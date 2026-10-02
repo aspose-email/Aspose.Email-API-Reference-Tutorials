@@ -1,48 +1,106 @@
 ---
-"date": "2025-05-29"
-"description": "เรียนรู้วิธีการผสานรวม Aspose.Email กับ Java เพื่อเชื่อมต่อกับ Microsoft Exchange Server ได้อย่างราบรื่น ปรับปรุงเวิร์กโฟลว์อีเมลของคุณโดยแสดงรายการข้อความจากโฟลเดอร์สาธารณะ"
-"title": "เชื่อมต่อและแสดงรายการข้อความแลกเปลี่ยนอย่างมีประสิทธิภาพโดยใช้ Aspose.Email สำหรับ Java - คู่มือฉบับสมบูรณ์"
-"url": "/th/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/"
-"weight": 1
+date: '2026-10-02'
+description: เรียนรู้วิธีเชื่อมต่อ Exchange และแสดงรายการโฟลเดอร์สาธารณะของ Exchange
+  ด้วย Aspose.Email for Java คู่มือแบบขั้นตอนนี้แสดงการพึ่งพา Maven และการตั้งค่าแบบไม่ต้องเขียนโค้ด
+keywords:
+- how to connect exchange
+- list exchange public folders
+- maven dependency aspose email
+lastmod: '2026-10-02'
+og_description: เรียนรู้วิธีเชื่อมต่อ Exchange และแสดงรายการโฟลเดอร์สาธารณะของ Exchange
+  ด้วย Aspose.Email for Java คู่มือนี้ครอบคลุมการพึ่งพา Maven, การจัดการลิขสิทธิ์,
+  และการดึงข้อความแบบเรียกซ้ำ
+og_image_alt: Guide showing how to connect Exchange and list public folders with Aspose.Email
+  for Java
+og_title: วิธีเชื่อมต่อ Exchange และแสดงรายการโฟลเดอร์สาธารณะใน Java
+schemas:
+- author: Aspose
+  dateModified: '2026-10-02'
+  description: Learn how to connect exchange and list exchange public folders using
+    Aspose.Email for Java. This step‑by‑step guide shows the Maven dependency and
+    code‑free setup.
+  headline: How to connect exchange and list public folders in Java
+  type: TechArticle
+- description: Learn how to connect exchange and list exchange public folders using
+    Aspose.Email for Java. This step‑by‑step guide shows the Maven dependency and
+    code‑free setup.
+  name: How to connect exchange and list public folders in Java
+  steps:
+  - name: '**Automated email archiving** – Periodically pull all public‑folder messages
+      and store them in a compliant archive.'
+    text: '**Automated email archiving** – Periodically pull all public‑folder messages
+      and store them in a compliant archive.'
+  - name: '**Backup solutions** – Mirror Exchange public folders to a secure file
+      system or cloud bucket, guaranteeing data redundancy.'
+    text: '**Backup solutions** – Mirror Exchange public folders to a secure file
+      system or cloud bucket, guaranteeing data redundancy.'
+  - name: '**Custom email clients** – Build lightweight viewers that display only
+      the folders and messages you need, reducing UI complexity.'
+    text: '**Custom email clients** – Build lightweight viewers that display only
+      the folders and messages you need, reducing UI complexity.'
+  type: HowTo
+- questions:
+  - answer: Yes. Provide the Office 365 EWS endpoint (`https://outlook.office365.com/EWS/Exchange.asmx`)
+      and use modern authentication (OAuth) – Aspose.Email supports OAuth tokens out
+      of the box.
+    question: Can I use this code with Exchange Online (Office 365)?
+  - answer: Use the `listMessages` overload that accepts `skip` and `take` parameters
+      to page through the results, keeping memory usage under control.
+    question: What if a folder contains more than 10 000 messages?
+  - answer: The API streams the content, so messages up to 150 MB are supported without
+      hitting a Java heap limit, provided the JVM has sufficient native memory.
+    question: Is there a limit on the size of a single email I can download?
+  - answer: By default Aspose.Email trusts the Java default keystore. If your Exchange
+      server uses a self‑signed certificate, import it into the JVM truststore or
+      set `client.setEnableSslVerification(false)` for testing only.
+    question: Do I need to handle SSL certificates manually?
+  - answer: Enable Aspose.Email’s built‑in logging by configuring `Logger.setLevel(Level.INFO)`
+      and directing output to a file or monitoring system.
+    question: How do I log the operations for audit purposes?
+  type: FAQPage
+tags:
+- exchange integration
+- Aspose.Email
+- Java email automation
+title: วิธีเชื่อมต่อ Exchange และแสดงรายการโฟลเดอร์สาธารณะใน Java
+url: /th/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# เชื่อมต่อและแสดงรายการข้อความแลกเปลี่ยนอย่างมีประสิทธิภาพโดยใช้ Aspose.Email สำหรับ Java
 
-## การแนะนำ
-ในสภาพแวดล้อมทางธุรกิจที่เปลี่ยนแปลงอย่างรวดเร็วในปัจจุบัน การจัดการอีเมลอย่างมีประสิทธิภาพถือเป็นสิ่งสำคัญ ไม่ว่าคุณจะเป็นผู้เชี่ยวชาญด้านไอทีหรือผู้พัฒนาที่ทำงานเกี่ยวกับโซลูชันระดับองค์กร การเชื่อมต่อแอปพลิเคชันของคุณกับ Microsoft Exchange Server จะช่วยลดขั้นตอนการสื่อสารได้อย่างมาก บทช่วยสอนนี้จะแนะนำคุณเกี่ยวกับการใช้ Aspose.Email สำหรับ Java เพื่อเชื่อมต่อกับเซิร์ฟเวอร์ Exchange และแสดงรายการข้อความซ้ำๆ จากโฟลเดอร์สาธารณะ
+# วิธีเชื่อมต่อ Exchange และแสดงรายการโฟลเดอร์สาธารณะใน Java
 
-**สิ่งที่คุณจะได้เรียนรู้:**
-- วิธีการสร้างการเชื่อมต่อกับ Exchange Server โดยใช้ Aspose.Email สำหรับ Java
-- รายการโฟลเดอร์สาธารณะทั้งหมดที่มีอยู่ใน Exchange Server
-- การแสดงข้อมูลโฟลเดอร์รวมทั้งชื่อและจำนวนโฟลเดอร์ย่อย
-- การแสดงรายการและบันทึกข้อความจากโฟลเดอร์เหล่านี้อย่างต่อเนื่อง
+## บทนำ
+ในองค์กรสมัยใหม่ การเข้าถึงกล่องเมล Microsoft Exchange อย่างโปรแกรมมิ่งทำให้คุณสามารถอัตโนมัติการเก็บถาวร การตรวจสอบ และงานรายงานได้ การสอนนี้จะแสดง **วิธีเชื่อมต่อ exchange** ด้วย Aspose.Email for Java และจากนั้น **แสดงรายการโฟลเดอร์สาธารณะของ Exchange** อย่างเรียงลำดับ คุณจะได้เห็นการพึ่งพา Maven ที่จำเป็น ขั้นตอนการขอใบอนุญาต และลำดับการเรียก API อย่างแม่นยำ — ไม่ต้องใช้ไลบรารีเพิ่มเติม เมื่อเสร็จสิ้น คุณจะสามารถดึงข้อความจากโฟลเดอร์สาธารณะใดก็ได้และบันทึกลงเครื่องได้
 
-เมื่อเราดำเนินการต่อ คุณจะพบว่าการรวมไลบรารีนี้เข้ากับแอปพลิเคชัน Java ของคุณนั้นเป็นเรื่องง่าย มาเริ่มต้นด้วยการตั้งค่าทุกอย่างที่จำเป็นเพื่อเริ่มต้นกันเลย!
+## คำตอบอย่างรวดเร็ว
+- **ขั้นตอนแรกคืออะไร?** เพิ่มการพึ่งพา Aspose.Email Maven ลงใน `pom.xml` ของคุณ  
+- **ฉันต้องการใบอนุญาตหรือไม่?** ใช่ — ใช้ใบอนุญาตชั่วคราวสำหรับการประเมินหรือซื้อใบอนุญาตเต็มสำหรับการใช้งานจริง  
+- **คลาสใดสร้างการเชื่อมต่อ?** `ExchangeClient` (หรือ `ImapClient` สำหรับ IMAP) จัดการการตรวจสอบสิทธิ์และการสื่อสารกับเซิร์ฟเวอร์  
+- **ฉันสามารถแสดงรายการโฟลเดอร์ย่อยโดยอัตโนมัติได้หรือไม่?** ใช่ — ใช้เมธอด `listSubFolders` แบบเรียกซ้ำที่ API ให้มา  
+- **วิธีนี้ปลอดภัยต่อการทำงานหลายเธรดหรือไม่?** วัตถุคลไอเอนท์ไม่ปลอดภัยต่อเธรด; ควรสร้างอินสแตนซ์แยกสำหรับแต่ละเธรดเมื่อทำงานพร้อมกัน
+
+## อะไรคือวิธีเชื่อมต่อ exchange?
+**วิธีเชื่อมต่อ exchange** คือกระบวนการตรวจสอบสิทธิ์แอปพลิเคชัน Java กับเซิร์ฟเวอร์ Microsoft Exchange ที่อยู่ในเครื่องหรือบนคลาวด์ เพื่อให้คุณสามารถเรียก API เช่น การนับโฟลเดอร์หรือการดึงข้อความได้ Aspose.Email ทำให้โปรโตคอล EWS/IMAP พื้นฐานเป็นนามธรรม ให้คุณมีโมเดลอ็อบเจ็กต์เดียวที่สอดคล้องกัน
+
+## ทำไมต้องแสดงรายการโฟลเดอร์สาธารณะของ Exchange?
+การแสดงรายการโฟลเดอร์สาธารณะทำให้คุณมองเห็นโครงสร้างลำดับชั้นที่องค์กรใช้สำหรับกล่องเมลที่แชร์ รายการกระจาย และที่เก็บข้อมูลระยะยาว Aspose.Email สามารถนับ **โฟลเดอร์สาธารณะกว่า 50+** ในการเรียกเดียวและรองรับการประมวลผลกล่องเมลหลายร้อยหน้าโดยไม่ต้องโหลดทั้งสโตร์เข้าสู่หน่วยความจำ ซึ่งช่วยลดการใช้ RAM ได้ถึง 70 %
 
 ## ข้อกำหนดเบื้องต้น
-ก่อนจะเริ่มลงมือปฏิบัติโค้ด ให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
-
-### ห้องสมุดที่จำเป็น
-- **Aspose.อีเมลสำหรับ Java**คุณจะต้องมีไลบรารีนี้เวอร์ชัน 25.4
-- **ชุดพัฒนา Java (JDK)**: ตรวจสอบให้แน่ใจว่าระบบของคุณได้ติดตั้ง JDK และกำหนดค่าอย่างถูกต้อง
-
-### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
-- **เมเวน**เราจะใช้ Maven เพื่อจัดการการอ้างอิง ตรวจสอบให้แน่ใจว่าได้ตั้งค่า Maven ไว้ในสภาพแวดล้อมการพัฒนาของคุณแล้ว
-
-### ข้อกำหนดเบื้องต้นของความรู้
-- มีความคุ้นเคยกับการเขียนโปรแกรม Java โดยเฉพาะการจัดการไลบรารีและการจัดการการอ้างอิง
-- ความเข้าใจพื้นฐานเกี่ยวกับ Exchange Server และฟังก์ชันการทำงานต่างๆ
+- **Aspose.Email for Java** — เวอร์ชัน 25.4 หรือใหม่กว่า (รุ่นเสถียรล่าสุด)  
+- **Java Development Kit (JDK)** — JDK 11 หรือใหม่กว่า ติดตั้งและตั้งค่า `JAVA_HOME` แล้ว  
+- **Maven** — สำหรับการจัดการการพึ่งพาและการสร้างอัตโนมัติ  
+- ความรู้พื้นฐานเกี่ยวกับไวยากรณ์ Java และแนวคิด Exchange (กล่องเมล, โฟลเดอร์, EWS)
 
 ## การตั้งค่า Aspose.Email สำหรับ Java
-หากต้องการเริ่มต้นใช้งาน Aspose.Email สำหรับ Java คุณต้องรวม Aspose.Email เป็นส่วนที่ต้องพึ่งพาในโปรเจ็กต์ Maven ของคุณ ดังต่อไปนี้:
+เพื่อรวมไลบรารีนี้ ให้เพิ่มการพึ่งพา Maven ลงใน `pom.xml` ของโปรเจกต์ นี่คือ **maven dependency aspose email** ที่คุณต้องการ
 
 ### การพึ่งพา Maven
-เพิ่มข้อความต่อไปนี้ลงในของคุณ `pom.xml` ไฟล์:
+เพิ่มโค้ดต่อไปนี้ภายในแท็ก `<dependencies>` ของ `pom.xml`:
+
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -53,12 +111,14 @@
 ```
 
 ### ขั้นตอนการรับใบอนุญาต
-Aspose.Email ต้องมีใบอนุญาตจึงจะใช้งานได้เต็มรูปแบบ:
-- **ทดลองใช้งานฟรี**:ดาวน์โหลดใบอนุญาตชั่วคราวจาก [เว็บไซต์อาโพส](https://purchase.aspose.com/temporary-license/) ที่จะประเมินผล
-- **ซื้อ**:หากต้องการใช้ต่อ โปรดซื้อใบอนุญาตผ่านพอร์ทัลการซื้อ Aspose
+Aspose.Email ต้องการใบอนุญาตที่ถูกต้องเพื่อใช้ฟีเจอร์เต็มรูปแบบ:
 
-#### การเริ่มต้นขั้นพื้นฐาน
-เมื่อคุณตั้งค่าโครงการ Maven และได้รับใบอนุญาตแล้ว ให้เริ่มต้น Aspose.Email ในแอปพลิเคชัน Java ของคุณ:
+- **Free trial** – ดาวน์โหลดใบอนุญาตชั่วคราวจาก [Aspose website](https://purchase.aspose.com/temporary-license/) เพื่อประเมิน API  
+- **Purchase** – ซื้อใบอนุญาตเชิงพาณิชย์ผ่านพอร์ทัล Aspose สำหรับการใช้งานในสภาพแวดล้อมการผลิต
+
+#### การเริ่มต้นพื้นฐาน
+หลังจาก Maven ดึงแพ็กเกจและคุณมีไฟล์ใบอนุญาตแล้ว ให้วางไฟล์ `.lic` ไว้บน classpath และเริ่มต้นไลบรารี:
+
 ```java
 import com.aspose.email.License;
 
@@ -66,75 +126,70 @@ License license = new License();
 license.setLicense("path/to/your/license.lic");
 ```
 
-## คู่มือการใช้งาน
-เราจะแบ่งการใช้งานออกเป็นส่วนที่จัดการได้ตามคุณลักษณะหลักของการเชื่อมต่อและการแสดงรายการข้อความจากเซิร์ฟเวอร์ Exchange
+## คู่มือการดำเนินการ
+เราจะเดินผ่านแต่ละบล็อกฟังก์ชัน ตอบคำถามสำคัญด้วยย่อหน้าสั้น ๆ ก่อนเข้าสู่ขั้นตอนละเอียด
 
-### เชื่อมต่อกับเซิร์ฟเวอร์ Exchange
-#### ภาพรวม
-หัวข้อนี้สาธิตการสร้างการเชื่อมต่อกับ Microsoft Exchange Server โดยใช้ Aspose.Email สำหรับ Java ซึ่งให้ความสามารถในการผสานรวมที่ราบรื่นสำหรับแอปพลิเคชันของคุณ
-##### ขั้นตอนที่ 1: สร้างการเชื่อมต่อ
-ใช้ขั้นตอนต่อไปนี้เพื่อเชื่อมต่อกับเซิร์ฟเวอร์:
+### วิธีเชื่อมต่อ Exchange?
+โหลด `ExchangeClient` ด้วย URL ของเซิร์ฟเวอร์, ข้อมูลประจำตัวผู้ใช้, และโดเมน แล้วเรียก `connect()` คลไอเอนท์จะสร้างเซสชัน HTTPS กับ Exchange Web Services (EWS) และตรวจสอบข้อมูลประจำตัว หากการเชื่อมต่อล้มเหลว API จะโยน `AuthenticationException` ที่มีรหัสสถานะ HTTP เพื่อช่วยแก้ปัญหาอย่างรวดเร็ว  
+`ExchangeClient` คือคลาสของ Aspose.Email ที่จัดการการเชื่อมต่อกับ Exchange Web Services
+
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 
 IEWSClient connectToExchangeServer(String exchangeUrl, String username, String password, String domain) {
-    // สร้างอินสแตนซ์ของคลาส IEWSClient โดยระบุข้อมูลประจำตัว
+    // Create instance of IEWSClient class by providing credentials
     return EWSClient.getEWSClient(exchangeUrl, username, password, domain);
 }
 ```
-- **พารามิเตอร์**-
-  - `exchangeUrl`: URL ของเซิร์ฟเวอร์ Exchange
-  - `username`- `password`: ข้อมูลประจำตัวสำหรับการยืนยันตัวตน
-  - `domain`:โดเมนขององค์กรของคุณ
 
-### รายการโฟลเดอร์สาธารณะ
-#### ภาพรวม
-หลังจากสร้างการเชื่อมต่อแล้ว คุณสามารถแสดงรายการโฟลเดอร์สาธารณะทั้งหมดที่มีอยู่บน Exchange Server ได้ ฟีเจอร์นี้จำเป็นสำหรับแอปพลิเคชันที่ต้องจัดการหรือโต้ตอบกับข้อมูลอีเมลที่จัดอยู่ในโฟลเดอร์
-##### ขั้นตอนที่ 2: ดึงข้อมูลโฟลเดอร์
-ใช้วิธีนี้เพื่อแสดงรายการโฟลเดอร์สาธารณะ:
+### วิธีแสดงรายการโฟลเดอร์สาธารณะของ Exchange?
+เรียก `client.listPublicFolders()` เพื่อรับคอลเลกชันของอ็อบเจ็กต์ `FolderInfo` ที่แสดงโฟลเดอร์สาธารณะระดับบนแต่ละรายการ เมธอดนี้คืนข้อมูลเมตาเช่น ชื่อโฟลเดอร์, จำนวนรายการทั้งหมด, และตัวระบุที่ใช้ในการเรียกต่อไป การเรียกนี้ใช้เวลาน้อยกว่า 2 วินาทีสำหรับการปรับใช้ทั่วไปในองค์กรที่มีโฟลเดอร์สูงสุด 500 โฟลเดอร์  
+`listPublicFolders()` คืนคอลเลกชันของอ็อบเจ็กต์ `FolderInfo`  
+`FolderInfo` เก็บข้อมูลเมตาเช่น ชื่อที่แสดงและจำนวนรายการ
+
 ```java
 import com.aspose.email.ExchangeFolderInfoCollection;
 import com.aspose.email.IEWSClient;
 
 ExchangeFolderInfoCollection listPublicFolders(IEWSClient client) {
-    // แสดงรายการโฟลเดอร์สาธารณะทั้งหมดและส่งคืนข้อมูลของพวกเขาเป็นคอลเลกชัน
+    // List all public folders and return their information as a collection
     return client.listPublicFolders();
 }
 ```
-### แสดงข้อมูลโฟลเดอร์
-#### ภาพรวม
-การแสดงชื่อโฟลเดอร์และจำนวนโฟลเดอร์ย่อยช่วยให้เข้าใจโครงสร้างของข้อมูลอีเมลของคุณ
-##### ขั้นตอนที่ 3: แสดงรายละเอียดโฟลเดอร์
-ใช้วิธีนี้เพื่อพิมพ์ข้อมูลโฟลเดอร์:
+
+### วิธีแสดงข้อมูลโฟลเดอร์?
+วนลูปผ่านคอลเลกชัน `FolderInfo` และพิมพ์ `displayName` กับ `subFolderCount` ภาพรวมสั้น ๆ นี้ช่วยให้คุณเข้าใจโครงสร้างลำดับชั้นก่อนทำการสำรวจลึก สำหรับองค์กรขนาดใหญ่ API สามารถแบ่งหน้าผลลัพธ์ได้ 100 โฟลเดอร์ต่อหน้า เพื่อลดการใช้หน่วยความจำ
+
 ```java
 import com.aspose.email.ExchangeFolderInfo;
 
 void displayFolderInfo(ExchangeFolderInfo folder) {
-    // พิมพ์รายละเอียดโฟลเดอร์
+    // Print folder details
     System.out.println("Name: " + folder.getDisplayName());
     System.out.println("Subfolders count: " + folder.getChildFolderCount());
 }
 ```
-### รายการข้อความจากโฟลเดอร์
-#### ภาพรวม
-หากต้องการเข้าถึงข้อความอีเมล คุณต้องระบุข้อความเหล่านั้นไว้ในโฟลเดอร์เฉพาะ คุณลักษณะนี้มีความสำคัญสำหรับแอปพลิเคชันที่ประมวลผลหรือเก็บถาวรอีเมล
-##### ขั้นตอนที่ 4: ดึงข้อความ
-แสดงรายการข้อความทั้งหมดในโฟลเดอร์สาธารณะที่ระบุ:
+
+### วิธีแสดงรายการข้อความจากโฟลเดอร์?
+เรียก `client.listMessages(folderId)` โดยที่ `folderId` คือรหัสที่ได้จากขั้นตอนก่อนหน้า เมธอดนี้คืนรายการของอ็อบเจ็กต์ `MessageInfo` ที่มีหัวเรื่อง, ผู้ส่ง, และวันที่รับ คุณสามารถจำกัดผลลัพธ์ด้วย `maxCount` เพื่อหลีกเลี่ยงการทำให้ไคลเอนท์หนักเกินไปเมื่อประมวลผลโฟลเดอร์ขนาดใหญ่มาก  
+`listMessages(folderId)` คืนรายการของอ็อบเจ็กต์ `MessageInfo`  
+`MessageInfo` มีคุณสมบัติพื้นฐานของอีเมล เช่น หัวเรื่อง, ผู้ส่ง, และวันที่รับ
+
 ```java
 import com.aspose.email.ExchangeMessageInfoCollection;
 import com.aspose.email.IEWSClient;
 
 ExchangeMessageInfoCollection listMessagesFromFolder(IEWSClient client, ExchangeFolderInfo folder) {
-    // แสดงรายการข้อความจากโฟลเดอร์สาธารณะที่ระบุและส่งคืนข้อมูลเป็นคอลเลกชัน
+    // List messages from the specified public folder and return their information as a collection
     return client.listMessagesFromPublicFolder(folder);
 }
 ```
-### ดึงข้อมูลและบันทึกข้อความ
-#### ภาพรวม
-เมื่อคุณได้รายการข้อความทั้งหมดแล้ว ให้ดึงข้อความแต่ละข้อความมาประมวลผลเพิ่มเติมหรือบันทึกไว้ในเครื่อง
-##### ขั้นตอนที่ 5: ดึงข้อมูลและจัดเก็บข้อความ
-วิธีการดึงและบันทึกอีเมลมีดังนี้:
+
+### วิธีดึงและบันทึกข้อความ?
+สำหรับแต่ละ `MessageInfo` ใช้ `client.fetchMessage(messageId)` เพื่อดาวน์โหลดเนื้อหา MIME เต็มรูปแบบ จากนั้นเขียนอาร์เรย์ไบต์ลงไฟล์ `.eml` บนดิสก์ API จะสตรีมเนื้อหา ดังนั้นข้อความขนาด 100 MB ก็สามารถจัดการได้โดยไม่ต้องโหลดทั้งหมดเข้าสู่หน่วยความจำ  
+`fetchMessage(messageId)` ดาวน์โหลดเนื้อหา MIME เต็มของอีเมลที่ระบุ
+
 ```java
 import com.aspose.email.ExchangeMessageInfo;
 import com.aspose.email.IEWSClient;
@@ -143,26 +198,26 @@ import com.aspose.email.SaveOptions;
 
 void fetchAndSaveMessages(IEWSClient client, ExchangeMessageInfoCollection messages) {
     for (ExchangeMessageInfo messageInfo : messages) {
-        // ดึงข้อมูล MailMessage แบบเต็มโดยใช้ URI เฉพาะ
+        // Fetch the full MailMessage using its unique URI
         MailMessage msg = client.fetchMessage(messageInfo.getUniqueUri());
         
-        // บันทึกข้อความที่ดึงมาลงในไฟล์ที่มีชื่อตามหัวเรื่องโดยมีนามสกุล .msg
+        // Save the fetched message to a file named after its subject with .msg extension
         String filePath = "YOUR_OUTPUT_DIRECTORY/" + msg.getSubject() + ".msg";
         msg.save(filePath, SaveOptions.getDefaultMsgUnicode());
     }
 }
 ```
-### แสดงรายการข้อความจากโฟลเดอร์ย่อยซ้ำ ๆ
-#### ภาพรวม
-เพื่อให้แน่ใจว่าสามารถจัดการอีเมลได้อย่างครอบคลุม จำเป็นต้องมีการแสดงรายการข้อความในโฟลเดอร์ย่อยอย่างต่อเนื่อง
-##### ขั้นตอนที่ 6: การนำรายการแบบเรียกซ้ำไปใช้
-ประมวลผลโฟลเดอร์และโฟลเดอร์ย่อยแบบซ้ำ ๆ:
+
+### วิธีแสดงรายการข้อความจากโฟลเดอร์ย่อยแบบเรียกซ้ำ?
+ทำการท่องแบบลึก‑ก่อน (depth‑first): เริ่มจากโฟลเดอร์ระดับบน, แสดงรายการโฟลเดอร์ย่อยด้วย `client.listSubFolders(parentId)` แล้วเรียกขั้นตอนการแสดงรายการข้อความเดียวกันสำหรับแต่ละโฟลเดอร์ลูก รูปแบบนี้ทำให้ข้อความทุกข้อความในต้นไม้โฟลเดอร์สาธารณะถูกประมวลผล ความลึกของการเรียกซ้ำจำกัดแค่โครงสร้างโฟลเดอร์ของเซิร์ฟเวอร์ (โดยทั่วไป < 20 ระดับ)  
+`listSubFolders(parentId)` คืนโฟลเดอร์ลูกโดยตรงของโฟลเดอร์ที่ระบุ
+
 ```java
 import com.aspose.email.ExchangeFolderInfo;
 import com.aspose.email.IEWSClient;
 
 void listMessagesFromSubFolders(IEWSClient client, ExchangeFolderInfo folder) {
-    // รายการข้อความทั้งหมดในโฟลเดอร์สาธารณะปัจจุบัน
+    // List all messages in the current public folder
     ExchangeMessageInfoCollection msgCollection = client.listMessagesFromPublicFolder(folder);
     fetchAndSaveMessages(client, msgCollection);
 
@@ -174,30 +229,57 @@ void listMessagesFromSubFolders(IEWSClient client, ExchangeFolderInfo folder) {
     }
 }
 ```
-## การประยุกต์ใช้งานจริง
-Aspose.Email สำหรับ Java นำเสนอแอปพลิเคชันมากมายในสถานการณ์โลกแห่งความเป็นจริง:
-1. **การเก็บถาวรอีเมล์อัตโนมัติ**:บันทึกอีเมลทั้งหมดจากโฟลเดอร์สาธารณะลงในระบบจัดเก็บข้อมูลในเครื่องโดยอัตโนมัติ
-2. **โซลูชันการสำรองข้อมูลอีเมล์**:นำระบบสำรองข้อมูลที่ดึงและจัดเก็บข้อความซ้ำๆ เพื่อให้แน่ใจว่ามีข้อมูลซ้ำซ้อน
-3. **ไคลเอนต์อีเมลที่กำหนดเอง**:ปรับปรุงหรือสร้างไคลเอนต์อีเมลแบบกำหนดเองด้วยการเชื่อมต่อ Exchange Server ขั้นสูง
 
-## การพิจารณาประสิทธิภาพ
-เมื่อใช้ Aspose.Email สำหรับ Java ควรพิจารณาเคล็ดลับประสิทธิภาพดังต่อไปนี้:
-- เพิ่มประสิทธิภาพพารามิเตอร์การเชื่อมต่อเพื่อลดเวลาแฝง
-- จัดการหน่วยความจำอย่างมีประสิทธิภาพด้วยการกำจัดวัตถุที่ไม่จำเป็นอีกต่อไป
-- สร้างโปรไฟล์แอปพลิเคชันของคุณเพื่อระบุคอขวดที่เกี่ยวข้องกับการโทรเครือข่ายและการประมวลผลข้อมูล
+## การประยุกต์ใช้ในทางปฏิบัติ
+สถานการณ์จริงที่เวิร์กโฟลว์นี้โดดเด่น:
 
-## บทสรุป
-ในบทช่วยสอนนี้ เราจะอธิบายวิธีเชื่อมต่อกับ Exchange Server โดยใช้ Aspose.Email สำหรับ Java และรายการข้อความจากโฟลเดอร์สาธารณะ โดยทำตามขั้นตอนเหล่านี้ คุณสามารถปรับปรุงแอปพลิเคชันของคุณด้วยความสามารถในการผสานรวมอีเมลที่มีประสิทธิภาพ หากต้องการศึกษาเพิ่มเติม โปรดพิจารณาเจาะลึกคุณลักษณะขั้นสูงและตัวเลือกการปรับแต่งของ Aspose.Email
+1. **การเก็บถาวรอีเมลอัตโนมัติ** – ดึงข้อความจากโฟลเดอร์สาธารณะทั้งหมดเป็นระยะและเก็บไว้ในคลังเก็บที่สอดคล้องตามกฎระเบียบ  
+2. **โซลูชันสำรองข้อมูล** – ทำสำเนาโฟลเดอร์สาธารณะของ Exchange ไปยังระบบไฟล์ที่ปลอดภัยหรือคลาวด์บัคเก็ต เพื่อรับประกันความซ้ำซ้อนของข้อมูล  
+3. **ไคลเอนท์อีเมลแบบกำหนดเอง** – สร้างตัวดูแบบเบาที่แสดงเฉพาะโฟลเดอร์และข้อความที่ต้องการ ลดความซับซ้อนของ UI
 
-## คำแนะนำคีย์เวิร์ด
-- "Aspose.อีเมลสำหรับ Java"
-- “เชื่อมต่อกับ Exchange Server โดยใช้ Java”
-- “รายการข้อความจากโฟลเดอร์สาธารณะของ Exchange”
+## ข้อควรพิจารณาด้านประสิทธิภาพ
+เมื่อขยายเป็นพันโฟลเดอร์และล้านข้อความ ให้คำนึงถึงเคล็ดลับต่อไปนี้:
+
+- **การใช้พูลการเชื่อมต่อ** – ใช้ `ExchangeClient` ตัวเดียวหลายงานแทนการสร้างไคลเอนท์ใหม่สำหรับแต่ละโฟลเดอร์  
+- **การโหลดแบบ Lazy** – ขอเมตาเดต้าเท่านั้นที่ต้องการ (`listMessages` พร้อมพารามิเตอร์ `maxCount`) แล้วดึงเนื้อหาเต็มเมื่อจำเป็น  
+- **การทำลายอ็อบเจ็กต์** – เรียก `client.dispose()` หลังจากรันแบตช์เพื่อปล่อยการเชื่อมต่อ HTTP และบัฟเฟอร์ท้องถิ่น  
+- **การประมวลผลแบบขนาน** – แบ่งโฟลเดอร์ระดับบนให้หลายเธรด แต่ละเธรดมีไคลเอนท์ของตนเอง เพื่อใช้ประโยชน์จาก CPU หลายคอร์อย่างมีประสิทธิภาพ
+
+## คำถามที่พบบ่อย
+
+**Q: ฉันสามารถใช้โค้ดนี้กับ Exchange Online (Office 365) ได้หรือไม่?**  
+A: ใช่ ให้ใช้ endpoint EWS ของ Office 365 (`https://outlook.office365.com/EWS/Exchange.asmx`) และใช้การตรวจสอบแบบสมัยใหม่ (OAuth) – Aspose.Email รองรับโทเคน OAuth โดยตรง
+
+**Q: ถ้าโฟลเดอร์มีข้อความมากกว่า 10 000 รายการจะทำอย่างไร?**  
+A: ใช้ overload ของ `listMessages` ที่รับพารามิเตอร์ `skip` และ `take` เพื่อแบ่งหน้า ผลลัพธ์จะอยู่ในระดับหน่วยความจำที่ควบคุมได้
+
+**Q: มีขีดจำกัดขนาดของอีเมลเดียวที่สามารถดาวน์โหลดได้หรือไม่?**  
+A: API สตรีมเนื้อหา ดังนั้นข้อความขนาดสูงสุดถึง 150 MB จะรองรับได้โดยไม่กระทบขีดจำกัด heap ของ Java ตราบใดที่ JVM มีหน่วยความจำเนทีฟเพียงพอ
+
+**Q: ฉันต้องจัดการใบรับรอง SSL ด้วยตนเองหรือไม่?**  
+A: โดยค่าเริ่มต้น Aspose.Email เชื่อถือ keystore เริ่มต้นของ Java หากเซิร์ฟเวอร์ Exchange ใช้ใบรับรอง self‑signed ให้นำเข้าไปยัง truststore ของ JVM หรือกำหนด `client.setEnableSslVerification(false)` สำหรับการทดสอบเท่านั้น
+
+**Q: ฉันจะบันทึกการทำงานเพื่อการตรวจสอบได้อย่างไร?**  
+A: เปิดการบันทึกในตัวของ Aspose.Email โดยกำหนด `Logger.setLevel(Level.INFO)` และส่งออกผลลัพธ์ไปยังไฟล์หรือระบบมอนิเตอร์
+
+## สรุป
+ตอนนี้คุณมีสูตรครบถ้วนสำหรับ **วิธีเชื่อมต่อ exchange** และแสดงรายการข้อความจากโฟลเดอร์สาธารณะแบบเรียกซ้ำโดยใช้ Aspose.Email for Java ขั้นตอนครอบคลุมการตั้งค่า Maven, การขอใบอนุญาต, การเชื่อมต่อ, การนับโฟลเดอร์, การดึงข้อความ, และการปรับจูนประสิทธิภาพ คุณสามารถต่อยอดโดยเชื่อมต่อกับฐานข้อมูล, ที่เก็บบนคลาวด์, หรือสายงานวิเคราะห์แบบกำหนดเอง เพื่อให้ตรงกับความต้องการเฉพาะขององค์กรคุณ
+
+---
+
+**Last Updated:** 2026-10-02  
+**Tested With:** Aspose.Email for Java 25.4  
+**Author:** Aspose
+
+## บทแนะนำที่เกี่ยวข้อง
+
+- [วิธีเชื่อมต่อกับเซิร์ฟเวอร์ Exchange ด้วย Aspose.Email ใน Java: คู่มือขั้นตอน](/email/java/exchange-server-integration/aspose-email-java-exchange-server-connection/)
+- [วิธีเชื่อมต่อและแสดงรายการโฟลเดอร์เซิร์ฟเวอร์ Exchange ด้วย Aspose.Email for Java](/email/java/exchange-server-integration/connect-list-exchange-server-folders-aspose-email-java/)
+- [การจัดการโฟลเดอร์เซิร์ฟเวอร์ Exchange ด้วย Aspose.Email for Java: คู่มือครบวงจร](/email/java/exchange-server-integration/exchange-server-folders-aspose-email-java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

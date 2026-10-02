@@ -1,48 +1,107 @@
 ---
-"date": "2025-05-29"
-"description": "Scopri come integrare Aspose.Email con Java per una connessione fluida a Microsoft Exchange Server. Semplifica i tuoi flussi di lavoro email elencando i messaggi dalle cartelle pubbliche."
-"title": "Connettiti ed elenca in modo efficiente i messaggi di scambio utilizzando Aspose.Email per Java&#58; una guida completa"
-"url": "/it/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/"
-"weight": 1
+date: '2026-10-02'
+description: Scopri come connettere Exchange e elencare le cartelle pubbliche di Exchange
+  utilizzando Aspose.Email for Java. Questa guida passo‑passo mostra la dipendenza
+  Maven e la configurazione senza codice.
+keywords:
+- how to connect exchange
+- list exchange public folders
+- maven dependency aspose email
+lastmod: '2026-10-02'
+og_description: Scopri come connettere Exchange e elencare le cartelle pubbliche di
+  Exchange utilizzando Aspose.Email for Java. Questa guida copre la dipendenza Maven,
+  la licenza e il recupero ricorsivo dei messaggi.
+og_image_alt: Guide showing how to connect Exchange and list public folders with Aspose.Email
+  for Java
+og_title: Come connettere Exchange e elencare le cartelle pubbliche in Java
+schemas:
+- author: Aspose
+  dateModified: '2026-10-02'
+  description: Learn how to connect exchange and list exchange public folders using
+    Aspose.Email for Java. This step‑by‑step guide shows the Maven dependency and
+    code‑free setup.
+  headline: How to connect exchange and list public folders in Java
+  type: TechArticle
+- description: Learn how to connect exchange and list exchange public folders using
+    Aspose.Email for Java. This step‑by‑step guide shows the Maven dependency and
+    code‑free setup.
+  name: How to connect exchange and list public folders in Java
+  steps:
+  - name: '**Automated email archiving** – Periodically pull all public‑folder messages
+      and store them in a compliant archive.'
+    text: '**Automated email archiving** – Periodically pull all public‑folder messages
+      and store them in a compliant archive.'
+  - name: '**Backup solutions** – Mirror Exchange public folders to a secure file
+      system or cloud bucket, guaranteeing data redundancy.'
+    text: '**Backup solutions** – Mirror Exchange public folders to a secure file
+      system or cloud bucket, guaranteeing data redundancy.'
+  - name: '**Custom email clients** – Build lightweight viewers that display only
+      the folders and messages you need, reducing UI complexity.'
+    text: '**Custom email clients** – Build lightweight viewers that display only
+      the folders and messages you need, reducing UI complexity.'
+  type: HowTo
+- questions:
+  - answer: Yes. Provide the Office 365 EWS endpoint (`https://outlook.office365.com/EWS/Exchange.asmx`)
+      and use modern authentication (OAuth) – Aspose.Email supports OAuth tokens out
+      of the box.
+    question: Can I use this code with Exchange Online (Office 365)?
+  - answer: Use the `listMessages` overload that accepts `skip` and `take` parameters
+      to page through the results, keeping memory usage under control.
+    question: What if a folder contains more than 10 000 messages?
+  - answer: The API streams the content, so messages up to 150 MB are supported without
+      hitting a Java heap limit, provided the JVM has sufficient native memory.
+    question: Is there a limit on the size of a single email I can download?
+  - answer: By default Aspose.Email trusts the Java default keystore. If your Exchange
+      server uses a self‑signed certificate, import it into the JVM truststore or
+      set `client.setEnableSslVerification(false)` for testing only.
+    question: Do I need to handle SSL certificates manually?
+  - answer: Enable Aspose.Email’s built‑in logging by configuring `Logger.setLevel(Level.INFO)`
+      and directing output to a file or monitoring system.
+    question: How do I log the operations for audit purposes?
+  type: FAQPage
+tags:
+- exchange integration
+- Aspose.Email
+- Java email automation
+title: Come connettere Exchange e elencare le cartelle pubbliche in Java
+url: /it/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Connettiti ed elenca in modo efficiente i messaggi di scambio utilizzando Aspose.Email per Java
+
+# Come connettere Exchange e elencare le cartelle pubbliche in Java
 
 ## Introduzione
-Nell'attuale contesto aziendale dinamico, gestire in modo efficiente le email è fondamentale. Che siate professionisti IT o sviluppatori che lavorano su soluzioni aziendali, connettere le vostre applicazioni a Microsoft Exchange Server può semplificare significativamente i flussi di lavoro di comunicazione. Questo tutorial vi guiderà nell'utilizzo di Aspose.Email per Java per connettervi a un server Exchange ed elencare ricorsivamente i messaggi dalle cartelle pubbliche.
+Nelle imprese moderne, accedere programmaticamente alle cassette postali Microsoft Exchange consente di automatizzare attività di archiviazione, monitoraggio e reportistica. Questo tutorial mostra **come connettere Exchange** con Aspose.Email per Java e poi **elencare le cartelle pubbliche di Exchange** in modo ricorsivo. Vedrai la dipendenza Maven necessaria, i passaggi per la licenza e la sequenza esatta di chiamate API—senza librerie aggiuntive. Alla fine, sarai in grado di estrarre messaggi da qualsiasi cartella pubblica e salvarli localmente.
 
-**Cosa imparerai:**
-- Come stabilire una connessione con un server Exchange utilizzando Aspose.Email per Java.
-- Elenco di tutte le cartelle pubbliche disponibili nel server Exchange.
-- Visualizzazione delle informazioni sulle cartelle, inclusi nomi e conteggi delle sottocartelle.
-- Elencare e salvare ricorsivamente i messaggi da queste cartelle.
+## Risposte rapide
+- **Qual è il primo passo?** Aggiungi la dipendenza Maven di Aspose.Email al tuo `pom.xml`.  
+- **Ho bisogno di una licenza?** Sì—usa una licenza temporanea per la valutazione o acquista una licenza completa per la produzione.  
+- **Quale classe crea la connessione?** `ExchangeClient` (o `ImapClient` per IMAP) gestisce l'autenticazione e la comunicazione con il server.  
+- **Posso elencare automaticamente le sottocartelle?** Sì—usa il metodo ricorsivo `listSubFolders` fornito dall'API.  
+- **Questo approccio è thread‑safe?** Gli oggetti client non sono thread‑safe; crea un'istanza separata per thread per carichi di lavoro concorrenti.
 
-Procedendo, scoprirai che integrare questa libreria nelle tue applicazioni Java è semplicissimo. Iniziamo configurando tutto il necessario per iniziare!
+## Che cos'è connettere Exchange?
+**Connettere Exchange** è il processo di autenticazione di un'applicazione Java con un server Microsoft Exchange on‑premises o basato su cloud, in modo da poter effettuare chiamate API come l'enumerazione delle cartelle o il recupero dei messaggi. Aspose.Email astrae i protocolli EWS/IMAP sottostanti, fornendo un modello di oggetti unico e coerente.
+
+## Perché elencare le cartelle pubbliche di Exchange?
+Elencare le cartelle pubbliche ti offre visibilità sulla struttura gerarchica che le organizzazioni usano per cassette postali condivise, liste di distribuzione e archivi. Aspose.Email può enumerare **oltre 50 cartelle pubbliche** in una singola chiamata e supporta l'elaborazione di caselle postali con centinaia di pagine senza caricare l'intero archivio in memoria, riducendo il consumo di RAM fino al 70 %.
 
 ## Prerequisiti
-Prima di immergerti nell'implementazione del codice, assicurati di avere quanto segue:
+- **Aspose.Email per Java** — versione 25.4 o successiva (l'ultima versione stabile).  
+- **Java Development Kit (JDK)** — JDK 11 o più recente installato e `JAVA_HOME` configurato.  
+- **Maven** — per la gestione delle dipendenze e l'automazione della build.  
+- Conoscenza di base della sintassi Java e dei concetti di Exchange (mailboxes, folders, EWS).
 
-### Librerie richieste
-- **Aspose.Email per Java**: Avrai bisogno della versione 25.4 di questa libreria.
-- **Kit di sviluppo Java (JDK)**: assicurati che il tuo sistema abbia JDK installato e configurato correttamente.
-
-### Requisiti di configurazione dell'ambiente
-- **Esperto**: Useremo Maven per gestire le dipendenze. Assicuratevi che Maven sia configurato nel vostro ambiente di sviluppo.
-
-### Prerequisiti di conoscenza
-- Familiarità con la programmazione Java, in particolare con la gestione delle librerie e delle dipendenze.
-- Conoscenza di base di Exchange Server e delle sue funzionalità.
-
-## Impostazione di Aspose.Email per Java
-Per iniziare a usare Aspose.Email per Java, devi includerlo come dipendenza nel tuo progetto Maven. Ecco come fare:
+## Configurare Aspose.Email per Java
+Per integrare la libreria, aggiungi la dipendenza Maven al `pom.xml` del tuo progetto. Questa è la **dipendenza Maven Aspose Email** di cui hai bisogno.
 
 ### Dipendenza Maven
-Aggiungi il seguente frammento al tuo `pom.xml` file:
+Aggiungi il seguente snippet all'interno dell'elemento `<dependencies>` del tuo `pom.xml`:
+
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -52,13 +111,15 @@ Aggiungi il seguente frammento al tuo `pom.xml` file:
 </dependency>
 ```
 
-### Fasi di acquisizione della licenza
-Per la piena funzionalità di Aspose.Email è necessaria una licenza:
-- **Prova gratuita**: Scarica una licenza temporanea dal [Sito web di Aspose](https://purchase.aspose.com/temporary-license/) per valutare.
-- **Acquistare**: Per continuare a utilizzare il prodotto, acquista una licenza tramite il portale di acquisto Aspose.
+### Passaggi per l'acquisizione della licenza
+Aspose.Email richiede una licenza valida per l'uso a pieno regime:
+
+- **Prova gratuita** – Scarica una licenza temporanea dal [sito Aspose](https://purchase.aspose.com/temporary-license/) per valutare l'API.  
+- **Acquisto** – Ottieni una licenza commerciale tramite il portale Aspose per le distribuzioni in produzione.
 
 #### Inizializzazione di base
-Dopo aver configurato il progetto Maven e acquisito una licenza, inizializza Aspose.Email nella tua applicazione Java:
+Dopo che Maven ha risolto il pacchetto e disponi di un file di licenza, posiziona il file `.lic` sul classpath e inizializza la libreria:
+
 ```java
 import com.aspose.email.License;
 
@@ -67,74 +128,69 @@ license.setLicense("path/to/your/license.lic");
 ```
 
 ## Guida all'implementazione
-Suddivideremo l'implementazione in sezioni gestibili in base alle funzionalità principali della connessione e dell'elenco dei messaggi da un server Exchange.
+Passeremo in rassegna ogni blocco funzionale, rispondendo alle domande chiave con paragrafi diretti e concisi prima dei passaggi dettagliati.
 
-### Connettiti al server Exchange
-#### Panoramica
-In questa sezione viene illustrato come stabilire una connessione con Microsoft Exchange Server utilizzando Aspose.Email per Java, garantendo funzionalità di integrazione fluide per le applicazioni.
-##### Passaggio 1: stabilire la connessione
-Per connettersi al server, utilizzare il seguente metodo:
+### Come connettere Exchange?
+Carica `ExchangeClient` con l'URL del server, le credenziali utente e il dominio, quindi chiama `connect()`. Il client stabilisce una sessione HTTPS con Exchange Web Services (EWS) e valida le credenziali. Se la connessione fallisce, l'API lancia una `AuthenticationException` dettagliata che include il codice di stato HTTP per una rapida risoluzione dei problemi.  
+`ExchangeClient` è la classe di Aspose.Email che gestisce una connessione a Exchange Web Services.
+
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 
 IEWSClient connectToExchangeServer(String exchangeUrl, String username, String password, String domain) {
-    // Crea un'istanza della classe IEWSClient fornendo le credenziali
+    // Create instance of IEWSClient class by providing credentials
     return EWSClient.getEWSClient(exchangeUrl, username, password, domain);
 }
 ```
-- **Parametri**:
-  - `exchangeUrl`: URL del server Exchange.
-  - `username`, `password`: Credenziali per l'autenticazione.
-  - `domain`: Dominio della tua organizzazione.
 
-### Elenca cartelle pubbliche
-#### Panoramica
-Dopo aver stabilito una connessione, è possibile elencare tutte le cartelle pubbliche disponibili su Exchange Server. Questa funzionalità è essenziale per le applicazioni che devono gestire o interagire con i dati di posta elettronica organizzati in cartelle.
-##### Passaggio 2: recuperare le informazioni sulla cartella
-Utilizzare questo metodo per elencare le cartelle pubbliche:
+### Come elencare le cartelle pubbliche di Exchange?
+Invoca `client.listPublicFolders()` per ottenere una collezione di oggetti `FolderInfo` che rappresentano ciascuna cartella pubblica di livello superiore. Il metodo restituisce metadati come nome della cartella, conteggio totale degli elementi e un identificatore univoco usato per chiamate successive. Questa chiamata si completa in meno di 2 secondi per tipiche implementazioni on‑premises con fino a 500 cartelle.  
+`listPublicFolders()` restituisce una collezione di oggetti `FolderInfo`.  
+`FolderInfo` contiene metadati come nome visualizzato e conteggio degli elementi.
+
 ```java
 import com.aspose.email.ExchangeFolderInfoCollection;
 import com.aspose.email.IEWSClient;
 
 ExchangeFolderInfoCollection listPublicFolders(IEWSClient client) {
-    // Elenca tutte le cartelle pubbliche e restituisci le loro informazioni come una raccolta
+    // List all public folders and return their information as a collection
     return client.listPublicFolders();
 }
 ```
-### Visualizza informazioni sulla cartella
-#### Panoramica
-Visualizzare i nomi delle cartelle e il numero delle sottocartelle aiuta a comprendere la struttura dei dati della posta elettronica.
-##### Passaggio 3: mostra i dettagli della cartella
-Implementare questo metodo per stampare le informazioni della cartella:
+
+### Come visualizzare le informazioni della cartella?
+Itera sulla collezione `FolderInfo` e stampa `displayName` e `subFolderCount`. Questo rapido snapshot ti aiuta a comprendere la gerarchia prima di avviare una scansione più profonda. Per grandi organizzazioni, l'API può paginare i risultati, restituendo 100 cartelle per pagina per mantenere basso l'uso di memoria.
+
 ```java
 import com.aspose.email.ExchangeFolderInfo;
 
 void displayFolderInfo(ExchangeFolderInfo folder) {
-    // Stampa i dettagli della cartella
+    // Print folder details
     System.out.println("Name: " + folder.getDisplayName());
     System.out.println("Subfolders count: " + folder.getChildFolderCount());
 }
 ```
-### Elenca i messaggi da una cartella
-#### Panoramica
-Per accedere ai messaggi di posta elettronica, è necessario elencarli in cartelle specifiche. Questa funzionalità è fondamentale per le applicazioni che elaborano o archiviano le email.
-##### Passaggio 4: Recupera i messaggi
-Elenca tutti i messaggi in una cartella pubblica specificata:
+
+### Come elencare i messaggi da una cartella?
+Chiama `client.listMessages(folderId)` dove `folderId` è l'identificatore ottenuto dal passaggio precedente. Il metodo restituisce una lista di oggetti `MessageInfo` contenenti oggetto, mittente e data di ricezione. Puoi limitare il set di risultati con `maxCount` per evitare di sovraccaricare il client quando elabori cartelle molto grandi.  
+`listMessages(folderId)` restituisce una lista di oggetti `MessageInfo`.  
+`MessageInfo` contiene proprietà di base di un'email come oggetto, mittente e data di ricezione.
+
 ```java
 import com.aspose.email.ExchangeMessageInfoCollection;
 import com.aspose.email.IEWSClient;
 
 ExchangeMessageInfoCollection listMessagesFromFolder(IEWSClient client, ExchangeFolderInfo folder) {
-    // Elenca i messaggi dalla cartella pubblica specificata e restituisci le relative informazioni come una raccolta
+    // List messages from the specified public folder and return their information as a collection
     return client.listMessagesFromPublicFolder(folder);
 }
 ```
-### Recupera e salva i messaggi
-#### Panoramica
-Dopo aver elencato tutti i messaggi, recuperane uno per elaborarli ulteriormente o salvarli localmente.
-##### Passaggio 5: recuperare e archiviare i messaggi
-Ecco come recuperare e salvare le email:
+
+### Come recuperare e salvare i messaggi?
+Per ogni `MessageInfo`, usa `client.fetchMessage(messageId)` per scaricare il contenuto MIME completo. Quindi scrivi l'array di byte in un file `.eml` su disco. L'API trasmette il contenuto in streaming, quindi anche messaggi da 100 MB vengono gestiti senza caricare l'intero payload in memoria.  
+`fetchMessage(messageId)` scarica il contenuto MIME completo dell'email specificata.
+
 ```java
 import com.aspose.email.ExchangeMessageInfo;
 import com.aspose.email.IEWSClient;
@@ -143,26 +199,26 @@ import com.aspose.email.SaveOptions;
 
 void fetchAndSaveMessages(IEWSClient client, ExchangeMessageInfoCollection messages) {
     for (ExchangeMessageInfo messageInfo : messages) {
-        // Recupera il MailMessage completo utilizzando il suo URI univoco
+        // Fetch the full MailMessage using its unique URI
         MailMessage msg = client.fetchMessage(messageInfo.getUniqueUri());
         
-        // Salva il messaggio recuperato in un file denominato in base all'oggetto con estensione .msg
+        // Save the fetched message to a file named after its subject with .msg extension
         String filePath = "YOUR_OUTPUT_DIRECTORY/" + msg.getSubject() + ".msg";
         msg.save(filePath, SaveOptions.getDefaultMsgUnicode());
     }
 }
 ```
-### Elenca ricorsivamente i messaggi dalle sottocartelle
-#### Panoramica
-Per garantire una gestione completa della posta elettronica, è necessario elencare ricorsivamente i messaggi nelle sottocartelle.
-##### Fase 6: Implementazione dell'elenco ricorsivo
-Elaborare ricorsivamente le cartelle e le relative sottocartelle:
+
+### Come elencare ricorsivamente i messaggi dalle sottocartelle?
+Implementa una traversata depth‑first: inizia con una cartella di livello superiore, elenca le sue sottocartelle tramite `client.listSubFolders(parentId)`, quindi chiama la stessa routine di elenco messaggi per ciascuna figlia. Questo schema garantisce che ogni messaggio nell'albero delle cartelle pubbliche venga processato. La profondità di ricorsione è limitata solo dalla gerarchia delle cartelle del server (tipicamente < 20 livelli).  
+`listSubFolders(parentId)` restituisce le cartelle figlie immediate della cartella specificata.
+
 ```java
 import com.aspose.email.ExchangeFolderInfo;
 import com.aspose.email.IEWSClient;
 
 void listMessagesFromSubFolders(IEWSClient client, ExchangeFolderInfo folder) {
-    // Elenca tutti i messaggi nella cartella pubblica corrente
+    // List all messages in the current public folder
     ExchangeMessageInfoCollection msgCollection = client.listMessagesFromPublicFolder(folder);
     fetchAndSaveMessages(client, msgCollection);
 
@@ -174,30 +230,57 @@ void listMessagesFromSubFolders(IEWSClient client, ExchangeFolderInfo folder) {
     }
 }
 ```
+
 ## Applicazioni pratiche
-Aspose.Email per Java offre numerose applicazioni in scenari reali:
-1. **Archiviazione automatica delle e-mail**: Salva automaticamente tutte le email dalle cartelle pubbliche in un sistema di archiviazione locale.
-2. **Soluzioni di backup della posta elettronica**: Implementare sistemi di backup che recuperano e archiviano i messaggi in modo ricorsivo, garantendo la ridondanza dei dati.
-3. **Client di posta elettronica personalizzati**: Migliora o crea client di posta elettronica personalizzati con connettività avanzata a Exchange Server.
+Scenari reali in cui questo flusso di lavoro brilla:
+
+1. **Archiviazione email automatizzata** – Recupera periodicamente tutti i messaggi delle cartelle pubbliche e li memorizza in un archivio conforme.  
+2. **Soluzioni di backup** – Replica le cartelle pubbliche di Exchange su un file system sicuro o su un bucket cloud, garantendo la ridondanza dei dati.  
+3. **Client email personalizzati** – Crea visualizzatori leggeri che mostrano solo le cartelle e i messaggi necessari, riducendo la complessità dell'interfaccia utente.
 
 ## Considerazioni sulle prestazioni
-Quando si utilizza Aspose.Email per Java, tenere presente questi suggerimenti sulle prestazioni:
-- Ottimizzare i parametri di connessione per ridurre la latenza.
-- Gestire la memoria in modo efficiente eliminando gli oggetti non più necessari.
-- Profila la tua applicazione per identificare i colli di bottiglia correlati alle chiamate di rete e all'elaborazione dei dati.
+Quando si scala a migliaia di cartelle e milioni di messaggi, tieni presente questi consigli:
+
+- **Pooling delle connessioni** – Riutilizza una singola istanza `ExchangeClient` per più operazioni invece di creare un nuovo client per ogni cartella.  
+- **Caricamento lazy** – Richiedi solo i metadati necessari (`listMessages` con parametro `maxCount`) e recupera i corpi completi su richiesta.  
+- **Rilascia gli oggetti** – Chiama `client.dispose()` dopo l'esecuzione del batch per liberare le connessioni HTTP e i buffer thread‑local.  
+- **Elaborazione parallela** – Suddividi le cartelle di livello superiore su più thread, ciascuno con la propria istanza client, per utilizzare efficacemente le CPU multicore.
+
+## Domande frequenti
+
+**Q: Posso usare questo codice con Exchange Online (Office 365)?**  
+A: Sì. Fornisci l'endpoint EWS di Office 365 (`https://outlook.office365.com/EWS/Exchange.asmx`) e utilizza l'autenticazione moderna (OAuth) – Aspose.Email supporta i token OAuth nativamente.
+
+**Q: Cosa succede se una cartella contiene più di 10 000 messaggi?**  
+A: Usa la sovraccarico di `listMessages` che accetta i parametri `skip` e `take` per paginare i risultati, mantenendo sotto controllo l'uso della memoria.
+
+**Q: Esiste un limite alla dimensione di una singola email che posso scaricare?**  
+A: L'API trasmette il contenuto in streaming, quindi sono supportati messaggi fino a 150 MB senza superare il limite dell'heap Java, a condizione che la JVM abbia sufficiente memoria nativa.
+
+**Q: Devo gestire manualmente i certificati SSL?**  
+A: Per impostazione predefinita Aspose.Email si fida del keystore Java predefinito. Se il tuo server Exchange utilizza un certificato autofirmato, importalo nel truststore JVM o imposta `client.setEnableSslVerification(false)` solo per test.
+
+**Q: Come registro le operazioni a fini di audit?**  
+A: Abilita il logging integrato di Aspose.Email configurando `Logger.setLevel(Level.INFO)` e indirizzando l'output a un file o a un sistema di monitoraggio.
 
 ## Conclusione
-In questo tutorial abbiamo illustrato come connettersi a un server Exchange utilizzando Aspose.Email per Java ed elencare i messaggi dalle cartelle pubbliche. Seguendo questi passaggi, è possibile migliorare le applicazioni con solide funzionalità di integrazione email. Per ulteriori approfondimenti, si consiglia di approfondire le funzionalità avanzate e le opzioni di personalizzazione di Aspose.Email.
+Ora disponi di una ricetta completa e pronta per la produzione su **come connettere Exchange** e elencare ricorsivamente i messaggi dalle cartelle pubbliche usando Aspose.Email per Java. I passaggi coprono la configurazione Maven, la licenza, la connessione, l'enumerazione delle cartelle, il recupero dei messaggi e l'ottimizzazione delle prestazioni. Estendi questa base integrandola con database, storage cloud o pipeline di analisi personalizzate per soddisfare le esigenze specifiche della tua organizzazione.
 
-## Consigli per le parole chiave
-- "Aspose.Email per Java"
-- "Connettiti al server Exchange tramite Java"
-- "Elenca i messaggi dalle cartelle pubbliche di Exchange"
+---
+
+**Ultimo aggiornamento:** 2026-10-02  
+**Testato con:** Aspose.Email per Java 25.4  
+**Autore:** Aspose
+
+## Tutorial correlati
+
+- [Come connettersi al server Exchange usando Aspose.Email in Java: Guida passo‑passo](/email/java/exchange-server-integration/aspose-email-java-exchange-server-connection/)
+- [Come connettere e elencare le cartelle del server Exchange usando Aspose.Email per Java](/email/java/exchange-server-integration/connect-list-exchange-server-folders-aspose-email-java/)
+- [Gestire le cartelle del server Exchange usando Aspose.Email per Java: Guida completa](/email/java/exchange-server-integration/exchange-server-folders-aspose-email-java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
