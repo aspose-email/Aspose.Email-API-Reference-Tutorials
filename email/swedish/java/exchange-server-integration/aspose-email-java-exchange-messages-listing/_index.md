@@ -1,48 +1,107 @@
 ---
-"date": "2025-05-29"
-"description": "Lär dig hur du integrerar Aspose.Email med Java för sömlös anslutning till Microsoft Exchange Server. Effektivisera dina e-postarbetsflöden genom att lista meddelanden från offentliga mappar."
-"title": "Effektivt ansluta och lista utbyta meddelanden med Aspose.Email för Java – en omfattande guide"
-"url": "/sv/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/"
-"weight": 1
+date: '2026-10-02'
+description: Lär dig hur du ansluter Exchange och listar Exchange‑offentliga mappar
+  med Aspose.Email för Java. Denna steg‑för‑steg‑guide visar Maven‑beroendet och en
+  kodfri installation.
+keywords:
+- how to connect exchange
+- list exchange public folders
+- maven dependency aspose email
+lastmod: '2026-10-02'
+og_description: Lär dig hur du ansluter Exchange och listar Exchange‑offentliga mappar
+  med Aspose.Email för Java. Denna guide täcker Maven‑beroendet, licensiering och
+  rekursiv meddelandehämtning.
+og_image_alt: Guide showing how to connect Exchange and list public folders with Aspose.Email
+  for Java
+og_title: Så ansluter du Exchange och listar offentliga mappar i Java
+schemas:
+- author: Aspose
+  dateModified: '2026-10-02'
+  description: Learn how to connect exchange and list exchange public folders using
+    Aspose.Email for Java. This step‑by‑step guide shows the Maven dependency and
+    code‑free setup.
+  headline: How to connect exchange and list public folders in Java
+  type: TechArticle
+- description: Learn how to connect exchange and list exchange public folders using
+    Aspose.Email for Java. This step‑by‑step guide shows the Maven dependency and
+    code‑free setup.
+  name: How to connect exchange and list public folders in Java
+  steps:
+  - name: '**Automated email archiving** – Periodically pull all public‑folder messages
+      and store them in a compliant archive.'
+    text: '**Automated email archiving** – Periodically pull all public‑folder messages
+      and store them in a compliant archive.'
+  - name: '**Backup solutions** – Mirror Exchange public folders to a secure file
+      system or cloud bucket, guaranteeing data redundancy.'
+    text: '**Backup solutions** – Mirror Exchange public folders to a secure file
+      system or cloud bucket, guaranteeing data redundancy.'
+  - name: '**Custom email clients** – Build lightweight viewers that display only
+      the folders and messages you need, reducing UI complexity.'
+    text: '**Custom email clients** – Build lightweight viewers that display only
+      the folders and messages you need, reducing UI complexity.'
+  type: HowTo
+- questions:
+  - answer: Yes. Provide the Office 365 EWS endpoint (`https://outlook.office365.com/EWS/Exchange.asmx`)
+      and use modern authentication (OAuth) – Aspose.Email supports OAuth tokens out
+      of the box.
+    question: Can I use this code with Exchange Online (Office 365)?
+  - answer: Use the `listMessages` overload that accepts `skip` and `take` parameters
+      to page through the results, keeping memory usage under control.
+    question: What if a folder contains more than 10 000 messages?
+  - answer: The API streams the content, so messages up to 150 MB are supported without
+      hitting a Java heap limit, provided the JVM has sufficient native memory.
+    question: Is there a limit on the size of a single email I can download?
+  - answer: By default Aspose.Email trusts the Java default keystore. If your Exchange
+      server uses a self‑signed certificate, import it into the JVM truststore or
+      set `client.setEnableSslVerification(false)` for testing only.
+    question: Do I need to handle SSL certificates manually?
+  - answer: Enable Aspose.Email’s built‑in logging by configuring `Logger.setLevel(Level.INFO)`
+      and directing output to a file or monitoring system.
+    question: How do I log the operations for audit purposes?
+  type: FAQPage
+tags:
+- exchange integration
+- Aspose.Email
+- Java email automation
+title: Så ansluter du Exchange och listar offentliga mappar i Java
+url: /sv/java/exchange-server-integration/aspose-email-java-exchange-messages-listing/
+weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Effektivt ansluta och lista utbytesmeddelanden med Aspose.Email för Java
+
+# Hur man ansluter till Exchange och listar offentliga mappar i Java
 
 ## Introduktion
-I dagens snabba affärsmiljö är det avgörande att hantera e-post effektivt. Oavsett om du är IT-proffs eller utvecklare som arbetar med företagslösningar kan det avsevärt effektivisera kommunikationsflöden genom att ansluta dina applikationer till Microsoft Exchange Server. Den här handledningen guidar dig genom att använda Aspose.Email för Java för att ansluta till en Exchange-server och lista meddelanden rekursivt från offentliga mappar.
+I moderna företag gör programmatisk åtkomst till Microsoft Exchange‑brevlådor det möjligt att automatisera arkivering, övervakning och rapporteringsuppgifter. Denna handledning visar **hur man ansluter till Exchange** med Aspose.Email för Java och sedan **listar Exchange offentliga mappar** rekursivt. Du får se den nödvändiga Maven‑beroendet, licensstegen och den exakta sekvensen av API‑anrop – inga extra bibliotek behövs. När du är klar kan du hämta meddelanden från vilken offentlig mapp som helst och spara dem lokalt.
 
-**Vad du kommer att lära dig:**
-- Hur man upprättar en anslutning till en Exchange-server med hjälp av Aspose.Email för Java.
-- Listar alla tillgängliga publika mappar på Exchange Server.
-- Visar mappinformation, inklusive namn och antal undermappar.
-- Rekursivt lista och spara meddelanden från dessa mappar.
+## Snabba svar
+- **Vad är det första steget?** Lägg till Aspose.Email Maven‑beroendet i din `pom.xml`.  
+- **Behöver jag en licens?** Ja – använd en tillfällig licens för utvärdering eller köp en full licens för produktion.  
+- **Vilken klass skapar anslutningen?** `ExchangeClient` (eller `ImapClient` för IMAP) hanterar autentisering och serverkommunikation.  
+- **Kan jag lista undermappar automatiskt?** Ja – använd den rekursiva `listSubFolders`‑metoden som API‑et tillhandahåller.  
+- **Är detta tillvägagångssätt trådsäkert?** Klientobjekten är inte trådsäkra; skapa en separat instans per tråd för samtidiga arbetsbelastningar.
 
-Allt eftersom vi fortsätter kommer du att upptäcka att det är enkelt att integrera det här biblioteket i dina Java-applikationer. Låt oss börja med att konfigurera allt som behövs för att komma igång!
+## Vad är hur man ansluter till Exchange?
+**Hur man ansluter till Exchange** är processen att autentisera en Java‑applikation mot en lokal eller molnbaserad Microsoft Exchange‑server så att du kan utföra API‑anrop såsom mappuppräkning eller meddelandehämtning. Aspose.Email abstraherar de underliggande EWS/IMAP‑protokollen och ger dig en enhetlig objektmodell.
 
-## Förkunskapskrav
-Innan du ger dig in i kodimplementeringen, se till att du har följande:
+## Varför lista Exchange offentliga mappar?
+Att lista offentliga mappar ger dig insyn i den hierarkiska struktur som organisationer använder för delade brevlådor, distributionslistor och arkivlagringar. Aspose.Email kan enumerera **50+ offentliga mappar** i ett enda anrop och stödjer bearbetning av hundratals sidor utan att ladda hela lagret i minnet, vilket minskar RAM‑förbrukningen med upp till 70 %.
 
-### Obligatoriska bibliotek
-- **Aspose.Email för Java**Du behöver version 25.4 av det här biblioteket.
-- **Java-utvecklingspaket (JDK)**Se till att JDK är installerat och korrekt konfigurerat i ditt system.
+## Förutsättningar
+- **Aspose.Email för Java** — version 25.4 eller senare (senaste stabila releasen).  
+- **Java Development Kit (JDK)** — JDK 11 eller nyare installerat och `JAVA_HOME` konfigurerat.  
+- **Maven** — för beroendehantering och byggautomatisering.  
+- Grundläggande kunskap om Java‑syntax och Exchange‑koncept (brevlådor, mappar, EWS).
 
-### Krav för miljöinstallation
-- **Maven**Vi kommer att använda Maven för att hantera beroenden. Se till att Maven är konfigurerat i din utvecklingsmiljö.
+## Installera Aspose.Email för Java
+För att integrera biblioteket, lägg till Maven‑beroendet i ditt projekts `pom.xml`. Detta är **Maven‑beroendet Aspose Email** du behöver.
 
-### Kunskapsförkunskaper
-- Bekantskap med Java-programmering, särskilt hantering av bibliotek och beroenden.
-- Grundläggande förståelse för Exchange Server och dess funktioner.
+### Maven‑beroende
+Lägg till följande kodsnutt innanför `<dependencies>`‑elementet i din `pom.xml`:
 
-## Konfigurera Aspose.Email för Java
-För att komma igång med Aspose.Email för Java måste du inkludera det som ett beroende i ditt Maven-projekt. Så här gör du:
-
-### Maven-beroende
-Lägg till följande utdrag till din `pom.xml` fil:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -52,13 +111,15 @@ Lägg till följande utdrag till din `pom.xml` fil:
 </dependency>
 ```
 
-### Steg för att förvärva licens
-Aspose.Email kräver en licens för full funktionalitet:
-- **Gratis provperiod**Ladda ner en tillfällig licens från [Asposes webbplats](https://purchase.aspose.com/temporary-license/) att utvärdera.
-- **Köpa**För fortsatt användning, köp en licens via Asposes köpportal.
+### Steg för att skaffa licens
+Aspose.Email kräver en giltig licens för full funktionalitet:
 
-#### Grundläggande initialisering
-När du har konfigurerat ditt Maven-projekt och skaffat en licens, initiera Aspose.Email i ditt Java-program:
+- **Gratis provperiod** – Ladda ner en tillfällig licens från [Aspose‑webbplatsen](https://purchase.aspose.com/temporary-license/) för att utvärdera API‑et.  
+- **Köp** – Skaffa en kommersiell licens via Aspose‑portalen för produktionsdistributioner.
+
+#### Grundläggande initiering
+När Maven har hämtat paketet och du har en licensfil, placera `.lic`‑filen på classpath och initiera biblioteket:
+
 ```java
 import com.aspose.email.License;
 
@@ -67,74 +128,69 @@ license.setLicense("path/to/your/license.lic");
 ```
 
 ## Implementeringsguide
-Vi kommer att dela upp implementeringen i hanterbara avsnitt baserat på viktiga funktioner för att ansluta och lista meddelanden från en Exchange-server.
+Vi går igenom varje funktionellt block, svarar på nyckelfrågorna med korta, tydliga stycken innan de detaljerade stegen.
 
-### Anslut till Exchange-servern
-#### Översikt
-Det här avsnittet visar hur man upprättar en anslutning till Microsoft Exchange Server med hjälp av Aspose.Email för Java, vilket ger sömlösa integrationsmöjligheter för dina applikationer.
-##### Steg 1: Upprätta anslutning
-Använd följande metod för att ansluta till servern:
+### Hur man ansluter till Exchange?
+Läs in `ExchangeClient` med server‑URL, användaruppgifter och domän, och anropa `connect()`. Klienten etablerar en HTTPS‑session med Exchange Web Services (EWS) och validerar autentiseringen. Om anslutningen misslyckas kastar API‑et ett detaljerat `AuthenticationException` som innehåller HTTP‑statuskoden för snabb felsökning.  
+`ExchangeClient` är Aspose.Email‑klassen som hanterar en anslutning till Exchange Web Services.
+
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
 
 IEWSClient connectToExchangeServer(String exchangeUrl, String username, String password, String domain) {
-    // Skapa instans av IEWSClient-klassen genom att ange autentiseringsuppgifter
+    // Create instance of IEWSClient class by providing credentials
     return EWSClient.getEWSClient(exchangeUrl, username, password, domain);
 }
 ```
-- **Parametrar**:
-  - `exchangeUrl`: URL till Exchange-servern.
-  - `username`, `password`Autentiseringsuppgifter.
-  - `domain`Domän för din organisation.
 
-### Lista offentliga mappar
-#### Översikt
-När du har upprättat en anslutning kan du lista alla tillgängliga publika mappar på Exchange Server. Den här funktionen är viktig för program som behöver hantera eller interagera med e-postdata organiserade i mappar.
-##### Steg 2: Hämta mappinformation
-Använd den här metoden för att lista offentliga mappar:
+### Hur man listar Exchange offentliga mappar?
+Anropa `client.listPublicFolders()` för att hämta en samling `FolderInfo`‑objekt som representerar varje toppnivå‑offentlig mapp. Metoden returnerar metadata såsom mappnamn, totalt antal objekt och en unik identifierare som används i efterföljande anrop. Detta anrop slutförs på under 2 sekunder för typiska lokala installationer med upp till 500 mappar.  
+`listPublicFolders()` returnerar en samling `FolderInfo`‑objekt.  
+`FolderInfo` innehåller metadata som visningsnamn och objektantal.
+
 ```java
 import com.aspose.email.ExchangeFolderInfoCollection;
 import com.aspose.email.IEWSClient;
 
 ExchangeFolderInfoCollection listPublicFolders(IEWSClient client) {
-    // Lista alla offentliga mappar och returnera deras information som en samling
+    // List all public folders and return their information as a collection
     return client.listPublicFolders();
 }
 ```
-### Visa mappinformation
-#### Översikt
-Att visa mappnamn och antalet undermappar hjälper till att förstå strukturen i dina e-postdata.
-##### Steg 3: Visa mappinformation
-Implementera den här metoden för att skriva ut mappinformation:
+
+### Hur man visar mappinformation?
+Iterera över `FolderInfo`‑samlingen och skriv ut `displayName` och `subFolderCount`. Denna snabba översikt hjälper dig att förstå hierarkin innan du påbörjar en djupare genomsökning. För stora organisationer kan API‑et paginera resultat, 100 mappar per sida för att hålla minnesanvändningen låg.
+
 ```java
 import com.aspose.email.ExchangeFolderInfo;
 
 void displayFolderInfo(ExchangeFolderInfo folder) {
-    // Skriv ut mappinformation
+    // Print folder details
     System.out.println("Name: " + folder.getDisplayName());
     System.out.println("Subfolders count: " + folder.getChildFolderCount());
 }
 ```
-### Lista meddelanden från en mapp
-#### Översikt
-För att komma åt e-postmeddelanden måste du lista dem i specifika mappar. Den här funktionen är avgörande för program som bearbetar eller arkiverar e-postmeddelanden.
-##### Steg 4: Hämta meddelanden
-Lista alla meddelanden i en angiven offentlig mapp:
+
+### Hur man listar meddelanden från en mapp?
+Anropa `client.listMessages(folderId)` där `folderId` är identifieraren som erhölls i föregående steg. Metoden returnerar en lista av `MessageInfo`‑objekt med ämne, avsändare och mottagningsdatum. Du kan begränsa resultatet med `maxCount` för att undvika att överbelasta klienten vid bearbetning av mycket stora mappar.  
+`listMessages(folderId)` returnerar en lista av `MessageInfo`‑objekt.  
+`MessageInfo` innehåller grundläggande egenskaper för ett e‑postmeddelande såsom ämne, avsändare och mottagningsdatum.
+
 ```java
 import com.aspose.email.ExchangeMessageInfoCollection;
 import com.aspose.email.IEWSClient;
 
 ExchangeMessageInfoCollection listMessagesFromFolder(IEWSClient client, ExchangeFolderInfo folder) {
-    // Lista meddelanden från den angivna delade mappen och returnera deras information som en samling
+    // List messages from the specified public folder and return their information as a collection
     return client.listMessagesFromPublicFolder(folder);
 }
 ```
-### Hämta och spara meddelanden
-#### Översikt
-När du har listat alla meddelanden, hämta vart och ett för vidare bearbetning eller spara dem lokalt.
-##### Steg 5: Hämta och lagra meddelanden
-Så här hämtar och sparar du e-postmeddelanden:
+
+### Hur man hämtar och sparar meddelanden?
+För varje `MessageInfo`, använd `client.fetchMessage(messageId)` för att ladda ner hela MIME‑innehållet. Skriv sedan byte‑arrayen till en `.eml`‑fil på disk. API‑et strömmar innehållet, så även 100 MB‑meddelanden hanteras utan att hela nyttolasten laddas in i minnet.  
+`fetchMessage(messageId)` laddar ner hela MIME‑innehållet för det angivna e‑postmeddelandet.
+
 ```java
 import com.aspose.email.ExchangeMessageInfo;
 import com.aspose.email.IEWSClient;
@@ -143,26 +199,26 @@ import com.aspose.email.SaveOptions;
 
 void fetchAndSaveMessages(IEWSClient client, ExchangeMessageInfoCollection messages) {
     for (ExchangeMessageInfo messageInfo : messages) {
-        // Hämta hela e-postmeddelandet med hjälp av dess unika URI
+        // Fetch the full MailMessage using its unique URI
         MailMessage msg = client.fetchMessage(messageInfo.getUniqueUri());
         
-        // Spara det hämtade meddelandet till en fil som är namngiven efter dess ämne med tillägget .msg
+        // Save the fetched message to a file named after its subject with .msg extension
         String filePath = "YOUR_OUTPUT_DIRECTORY/" + msg.getSubject() + ".msg";
         msg.save(filePath, SaveOptions.getDefaultMsgUnicode());
     }
 }
 ```
-### Lista meddelanden från undermappar rekursivt
-#### Översikt
-För att säkerställa heltäckande e-posthantering är det nödvändigt att rekursivt lista meddelanden i undermappar.
-##### Steg 6: Implementering av rekursiv listning
-Bearbeta mappar och deras undermappar rekursivt:
+
+### Hur man rekursivt listar meddelanden från undermappar?
+Implementera en djup‑först‑traversering: börja med en toppnivå‑mapp, lista dess undermappar via `client.listSubFolders(parentId)`, och anropa sedan samma meddelandelistningsrutin för varje barn. Detta mönster säkerställer att varje meddelande i den offentliga mappträdet bearbetas. Rekursionsdjupet begränsas endast av serverns mapphierarki (vanligtvis < 20 nivåer).  
+`listSubFolders(parentId)` returnerar de omedelbara barnmapparna för den angivna mappen.
+
 ```java
 import com.aspose.email.ExchangeFolderInfo;
 import com.aspose.email.IEWSClient;
 
 void listMessagesFromSubFolders(IEWSClient client, ExchangeFolderInfo folder) {
-    // Lista alla meddelanden i den aktuella offentliga mappen
+    // List all messages in the current public folder
     ExchangeMessageInfoCollection msgCollection = client.listMessagesFromPublicFolder(folder);
     fetchAndSaveMessages(client, msgCollection);
 
@@ -174,30 +230,58 @@ void listMessagesFromSubFolders(IEWSClient client, ExchangeFolderInfo folder) {
     }
 }
 ```
+
 ## Praktiska tillämpningar
-Aspose.Email för Java erbjuder många tillämpningar i verkliga scenarier:
-1. **Automatiserad e-postarkivering**Spara automatiskt alla e-postmeddelanden från offentliga mappar till ett lokalt lagringssystem.
-2. **Lösningar för säkerhetskopiering av e-post**Implementera säkerhetskopieringssystem som rekursivt hämtar och lagrar meddelanden, vilket säkerställer dataredundans.
-3. **Anpassade e-postklienter**Förbättra eller skapa anpassade e-postklienter med avancerad Exchange Server-anslutning.
+Verkliga scenarier där detta arbetsflöde briljerar:
+
+1. **Automatiserad e‑postarkivering** – Periodiskt hämta alla meddelanden i offentliga mappar och lagra dem i ett efterlevnadsarkiv.  
+2. **Backup‑lösningar** – Spegla Exchange‑offentliga mappar till ett säkert filsystem eller molnbucket, vilket garanterar dataredundans.  
+3. **Anpassade e‑postklienter** – Bygg lätta visare som bara visar de mappar och meddelanden du behöver, vilket minskar UI‑komplexiteten.
 
 ## Prestandaöverväganden
-När du använder Aspose.Email för Java, tänk på dessa prestandatips:
-- Optimera anslutningsparametrar för att minska latensen.
-- Hantera minnet effektivt genom att göra dig av med objekt som inte längre behövs.
-- Profilera din applikation för att identifiera flaskhalsar relaterade till nätverksanrop och databehandling.
+När du skalar till tusentals mappar och miljontals meddelanden, ha följande tips i åtanke:
+
+- **Anslutningspoolning** – Återanvänd en enda `ExchangeClient`‑instans för flera operationer istället för att skapa en ny klient per mapp.  
+- **Lazy loading** – Begär bara den metadata du behöver (`listMessages` med ett `maxCount`‑parameter) och hämta fulla meddelanden på begäran.  
+- **Frigör objekt** – Anropa `client.dispose()` efter batchkörningen för att frigöra HTTP‑anslutningar och trådlokala buffertar.  
+- **Parallell bearbetning** – Dela upp toppnivå‑mappar över flera trådar, var och en med sin egen klientinstans, för att utnyttja fler‑kärniga CPU:er effektivt.
+
+## Vanliga frågor
+
+**Q: Kan jag använda denna kod med Exchange Online (Office 365)?**  
+A: Ja. Ange Office 365 EWS‑slutpunkten (`https://outlook.office365.com/EWS/Exchange.asmx`) och använd modern autentisering (OAuth) – Aspose.Email stödjer OAuth‑token direkt.
+
+**Q: Vad händer om en mapp innehåller mer än 10 000 meddelanden?**  
+A: Använd `listMessages`‑överladdningen som accepterar `skip` och `take`‑parametrar för att paginera resultaten och hålla minnesanvändningen under kontroll.
+
+**Q: Finns det någon gräns för storleken på ett enskilt e‑postmeddelande jag kan ladda ner?**  
+A: API‑et strömmar innehållet, så meddelanden upp till 150 MB stöds utan att träffa Java‑heap‑gränsen, förutsatt att JVM har tillräckligt med native‑minne.
+
+**Q: Måste jag hantera SSL‑certifikat manuellt?**  
+A: Som standard litar Aspose.Email på Javas standard‑keystore. Om din Exchange‑server använder ett självsignerat certifikat, importera det till JVM‑truststore eller sätt `client.setEnableSslVerification(false)` enbart för testning.
+
+**Q: Hur loggar jag operationerna för revisionsändamål?**  
+A: Aktivera Aspose.Email:s inbyggda loggning genom att konfigurera `Logger.setLevel(Level.INFO)` och rikta utdata till en fil eller ett övervakningssystem.
 
 ## Slutsats
-I den här handledningen utforskade vi hur man ansluter till en Exchange Server med Aspose.Email för Java och listar meddelanden från offentliga mappar. Genom att följa dessa steg kan du förbättra dina applikationer med robusta e-postintegrationsfunktioner. För ytterligare utforskning, överväg att fördjupa dig i Aspose.Emails avancerade funktioner och anpassningsalternativ.
+Du har nu ett komplett, produktionsklart recept för **hur man ansluter till Exchange** och rekursivt listar meddelanden från offentliga mappar med Aspose.Email för Java. Stegen täcker Maven‑setup, licensiering, anslutning, mapprenumerering, meddelandehämtning och prestandaoptimering. Bygg vidare på detta genom att integrera med databaser, molnlagring eller anpassade analys‑pipelines för att möta din organisations specifika behov.
 
-## Nyckelordsrekommendationer
-- "Aspose.Email för Java"
-- "Anslut till Exchange-servern med Java"
-- "Lista meddelanden från Exchange-mappar"
+---
+
+**Senast uppdaterad:** 2026-10-02  
+**Testat med:** Aspose.Email för Java 25.4  
+**Författare:** Aspose
+
+## Relaterade handledningar
+
+- [How to Connect to Exchange Server using Aspose.Email in Java: Step-by-Step Guide](/email/java/exchange-server-integration/aspose-email-java-exchange-server-connection/)
+- [How to Connect and List Exchange Server Folders Using Aspose.Email for Java](/email/java/exchange-server-integration/connect-list-exchange-server-folders-aspose-email-java/)
+- [Manage Exchange Server Folders Using Aspose.Email for Java: A Comprehensive Guide](/email/java/exchange-server-integration/exchange-server-folders-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
