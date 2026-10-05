@@ -245,9 +245,9 @@ A5: Absolutely—when you batch process and release resources promptly, the libr
 
 ## Related Tutorials
 
-- [Automate Outlook MSG Creation in Java with Aspose.Email: A Complete Guide]({{< relref ""/java/mapi-operations/automate-outlook-msg-creation-aspose-email-java/"" >}})
-- [How to Load and Parse Outlook MSG Files Using Aspose.Email for Java: A Comprehensive Guide]({{< relref ""/java/mapi-operations/outlook-msg-aspose-email-java-guide/"" >}})
-- [Master Email Management in Java: Convert EML to MSG with Aspose.Email Library]({{< relref ""/java/exchange-server-integration/master-email-management-java-aspose-email/"" >}})
+- [Automate Outlook MSG Creation in Java with Aspose.Email: A Complete Guide](/java/mapi-operations/automate-outlook-msg-creation-aspose-email-java/)
+- [How to Load and Parse Outlook MSG Files Using Aspose.Email for Java: A Comprehensive Guide](/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [Master Email Management in Java: Convert EML to MSG with Aspose.Email Library](/java/exchange-server-integration/master-email-management-java-aspose-email/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

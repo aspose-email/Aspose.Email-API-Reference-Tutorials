@@ -154,27 +154,27 @@ A: When you use `Attachment.save()`, the library handles stream disposal automat
 
 ## Additional Resources
 
-- [Aspose.Email for Java Documentation]({{< relref "/java/" >}})
-- [Aspose.Email for Java API Reference]({{< relref "/java/" >}})
-- [Download Aspose.Email for Java]({{< relref "/java/" >}})
+- [Aspose.Email for Java Documentation](/java/)
+- [Aspose.Email for Java API Reference](/java/)
+- [Download Aspose.Email for Java](/java/)
 - [Aspose.Email Forum](https://forum.aspose.com/c/email)
 - [Free Support](https://forum.aspose.com/)
 - [Temporary License](https://purchase.aspose.com/temporary-license/)
 
 ### Available Tutorials
 
-- [Aspose.Email for Java: Efficiently Parse and Manage MSG Attachments]({{< relref "/java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/" >}})
-- [Aspose.Email for Java: How to Parse and Save Email Attachments Efficiently]({{< relref ""/java/attachments-handling/aspose-email-java-parse-save-attachments/"" >}})
-- [Extract Email Attachments from PST Files using Aspose.Email for Java: A Step‑By‑Step Guide]({{< relref "/java/attachments-handling/extract-email-attachments-pst-aspose-java/" >}})
-- [Extract Inline Attachments from MSG Files Using Aspose.Email in Java]({{< relref "/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/" >}})
-- [How to Build and Send Emails with Attachments Using Aspose.Email for Java]({{< relref "/java/attachments-handling/build-send-emails-attachments-aspose-email-java/" >}})
-- [How to Load and Inspect Email Attachments Using Aspose.Email for Java: A Developer's Guide]({{< relref "/java/attachments-handling/aspose-email-java-load-inspect-attachments/" >}})
-- [How to Manage EML Attachments Using Aspose.Email for Java: A Complete Guide]({{< relref "/java/attachments-handling/manage-eml-attachments-aspose-email-java/" >}})
-- [How to Retrieve Email Attachment Content Descriptions Using Aspose.Email for Java]({{< relref "/java/attachments-handling/retrieve-email-attachment-content-descriptions-aspose-email-java/" >}})
-- [Insert & Replace MSG Attachments Using Aspose.Email Java: A Comprehensive Guide]({{< relref "/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/" >}})
-- [Master Aspose.Email Java: Handling TNEF Attachments and Conversion Techniques]({{< relref "/java/attachments-handling/aspose-email-java-tnef-attachments-guide/" >}})
-- [Master EML File Handling with TNEF Attachments Using Aspose.Email for Java]({{< relref ""/java/attachments-handling/aspose-email-java-eml-tnef-handling/"" >}})
-- [Preserve TNEF Attachments in EML Files Using Aspose.Email for Java: A Comprehensive Guide]({{< relref "/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/" >}})
+- [Aspose.Email for Java: Efficiently Parse and Manage MSG Attachments](/java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/)
+- [Aspose.Email for Java: How to Parse and Save Email Attachments Efficiently](/java/attachments-handling/aspose-email-java-parse-save-attachments/)
+- [Extract Email Attachments from PST Files using Aspose.Email for Java: A Step‑By‑Step Guide](/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
+- [Extract Inline Attachments from MSG Files Using Aspose.Email in Java](/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/)
+- [How to Build and Send Emails with Attachments Using Aspose.Email for Java](/java/attachments-handling/build-send-emails-attachments-aspose-email-java/)
+- [How to Load and Inspect Email Attachments Using Aspose.Email for Java: A Developer's Guide](/java/attachments-handling/aspose-email-java-load-inspect-attachments/)
+- [How to Manage EML Attachments Using Aspose.Email for Java: A Complete Guide](/java/attachments-handling/manage-eml-attachments-aspose-email-java/)
+- [How to Retrieve Email Attachment Content Descriptions Using Aspose.Email for Java](/java/attachments-handling/retrieve-email-attachment-content-descriptions-aspose-email-java/)
+- [Insert & Replace MSG Attachments Using Aspose.Email Java: A Comprehensive Guide](/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/)
+- [Master Aspose.Email Java: Handling TNEF Attachments and Conversion Techniques](/java/attachments-handling/aspose-email-java-tnef-attachments-guide/)
+- [Master EML File Handling with TNEF Attachments Using Aspose.Email for Java](/java/attachments-handling/aspose-email-java-eml-tnef-handling/)
+- [Preserve TNEF Attachments in EML Files Using Aspose.Email for Java: A Comprehensive Guide](/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/)
 
 ---
 
@@ -184,9 +184,9 @@ A: When you use `Attachment.save()`, the library handles stream disposal automat
 
 ## Related Tutorials
 
-- [How to Load and Save EML Files in Java with Aspose.Email: Complete Guide]({{< relref "/java/email-message-operations/load-save-eml-aspose-email-java/" >}})
-- [How to Extract Email Attachments from EML Files Using Aspose.Email for Java - A Complete Guide]({{< relref "/java/attachments-handling/manage-eml-attachments-aspose-email-java/" >}})
-- [Extract Email Attachments Java - Using Aspose.Email for PST Files – A Step‑by‑Step Guide]({{< relref "/java/attachments-handling/extract-email-attachments-pst-aspose-java/" >}})
+- [How to Load and Save EML Files in Java with Aspose.Email: Complete Guide](/java/email-message-operations/load-save-eml-aspose-email-java/)
+- [How to Extract Email Attachments from EML Files Using Aspose.Email for Java - A Complete Guide](/java/attachments-handling/manage-eml-attachments-aspose-email-java/)
+- [Extract Email Attachments Java - Using Aspose.Email for PST Files – A Step‑by‑Step Guide](/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

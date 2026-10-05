@@ -231,9 +231,9 @@ eml.save("YOUR_OUTPUT_DIRECTORY/CustomOrderOfInformationInMHTML_1.mhtml");
 
 ## Related Tutorials
 
-- [How to Save Emails as MHT Files Using Aspose.Email for Java: A Comprehensive Guide]({{< relref "/java/email-message-operations/save-emails-as-mht-using-aspose-email-java/" >}})
-- [Convert EML to MSG Using Aspose.Email for Java: A Comprehensive Guide]({{< relref ""/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/"" >}})
-- [How to Load and Save EML Files in Java with Aspose.Email: Complete Guide]({{< relref "/java/email-message-operations/load-save-eml-aspose-email-java/" >}})
+- [How to Save Emails as MHT Files Using Aspose.Email for Java: A Comprehensive Guide](/java/email-message-operations/save-emails-as-mht-using-aspose-email-java/)
+- [Convert EML to MSG Using Aspose.Email for Java: A Comprehensive Guide](/java/email-conversion-rendering/convert-eml-to-msg-aspose-email-java/)
+- [How to Load and Save EML Files in Java with Aspose.Email: Complete Guide](/java/email-message-operations/load-save-eml-aspose-email-java/)
 
 
 {{< /blocks/products/pf/tutorial-page-section >}}

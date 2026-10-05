@@ -81,61 +81,61 @@ Aspose.Email for Java is the industry‑standard solution that eliminates the ne
 
 ## Available Tutorials
 
-### [Best Practices for Loading Emails with Aspose.Email for Java: A Comprehensive Guide]({{< relref "/java/email-message-operations/aspose-email-java-load-emails/" >}})
+### [Best Practices for Loading Emails with Aspose.Email for Java: A Comprehensive Guide](/java/email-message-operations/aspose-email-java-load-emails/)
 Master loading emails in various formats using Aspose.Email for Java. Learn default and custom options, real‑world applications, and performance tips.
 
-### [Creating and Configuring Email Messages with Aspose.Email for Java: A Comprehensive Guide]({{< relref "/java/email-message-operations/create-configure-mail-message-aspose-email-java/" >}})
+### [Creating and Configuring Email Messages with Aspose.Email for Java: A Comprehensive Guide](/java/email-message-operations/create-configure-mail-message-aspose-email-java/)
 Learn how to create and configure email messages in Java using the powerful Aspose.Email library. This guide covers setup, SMTP configuration, and best practices.
 
-### [How to Load Email Messages with Aspose.Email for Java: Step‑By‑Step Guide]({{< relref ""/java/email-message-operations/aspose-email-java-load-email-tutorial/"" >}})
+### [How to Load Email Messages with Aspose.Email for Java: Step‑By‑Step Guide](/java/email-message-operations/aspose-email-java-load-email-tutorial/)
 Learn how to load email messages using Aspose.Email for Java. This comprehensive guide covers setup, loading emails, and practical applications.
 
-### [How to Load and Save EML Files in Java with Aspose.Email: Complete Guide]({{< relref "/java/email-message-operations/load-save-eml-aspose-email-java/" >}})
+### [How to Load and Save EML Files in Java with Aspose.Email: Complete Guide](/java/email-message-operations/load-save-eml-aspose-email-java/)
 Learn how to load and save EML files using Aspose.Email for Java, including setting up a custom progress handler. Perfect for managing email data efficiently.
 
-### [How to Load and Save Emails as MHTML Using Aspose.Email for Java: A Comprehensive Guide]({{< relref "/java/email-message-operations/load-save-emails-mhtml-aspose-java/" >}})
+### [How to Load and Save Emails as MHTML Using Aspose.Email for Java: A Comprehensive Guide](/java/email-message-operations/load-save-emails-mhtml-aspose-java/)
 Learn how to efficiently load and save emails in MHTML format using Aspose.Email for Java, with custom timezone settings. Streamline your email processing tasks today.
 
-### [How to Preserve Embedded Messages in EML Files Using Aspose.Email for Java]({{< relref ""/java/email-message-operations/aspose-email-java-eml-embedded-messages-preservation/"" >}})
+### [How to Preserve Embedded Messages in EML Files Using Aspose.Email for Java](/java/email-message-operations/aspose-email-java-eml-embedded-messages-preservation/)
 Learn how to use Aspose.Email for Java to preserve embedded messages in EML files with this comprehensive guide, featuring step‑by‑step instructions and performance tips.
 
-### [How to Save Emails as MHT Files Using Aspose.Email for Java: A Comprehensive Guide]({{< relref "/java/email-message-operations/save-emails-as-mht-using-aspose-email-java/" >}})
+### [How to Save Emails as MHT Files Using Aspose.Email for Java: A Comprehensive Guide](/java/email-message-operations/save-emails-as-mht-using-aspose-email-java/)
 Learn how to transform and save your emails as MHT files using Aspose.Email for Java. This step‑by‑step guide covers all you need, from setup to saving with custom templates.
 
-### [How to Save and Modify Email Messages Using Aspose.Email for Java]({{< relref "./save-modified-emails-aspose-java/_index.md" >}})
+### [How to Save and Modify Email Messages Using Aspose.Email for Java](/java/email-message-operations/save-modified-emails-aspose-java/)
 Learn how to effectively save and modify email messages with Aspose.Email for Java, including key features and practical applications.
 
-### [Implement email features in java using Aspose.Email: a comprehensive guide]({{< relref ""/java/email-message-operations/implement-email-features-java-aspose-email/"" >}})
+### [Implement email features in java using Aspose.Email: a comprehensive guide](/java/email-message-operations/implement-email-features-java-aspose-email/)
 Learn how to create and configure email messages with Aspose.Email for Java. This guide covers setting up MailMessage, adding alternate views, and optimizing performance.
 
-### [Java Email Automation: Manage MSG Replies and Forwards with Aspose.Email]({{< relref ""/java/email-message-operations/email-automation-java-aspose-email-replies-forwards/"" >}})
+### [Java Email Automation: Manage MSG Replies and Forwards with Aspose.Email](/java/email-message-operations/email-automation-java-aspose-email-replies-forwards/)
 Learn how to automate email replies and forwards in Java using Aspose.Email. Master creating and managing MSG files for efficient communication.
 
-### [Load and Display EML Emails Efficiently with Aspose.Email for Java]({{< relref ""/java/email-message-operations/load-display-eml-emails-aspose-java/"" >}})
+### [Load and Display EML Emails Efficiently with Aspose.Email for Java](/java/email-message-operations/load-display-eml-emails-aspose-java/)
 Master loading and displaying EML emails using Aspise.Email for Java. Learn to extract sender, recipients, subject, and body data efficiently.
 
-### [Master Email Creation and Image Embedding in Java with Aspose.Email]({{< relref ""/java/email-message-operations/aspose-email-java-create-embed-images/"" >}})
+### [Master Email Creation and Image Embedding in Java with Aspose.Email](/java/email-message-operations/aspose-email-java-create-embed-images/)
 Learn to create and customize emails programmatically using Aspose.Email for Java, including image embedding. Enhance your email automation skills today.
 
-### [Master Email File Detection with Aspose.Email for Java: A Comprehensive Guide]({{< relref "/java/email-message-operations/master-email-file-detection-aspose-java/" >}})
+### [Master Email File Detection with Aspose.Email for Java: A Comprehensive Guide](/java/email-message-operations/master-email-file-detection-aspose-java/)
 Learn how to detect and manage email file formats using Aspose.Email for Java. This guide covers setup, detection techniques, and practical applications.
 
-### [Master Email File Handling in Java: Convert EML to MapiMessage with Aspose.Email]({{< relref ""/java/email-message-operations/master-email-file-handling-java-aspose-email/"" >}})
+### [Master Email File Handling in Java: Convert EML to MapiMessage with Aspose.Email](/java/email-message-operations/master-email-file-handling-java-aspose-email/)
 Learn how to handle email files efficiently using Aspose.Email for Java. This guide covers loading EML files and converting them to MapiMessage format.
 
-### [Master email management in java with Aspose.Email: create and save emails effortlessly]({{< relref ""/java/email-message-operations/aspose-email-java-create-save-emails/"" >}})
+### [Master email management in java with Aspose.Email: create and save emails effortlessly](/java/email-message-operations/aspose-email-java-create-save-emails/)
 Learn how to create, configure, and save emails using Aspose.Email for Java. Streamline your email handling with EML, MSG, MHTML, and OFT formats.
 
-### [Master Email Management with Aspose.Email for Java on Exchange Server: Comprehensive Guide]({{< relref "/java/email-message-operations/master-email-management-aspose-email-java-exchange-server/" >}})
+### [Master Email Management with Aspose.Email for Java on Exchange Server: Comprehensive Guide](/java/email-message-operations/master-email-management-aspose-email-java-exchange-server/)
 Learn how to efficiently manage emails using Aspose.Email for Java. Connect, create, append, and retrieve emails from Microsoft Exchange Server with ease.
 
-### [Master email management: move PST folders & messages with Aspose.Email java]({{< relref "/java/email-message-operations/aspose-email-java-move-pst-messages-folders/" >}})
+### [Master email management: move PST folders & messages with Aspose.Email java](/java/email-message-operations/aspose-email-java-move-pst-messages-folders/)
 Learn how to move folders and messages within PST files using Aspose.Email for Java. Enhance your email management skills efficiently.
 
-### [Master Email Management: Save & Load Emails with AMP using Aspose.Email for Java]({{< relref "/java/email-message-operations/aspose-email-java-save-load-amp-emails/" >}})
+### [Master Email Management: Save & Load Emails with AMP using Aspose.Email for Java](/java/email-message-operations/aspose-email-java-save-load-amp-emails/)
 Learn to save and load emails with AMP components using Aspose.Email for Java. This tutorial covers efficient email management, AMP integration, and troubleshooting.
 
-### [Master Email Processing in Java: Load EML Files with Aspose.Email]({{< relref ""/java/email-message-operations/master-email-processing-java-aspose-email/"" >}})
+### [Master Email Processing in Java: Load EML Files with Aspose.Email](/java/email-message-operations/master-email-processing-java-aspose-email/)
 Learn how to efficiently load and process EML files using Aspose.Email for Java. Enhance your email management skills and streamline your projects.
 
 ## Additional Resources
@@ -172,9 +172,9 @@ A: Aspose offers perpetual, subscription, and temporary licenses; a temporary li
 
 ## Related Tutorials
 
-- [Convert EML to MSG with Aspose.Email for Java – Guide]({{< relref ""/java/email-conversion-rendering/"" >}})
-- [Best Practices for Loading Emails with Aspose.Email for Java: A Comprehensive Guide]({{< relref "/java/email-message-operations/aspose-email-java-load-emails/" >}})
-- [Email Message Operations Tutorials with Aspose.Email for Java]({{< relref ""/java/email-message-operations/"" >}})
+- [Convert EML to MSG with Aspose.Email for Java – Guide](/java/email-conversion-rendering/)
+- [Best Practices for Loading Emails with Aspose.Email for Java: A Comprehensive Guide](/java/email-message-operations/aspose-email-java-load-emails/)
+- [Email Message Operations Tutorials with Aspose.Email for Java](/java/email-message-operations/)
 
 
 {{< /blocks/products/pf/tutorial-page-section >}}
