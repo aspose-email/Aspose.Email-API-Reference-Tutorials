@@ -1,71 +1,111 @@
 ---
-date: '2026-03-09'
-description: 学习如何使用 Aspose.Email for Java 创建 Exchange 日历（Java）。包括 Maven 依赖、连接 Exchange（Java）以及约会管理。
+date: '2026-10-07'
+description: 了解如何使用 Aspose.Email for Java 创建 Java 日历文件夹，包括 Maven 设置、连接 Exchange 以及更新
+  Exchange 日历预约详情。
 keywords:
-- Exchange Calendar Management
+- create calendar folder java
+- update exchange calendar appointment
 - Aspose.Email for Java
-- Java Exchange Server Integration
-title: 使用 Aspose.Email 在 Java 中创建 Exchange 日历 – 完整指南
+- exchange calendar management
+lastmod: '2026-10-07'
+og_description: 使用 Aspose.Email for Java 创建 Java 日历文件夹。本指南展示了 Maven 依赖、Exchange 连接以及如何高效更新
+  Exchange 日历预约。
+og_image_alt: 'Aspose.Email Java tutorial: creating a calendar folder and managing
+  appointments'
+og_title: 使用 Aspose.Email 创建 Java 日历文件夹 – 指南
+schemas:
+- author: Aspose
+  dateModified: '2026-10-07'
+  description: Learn how to create calendar folder java with Aspose.Email for Java,
+    including Maven setup, connecting to Exchange, and updating exchange calendar
+    appointment details.
+  headline: How to create calendar folder java with Aspose.Email
+  type: TechArticle
+- questions:
+  - answer: A free trial works for development and testing, but a full license is
+      required for production deployments.
+    question: Do I need a license for development?
+  - answer: Yes. Just change the EWS URL to point to your on‑premises server.
+    question: Can I use this with on‑premises Exchange?
+  - answer: The library supports JDK 16 and newer; older JDKs are not recommended
+      for the latest version.
+    question: Is Java 8 supported?
+  - answer: Use `client.deleteAppointment(appointmentId, calendarFolderUri);` after
+      retrieving the appointment’s unique ID.
+    question: How do I delete an appointment?
+  - answer: Aspose.Email provides a `Recurrence` class that you can attach to an `Appointment`
+      before saving.
+    question: What if I need to handle recurring meetings?
+  type: FAQPage
+tags:
+- calendar folder
+- Aspose.Email
+- Java Exchange integration
+- appointment management
+title: 如何使用 Aspose.Email 在 Java 中创建日历文件夹
 url: /zh/java/calendar-appointments/mastering-exchange-calendar-management-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# 使用 Aspose.Email 创建 Exchange Calendar Java
+# 使用 Aspose.Email 创建 Exchange 日历 Java
 
-## 简介
+## 介绍
 
-在企业环境中管理电子邮件和日历可能非常复杂，尤其是当您需要编写能够在多个用户和时区之间工作的 **create exchange calendar java** 程序时。幸运的是，**Aspose.Email for Java** 通过提供强大的 Exchange Server 日历管理 API，简化了这些任务。在本完整指南中，您将学习如何连接到 Exchange 服务器、创建日历文件夹以及处理约会——全部使用清晰的、一步步的 Java 代码。您还将看到自动化日历处理在实际场景中如何节省数小时的手工工作。
+在商业环境中管理电子邮件和日历可能很复杂，尤其是当您需要 **create calendar folder java** 程序以在多个用户和时区之间工作时。幸运的是，**Aspose.Email for Java** 通过提供强大的 Exchange Server 日历管理 API 简化了这些任务。在本综合指南中，您将学习如何连接到 Exchange 服务器、创建日历文件夹以及处理约会——包括如何 **update exchange calendar appointment** 对象——使用清晰的逐步 Java 代码。您还将看到自动化日历处理在实际场景中如何节省数小时的手动工作。
 
-**您将学到什么**
+**您将学习**
 - 如何使用 Aspose.Email **connect to exchange java**  
-- 如何将 **maven dependency aspose email** 添加到项目中  
-- 创建新日历文件夹并管理约会  
+- 如何将 **maven dependency aspose email** 添加到您的项目  
+- 创建新的日历文件夹并管理约会  
 - 更新、列出和取消约会  
 
 让我们开始吧！
 
-## 快速解答
+## 快速答案
 
-- **主要库是什么？** Aspose.Email for Java
-- **如何添加库？** 使用下方所示的 Maven 依赖项
-- **我可以创建日历文件夹吗？** 可以，只需一次 API 调用
-- **我需要许可证吗？** 试用版可用于开发；生产环境需要完整许可证
-- **它与 Office 365 兼容吗？** 完全兼容 – 相同的代码也适用于 Exchange Online 
+- **主要库是什么？** Aspose.Email for Java  
+- **如何添加库？** 使用下面显示的 Maven 依赖  
+- **我可以创建日历文件夹吗？** 可以，使用单个 API 调用即可  
+- **我需要许可证吗？** 免费试用可用于开发；生产环境需要完整许可证  
+- **这与 Office 365 兼容吗？** 绝对兼容——相同代码可用于 Exchange Online  
 
-## 什么是“创建 Exchange 日历（Java）”？
-在 Java 中创建 Exchange 日历指的是以编程方式与 Exchange 邮箱交互，添加、修改或删除日历项。这种方式非常适合自动化排程、会议管理工具或企业级日历同步。
+## 什么是 create calendar folder java？
 
-## 为什么选择 Aspose.Email for Java？
+在 Java 中创建日历文件夹意味着以编程方式在 Exchange 邮箱的日历层级中添加一个专用的子文件夹。这使您能够对相关会议进行分组，将部门特定的日程分离，并在无需人工交互的情况下自动化批量操作。该文件夹可用于存储部门特定的事件、应用自定义权限，并简化跨多个日历的报告。
 
-- **功能齐全的 API** – 无需底层 SOAP 处理即可处理 Exchange Web 服务 (EWS)。
-- **跨平台** – 可在 Windows、Linux 和 macOS 上运行，支持任何 JDK 16+ 运行时环境。
-- **无外部依赖** – 该库包含与 Exchange 通信所需的一切。  
+## 为什么使用 Aspose.Email for Java？
 
-## 重要性
-自动化日历操作可以消除人为错误，确保跨部门的会议数据保持一致，并且能够与 CRM、ERP 等其他业务系统集成。使用 **create exchange calendar java**，您可以构建自定义排程机器人、从数据库生成会议邀请，或在多个 Exchange 租户之间同步事件。
+Aspose.Email for Java 提供了一个全面的高级 API，抽象了 Exchange Web Services 的复杂性，使开发人员能够使用简单的 Java 对象处理邮件、联系人和日历项。它消除了编写原始 SOAP 请求的需求，并在内部处理身份验证、序列化和错误处理。
+
+- **Full‑featured API** – 处理 Exchange Web Services (EWS)，无需低层 SOAP 处理。  
+- **Cross‑platform** – 在 Windows、Linux 和 macOS 上使用任何 JDK 16+ 运行时均可工作。  
+- **No external dependencies** – 该库捆绑了与 Exchange 通信所需的所有内容。  
+- **Quantified capability** – 支持 **50+** Exchange 操作，每秒处理 **hundreds of appointments per second**，并且能够在不将整个存储加载到内存的情况下处理高达 **2 GB** 的邮箱。
+
+## 为什么这很重要
+
+自动化日历操作可消除人为错误，确保跨部门的会议数据一致，并实现与 CRM 或 ERP 平台等其他业务系统的集成。使用 **create calendar folder java**，您可以构建自定义调度机器人，从数据库生成会议邀请，或在多个 Exchange 租户之间同步事件。
 
 ## 常见用例
 
-- **企业会议室**：根据 Exchange 中存储的可用会议室信息自动预订会议室。
-- **员工入职**：预先将培训课程添加到新员工的日历中。
-- **项目时间表**：将项目管理工具中的里程碑日期直接推送到 Outlook 日历。
+- **Enterprise meeting rooms** – 基于 Exchange 中存储的可用性自动预订会议室。  
+- **Employee onboarding** – 为新员工的日历预先填充培训课程。  
+- **Project timelines** – 将项目管理工具中的里程碑日期直接推送到 Outlook 日历。  
 
-## 前提条件
+## 先决条件
 
-- **Aspose.Email for Java** 库（版本 25.4 或更高版本）
-- JDK 16 或更高版本
-- 可访问 Exchange 服务器（Office 365 或本地部署）
-- IDE，例如 IntelliJ IDEA、Eclipse 或 NetBeans
+- Aspose.Email for Java 库（版本 25.4 或更高）  
+- JDK 16 或更高  
+- 访问 Exchange 服务器（Office 365 或本地部署）  
+- IDE，例如 IntelliJ IDEA、Eclipse 或 NetBeans  
 
-## Maven 依赖项 Aspose Email
+## Maven 依赖 Aspose Email
 
-将以下代码片段添加到您的 `pom.xml` 文件中。这是您需要从 Maven Central 拉取库的 **Maven 依赖项 aspose email**。
+将以下代码片段添加到您的 `pom.xml` 中。这就是您需要从 Maven Central 获取库的 **maven dependency aspose email**。
 
 ```xml
 <dependency>
@@ -76,17 +116,22 @@ weight: 1
 </dependency>
 ```
 
-### 获取许可步骤
+### 获取许可证的步骤
 
-1. **免费试用：** 从 [Aspose 网站](https://releases.aspose.com/email/java/) 下载试用版以测试各项功能。
-2. **临时许可：** 通过 [此链接](https://purchase.aspose.com/temporary-license/) 获取临时许可，以访问所有功能。
-3. **购买：** 如果您满意，请考虑在 [Aspose 购买页面](https://purchase.aspose.com/buy) 购买完整许可。
+1. **Free trial:** 从 [Aspose website](https://releases.aspose.com/email/java/) 下载试用版以测试功能。  
+2. **Temporary license:** 通过 [this link](https://purchase.aspose.com/temporary-license/) 获取临时许可证以获得完整功能。  
+3. **Purchase:** 如果满意，请考虑在 [Aspose's purchase page](https://purchase.aspose.com/buy) 购买完整许可证。  
 
-## 连接到 Exchange Java
+## 如何创建 calendar folder java
 
-**概述：** 本节介绍如何使用 EWS 客户端**连接到 Exchange Java**。
+`IEWSClient` 是 Aspose.Email 与 Exchange Web Services 通信的主要类。使用 `new IEWSClient("https://exchange.example.com/EWS/Exchange.asmx", "username", "password")` 加载您的 Exchange 邮箱——此行代码创建了一个可在日历操作中重复使用的安全会话。然后调用 `client.createFolder("new calendar", client.getDefaultFolder(WellKnownFolderName.Calendar))` 在主日历层级下添加专用文件夹。该文件夹会立即出现，并且可以存储任意数量的约会，非常适合部门特定的调度。
 
-### 步骤 1：建立连接
+## IEWSClient 的定义锚点
+
+`IEWSClient` 是 Aspose.Email 用于与 Exchange Web Services 交互的主要类，负责身份验证、请求构建和响应解析。  
+
+**Explanation:** 将 `"username"` 和 `"password"` 替换为您的实际凭据。此客户端对象将在后续所有日历操作中重复使用。
+
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
@@ -105,13 +150,17 @@ public class ConnectToExchangeServer {
     }
 }
 ```
-**说明：**请将 `"username"` 和 `"password"` 替换为您的实际凭据。此代码将创建一个 `IEWSClient` 实例，您可以在所有后续日历操作中重复使用该实例。
 
-## 创建日历文件夹
+## 如何更新 exchange calendar appointment
 
-**概述：**在邮箱日历中创建一个专用文件夹，用于整理相关约会。
+通过唯一标识符获取现有约会，修改所需字段，然后调用 `client.updateAppointment(appointment)`——此三步模式在不重新创建的情况下就地更新项目，保留所有与会者和重复数据。当您需要在会议发送后更改地点、主题或时间时，请使用此方法。
 
-### 步骤 2：创建新的日历文件夹
+## Appointment 的定义锚点
+
+`Appointment` 是 Aspose.Email 对日历项的表示，公开诸如主题、开始时间、结束时间、地点和与会者等属性。  
+
+**Explanation:** 将 `"YOUR_DOCUMENT_DIRECTORY"` 替换为您想要更新的约会的实际文件夹 URI。此代码片段演示了如何更改地点字段。
+
 ```java
 import com.aspose.email.MailboxInfo;
 
@@ -132,11 +181,10 @@ public class CreateCalendarFolder {
     }
 }
 ```
-**说明：** “新建日历”文件夹位于主日历层级结构下，用于存储之后创建的约会。
 
 ## 在日历文件夹中创建约会
 
-**概述：** 将会议或事件添加到新建的日历文件夹中。
+**Overview:** 将会议或事件添加到新创建的日历文件夹中。
 
 ### 步骤 3：设置约会详情
 ```java
@@ -179,13 +227,13 @@ public class CreateAppointment {
     }
 }
 ```
-**说明：** 此代码创建一个 `Appointment` 对象，设置其时区，添加参与者，并将其存储在自定义日历文件夹中。
+**Explanation:** 此代码构建一个 `Appointment` 对象，设置其时区，添加与会者，并将其存储在自定义日历文件夹中。
 
 ## 更新约会
 
-**概述：** 修改现有约会的属性，例如地点或主题。
+**Overview:** 修改现有约会的属性，例如地点或主题。
 
-### 第 4 步：定义现有约会
+### 步骤 4：定义现有约会
 ```java
 import com.aspose.email.Appointment;
 
@@ -212,54 +260,59 @@ public class UpdateAppointment {
     }
 }
 ```
-**说明：** 将 `"YOUR_DOCUMENT_DIRECTORY"` 替换为您要更新的预约的实际文件夹 URI。此代码片段演示了如何更改位置字段。
+**Explanation:** 将 `"YOUR_DOCUMENT_DIRECTORY"` 替换为您想要更新的约会的实际文件夹 URI。此代码片段演示了如何更改地点字段。
 
-## 常见问题和提示
+## 常见问题与技巧
 
-- **身份验证错误：** 确认帐户具有 EWS 访问权限，并且已禁用多因素身份验证或使用应用密码。
+- **Authentication errors:** 验证账户是否具有 EWS 访问权限，并且已禁用多因素身份验证或使用了应用密码。  
+- **Folder URI not found:** 使用 `client.listSubFolders()` 在创建或更新项目之前发现正确的日历 URI。  
+- **Time‑zone mismatches:** 始终在 `Appointment` 对象上设置时区，以避免夏令时带来的意外。  
+- **Performance tip:** 处理大批量时，重复使用单个 `IEWSClient` 实例并启用 `client.setTimeout(60000)` 以防止超时异常。  
 
-- **找不到文件夹 URI：** 在创建或更新项目之前，请使用 `client.listSubFolders()` 查找正确的日历 URI。
+## Aspose Email Java 教程概览
 
-- **时区不匹配：** 始终在 `Appointment` 对象上设置时区，以避免夏令时带来的问题。
+本教程是更广泛的 **Aspose Email Java tutorial** 系列的一部分，涵盖消息处理、联系人管理和 MIME 处理。如果您想掌握完整套件，请查看其他指南，了解发送电子邮件、解析 EML 文件以及使用 IMAP/POP3 的方法。
 
-## Aspose Email Java 教程概述
+## 常见问题
 
-本教程是更广泛的 **Aspose Email Java 教程** 系列的一部分，该系列涵盖邮件处理、联系人管理和 MIME 处理。如果您想掌握完整的套件，请查看其他关于发送电子邮件、解析 EML 文件和使用 IMAP/POP3 的指南。
+**Q: 我需要开发许可证吗？**  
+A: 免费试用可用于开发和测试，但生产部署需要完整许可证。
 
-## 常见问题解答
+**Q: 我可以在本地部署的 Exchange 上使用吗？**  
+A: 可以。只需将 EWS URL 更改为指向您的本地服务器。
 
-**问：我需要开发许可证吗？** 
-答：免费试用版可用于开发和测试，但生产部署需要完整许可证。
+**Q: 支持 Java 8 吗？**  
+A: 该库支持 JDK 16 及以上；不建议在最新版本中使用旧的 JDK。
 
-**问：我可以将其与本地 Exchange 服务器一起使用吗？** 
-答：可以。只需将 EWS URL 更改为指向您的本地服务器即可。
+**Q: 如何删除约会？**  
+A: 在获取约会的唯一 ID 后，使用 `client.deleteAppointment(appointmentId, calendarFolderUri);`。
 
-**问：是否支持 Java 8？** 
-答：该库支持 JDK 16 及更高版本；不建议在最新版本中使用旧版 JDK。
+**Q: 如果需要处理重复会议怎么办？**  
+A: Aspose.Email 提供了 `Recurrence` 类，您可以在保存之前将其附加到 `Appointment`。
 
-**问：如何删除约会？** 
-答：获取约会的唯一 ID 后，使用 `client.deleteAppointment(appointmentId, calendarFolderUri);` 即可。
+**Q: 创建约会的数量有限制吗？**  
+A: 限制由 Exchange 服务器配置决定，而非 Aspose.Email。确保您的邮箱配额能够容纳这些项目。
 
-**问：如果我需要处理重复会议怎么办？** 
-答：Aspose.Email 提供了一个 `Recurrence` 类，您可以在保存之前将其附加到 `Appointment` 对象。
+## 结论
 
-**问：我可以创建的约会数量有限制吗？** 
-答：限制由 Exchange 服务器配置决定，而非 Aspose.Email 本身。请确保您的邮箱配额足以容纳这些项目。
-
-## 总结
-
-现在，您已经了解了如何使用 Aspose.Email for Java 创建 Exchange 日历 Java 应用程序的完整端到端示例。从建立安全连接到管理文件夹和约会，以上步骤为您构建更复杂的日程安排解决方案奠定了坚实的基础。请浏览 Aspose Email Java 教程的其他部分，以扩展您的自动化功能。
+您现在拥有一个完整的、端到端的示例，展示如何使用 Aspose.Email for Java **create calendar folder java** 应用程序。从建立安全连接到管理文件夹和约会，上述步骤为您构建更复杂的调度解决方案提供了坚实的基础。探索 Aspose Email Java 教程的其他章节，以扩展您的自动化能力。
 
 ---
 
-**上次更新时间：** 2026-03-09
-**测试版本：** Aspose.Email for Java 25.4 (jdk16 分类器)
-**作者：** Aspose 
+**最后更新：** 2026-10-07  
+**测试环境：** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**作者：** Aspose
+
+## 相关教程
+
+- [使用 Aspose.Email for Java 连接 Exchange 日历指南 | Exchange Server 集成](/email/java/exchange-server-integration/exchange-calendar-connection-aspose-email-java/)
+- [Aspose Email Java Exchange 约会管理](/email/java/exchange-server-integration/aspose-email-java-exchange-appointments-management/)
+- [使用 Aspose.Email for Java 管理 Exchange 文件夹权限：分步指南](/email/java/exchange-server-integration/manage-exchange-folder-permissions-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}

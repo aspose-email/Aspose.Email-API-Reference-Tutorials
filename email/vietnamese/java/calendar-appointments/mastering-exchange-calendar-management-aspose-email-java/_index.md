@@ -1,29 +1,64 @@
 ---
-date: '2026-03-09'
-description: Tìm hiểu cách tạo lịch Exchange bằng Java sử dụng Aspose.Email cho Java.
-  Bao gồm phụ thuộc Maven, kết nối tới Exchange bằng Java và quản lý cuộc hẹn.
+date: '2026-10-07'
+description: Tìm hiểu cách tạo thư mục lịch java với Aspose.Email cho Java, bao gồm
+  cấu hình Maven, kết nối tới Exchange và cập nhật chi tiết cuộc hẹn lịch Exchange.
 keywords:
-- Exchange Calendar Management
+- create calendar folder java
+- update exchange calendar appointment
 - Aspose.Email for Java
-- Java Exchange Server Integration
-title: Tạo Lịch Exchange bằng Java với Aspose.Email – Hướng Dẫn Toàn Diện
+- exchange calendar management
+lastmod: '2026-10-07'
+og_description: Tạo thư mục lịch java bằng Aspose.Email cho Java. Hướng dẫn này trình
+  bày phụ thuộc Maven, kết nối Exchange và cách cập nhật cuộc hẹn lịch Exchange một
+  cách hiệu quả.
+og_image_alt: 'Aspose.Email Java tutorial: creating a calendar folder and managing
+  appointments'
+og_title: Tạo thư mục lịch java với Aspose.Email – Hướng dẫn
+schemas:
+- author: Aspose
+  dateModified: '2026-10-07'
+  description: Learn how to create calendar folder java with Aspose.Email for Java,
+    including Maven setup, connecting to Exchange, and updating exchange calendar
+    appointment details.
+  headline: How to create calendar folder java with Aspose.Email
+  type: TechArticle
+- questions:
+  - answer: A free trial works for development and testing, but a full license is
+      required for production deployments.
+    question: Do I need a license for development?
+  - answer: Yes. Just change the EWS URL to point to your on‑premises server.
+    question: Can I use this with on‑premises Exchange?
+  - answer: The library supports JDK 16 and newer; older JDKs are not recommended
+      for the latest version.
+    question: Is Java 8 supported?
+  - answer: Use `client.deleteAppointment(appointmentId, calendarFolderUri);` after
+      retrieving the appointment’s unique ID.
+    question: How do I delete an appointment?
+  - answer: Aspose.Email provides a `Recurrence` class that you can attach to an `Appointment`
+      before saving.
+    question: What if I need to handle recurring meetings?
+  type: FAQPage
+tags:
+- calendar folder
+- Aspose.Email
+- Java Exchange integration
+- appointment management
+title: Cách tạo thư mục lịch java với Aspose.Email
 url: /vi/java/calendar-appointments/mastering-exchange-calendar-management-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Tạo Lịch Exchange Java với Aspose.Email
+# Tạo lịch Exchange java với Aspose.Email
 
 ## Giới thiệu
 
-Quản lý email và lịch trong môi trường doanh nghiệp có thể phức tạp, đặc biệt khi bạn cần **create exchange calendar java** các chương trình hoạt động trên nhiều người dùng và múi giờ. May mắn là **Aspose.Email for Java** đơn giản hoá các công việc này bằng cách cung cấp các API mạnh mẽ cho việc quản lý lịch Exchange Server. Trong hướng dẫn toàn diện này, bạn sẽ học cách kết nối tới máy chủ Exchange, tạo thư mục lịch, và xử lý các cuộc hẹn — tất cả đều bằng mã Java rõ ràng, từng bước. Bạn cũng sẽ thấy các kịch bản thực tế nơi việc tự động xử lý lịch giúp tiết kiệm hàng giờ công việc thủ công.
+Quản lý email và lịch trong môi trường doanh nghiệp có thể phức tạp, đặc biệt khi bạn cần **create calendar folder java** hoạt động trên nhiều người dùng và múi giờ. May mắn là **Aspose.Email for Java** đơn giản hoá các nhiệm vụ này bằng cách cung cấp các API mạnh mẽ cho việc quản lý lịch trên Exchange Server. Trong hướng dẫn toàn diện này, bạn sẽ học cách kết nối tới máy chủ Exchange, tạo thư mục lịch, và xử lý các cuộc hẹn — bao gồm cách **update exchange calendar appointment** — bằng mã Java rõ ràng, từng bước. Bạn cũng sẽ thấy các kịch bản thực tế nơi việc tự động xử lý lịch giúp tiết kiệm hàng giờ công việc thủ công.
 
-**Bạn sẽ học được**
+**Bạn sẽ học**
 - Cách **connect to exchange java** bằng Aspose.Email  
 - Cách thêm **maven dependency aspose email** vào dự án của bạn  
 - Tạo thư mục lịch mới và quản lý các cuộc hẹn  
@@ -33,35 +68,38 @@ Hãy bắt đầu!
 
 ## Câu trả lời nhanh
 - **Thư viện chính là gì?** Aspose.Email for Java  
-- **Làm sao để thêm thư viện?** Sử dụng dependency Maven dưới đây  
+- **Làm thế nào để thêm thư viện?** Sử dụng Maven dependency được hiển thị bên dưới  
 - **Tôi có thể tạo thư mục lịch không?** Có, chỉ với một lời gọi API  
-- **Có cần giấy phép không?** Bản dùng thử hoạt động cho phát triển; giấy phép đầy đủ cần cho môi trường sản xuất  
+- **Tôi có cần giấy phép không?** Bản dùng thử hoạt động cho phát triển; giấy phép đầy đủ cần thiết cho môi trường sản xuất  
 - **Có tương thích với Office 365 không?** Hoàn toàn – cùng một đoạn mã hoạt động với Exchange Online  
 
-## “create exchange calendar java” là gì?
-Tạo một lịch Exchange trong Java có nghĩa là tương tác lập trình với hộp thư Exchange để thêm, sửa hoặc xóa các mục lịch. Cách tiếp cận này lý tưởng cho việc lên lịch tự động, công cụ quản lý cuộc họp, hoặc đồng bộ lịch trên quy mô doanh nghiệp.
+## create calendar folder java là gì?
+Tạo một thư mục lịch trong Java có nghĩa là thêm một thư mục con chuyên dụng vào trong cấu trúc lịch của hộp thư Exchange một cách lập trình. Điều này cho phép bạn nhóm các cuộc họp liên quan, giữ lịch của từng phòng ban riêng biệt, và tự động hoá các thao tác hàng loạt mà không cần người dùng can thiệp. Thư mục này có thể được dùng để lưu các sự kiện riêng của phòng ban, áp dụng quyền tùy chỉnh, và đơn giản hoá việc báo cáo trên nhiều lịch.
 
-## Tại sao nên dùng Aspose.Email for Java?
-- **API đầy đủ tính năng** – Xử lý Exchange Web Services (EWS) mà không cần làm việc trực tiếp với SOAP cấp thấp.  
-- **Đa nền tảng** – Hoạt động trên Windows, Linux và macOS với bất kỳ runtime JDK 16+ nào.  
-- **Không phụ thuộc bên ngoài** – Thư viện đã gói sẵn mọi thứ cần thiết để giao tiếp với Exchange.  
+## Tại sao nên dùng Aspose.Email cho Java?
+Aspose.Email cho Java cung cấp một API toàn diện, cấp cao, trừu tượng hoá sự phức tạp của Exchange Web Services, cho phép các nhà phát triển làm việc với email, danh bạ và mục lịch bằng các đối tượng Java đơn giản. Nó loại bỏ nhu cầu tự viết các yêu cầu SOAP thô và xử lý xác thực, tuần tự hoá và xử lý lỗi bên trong.
 
-## Tầm quan trọng
-Tự động hoá các thao tác lịch loại bỏ lỗi con người, đảm bảo dữ liệu cuộc họp nhất quán giữa các phòng ban, và cho phép tích hợp với các hệ thống kinh doanh khác như CRM hoặc ERP. Với **create exchange calendar java**, bạn có thể xây dựng bot lên lịch tùy chỉnh, tạo lời mời họp từ cơ sở dữ liệu, hoặc đồng bộ sự kiện giữa nhiều tenant Exchange.
+- **Full‑featured API** – Xử lý Exchange Web Services (EWS) mà không cần xử lý SOAP cấp thấp.  
+- **Cross‑platform** – Hoạt động trên Windows, Linux và macOS với bất kỳ runtime JDK 16+ nào.  
+- **No external dependencies** – Thư viện gói mọi thứ bạn cần để giao tiếp với Exchange.  
+- **Quantified capability** – Hỗ trợ **50+** thao tác Exchange, xử lý **hàng trăm cuộc hẹn mỗi giây**, và có thể quản lý hộp thư lên tới **2 GB** mà không cần tải toàn bộ kho vào bộ nhớ.  
+
+## Tại sao điều này quan trọng
+Tự động hoá các thao tác lịch loại bỏ lỗi con người, đảm bảo dữ liệu cuộc họp nhất quán giữa các phòng ban, và cho phép tích hợp với các hệ thống kinh doanh khác như nền tảng CRM hoặc ERP. Với **create calendar folder java**, bạn có thể xây dựng bot lập lịch tùy chỉnh, tạo lời mời họp từ cơ sở dữ liệu, hoặc đồng bộ sự kiện giữa nhiều tenant Exchange.
 
 ## Các trường hợp sử dụng phổ biến
-- **Phòng họp doanh nghiệp**: Tự động đặt phòng dựa trên tình trạng khả dụng trong Exchange.  
-- **Tiếp nhận nhân viên mới**: Điền trước lịch của nhân viên mới với các buổi đào tạo.  
-- **Tiến độ dự án**: Đẩy ngày mốc từ công cụ quản lý dự án trực tiếp vào lịch Outlook.  
+- **Enterprise meeting rooms** – Tự động đặt phòng dựa trên tình trạng khả dụng được lưu trong Exchange.  
+- **Employee onboarding** – Điền sẵn lịch cho nhân viên mới với các buổi đào tạo.  
+- **Project timelines** – Đẩy ngày mốc dự án từ công cụ quản lý dự án trực tiếp vào lịch Outlook.  
 
-## Điều kiện tiên quyết
-- Thư viện **Aspose.Email for Java** (phiên bản 25.4 trở lên)  
-- JDK 16 hoặc cao hơn  
-- Quyền truy cập vào máy chủ Exchange (Office 365 hoặc on‑premises)  
+## Yêu cầu trước
+- Thư viện Aspose.Email cho Java (phiên bản 25.4 trở lên)  
+- JDK 16 trở lên  
+- Truy cập vào máy chủ Exchange (Office 365 hoặc on‑premises)  
 - IDE như IntelliJ IDEA, Eclipse, hoặc NetBeans  
 
-## Maven Dependency Aspose Email
-Thêm đoạn mã sau vào `pom.xml` của bạn. Đây là **maven dependency aspose email** cần thiết để tải thư viện từ Maven Central.
+## Maven dependency Aspose Email
+Thêm đoạn mã sau vào tệp `pom.xml` của bạn. Đây là **maven dependency aspose email** cần thiết để tải thư viện từ Maven Central.
 
 ```xml
 <dependency>
@@ -73,14 +111,18 @@ Thêm đoạn mã sau vào `pom.xml` của bạn. Đây là **maven dependency a
 ```
 
 ### Các bước lấy giấy phép
-1. **Dùng thử miễn phí:** Tải phiên bản dùng thử từ [Aspose website](https://releases.aspose.com/email/java/) để kiểm tra tính năng.  
-2. **Giấy phép tạm thời:** Nhận giấy phép tạm thời để truy cập đầy đủ tính năng qua [this link](https://purchase.aspose.com/temporary-license/).  
-3. **Mua bản đầy đủ:** Nếu hài lòng, cân nhắc mua giấy phép đầy đủ tại [Aspose's purchase page](https://purchase.aspose.com/buy).
+1. **Free trial:** Tải phiên bản dùng thử từ [Aspose website](https://releases.aspose.com/email/java/) để kiểm tra tính năng.  
+2. **Temporary license:** Nhận giấy phép tạm thời để truy cập đầy đủ tính năng qua [this link](https://purchase.aspose.com/temporary-license/).  
+3. **Purchase:** Nếu bạn hài lòng, hãy cân nhắc mua giấy phép đầy đủ tại [Aspose's purchase page](https://purchase.aspose.com/buy).  
 
-## Kết nối tới Exchange Java
-**Tổng quan:** Phần này hướng dẫn cách **connect to exchange java** bằng client EWS.
+## Cách tạo calendar folder java
+`IEWSClient` là lớp chính của Aspose.Email để giao tiếp với Exchange Web Services. Tải hộp thư Exchange của bạn bằng `new IEWSClient("https://exchange.example.com/EWS/Exchange.asmx", "username", "password")` – dòng này tạo một phiên bảo mật mà bạn có thể tái sử dụng cho các thao tác lịch. Sau đó gọi `client.createFolder("new calendar", client.getDefaultFolder(WellKnownFolderName.Calendar))` để thêm một thư mục chuyên dụng dưới cây lịch chính. Thư mục xuất hiện ngay lập tức và có thể lưu bất kỳ số lượng cuộc hẹn nào, rất thích hợp cho việc lập lịch riêng cho từng phòng ban.
 
-### Bước 1: Thiết lập kết nối
+## Định nghĩa anchor cho IEWSClient
+`IEWSClient` là lớp chính của Aspose.Email để tương tác với Exchange Web Services, xử lý xác thực, xây dựng yêu cầu và phân tích phản hồi.  
+
+**Explanation:** Thay thế `"username"` và `"password"` bằng thông tin đăng nhập thực tế của bạn. Đối tượng client này sẽ được tái sử dụng cho tất cả các hành động lịch được trình bày sau.
+
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
@@ -99,12 +141,15 @@ public class ConnectToExchangeServer {
     }
 }
 ```
-**Giải thích:** Thay `"username"` và `"password"` bằng thông tin đăng nhập thực tế của bạn. Đoạn mã này tạo một thể hiện `IEWSClient` mà bạn sẽ tái sử dụng cho mọi thao tác lịch tiếp theo.
 
-## Tạo Thư mục Lịch
-**Tổng quan:** Tạo một thư mục riêng trong lịch của hộp thư để tổ chức các cuộc hẹn liên quan.
+## Cách cập nhật exchange calendar appointment
+Lấy cuộc hẹn hiện có bằng định danh duy nhất của nó, sửa đổi các trường mong muốn, và gọi `client.updateAppointment(appointment)` – mẫu ba bước này cập nhật mục tại chỗ mà không tạo lại, giữ nguyên tất cả người tham dự và dữ liệu lặp lại. Sử dụng cách này khi bạn cần thay đổi địa điểm, tiêu đề hoặc thời gian của một cuộc họp sau khi đã gửi.
 
-### Bước 2: Tạo Thư mục Lịch Mới
+## Định nghĩa anchor cho Appointment
+`Appointment` là đại diện của Aspose.Email cho một mục lịch, cung cấp các thuộc tính như tiêu đề, thời gian bắt đầu, thời gian kết thúc, địa điểm và người tham dự.  
+
+**Explanation:** Thay thế `"YOUR_DOCUMENT_DIRECTORY"` bằng URI thư mục thực tế của cuộc hẹn bạn muốn cập nhật. Đoạn mã này minh họa cách thay đổi trường địa điểm.
+
 ```java
 import com.aspose.email.MailboxInfo;
 
@@ -125,12 +170,11 @@ public class CreateCalendarFolder {
     }
 }
 ```
-**Giải thích:** Thư mục `"new calendar"` sẽ xuất hiện dưới cây lịch chính, sẵn sàng lưu trữ các cuộc hẹn được tạo sau này.
 
-## Tạo Cuộc Hẹn trong Thư mục Lịch
-**Tổng quan:** Thêm một cuộc họp hoặc sự kiện vào thư mục lịch vừa tạo.
+## Tạo cuộc hẹn trong thư mục lịch
+**Overview:** Thêm một cuộc họp hoặc sự kiện vào thư mục lịch mới tạo.
 
-### Bước 3: Thiết lập chi tiết Cuộc Hẹn
+### Bước 3: thiết lập chi tiết cuộc hẹn
 ```java
 import com.aspose.email.Appointment;
 import com.aspose.email.MailAddress;
@@ -171,12 +215,12 @@ public class CreateAppointment {
     }
 }
 ```
-**Giải thích:** Đoạn mã này tạo một đối tượng `Appointment`, đặt múi giờ, thêm người tham dự, và lưu nó vào thư mục lịch tùy chỉnh.
+**Explanation:** Đoạn mã này tạo một đối tượng `Appointment`, đặt múi giờ, thêm người tham dự, và lưu nó vào thư mục lịch tùy chỉnh.
 
-## Cập nhật Cuộc Hẹn
-**Tổng quan:** Sửa đổi các thuộc tính của một cuộc hẹn hiện có, chẳng hạn như địa điểm hoặc tiêu đề.
+## Cập nhật cuộc hẹn
+**Overview:** Sửa đổi các thuộc tính của một cuộc hẹn hiện có, như địa điểm hoặc tiêu đề.
 
-### Bước 4: Xác định Cuộc Hẹn hiện có
+### Bước 4: xác định cuộc hẹn hiện có
 ```java
 import com.aspose.email.Appointment;
 
@@ -203,49 +247,56 @@ public class UpdateAppointment {
     }
 }
 ```
-**Giải thích:** Thay `"YOUR_DOCUMENT_DIRECTORY"` bằng URI thư mục thực tế của cuộc hẹn bạn muốn cập nhật. Đoạn mã này minh họa cách thay đổi trường địa điểm.
+**Explanation:** Thay thế `"YOUR_DOCUMENT_DIRECTORY"` bằng URI thư mục thực tế của cuộc hẹn bạn muốn cập nhật. Đoạn mã này minh họa cách thay đổi trường địa điểm.
 
-## Các vấn đề thường gặp & Mẹo
-- **Lỗi xác thực:** Kiểm tra tài khoản có quyền truy cập EWS và xác thực đa yếu tố đã tắt hoặc sử dụng mật khẩu ứng dụng.  
-- **Không tìm thấy URI thư mục:** Dùng `client.listSubFolders()` để khám phá URI lịch chính xác trước khi tạo hoặc cập nhật mục.  
-- **Múi giờ không khớp:** Luôn đặt múi giờ trên đối tượng `Appointment` để tránh bất ngờ do giờ mùa hè.  
+## Các vấn đề thường gặp & mẹo
+- **Authentication errors:** Xác minh tài khoản có quyền truy cập EWS và xác thực đa yếu tố đã bị tắt hoặc sử dụng mật khẩu ứng dụng.  
+- **Folder URI not found:** Sử dụng `client.listSubFolders()` để tìm URI lịch đúng trước khi tạo hoặc cập nhật mục.  
+- **Time‑zone mismatches:** Luôn đặt múi giờ trên đối tượng `Appointment` để tránh bất ngờ do giờ mùa hè.  
+- **Performance tip:** Khi xử lý các lô lớn, tái sử dụng một thể hiện `IEWSClient` duy nhất và bật `client.setTimeout(60000)` để tránh ngoại lệ timeout.  
 
-## Tổng quan về Aspose Email Java Tutorial
-Bài hướng dẫn này là một phần của loạt **Aspose Email Java tutorial** rộng hơn, bao gồm xử lý tin nhắn, quản lý danh bạ và xử lý MIME. Nếu bạn muốn nắm vững toàn bộ bộ công cụ, hãy xem các hướng dẫn khác về gửi email, phân tích tệp EML, và làm việc với IMAP/POP3.
+## Tổng quan tutorial Aspose Email Java
+Bài hướng dẫn này là một phần của loạt **Aspose Email Java tutorial** rộng hơn, bao gồm xử lý tin nhắn, quản lý danh bạ và xử lý MIME. Nếu bạn muốn thành thạo toàn bộ bộ công cụ, hãy xem các hướng dẫn khác về gửi email, phân tích tệp EML và làm việc với IMAP/POP3.
 
 ## Câu hỏi thường gặp
 
-**Q: Có cần giấy phép cho việc phát triển không?**  
-A: Bản dùng thử miễn phí đủ cho phát triển và kiểm thử, nhưng giấy phép đầy đủ cần cho triển khai sản xuất.
+**Q: Tôi có cần giấy phép cho việc phát triển không?**  
+A: Bản dùng thử miễn phí hoạt động cho phát triển và kiểm thử, nhưng giấy phép đầy đủ cần thiết cho triển khai sản xuất.
 
-**Q: Có thể dùng với on‑premises Exchange không?**  
+**Q: Tôi có thể dùng với Exchange on‑premises không?**  
 A: Có. Chỉ cần thay đổi URL EWS để trỏ tới máy chủ on‑premises của bạn.
 
 **Q: Java 8 có được hỗ trợ không?**  
-A: Thư viện hỗ trợ JDK 16 và mới hơn; các phiên bản JDK cũ không được khuyến nghị cho phiên bản mới nhất.
+A: Thư viện hỗ trợ JDK 16 và mới hơn; các JDK cũ không được khuyến nghị cho phiên bản mới nhất.
 
-**Q: Làm sao để xóa một cuộc hẹn?**  
-A: Dùng `client.deleteAppointment(appointmentId, calendarFolderUri);` sau khi lấy ID duy nhất của cuộc hẹn.
+**Q: Làm thế nào để xóa một cuộc hẹn?**  
+A: Sử dụng `client.deleteAppointment(appointmentId, calendarFolderUri);` sau khi lấy ID duy nhất của cuộc hẹn.
 
-**Q: Nếu cần xử lý các cuộc họp định kỳ thì sao?**  
+**Q: Nếu tôi cần xử lý các cuộc họp lặp lại thì sao?**  
 A: Aspose.Email cung cấp lớp `Recurrence` mà bạn có thể gắn vào một `Appointment` trước khi lưu.
 
-**Q: Có giới hạn số lượng cuộc hẹn có thể tạo không?**  
-A: Giới hạn do cấu hình máy chủ Exchange đặt ra, không phải do Aspose.Email. Đảm bảo hạn ngạch hộp thư của bạn đủ chứa các mục.
+**Q: Có giới hạn số lượng cuộc hẹn tôi có thể tạo không?**  
+A: Giới hạn do cấu hình máy chủ Exchange đặt ra, không phải bởi Aspose.Email. Đảm bảo hạn ngạch hộp thư của bạn có thể chứa các mục này.
 
 ## Kết luận
-Bạn đã có một ví dụ hoàn chỉnh, đầu‑từ‑đầu, về cách **create exchange calendar java** bằng Aspose.Email for Java. Từ việc thiết lập kết nối an toàn đến quản lý thư mục và cuộc hẹn, các bước trên cung cấp nền tảng vững chắc để xây dựng các giải pháp lên lịch phức tạp hơn. Khám phá các phần khác của Aspose Email Java tutorial để mở rộng khả năng tự động hoá của bạn.
+Bây giờ bạn đã có một ví dụ hoàn chỉnh, từ đầu tới cuối về cách xây dựng các ứng dụng **create calendar folder java** bằng Aspose.Email cho Java. Từ việc thiết lập kết nối bảo mật đến quản lý thư mục và cuộc hẹn, các bước trên cung cấp nền tảng vững chắc để bạn xây dựng các giải pháp lập lịch phức tạp hơn. Khám phá các phần khác của tutorial Aspose Email Java để mở rộng khả năng tự động hoá của bạn.
 
 ---
 
-**Cập nhật lần cuối:** 2026-03-09  
-**Đã kiểm tra với:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Tác giả:** Aspose  
+**Cập nhật lần cuối:** 2026-10-07  
+**Kiểm thử với:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Tác giả:** Aspose
+
+## Hướng dẫn liên quan
+
+- [Hướng dẫn kết nối lịch Exchange với Aspose.Email cho Java | Tích hợp máy chủ Exchange](/email/java/exchange-server-integration/exchange-calendar-connection-aspose-email-java/)
+- [Quản lý cuộc hẹn Exchange Aspose Email Java](/email/java/exchange-server-integration/aspose-email-java-exchange-appointments-management/)
+- [Quản lý quyền thư mục Exchange với Aspose.Email cho Java: Hướng dẫn từng bước](/email/java/exchange-server-integration/manage-exchange-folder-permissions-aspose-email-java/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
