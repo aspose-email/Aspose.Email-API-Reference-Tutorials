@@ -219,9 +219,9 @@ A: Process contacts in batches, use asynchronous I/O, and reuse the `License` ob
 
 ## Related Tutorials
 
-- [Converting EML to MHT/MHTML Using Aspose.Email for Java]({{< relref ""/java/email-conversion-rendering/email-conversion-eml-to-mht-aspose-email-java/"" >}})
+- [Converting EML to MHT/MHTML Using Aspose.Email for Java]({{< relref "/java/email-conversion-rendering/email-conversion-eml-to-mht-aspose-email-java/" >}})
 - [How to Load and Save Emails as MHTML Using Aspose.Email for Java]({{< relref "/java/email-message-operations/load-save-emails-mhtml-aspose-java/" >}})
-- [Manage Exchange Server Contacts with Aspose.Email for Java]({{< relref ""/java/exchange-server-integration/exchange-server-contact-management-aspose-email-java/"" >}})
+- [Manage Exchange Server Contacts with Aspose.Email for Java]({{< relref "/java/exchange-server-integration/exchange-server-contact-management-aspose-email-java/" >}})
 
 
 
