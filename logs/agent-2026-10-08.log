@@ -1,0 +1,8 @@
+2026-10-08 09:47:22 - src.utils.content_validator - WARNING - Stripped same-line leaked prefix before opening tag: "Let's craft final output."
+2026-10-08 09:47:22 - src.utils.content_validator - INFO - Stripped leaked LLM preamble text before first opening shortcode
+2026-10-08 09:47:25 - src.utils.content_validator - WARNING - Stripped same-line leaked prefix before opening tag: 'Now produce final content.'
+2026-10-08 09:47:25 - src.utils.content_validator - INFO - Stripped leaked LLM preamble text before first opening shortcode
+2026-10-08 09:47:25 - src.utils.content_validator - WARNING - Stripped same-line leaked prefix before opening tag: "Let's craft final answer."
+2026-10-08 09:47:25 - src.utils.content_validator - INFO - Stripped leaked LLM preamble text before first opening shortcode
+2026-10-08 09:47:28 - src.utils.content_validator - WARNING - Stripped same-line leaked prefix before opening tag: "Let's craft."
+2026-10-08 09:47:28 - src.utils.content_validator - INFO - Stripped leaked LLM preamble text before first opening shortcode
