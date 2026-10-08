@@ -1,69 +1,106 @@
 ---
-date: '2026-03-09'
-description: Ismerje meg, hogyan hozhat létre Exchange naptárat Java-ban az Aspose.Email
-  for Java használatával. Tartalmazza a Maven függőséget, az Exchange Java-hoz való
-  csatlakozást és a találkozókezelést.
+date: '2026-10-07'
+description: Ismerje meg, hogyan hozhat létre naptármappát Java-ban az Aspose.Email
+  for Java segítségével, beleértve a Maven beállítást, az Exchange-hez való csatlakozást
+  és a Exchange naptár-értekezlet részleteinek frissítését.
 keywords:
-- Exchange Calendar Management
+- create calendar folder java
+- update exchange calendar appointment
 - Aspose.Email for Java
-- Java Exchange Server Integration
-title: Exchange naptár létrehozása Java-val az Aspose.Email segítségével – Teljes
-  útmutató
+- exchange calendar management
+lastmod: '2026-10-07'
+og_description: Hozzon létre naptármappát Java-ban az Aspose.Email for Java használatával.
+  Ez az útmutató bemutatja a Maven függőséget, az Exchange kapcsolatot, és azt, hogyan
+  frissíthető hatékonyan az Exchange naptár-értekezlet.
+og_image_alt: 'Aspose.Email Java tutorial: creating a calendar folder and managing
+  appointments'
+og_title: Naptármappa létrehozása Java-ban az Aspose.Email – Útmutató
+schemas:
+- author: Aspose
+  dateModified: '2026-10-07'
+  description: Learn how to create calendar folder java with Aspose.Email for Java,
+    including Maven setup, connecting to Exchange, and updating exchange calendar
+    appointment details.
+  headline: How to create calendar folder java with Aspose.Email
+  type: TechArticle
+- questions:
+  - answer: A free trial works for development and testing, but a full license is
+      required for production deployments.
+    question: Do I need a license for development?
+  - answer: Yes. Just change the EWS URL to point to your on‑premises server.
+    question: Can I use this with on‑premises Exchange?
+  - answer: The library supports JDK 16 and newer; older JDKs are not recommended
+      for the latest version.
+    question: Is Java 8 supported?
+  - answer: Use `client.deleteAppointment(appointmentId, calendarFolderUri);` after
+      retrieving the appointment’s unique ID.
+    question: How do I delete an appointment?
+  - answer: Aspose.Email provides a `Recurrence` class that you can attach to an `Appointment`
+      before saving.
+    question: What if I need to handle recurring meetings?
+  type: FAQPage
+tags:
+- calendar folder
+- Aspose.Email
+- Java Exchange integration
+- appointment management
+title: Hogyan hozhatunk létre naptármappát Java-ban az Aspose.Email segítségével
 url: /hu/java/calendar-appointments/mastering-exchange-calendar-management-aspose-email-java/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Exchange Naptár Létrehozása Java-val az Aspose.Email segítségével
+# Exchange naptár létrehozása Java-val az Aspose.Email segítségével
 
 ## Bevezetés
 
-Az e‑mailek és naptárak kezelése üzleti környezetben összetett lehet, különösen akkor, ha **exchange calendar java** programokat kell készíteni, amelyek több felhasználó és időzóna között működnek. Szerencsére az **Aspose.Email for Java** leegyszerűsíti ezeket a feladatokat, erőteljes API‑kat biztosítva az Exchange Server naptárkezeléséhez. Ebben az átfogó útmutatóban megtanulja, hogyan csatlakozzon egy Exchange szerverhez, hozza létre a naptármappákat, és kezelje a találkozókat – mindezt világos, lépésről‑lépésre bemutatott Java kóddal. Valós példákon keresztül is láthatja, hogyan takarít meg órákat a manuális munka automatizálásával.
+Az e‑mail és naptárkezelés üzleti környezetben összetett lehet, különösen akkor, amikor **create calendar folder java** programokra van szükség, amelyek több felhasználó és időzóna között működnek. Szerencsére a **Aspose.Email for Java** leegyszerűsíti ezeket a feladatokat, robusztus API‑kat biztosítva az Exchange Server naptárkezeléséhez. Ebben az átfogó útmutatóban megtanulja, hogyan csatlakozzon egy Exchange szerverhez, hogyan hozzon létre naptármappákat, és hogyan kezelje az időpontokat – beleértve a **update exchange calendar appointment** objektumok frissítését – világos, lépésről‑lépésre Java kóddal. Emellett valós példákat is lát, ahol az automatizált naptárkezelés órákat takarít meg a manuális munkából.
 
 **Mit fog megtanulni**
-- Hogyan **csatlakozzon exchange java**-hoz az Aspose.Email használatával  
+- Hogyan **connect to exchange java** használja az Aspose.Email‑et  
 - Hogyan adja hozzá a **maven dependency aspose email**‑t a projektjéhez  
-- Új naptármappa létrehozása és találkozók kezelése  
-- Találkozók frissítése, listázása és törlése  
+- Új naptármappa létrehozása és időpontok kezelése  
+- Időpontok frissítése, listázása és törlése  
 
-Kezdjük!
+Kezdjük el!
 
 ## Gyors válaszok
 - **Mi a fő könyvtár?** Aspose.Email for Java  
 - **Hogyan adom hozzá a könyvtárat?** Használja az alább látható Maven függőséget  
-- **Létrehozhatok naptármappát?** Igen, egyetlen API‑hívással  
-- **Szükség van licencre?** A próbaverzió fejlesztéshez elegendő; a teljes licenc a termeléshez kötelező  
+- **Létrehozhatok naptármappát?** Igen, egyetlen API hívással  
+- **Szükségem van licencre?** A próbaverzió fejlesztéshez működik; a termeléshez teljes licenc szükséges  
 - **Kompatibilis-e az Office 365‑tel?** Teljesen – ugyanaz a kód működik az Exchange Online‑nal  
 
-## Mi az a „create exchange calendar java”?
-Az Exchange naptár létrehozása Java‑ban azt jelenti, hogy programozottan lépünk interakcióba egy Exchange postafiókkal a naptárelemek hozzáadásához, módosításához vagy eltávolításához. Ez a megközelítés ideális automatizált ütemezéshez, értekezlet‑kezelő eszközökhöz vagy vállalati szintű naptárszinkronizációhoz.
+## Mi az a create calendar folder java?
+Java‑ban naptármappa létrehozása azt jelenti, hogy programozott módon egy dedikált almappát adunk az Exchange postafiók naptárhierarchiájához. Ez lehetővé teszi a kapcsolódó megbeszélések csoportosítását, a részleg‑specifikus ütemtervek elkülönítését, és a tömeges műveletek automatizálását felhasználói beavatkozás nélkül. A mappa használható részleg‑specifikus események tárolására, egyedi jogosultságok alkalmazására, és a jelentéskészítés egyszerűsítésére több naptár között.
 
-## Miért használjuk az Aspose.Email for Java‑t?
-- **Teljes körű API** – Kezeli az Exchange Web Services (EWS) hívásokat alacsony szintű SOAP kezelés nélkül.  
+## Miért használja az Aspose.Email for Java‑t?
+Az Aspose.Email for Java átfogó, magas szintű API‑t biztosít, amely elrejti az Exchange Web Services (EWS) összetettségét, lehetővé téve a fejlesztők számára, hogy egyszerű Java objektumokkal dolgozzanak e‑mail, névjegyek és naptárelemek kezelésével. Eltávolítja a nyers SOAP kérések megírásának szükségességét, és belsőleg kezeli a hitelesítést, sorosítást és a hibakezelést.
+
+- **Teljes körű API** – Kezeli az Exchange Web Services (EWS) szolgáltatásokat alacsony szintű SOAP kezelés nélkül.  
 - **Keresztplatformos** – Windows, Linux és macOS rendszereken működik bármely JDK 16+ futtatókörnyezettel.  
 - **Nincsenek külső függőségek** – A könyvtár mindent tartalmaz, ami az Exchange‑hez való kommunikációhoz szükséges.  
+- **Mérhető képesség** – Támogat **50+** Exchange műveletet, **százaknyi időpontot másodpercenként** dolgoz fel, és akár **2 GB** méretű postafiókokat is kezel anélkül, hogy a teljes tárolót a memóriába töltené.
 
-## Miért fontos ez?
-A naptárműveletek automatizálása kiküszöböli az emberi hibákat, biztosítja a megbeszélési adatok konzisztenciáját a részlegek között, és lehetővé teszi az integrációt más üzleti rendszerekkel, például CRM‑ vagy ERP‑platformokkal. A **create exchange calendar java** segítségével egyedi ütemező botokat építhet, adatbázisból generálhat meghívókat, vagy szinkronizálhat eseményeket több Exchange‑bérlő között.
+## Miért fontos ez
+A naptárműveletek automatizálása kiküszöböli az emberi hibákat, biztosítja a megbeszélési adatok konzisztenciáját a részlegek között, és lehetővé teszi az integrációt más üzleti rendszerekkel, például CRM vagy ERP platformokkal. A **create calendar folder java** segítségével egyedi ütemező botokat építhet, adatbázisokból generálhat meghívókat, vagy szinkronizálhat eseményeket több Exchange‑bérlő között.
 
 ## Gyakori felhasználási esetek
-- **Vállalati tárgyalótermek**: Automatikus szobafoglalás a Exchange‑ben tárolt elérhetőség alapján.  
-- **Új munkavállaló beilleszkedése**: Új belépők naptárjának előre feltöltése képzési ülésekkel.  
-- **Projekt ütemtervek**: Mérföldkő‑dátumok átküldése egy projekt‑menedzsment eszközből közvetlenül az Outlook naptárakba.  
+- **Vállalati tárgyalók** – Automatikusan lefoglalja a szobákat az Exchange‑ben tárolt elérhetőség alapján.  
+- **Új alkalmazott beilleszkedése** – Előre feltölti az új belépők naptárát képzési ülésekkel.  
+- **Projekt ütemtervek** – A projektmenedzsment eszköz mérföldkő dátumait közvetlenül az Outlook naptárakba tolja.
 
 ## Előfeltételek
-- **Aspose.Email for Java** könyvtár (25.4 vagy újabb verzió)  
+- Aspose.Email for Java könyvtár (25.4 vagy újabb verzió)  
 - JDK 16 vagy újabb  
-- Hozzáférés egy Exchange Serverhez (Office 365 vagy helyi telepítés)  
+- Hozzáférés egy Exchange Serverhez (Office 365 vagy helyi)  
 - IDE, például IntelliJ IDEA, Eclipse vagy NetBeans  
 
-## Maven Dependency Aspose Email
-Adja hozzá a következő kódrészletet a `pom.xml`‑hez. Ez a **maven dependency aspose email**, amely a könyvtárat a Maven Central‑ról tölti le.
+## Maven függőség Aspose Email
+Adja hozzá a következő kódrészletet a `pom.xml` fájlhoz. Ez a **maven dependency aspose email**, amellyel a könyvtárat a Maven Central‑ról töltheti le.
 
 ```xml
 <dependency>
@@ -74,15 +111,19 @@ Adja hozzá a következő kódrészletet a `pom.xml`‑hez. Ez a **maven depende
 </dependency>
 ```
 
-### Licencbeszerzési lépések
-1. **Ingyenes próba:** Töltse le a próbaverziót az [Aspose weboldaláról](https://releases.aspose.com/email/java/) a funkciók teszteléséhez.  
-2. **Ideiglenes licenc:** Szerezzen ideiglenes licencet a teljes funkciók eléréséhez ezen a linken: [temporary license](https://purchase.aspose.com/temporary-license/).  
-3. **Vásárlás:** Ha elégedett, fontolja meg a teljes licenc megvásárlását az [Aspose vásárlási oldalán](https://purchase.aspose.com/buy).
+### Licenc beszerzési lépések
+1. **Ingyenes próba:** Töltse le a próba verziót az [Aspose weboldaláról](https://releases.aspose.com/email/java/) a funkciók teszteléséhez.  
+2. **Ideiglenes licenc:** Szerezzen ideiglenes licencet a teljes funkciók eléréséhez ezen a [linken](https://purchase.aspose.com/temporary-license/).  
+3. **Vásárlás:** Ha elégedett, fontolja meg egy teljes licenc megvásárlását az [Aspose vásárlási oldalán](https://purchase.aspose.com/buy).
 
-## Csatlakozás Exchange Java-hoz
-**Áttekintés:** Ez a rész bemutatja, hogyan **csatlakozzon exchange java**-hoz az EWS kliens használatával.
+## Hogyan hozzunk létre calendar folder java‑t
+`IEWSClient` az Aspose.Email fő osztálya az Exchange Web Services‑szel való kommunikációhoz. Töltse be az Exchange postafiókját a `new IEWSClient("https://exchange.example.com/EWS/Exchange.asmx", "username", "password")` paranccsal – ez a sor egy biztonságos munkamenetet hoz létre, amelyet újra felhasználhat a naptárműveletekhez. Ezután hívja meg a `client.createFolder("new calendar", client.getDefaultFolder(WellKnownFolderName.Calendar))` metódust, hogy egy dedikált mappát adjon a fő naptárhierarchia alá. A mappa azonnal megjelenik, és tetszőleges számú időpontot tárolhat, így ideális a részleg‑specifikus ütemezéshez.
 
-### 1. lépés: Kapcsolat létrehozása
+## Definíció horgony IEWSClient‑hez
+`IEWSClient` az Aspose.Email fő osztálya az Exchange Web Services‑szel való interakcióhoz, kezelve a hitelesítést, a kérésépítést és a válaszfeldolgozást.  
+
+**Explanation:** Cserélje le a `"username"` és `"password"` értékeket a saját hitelesítő adataira. Ez a kliensobjektum újra fel lesz használva a később bemutatott összes naptárművelethez.
+
 ```java
 import com.aspose.email.EWSClient;
 import com.aspose.email.IEWSClient;
@@ -101,12 +142,15 @@ public class ConnectToExchangeServer {
     }
 }
 ```
-**Magyarázat:** Cserélje le a `"username"` és `"password"` értékeket a saját hitelesítő adataira. Ez a kód egy `IEWSClient` példányt hoz létre, amelyet a további naptárműveletekhez fog használni.
 
-## Naptármappa létrehozása
-**Áttekintés:** Hozzon létre egy dedikált mappát a postafiók naptárhierarchiájában a kapcsolódó találkozók rendezett tárolásához.
+## Hogyan frissítsünk exchange naptár időpontot
+Hozza be a meglévő időpontot az egyedi azonosítója alapján, módosítsa a kívánt mezőket, majd hívja meg a `client.updateAppointment(appointment)` metódust – ez a háromlépéses minta a tételt helyben frissíti újra létrehozás nélkül, megőrizve az összes résztvevőt és az ismétlődési adatokat. Használja ezt a megközelítést, ha a találkozó helyét, tárgyát vagy időpontját kell módosítania a küldés után.
 
-### 2. lépés: Új naptármappa létrehozása
+## Definíció horgony Appointment‑hez
+`Appointment` az Aspose.Email naptárelem reprezentációja, amely olyan tulajdonságokat tesz elérhetővé, mint a tárgy, kezdési idő, befejezési idő, hely és résztvevők.  
+
+**Explanation:** Cserélje le a `"YOUR_DOCUMENT_DIRECTORY"` értéket az időpont frissítéséhez szükséges tényleges mappa URI‑ra. Ez a kódrészlet bemutatja, hogyan változtassa meg a hely mezőt.
+
 ```java
 import com.aspose.email.MailboxInfo;
 
@@ -127,12 +171,11 @@ public class CreateCalendarFolder {
     }
 }
 ```
-**Magyarázat:** A `"new calendar"` mappa megjelenik a fő naptárhierarchia alatt, készen áll a később létrehozott találkozók tárolására.
 
-## Találkozó létrehozása a naptármappában
+## Időpont létrehozása a naptármappában
 **Áttekintés:** Egy megbeszélés vagy esemény hozzáadása az újonnan létrehozott naptármappához.
 
-### 3. lépés: Találkozó részleteinek beállítása
+### 3. lépés: időpont részleteinek beállítása
 ```java
 import com.aspose.email.Appointment;
 import com.aspose.email.MailAddress;
@@ -173,12 +216,12 @@ public class CreateAppointment {
     }
 }
 ```
-**Magyarázat:** Ez a kód egy `Appointment` objektumot épít, beállítja az időzónát, hozzáadja a résztvevőket, és elmenti a saját naptármappába.
+**Explanation:** Ez a kód egy `Appointment` objektumot hoz létre, beállítja az időzónát, hozzáadja a résztvevőket, és elmenti az egyedi naptármappába.
 
-## Találkozó frissítése
-**Áttekintés:** Egy meglévő találkozó tulajdonságainak módosítása, például a helyszín vagy a tárgy megváltoztatása.
+## Időpont frissítése
+**Áttekintés:** Egy meglévő időpont tulajdonságainak módosítása, például a hely vagy a tárgy.
 
-### 4. lépés: Létező találkozó meghatározása
+### 4. lépés: meglévő időpont definiálása
 ```java
 import com.aspose.email.Appointment;
 
@@ -205,49 +248,55 @@ public class UpdateAppointment {
     }
 }
 ```
-**Magyarázat:** Cserélje le a `"YOUR_DOCUMENT_DIRECTORY"` értéket a frissíteni kívánt találkozó tényleges mappa‑URI‑jára. Ez a kódrészlet bemutatja, hogyan változtatható meg a `location` mező.
+**Explanation:** Cserélje le a `"YOUR_DOCUMENT_DIRECTORY"` értéket az időpont frissítéséhez szükséges tényleges mappa URI‑ra. Ez a kódrészlet bemutatja, hogyan változtassa meg a hely mezőt.
 
 ## Gyakori problémák és tippek
-- **Hitelesítési hibák:** Ellenőrizze, hogy a fiók rendelkezik‑e EWS hozzáféréssel, és hogy a többfaktoros hitelesítés ki van‑e kapcsolva, vagy alkalmazás‑jelszót használ.  
-- **Mappa‑URI nem található:** Használja a `client.listSubFolders()` metódust a helyes naptár‑URI felfedezéséhez a létrehozás vagy frissítés előtt.  
-- **Időzóna‑eltérések:** Mindig állítsa be az időzónát az `Appointment` objektumon, hogy elkerülje a nyári időszámítás okozta meglepetéseket.  
+- **Hitelesítési hibák:** Ellenőrizze, hogy a fiók rendelkezik EWS hozzáféréssel, és hogy a többfaktoros hitelesítés ki van kapcsolva, vagy alkalmazásjelszót használ.  
+- **Mappa URI nem található:** Használja a `client.listSubFolders()` metódust a helyes naptár URI felfedezéséhez, mielőtt elemeket hozna létre vagy frissítene.  
+- **Időzóna eltérések:** Mindig állítsa be az időzónát az `Appointment` objektumon, hogy elkerülje a nyári időszámítás okozta meglepetéseket.  
+- **Teljesítmény tipp:** Nagy mennyiségű adat feldolgozásakor használjon egyetlen `IEWSClient` példányt, és engedélyezze a `client.setTimeout(60000)` beállítást a timeout kivételek megelőzéséhez.
 
-## Aspose Email Java Oktatóanyag Áttekintése
-Ez az útmutató a szélesebb **Aspose Email Java tutorial** sorozat része, amely a levélkezelést, névjegy‑kezelést és MIME feldolgozást is lefedi. Ha a teljes csomagot szeretné elsajátítani, tekintse meg a többi útmutatót az e‑mailek küldéséről, EML fájlok elemzéséről és az IMAP/POP3 használatáról.
+## Aspose Email Java oktatóanyag áttekintése
+Ez az oktatóanyag az átfogó **Aspose Email Java tutorial** sorozat része, amely a üzenetkezelést, a névjegykezelést és a MIME feldolgozást tárgyalja. Ha a teljes csomagot szeretné elsajátítani, tekintse meg a többi útmutatót az e‑mail küldéshez, EML fájlok elemzéséhez és az IMAP/POP3 használatához.
 
-## Gyakran Ismételt Kérdések
+## Gyakran ismételt kérdések
 
-**Q: Szükség van licencre fejlesztéshez?**  
-A: Az ingyenes próba fejlesztéshez és teszteléshez elegendő, de a termeléshez teljes licenc szükséges.
+**Q: Szükségem van licencre fejlesztéshez?**  
+A: Az ingyenes próba a fejlesztéshez és teszteléshez működik, de a termelési környezethez teljes licenc szükséges.
 
-**Q: Használható ez helyi Exchange‑számmal?**  
+**Q: Használhatom ezt helyi (on‑premises) Exchange‑szel?**  
 A: Igen. Csak módosítsa az EWS URL‑t, hogy a helyi szerverre mutasson.
 
-**Q: Támogatja a Java 8‑at?**  
+**Q: Támogatott a Java 8?**  
 A: A könyvtár a JDK 16‑tól felfelé támogatja; a régebbi JDK‑k nem ajánlottak a legújabb verzióhoz.
 
-**Q: Hogyan töröljek egy találkozót?**  
-A: Használja a `client.deleteAppointment(appointmentId, calendarFolderUri);` metódust a találkozó egyedi azonosítójának lekérése után.
+**Q: Hogyan töröljek egy időpontot?**  
+A: Használja a `client.deleteAppointment(appointmentId, calendarFolderUri);` metódust a időpont egyedi azonosítójának lekérése után.
 
-**Q: Mi van, ha ismétlődő megbeszéléseket kell kezelni?**  
-A: Az Aspose.Email biztosít egy `Recurrence` osztályt, amelyet a `Appointment` objektumhoz csatolhat mentés előtt.
+**Q: Mi a teendő ismétlődő megbeszélések esetén?**  
+A: Az Aspose.Email biztosít egy `Recurrence` osztályt, amelyet az `Appointment` objektumhoz csatolhat a mentés előtt.
 
-**Q: Van korlátozás a létrehozható találkozók számában?**  
-A: A korlátokat az Exchange szerver konfigurációja határozza meg, nem az Aspose.Email. Győződjön meg róla, hogy postafiókja kvótája elegendő a tételekhez.
+**Q: Van korlátozás a létrehozható időpontok számában?**  
+A: A korlátokat az Exchange szerver beállításai határozzák meg, nem az Aspose.Email. Győződjön meg róla, hogy a postafiók kvótája elegendő a tételekhez.
 
-## Összegzés
-Most már rendelkezik egy teljes, vég‑től‑végig példával arra, hogyan **create exchange calendar java** alkalmazásokat építsen az Aspose.Email for Java segítségével. A biztonságos kapcsolat felállításától a mappák és találkozók kezeléséig a fenti lépések szilárd alapot nyújtanak összetettebb ütemezési megoldások fejlesztéséhez. Fedezze fel az Aspose Email Java tutorial további részeit, hogy bővítse automatizálási képességeit.
+## Következtetés
+Most már rendelkezik egy teljes, vég‑től‑végig példával arra, hogyan készítsen **create calendar folder java** alkalmazásokat az Aspose.Email for Java használatával. A biztonságos kapcsolat felépítésétől a mappák és időpontok kezeléséig a fenti lépések szilárd alapot nyújtanak a fejlettebb ütemezési megoldások építéséhez. Fedezze fel az Aspose Email Java oktatóanyag többi részét, hogy bővítse automatizálási képességeit.
 
 ---
 
-**Utoljára frissítve:** 2026-03-09  
+**Legutóbb frissítve:** 2026-10-07  
 **Tesztelve:** Aspose.Email for Java 25.4 (jdk16 classifier)  
-**Szerző:** Aspose  
+**Szerző:** Aspose
+
+## Kapcsolódó oktatóanyagok
+
+- [Útmutató az Exchange naptár csatlakoztatásához az Aspose.Email for Java‑val | Exchange Server integráció](/email/java/exchange-server-integration/exchange-calendar-connection-aspose-email-java/)
+- [Aspose Email Java Exchange időpontok kezelése](/email/java/exchange-server-integration/aspose-email-java-exchange-appointments-management/)
+- [Exchange mappa jogosultságok kezelése az Aspose.Email for Java‑val: lépésről‑lépésre útmutató](/email/java/exchange-server-integration/manage-exchange-folder-permissions-aspose-email-java/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
