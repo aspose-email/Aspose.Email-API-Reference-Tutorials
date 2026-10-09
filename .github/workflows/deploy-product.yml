@@ -1,16 +1,13 @@
 name: Build and Deploy Tutorials
 
-# PILOT (see aspose-tutorials-workflows PR plan): calls the new reusable
-# deploy-product.yml workflow directly instead of relying on
-# CopyChangesToThemeRepo (main.yml) + a manual trigger of
-# aspose-tutorials-workflows. `push:` is deliberately commented out while
-# this is being verified by hand via workflow_dispatch -- re-enable it,
-# and remove main.yml's Copycat step, once a manual run has been diffed
-# clean against today's pipeline.
+# Push-triggered: calls the reusable deploy-product.yml workflow in
+# Aspose/aspose-tutorials-workflows on every push to main. Builds and
+# deploys both production and staging in parallel, directly from this
+# repo's own content -- no replication into any shared repo.
 
 on:
-  # push:
-  #   branches: [ main ]
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
