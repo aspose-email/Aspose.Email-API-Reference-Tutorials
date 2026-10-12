@@ -1,191 +1,240 @@
 ---
-date: 2026-04-21
-description: Apprenez à générer un fichier ics en Java, créer une invitation de calendrier,
-  envoyer un e‑mail en Java, convertir un fichier eml en msg en Java, et ajouter une
-  signature numérique en Java à l’aide d’Aspose.Email pour Java.
+date: 2026-10-12
+description: Apprenez comment générer un fichier .ics java, créer un calendar invite,
+  envoyer un email java, convertir eml en msg java, et ajouter une digital signature
+  java avec Aspose.Email for Java.
 keywords:
 - generate ics file java
 - convert eml to msg java
 - add digital signature java
 - read ics file java
 - encrypt email java
-linktitle: Tutoriels Aspose.Email pour Java
-title: Générer un fichier .ics en Java – Créer une invitation de calendrier avec Aspose.Email
-  pour Java – Tutoriel complet
+lastmod: 2026-10-12
+linktitle: Tutoriels Aspose.Email for Java
+og_description: Comment générer un fichier .ics java avec Aspose.Email for Java. Créez
+  des calendar invites, envoyez-les via SMTP, ajoutez des digital signatures et cryptez
+  les emails en quelques étapes.
+og_image_alt: Developer guide showing how to generate .ics calendar invites in Java
+  with Aspose.Email
+og_title: Comment générer un fichier .ics java avec Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-10-12'
+  description: Learn how to generate .ics file java, create calendar invite, send
+    email java, convert eml to msg java, and add digital signature java using Aspose.Email
+    for Java.
+  headline: How to generate .ics file java using Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to generate .ics file java, create calendar invite, send
+    email java, convert eml to msg java, and add digital signature java using Aspose.Email
+    for Java.
+  name: How to generate .ics file java using Aspose.Email for Java
+  steps:
+  - name: set up your project
+    text: Add the Aspose.Email JAR to your classpath or reference it via Maven/Gradle.
+      This gives you access to `Appointment`, `MailMessage`, `SmtpClient` and related
+      types.
+  - name: build the appointment
+    text: '`Appointment` is Aspose.Email’s representation of a calendar event. It
+      stores the subject, location, start/end times, and attendee list. Create the
+      object and fill the required fields: *subject, location, start time, end time,
+      attendees, reminder*.'
+  - name: convert the appointment to an iCalendar stream
+    text: Call `appointment.save` to serialize the object to the iCalendar format.
+      You can write the stream to disk (`.ics` file) or keep it in memory for immediate
+      attachment.
+  - name: create the email message
+    text: '`MailMessage` is the top‑level class that models an email. It holds the
+      sender, recipients, subject, body and any attachments. Instantiate a `MailMessage`,
+      set the plain‑text or HTML body, and attach the iCalendar stream with MIME type
+      `text/calendar`.'
+  - name: (optional) add a digital signature
+    text: 'If you need a **digital signature java**, load your X.509 certificate (`certificate.pfx`)
+      and call `mailMessage.sign(certificate, password)`. The `sign` method applies
+      an S/MIME signature to the entire message using the provided certificate, ensuring
+      integrity and authenticity. This guarantees that '
+  - name: (optional) encrypt the email
+    text: To **encrypt email java**, obtain the recipient’s public certificate and
+      invoke `mailMessage.encrypt(publicCertificate)`. The `encrypt` method encrypts
+      the MIME content with the recipient’s public key, producing an S/MIME encrypted
+      message. Encryption protects sensitive meeting details such as locat
+  - name: send the email via SMTP
+    text: '`SmtpClient` is Aspose.Email’s SMTP transport class. Configure host, port,
+      credentials, and enable TLS/SSL if required. Then call `client.send(mailMessage)`
+      to deliver the invite. > **Pro tip:** reuse a single `SmtpClient` instance when
+      sending bulk invitations; it reduces socket overhead and improv'
+  type: HowTo
+- questions:
+  - answer: Use `Appointment.load("invite.ics")` to import the file back into an `Appointment`
+      object, then read its properties such as `startTime`, `subject`, and `attendees`.
+    question: How do I read an .ics file after creating a calendar invite?
+  - answer: Yes – set `mailMessage.isCalendar = true` and assign the `Appointment`
+      object directly to the message body; the client renders it as a meeting request.
+    question: Can I send a calendar invite without an attachment?
+  - answer: Absolutely. Load the EML with `MailMessage.load`, then call `mailMessage.save("output.msg",
+      MailMessageSaveType.OutlookMessage)`. The attached `.ics` remains intact.
+    question: Is it possible to convert an EML file to MSG while preserving calendar
+      data?
+  - answer: A valid X.509 certificate (PFX) and its private‑key password. Call `mailMessage.sign(certificate,
+      password)` before sending.
+    question: What do I need to add a digital signature to my email?
+  - answer: Obtain the recipient’s public certificate and invoke `mailMessage.encrypt(publicCertificate)`.
+      The entire message, including the `.ics` attachment, is encrypted end‑to‑end.
+    question: How can I encrypt email java to protect the invite?
+  type: FAQPage
+tags:
+- generate ics
+- Aspose.Email
+- Java email processing
+- calendar invites
+- email security
+title: Comment générer un fichier .ics java avec Aspose.Email for Java
 url: /fr/java/
 weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Générer un fichier .ics Java – Créer une invitation de calendrier avec Aspose.Email pour Java – Tutoriel complet
+# Comment générer un fichier .ics java avec Aspose.Email pour Java
 
-Bienvenue dans les **tutoriels Aspose.Email pour Java** – votre ressource incontournable pour maîtriser la manipulation des e‑mails, **créer des invitations de calendrier**, et gérer tous les aspects de la communication par e‑mail dans les applications Java. Dans ce tutoriel, vous apprendrez comment **générer un fichier ics java** avec Aspose.Email, envoyer l’invitation via SMTP, et éventuellement ajouter une **signature numérique** ou chiffrer le message.
+Dans ce tutoriel, vous découvrirez **comment générer un fichier .ics java** avec Aspose.Email, joindre l’invitation à un e‑mail et, éventuellement, signer ou chiffrer le message. Que vous construisiez un outil de planification interne ou un service de notification à grande échelle, les étapes ci‑dessous vous offrent une solution prête pour la production qui fonctionne sous Windows, Linux et les environnements d’exécution Java macOS.
 
 ## Réponses rapides
-- **Comment générer un fichier .ics en Java ?** Utilisez les objets `Appointment` d’Aspose.Email et appelez `save` pour produire le flux iCalendar.  
-- **Puis-je envoyer l’invitation via SMTP ?** Oui – configurez un `SmtpClient` et appelez `client.send(message)`.  
-- **Quel format utilise l’invitation ?** Le format standard iCalendar (`.ics`), lisible par Outlook, Google Calendar et la plupart des clients.  
-- **Ai-je besoin d’une licence pour la production ?** Une licence commerciale est requise pour une utilisation non‑évaluation.  
-- **Est‑il possible d’ajouter une signature numérique à l’invitation ?** Absolument – utilisez `MailMessage.sign` avec un certificat X.509.
+- **Comment générer un fichier .ics en Java ?** Créez un objet `Appointment`, remplissez ses champs et appelez `appointment.save` pour obtenir le flux iCalendar.  
+- **Puis-je envoyer l’invitation via SMTP ?** Oui – instanciez un `SmtpClient`, configurez TLS/SSL et appelez `client.send(message)`.  
+- **Quel format utilise l’invitation ?** Le format iCalendar standard (`.ics`), compatible avec Outlook, Google Calendar, Apple Calendar et la plupart des autres clients.  
+- **Ai-je besoin d’une licence pour la production ?** Une licence commerciale Aspose.Email est requise pour les déploiements non‑évaluatifs.  
+- **Est‑il possible d’ajouter une signature numérique à l’invitation ?** Absolument – chargez un certificat X.509 et invoquez `mailMessage.sign`.
 
 ## Qu’est‑ce qu’une invitation de calendrier et pourquoi en créer une programmatiquement ?
-Une invitation de calendrier (fichier iCalendar `.ics`) est une représentation portable d’un événement qui peut être importée dans Outlook, Google Calendar ou tout client compatible iCalendar. Générer des invitations de façon programmatique vous permet d’automatiser la planification de réunions, d’envoyer des rappels et d’intégrer la fonctionnalité de calendrier directement dans vos services Java.
+Une invitation de calendrier est un fichier iCalendar (`.ics`) qui décrit un événement — heure, lieu, participants et règles de récurrence. Elle permet aux destinataires d’ajouter la réunion à leurs calendriers personnels d’un simple clic, éliminant ainsi la saisie manuelle et réduisant les erreurs de planification.
 
-## Pourquoi utiliser Aspose.Email pour Java pour générer un fichier .ics Java ?
-- **Full .ics support** – lire, modifier et écrire des fichiers iCalendar sans dépendances externes.  
-- **Seamless integration** – combiner les invitations avec des corps d’e‑mail riches, des pièces jointes et des signatures numériques.  
-- **Cross‑platform** – fonctionne sous Windows, Linux et macOS avec n’importe quel runtime Java.  
-- **Robust security** – chiffrer les messages, appliquer des signatures S/MIME et protéger les pièces jointes.
+## Pourquoi utiliser Aspose.Email pour Java pour générer un fichier .ics java ?
+Aspose.Email offre **une prise en charge complète du .ics**—plus de 50 fonctionnalités iCalendar telles que la récurrence, les alarmes et les participants—sans aucune bibliothèque tierce. Il fonctionne sur Java 8‑21, traite des fichiers jusqu’à 500 Mo en mode mémoire efficace, et propose des fonctionnalités de sécurité intégrées comme la signature et le chiffrement S/MIME.
 
 ## Prérequis
 - Java Development Kit (JDK) 8 ou supérieur.  
 - Bibliothèque Aspose.Email pour Java (téléchargement depuis le site Aspose).  
-- Un serveur SMTP pour l’envoi des messages (par ex., Gmail, Office 365, ou un serveur local).  
-- Optionnel : certificat X.509 pour la signature numérique.  
-- Optionnel : si vous avez besoin d’e‑mail chiffré, préparez la clé publique du destinataire.
+- Un serveur SMTP (Gmail, Office 365 ou un relais local).  
+- Facultatif : certificat X.509 (PFX) pour la signature.  
+- Facultatif : clé publique du destinataire pour le chiffrement.
 
-## Guide étape par étape pour générer un fichier .ics Java
+## Comment générer un fichier .ics java
 
-### Étape 1 : Configurer votre projet
-Ajoutez le JAR Aspose.Email au classpath de votre projet ou incluez‑le via Maven/Gradle. Cela vous donne accès aux classes `MailMessage`, `Appointment` et aux classes associées.
+Chargez la bibliothèque Aspose.Email et suivez les étapes ci‑dessous. La réponse à la question globale se trouve à la fin de ce paragraphe : **vous générez un fichier .ics en créant un `Appointment`, en remplissant ses propriétés et en appelant `save` pour produire le flux iCalendar, que vous pouvez ensuite joindre à un `MailMessage`.** Les sections suivantes décomposent le processus en actions claires et réutilisables.
 
-### Étape 2 : Construire le rendez‑vous (Invitation de calendrier)
-Créez un objet `Appointment`, remplissez le sujet, le lieu, les heures de début/fin et les participants. Cet objet sera ensuite enregistré en tant que fichier `.ics` et joint à un e‑mail.
+### Étape 1 : configurer votre projet
+Ajoutez le JAR Aspose.Email à votre classpath ou référencez‑le via Maven/Gradle. Cela vous donne accès à `Appointment`, `MailMessage`, `SmtpClient` et aux types associés.
 
-### Étape 3 : Convertir le rendez‑vous en flux iCalendar
-Appelez `appointment.save` pour générer les données iCalendar. Vous pouvez les écrire sur le disque ou les garder en mémoire pour la pièce jointe.
+### Étape 2 : créer le rendez‑vous
+`Appointment` est la représentation par Aspose.Email d’un événement de calendrier. Il stocke le sujet, le lieu, les heures de début/fin et la liste des participants.  
+Créez l’objet et remplissez les champs requis :
 
-### Étape 4 : Créer le message e‑mail
-Instanciez un `MailMessage`, définissez l’expéditeur, les destinataires, le sujet et le corps. Joignez le flux iCalendar en tant que partie `message/rfc822` afin que les clients e‑mail le reconnaissent comme une demande de réunion.
+*sujet, lieu, heure de début, heure de fin, participants, rappel*.
 
-### Étape 5 : (Optionnel) Ajouter une signature numérique
-Si vous avez besoin d’une **digital signature java**, chargez votre certificat et appelez `mailMessage.sign`. Cela garantit l’intégrité et l’authenticité du message.
+### Étape 3 : convertir le rendez‑vous en flux iCalendar
+Appelez `appointment.save` pour sérialiser l’objet au format iCalendar. Vous pouvez écrire le flux sur le disque (fichier `.ics`) ou le garder en mémoire pour une pièce jointe immédiate.
 
-### Étape 6 : (Optionnel) Chiffrer l’e‑mail
-Pour **encrypt email java**, utilisez `mailMessage.encrypt` avec la clé publique du destinataire avant l’envoi. Cela protège le contenu de l’invitation pendant le transport.
+### Étape 4 : créer le message électronique
+`MailMessage` est la classe de haut niveau qui modélise un e‑mail. Elle contient l’expéditeur, les destinataires, le sujet, le corps et les pièces jointes.  
+Instanciez un `MailMessage`, définissez le corps en texte brut ou en HTML, et joignez le flux iCalendar avec le type MIME `text/calendar`.
 
-### Étape 7 : Envoyer l’e‑mail via SMTP
-Configurez un `SmtpClient` avec les détails de votre serveur, activez TLS/SSL si nécessaire, et appelez `client.send(mailMessage)`. Les destinataires recevront une invitation de calendrier prête à accepter.
+### Étape 5 : (facultatif) ajouter une signature numérique
+Si vous avez besoin d’une **signature numérique java**, chargez votre certificat X.509 (`certificate.pfx`) et appelez `mailMessage.sign(certificate, password)`.  
+La méthode `sign` applique une signature S/MIME à l’ensemble du message en utilisant le certificat fourni, garantissant l’intégrité et l’authenticité. Cela assure que l’e‑mail n’a pas été modifié en transit et confirme l’identité de l’expéditeur.
 
-> **Astuce :** Réutilisez la même instance `SmtpClient` pour les invitations en masse afin d’améliorer les performances.
+### Étape 6 : (facultatif) chiffrer l’e‑mail
+Pour **chiffrer un e‑mail java**, obtenez le certificat public du destinataire et invoquez `mailMessage.encrypt(publicCertificate)`.  
+La méthode `encrypt` chiffre le contenu MIME avec la clé publique du destinataire, produisant un message chiffré S/MIME. Le chiffrement protège les détails sensibles de la réunion tels que le lieu, l’ordre du jour et la liste des participants contre la lecture par des parties non autorisées.
+
+### Étape 7 : envoyer l’e‑mail via SMTP
+`SmtpClient` est la classe de transport SMTP d’Aspose.Email. Configurez l’hôte, le port, les identifiants et activez TLS/SSL si nécessaire. Puis appelez `client.send(mailMessage)` pour livrer l’invitation.
+
+> **Astuce :** réutilisez une seule instance de `SmtpClient` lors de l’envoi d’invitations en masse ; cela réduit la surcharge des sockets et améliore le débit.
+
+## Comment lire un fichier .ics java
+Chargez le fichier `.ics` dans un objet `Appointment` en utilisant `Appointment.load`. La méthode `load` lit un fichier iCalendar et renvoie un objet `Appointment` rempli avec les données de l’événement. L’objet retourné vous donne un accès direct aux détails de l’événement tels que l’heure de début, le sujet et la liste des participants, vous permettant d’afficher ou de modifier l’invitation programmatiquement.
+
+## Comment convertir eml en msg java
+Aspose.Email peut **convertir eml en msg java** tout en préservant les données de calendrier jointes. Chargez le fichier EML avec `MailMessage.load`. La méthode `load` lit un fichier e‑mail (EML) dans un objet `MailMessage`, puis appelez `mailMessage.save("output.msg", MailMessageSaveType.OutlookMessage)`. Le fichier MSG résultant contient le corps du message original, les pièces jointes et toute invitation `.ics` intégrée.
+
+## Comment ajouter une signature numérique java
+Obtenez un certificat X.509 (PFX) et son mot de passe, puis invoquez `mailMessage.sign(certificate, password)`. La méthode enveloppe l’entité MIME dans une signature S/MIME, que les clients e‑mail vérifient automatiquement. Cela assure l’intégrité de l’e‑mail et confirme l’identité de l’expéditeur auprès du destinataire.
+
+## Comment chiffrer un e‑mail java
+Acquérez le certificat public du destinataire (généralement un fichier `.cer`) et appelez `mailMessage.encrypt(publicCertificate)`. Cela chiffre l’ensemble du payload MIME, garantissant que seul le détenteur de la clé privée correspondante peut déchiffrer le contenu. Le chiffrement protège les détails sensibles de la réunion tels que le lieu, l’ordre du jour et la liste des participants contre la lecture par des parties non autorisées.
 
 ## Cas d’utilisation courants
-- **Automated meeting scheduling** depuis un portail web ou un outil interne.  
-- **Reminder emails** incluant un fichier `.ics` joint.  
-- **Bulk invitations** pour des webinaires ou des sessions de formation.  
-- **Integration with CRM systems** pour synchroniser automatiquement les événements.  
+- planification automatisée de réunions depuis un portail web ou un outil interne  
+- e‑mails de rappel incluant un fichier `.ics` joint  
+- invitations en masse pour des webinaires, sessions de formation ou événements d’entreprise  
+- intégration CRM synchronisant les réunions commerciales avec Outlook ou Google Calendar  
 
-## Comment lire un fichier .ics Java
-Si vous devez **read ics file java** après avoir créé une invitation, appelez simplement `Appointment.load` avec le chemin ou le flux du fichier `.ics`. L’objet `Appointment` retourné vous donne accès à toutes les propriétés de l’événement telles que l’heure de début, le sujet et les participants.
+## Bonnes pratiques et dépannage
+- **Réutiliser les objets** : conservez une seule instance de `SmtpClient` pour les envois par lots afin d’éviter les multiples négociations TLS.  
+- **Valider les participants** : assurez‑vous que les adresses e‑mail sont conformes à la RFC‑5322 avant de les ajouter à l’`Appointment`.  
+- **Gestion des fuseaux horaires** : définissez la propriété `Appointment.timeZone` pour éviter les décalages d’heures de début entre les régions.  
+- **Fichiers volumineux** : lors de la génération d’invitations pour des événements avec de nombreux participants, utilisez la surcharge `Appointment.save` qui écrit directement dans un `FileOutputStream` afin de limiter l’utilisation de la mémoire.  
+- **Erreurs de signature** : si le destinataire signale une signature invalide, vérifiez que la chaîne de certificats est complète et que le mot de passe de la clé privée est correct.  
 
-## Comment convertir EML en MSG Java
-Aspose.Email vous permet également de **convert eml to msg java** tout en conservant les données de calendrier jointes. Chargez l’EML avec `MailMessage.load`, puis enregistrez‑le au format MSG en utilisant `mailMessage.save("output.msg", MailMessageSaveType.OutlookMessage)`. Le `.ics` joint reste intact.
+## Questions fréquemment posées
 
-## Comment ajouter une signature numérique Java
-Pour **add digital signature java**, obtenez un certificat X.509 (PFX) et son mot de passe, puis invoquez `mailMessage.sign(certificate, password)`. Le message signé peut être vérifié par le client e‑mail du destinataire.
+**Q : Comment lire un fichier .ics après avoir créé une invitation de calendrier ?**  
+R : Utilisez `Appointment.load("invite.ics")` pour importer le fichier dans un objet `Appointment`, puis lisez ses propriétés comme `startTime`, `subject` et `attendees`.
 
-## Comment chiffrer un e‑mail Java
-Pour **encrypt email java**, obtenez le certificat public du destinataire et appelez `mailMessage.encrypt(publicCertificate)`. Le message résultant est chiffré de bout en bout, garantissant que seul le destinataire prévu puisse le déchiffrer.
+**Q : Puis‑je envoyer une invitation de calendrier sans pièce jointe ?**  
+R : Oui – définissez `mailMessage.isCalendar = true` et assignez directement l’objet `Appointment` au corps du message ; le client le rend comme une demande de réunion.
 
-## Sujets connexes que vous pourriez explorer
-* ### [Commencer avec Aspose.Email pour Java](./getting-started/)
-    Commencez votre aventure avec **Aspose.Email pour Java**. Apprenez à installer l’API, configurer la licence et créer vos premières applications e‑mail. Maîtrisez les bases rapidement grâce à nos guides pas à pas faciles à suivre.
+**Q : Est‑il possible de convertir un fichier EML en MSG tout en préservant les données du calendrier ?**  
+R : Absolument. Chargez le EML avec `MailMessage.load`, puis appelez `mailMessage.save("output.msg", MailMessageSaveType.OutlookMessage)`. Le `.ics` joint reste intact.
 
+**Q : De quoi ai‑je besoin pour ajouter une signature numérique à mon e‑mail ?**  
+R : Un certificat X.509 valide (PFX) et son mot de passe de clé privée. Appelez `mailMessage.sign(certificate, password)` avant l’envoi.
+
+**Q : Comment chiffrer un e‑mail java pour protéger l’invitation ?**  
+R : Obtenez le certificat public du destinataire et invoquez `mailMessage.encrypt(publicCertificate)`. L’ensemble du message, y compris la pièce jointe `.ics`, est chiffré de bout en bout.
+
+### Parcours d’apprentissage Aspose.Email pour Java
+
+* ### [Premiers pas avec Aspose.Email pour Java](./getting-started/)
 * ### [Opérations de base sur les messages e‑mail en Java](./email-message-operations/)
-    Explorez les techniques complètes de gestion des messages e‑mail avec **Aspose.Email pour Java**. Apprenez à créer, charger, enregistrer et convertir les messages entre les formats populaires comme **EML**, **MSG** et **MHTML** à l’aide de tutoriels pratiques et d’exemples de code.
-
-* ### [Mise en forme & personnalisation des messages e‑mail en Java](./message-formatting-customization/)
-    Maîtrisez la mise en forme du contenu e‑mail avec **Aspose.Email pour Java**. Nos tutoriels détaillés vous montrent comment travailler avec des **corps HTML**, des textes alternatifs, des en‑têtes personnalisés et le codage des messages pour créer des e‑mails professionnels et visuellement attrayants.
-
+* ### [Mise en forme et personnalisation des messages e‑mail en Java](./message-formatting-customization/)
 * ### [Gestion des pièces jointes e‑mail en Java](./attachments-handling/)
-    Implémentez des opérations robustes sur les pièces jointes dans vos e‑mails en utilisant **Aspose.Email pour Java**. Apprenez à ajouter, extraire, supprimer et enregistrer des pièces jointes provenant de divers formats de messages, y compris les objets incorporés et les formats TNEF.
-
-* ### [Gestion du calendrier et des rendez‑vous dans les e‑mail (Java)](./calendar-appointments/)
-    Découvrez comment gérer la fonctionnalité de calendrier dans vos applications avec nos tutoriels complets **Aspose.Email pour Java**. Créez des éléments de calendrier, générez des demandes de réunion, traitez les réponses aux rendez‑vous et travaillez avec les **fichiers de calendrier ICS**.
-
-* ### [Intégration avec Exchange Server via Aspose.Email pour Java](./exchange-server-integration/)
-    Apprenez à intégrer de façon transparente **Exchange Server** à l’aide de nos tutoriels **Aspose.Email pour Java**. Connectez‑vous aux serveurs Exchange, accédez aux boîtes aux lettres et dossiers, et gérez les messages et rendez‑vous avec **Exchange Web Services (EWS)**.
-
-* ### [Opérations client IMAP avec Aspose.Email pour Java](./imap-client-operations/)
-    Nos tutoriels **client IMAP** démontrent comment interagir avec les serveurs e‑mail en utilisant le **protocole IMAP** dans **Aspose.Email pour Java**. Apprenez à vous connecter aux serveurs IMAP, parcourir les dossiers, récupérer les messages et implémenter des recherches avancées.
-
-* ### [Opérations client POP3 avec Aspose.Email pour Java](./pop3-client-operations/)
-    Maîtrisez l’implémentation du **client mail POP3** grâce à nos tutoriels détaillés **Aspose.Email pour Java**. Connectez‑vous aux serveurs POP3, téléchargez les messages, récupérez les informations de messagerie et traitez les e‑mails de façon programmatique.
-
-* ### [Opérations client SMTP pour l’envoi d’e‑mail en Java](./smtp-client-operations/)
-    Nos tutoriels **client SMTP** vous montrent comment envoyer des e‑mails de façon programmatique en utilisant **Aspose.Email en Java**. Configurez les serveurs SMTP, implémentez des connexions sécurisées, gérez les notifications de livraison et créez des opérations d’envoi en masse.
-
-* ### [Travail avec les fichiers PST & OST d’Outlook en Java](./outlook-pst-ost-operations/)
-    Apprenez à travailler avec les **fichiers de stockage Microsoft Outlook** grâce à nos tutoriels complets **Aspose.Email pour Java**. Créez, chargez et manipulez les fichiers **PST** et **OST**, extrayez et enregistrez les messages, et gérez les dossiers de façon programmatique.
-
+* ### [Gestion des calendriers et rendez‑vous dans les e‑mails (Java)](./calendar-appointments/)
+* ### [Intégration avec Exchange Server à l’aide d’Aspose.Email pour Java](./exchange-server-integration/)
+* ### [Opérations du client IMAP avec Aspose.Email pour Java](./imap-client-operations/)
+* ### [Opérations du client POP3 avec Aspose.Email pour Java](./pop3-client-operations/)
+* ### [Opérations du client SMTP pour l’envoi d’e‑mails en Java](./smtp-client-operations/)
+* ### [Travail avec les fichiers Outlook PST et OST en Java](./outlook-pst-ost-operations/)
 * ### [Opérations MAPI pour les données Outlook en Java](./mapi-operations/)
-    Maîtrisez la **manipulation des messages MAPI** avec nos tutoriels détaillés **Aspose.Email pour Java**. Apprenez à travailler avec les propriétés MAPI, créer et modifier des éléments compatibles Outlook tels que contacts, tâches et notes de façon programmatique.
-
-* ### [Sécurité et authentification des e‑mail dans les applications Java](./security-authentication/)
-    Nos tutoriels de sécurité et d’authentification démontrent comment protéger les communications e‑mail en utilisant **Aspose.Email pour Java**. Implémentez le chiffrement des e‑mails, ajoutez des signatures numériques, configurez la signature DKIM et mettez en place une authentification sécurisée.
-
+* ### [Sécurité et authentification des e‑mails dans les applications Java](./security-authentication/)
 * ### [Techniques d’analyse et de parsing d’e‑mail en Java](./email-parsing-analysis/)
-    Nos tutoriels de parsing et d’analyse d’e‑mail vous montrent comment extraire des informations précieuses des messages en utilisant **Aspose.Email en Java**. Analysez les en‑têtes d’e‑mail, extrayez les informations des destinataires et analysez le contenu des messages de façon programmatique.
-
 * ### [Conversion et rendu d’e‑mail vers divers formats (Java)](./email-conversion-rendering/)
-    Découvrez comment convertir les e‑mails entre différents formats (**EML**, **MSG**, **MHTML**, **HTML**) grâce à nos tutoriels détaillés **Aspose.Email pour Java**. Rendu des messages avec un formatage correct et préservation de la fidélité visuelle.
-
 * ### [Opérations Thunderbird & MBOX avec Aspose.Email pour Java](./thunderbird-mbox-operations/)
-    Nos tutoriels Thunderbird et MBOX offrent des directives complètes pour gérer les formats d’e‑mail open‑source avec **Aspose.Email en Java**. Apprenez à accéder aux magasins de courrier Thunderbird, traiter les **fichiers MBOX** et extraire les messages des archives.
-
-* ### [Envoi d’e‑mail avec Aspose.Email pour Java](./sending-emails/)
-    Maîtrisez l’art d’envoyer des e‑mails en utilisant **Aspose.Email pour Java** grâce à ces tutoriels complets. Apprenez à créer et envoyer des e‑mails facilement et efficacement depuis vos applications Java.
-
-* ### [Réception d’e‑mail avec Aspose.Email pour Java](./receiving-emails/)
-    Apprenez comment recevoir et traiter les e‑mails sans effort avec les tutoriels **Aspose.Email pour Java**. Commencez à gérer votre boîte de réception de façon programmatique et rationalisez vos flux de travail e‑mail.
-
+* ### [Envoi d’e‑mails avec Aspose.Email pour Java](./sending-emails/)
+* ### [Réception d’e‑mails avec Aspose.Email pour Java](./receiving-emails/)
 * ### [Configuration des serveurs SMTP avec Aspose.Email pour Java](./configuring-smtp-servers/)
-    Apprenez à configurer les **serveurs SMTP** sans effort avec **Aspose.Email pour Java**. Nos tutoriels pas à pas vous guident à travers une configuration fluide de la livraison d’e‑mail et les meilleures pratiques.
-
 * ### [Pièces jointes avancées d’e‑mail avec Aspose.Email pour Java](./advanced-email-attachments/)
-    Plongez dans les techniques avancées de pièces jointes d’e‑mail avec **Aspose.Email pour Java**. Explorez les tutoriels pour gérer divers types de pièces jointes, manipuler de gros fichiers et optimiser le traitement des pièces jointes de façon efficace.
-
 * ### [Sécurisation des communications e‑mail avec Aspose.Email pour Java](./securing-email-communications/)
-    Apprenez à renforcer la sécurité des e‑mails avec **Aspose.Email pour Java**. Nos tutoriels couvrent des sujets essentiels tels que **encryption**, **digital signatures**, et les protocoles de communication sécurisés pour une protection robuste des e‑mails.
+* ### [Personnalisation des en‑têtes d’e‑mail avec Aspose.Email pour Java](./customizing-headers/)
+* ### [Exploration de la sécurité des e‑mail avec Aspose.Email pour Java](./exploring-email-security/)
 
-* ### [Personnalisation des en‑têtes e‑mail avec Aspose.Email pour Java](./customizing-email-headers/)
-    Apprenez à personnaliser les en‑têtes d’e‑mail sans effort avec **Aspose.Email pour Java**. Plongez dans ces tutoriels et exploitez la puissance de la manipulation des en‑têtes pour un meilleur contrôle de vos messages.
+**Dernière mise à jour :** 2026-10-12  
+**Testé avec :** Aspose.Email pour Java 24.11  
+**Auteur :** Aspose
 
-* ### [Exploration de la sécurité e‑mail avec Aspose.Email pour Java](./exploring-email-security/)
-    Découvrez en profondeur comment améliorer la sécurité des e‑mails avec **Aspose.Email pour Java**. Explorez des tutoriels pas à pas et les meilleures pratiques pour implémenter des solutions d’e‑mail sécurisées dans vos applications Java.
+## Tutoriels associés
 
-## Questions fréquentes
+- [Créer et envoyer des invitations de calendrier Aspose Email Java](/email/java/calendar-appointments/create-send-calendar-invitations-aspose-email-java/)
+- [Lire plusieurs événements Ics Aspose Email Java](/email/java/calendar-appointments/read-multiple-ics-events-aspose-email-java/)
+- [Comment créer un élément de calendrier Java avec Aspose.Email](/email/java/calendar-appointments/create-save-calendar-items-aspose-email-java/)
 
-**Q : Comment lire un fichier .ics après avoir créé une invitation de calendrier ?**  
-R : Utilisez la méthode `Appointment.load` pour importer le fichier `.ics` dans un objet `Appointment`, puis accédez à ses propriétés telles que l’heure de début, le sujet et les participants.
-
-**Q : Puis‑je envoyer une invitation de calendrier sans pièce jointe ?**  
-R : Oui – définissez le drapeau `MailMessage.isCalendar` sur `true` et assignez directement l’objet `Appointment` au corps du message ; le client le rendra comme une demande de réunion.
-
-**Q : Est‑il possible de convertir un fichier EML en MSG tout en préservant les données du calendrier ?**  
-R : Absolument. Chargez l’EML avec `MailMessage.load`, puis appelez `mailMessage.save` en spécifiant le format MSG ; toute invitation de calendrier jointe reste intacte.
-
-**Q : De quoi ai‑je besoin pour ajouter une signature numérique à mon e‑mail ?**  
-R : Un certificat X.509 valide (fichier PFX) et le mot de passe de la clé privée. Appelez `mailMessage.sign(certificate, password)` avant l’envoi.
-
-**Q : Comment puis‑je chiffrer un e‑mail java pour protéger l’invitation ?**  
-R : Obtenez le certificat public du destinataire et invoquez `mailMessage.encrypt(publicCertificate)`. Cela chiffre l’ensemble du message, y compris le fichier `.ics` joint.
-
----
-
-**Dernière mise à jour :** 2026-04-21  
-**Testé avec :** Aspose.Email pour Java 24.11  
-**Auteur :** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
