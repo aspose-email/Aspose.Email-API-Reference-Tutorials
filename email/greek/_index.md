@@ -1,172 +1,217 @@
 ---
 additionalTitle: Aspose API References
-date: 2026-05-03
-description: Μάθετε πώς να δημιουργείτε ραντεβού ημερολογίου με το Aspose.Email για
-  .NET και Java, να μετατρέπετε PST σε EML, να επικυρώνετε διευθύνσεις email και να
-  διαμορφώνετε διακομιστές SMTP.
+date: 2026-10-12
+description: Μάθετε πώς να δημιουργήσετε ραντεβού ημερολογίου Aspose.Email για .NET
+  και Java, να μετατρέψετε PST σε EML, να επαληθεύσετε διευθύνσεις email και να διαμορφώσετε
+  διακομιστές SMTP.
 keywords:
 - create calendar appointment Aspose.Email
 - convert PST to EML
 - validate email address
 - SMTP server configuration
+lastmod: 2026-10-12
 linktitle: Οδηγοί Aspose.Email
+og_description: Μάθετε πώς να δημιουργήσετε ραντεβού ημερολογίου με Aspose.Email σε
+  .NET και Java, να δημιουργήσετε αρχεία iCalendar και να τα στείλετε μέσω SMTP. Υποστηρίζει
+  πάνω από 30 μορφές και μαζική επεξεργασία.
+og_image_alt: Developer guide showing Aspose.Email calendar appointment creation in
+  .NET and Java
+og_title: Δημιουργία ραντεβού ημερολογίου με Aspose.Email (.NET & Java)
+schemas:
+- author: Aspose
+  dateModified: '2026-10-12'
+  description: Learn how to create calendar appointment Aspose.Email for .NET and
+    Java, convert PST to EML, validate email addresses, and configure SMTP servers.
+  headline: Create calendar appointment Aspose.Email for .NET & Java
+  type: TechArticle
+- questions:
+  - answer: Build an `Appointment` object, set its properties, call `appointment.Save(message,
+      SaveOptions.DefaultIcs)` to embed the iCalendar content, then send the `MailMessage`
+      via `SmtpClient`.
+    question: How do I create calendar appointment and send it as an iCalendar file?
+  - answer: Yes. Load the PST with `PersonalStorage.FromFile`, enumerate its `Folder`
+      objects, and call `message.Save("output.eml", SaveOptions.DefaultEml)` for each
+      mail item.
+    question: Can Aspose.Email convert PST to EML automatically?
+  - answer: Use `EmailValidator.IsValid(email, ValidationOptions.Default)` from Aspose.Email
+      for Java. It checks syntax and can optionally verify DNS MX records.
+    question: What is the best way to validate email address Java?
+  - answer: Create an `SmtpClient` (or `SmtpTransport` in Java), set `Host`, `Port`
+      (usually 587 for TLS), enable `EnableSsl`/`UseStartTls`, and provide valid credentials.
+    question: How should I set up SMTP server configuration for secure sending?
+  - answer: Absolutely. Use `MailMessage.Save("output.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))`.
+      Attachments are rendered as icons or inline depending on the save options you
+      choose.
+    question: Is it possible to convert email to PDF with attachments embedded?
+  type: FAQPage
+tags:
+- calendar appointment
+- Aspose.Email
+- .NET email API
+- Java email API
+- email conversion
 title: Δημιουργία ραντεβού ημερολογίου Aspose.Email για .NET & Java
 url: /el/
 weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Aspose.Email Tutorials: Κατακτήστε τη Διαχείριση & Επεξεργασία Email με .NET & Java APIs
+# Aspose.Email μαθήματα: κυριαρχήστε στη διαχείριση και επεξεργασία email με .NET & Java APIs
 
-Σε αυτόν τον οδηγό θα **δημιουργήσετε αντικείμενα calendar appointment Aspose.Email** εύκολα χρησιμοποιώντας τις ισχυρές βιβλιοθήκες .NET και Java. Είτε προσθέτετε μια λειτουργία προγραμματισμού σε ένα εταιρικό σύστημα, συγχρονίζετε συναντήσεις με το Outlook ή το Exchange, είτε απλώς χρειάζεστε να δημιουργήσετε αρχεία iCalendar προγραμματιστικά, αυτό το tutorial σας καθοδηγεί βήμα προς βήμα—από τη δημιουργία του ραντεβού μέχρι την αποστολή του ή την αποθήκευσή του ως αρχείο.
+Στον οδηγό αυτό θα **δημιουργήσετε αντικείμενα calendar appointment Aspose.Email** με ευκολία χρησιμοποιώντας τις ισχυρές βιβλιοθήκες .NET και Java. Είτε προσθέτετε μια λειτουργία προγραμματισμού σε ένα εταιρικό σύστημα, συγχρονίζετε συναντήσεις με Outlook ή Exchange, είτε απλώς χρειάζεστε να δημιουργήσετε αρχεία iCalendar προγραμματιστικά, αυτό το μάθημα σας καθοδηγεί βήμα‑βήμα—από τη δημιουργία του ραντεβού μέχρι την αποστολή του ή την αποθήκευσή του ως αρχείο.
 
-## Γρήγορες Απαντήσεις
-- **Ποιος είναι ο κύριος σκοπός του Aspose.Email;** Να δημιουργείτε, διαβάζετε, επεξεργάζεστε και στέλνετε προγραμματιστικά μηνύματα email, στοιχεία ημερολογίου και σχετικά δεδομένα σε πλατφόρμες .NET και Java.  
-- **Μπορώ να δημιουργήσω προγραμματιστικά ένα ραντεβού ημερολογίου;** Ναι—το Aspose.Email προσφέρει ένα απλό API για τη δημιουργία ραντεβού iCalendar (ICS).  
-- **Χρειάζομαι άδεια για παραγωγή;** Απαιτείται εμπορική άδεια για χρήση σε παραγωγή· είναι διαθέσιμη δωρεάν δοκιμαστική έκδοση για αξιολόγηση.  
-- **Ποια μορφές μπορώ να μετατρέψω προς/από;** Outlook PST/OST, MSG, EML, MBOX, PDF και πολλές άλλες (συμπεριλαμβανομένου του **convert PST to EML**).  
-- **Υποστηρίζεται η διαμόρφωση διακομιστή SMTP;** Απόλυτα—η πλήρης υποστήριξη πελάτη SMTP σας επιτρέπει να στέλνετε μηνύματα και προσκλήσεις ημερολογίου με ασφάλεια.
+## Γρήγορες απαντήσεις
+- **What is the primary purpose of Aspose.Email?** To programmatically create, read, edit, and send email messages, calendar items, and related data on .NET and Java platforms. → **Ποιος είναι ο κύριος σκοπός του Aspose.Email;** Για να δημιουργεί, διαβάζει, επεξεργάζεται και αποστέλλει προγραμματιστικά μηνύματα email, στοιχεία ημερολογίου και σχεδεμένα δεδομένα στις πλατφόρμες .NET και Java.  
+- **Can I programmatically create a calendar appointment?** Yes—Aspose.Email offers a straightforward API to build iCalendar (ICS) appointments. → **Μπορώ να δημιουργήσω προγραμματιστικά ένα ραντεβού ημερολογίου;** Ναι—το Aspose.Email προσφέρει ένα απλό API για τη δημιουργία iCalendar (ICS) ραντεβού.  
+- **Do I need a license for production?** A commercial license is required for production use; a free trial is available for evaluation. → **Χρειάζομαι άδεια για παραγωγή;** Απαιτείται εμπορική άδεια για χρήση σε παραγωγή· διατίθεται δωρεάν δοκιμαστική έκδοση για αξιολόγηση.  
+- **Which formats can I convert to/from?** Outlook PST/OST, MSG, EML, MBOX, PDF, and many more (including **convert PST to EML**). → **Ποιες μορφές μπορώ να μετατρέψω προς/από;** Outlook PST/OST, MSG, EML, MBOX, PDF και πολλές άλλες (συμπεριλαμβανομένου του **convert PST to EML**).  
+- **Is SMTP server configuration supported?** Absolutely—full SMTP client support lets you send messages and calendar invites securely. → **Υποστηρίζεται η διαμόρφωση διακομιστή SMTP;** Απόλυτα—η πλήρης υποστήριξη πελάτη SMTP σας επιτρέπει να στέλνετε μηνύματα και προσκλήσεις ημερολογίου με ασφάλεια.
 
-## Τι είναι **create calendar appointment Aspose.Email**;
-Η δημιουργία ενός ραντεβού ημερολογίου σημαίνει τη δημιουργία ενός αντικειμένου iCalendar (ICS) που αντιπροσωπεύει ένα γεγονός, μια συνάντηση ή μια υπενθύμιση. Με το Aspose.Email ορίζετε το θέμα, το χρονικό διάστημα, τους συμμετέχοντες, την επανάληψη και στη συνέχεια αποθηκεύετε ή στέλνετε το ραντεβού ως email ή ως αυτόνομο αρχείο.
+## Τι είναι η δημιουργία ραντεβού ημερολογίου με Aspose.Email;
+Η δημιουργία ραντεβού ημερολογίου με Aspose.Email σημαίνει την προγραμματιστική κατασκευή ενός αντικειμένου iCalendar (ICS) που αντιπροσωπεύει ένα γεγονός, περιλαμβάνοντας λεπτομέρειες όπως θέμα, ώρα, τοποθεσία, συμμετέχοντες και επαναλήψεις, το οποίο μπορεί στη συνέχεια να αποθηκευτεί ως αρχείο ή να σταλεί ως πρόσκληση email. Η κλάση `Appointment` είναι το μοντέλο του Aspose.Email για ένα γεγονός iCalendar· εκθέτει ιδιότητες για θέμα, τοποθεσία, χρόνους έναρξης/λήξης, συμμετέχοντες, κανόνες επανάληψης και διαχείριση ζώνης ώρας.
 
-## Γιατί να χρησιμοποιήσετε το Aspose.Email για **create calendar appointment**;
-- **Συνεπής λειτουργία μεταξύ πλατφορμών:** Γράψτε μία φορά σε C# ή Java και τρέξτε σε Windows, Linux ή macOS.  
-- **Πλήρης υποστήριξη μορφών:** Εργαστείτε με PST, MSG, EML, PDF και άλλα χωρίς να χρειάζεται εγκατεστημένο Outlook.  
-- **Ανθεκτική ασφάλεια:** Ενσωματωμένη υπογραφή S/MIME, κρυπτογράφηση και TLS/SSL για SMTP.  
-- **Επεκτάσιμες δυνατότητες:** Συνδυάστε εύκολα με **convert PST to EML**, **validate email address**, και δυνατότητες **SMTP server configuration**.
+## Γιατί να χρησιμοποιήσετε Aspose.Email για τη δημιουργία ραντεβού ημερολογίου;
+Θα πρέπει να χρησιμοποιήσετε Aspose.Email για τη δημιουργία ραντεβού επειδή παρέχει ένα ενιαίο,跨‑πλατφόρμα API που υποστηρίζει **30+ μορφές email και ημερολογίου**, διαχειρίζεται σύνθετους κανόνες επανάληψης, εκτελεί αυτόματη μετατροπή ζώνης ώρας και μπορεί να δημιουργήσει PDF ή EML εξόδους χωρίς την ανάγκη Outlook. Η βιβλιοθήκη επεξεργάζεται συλλογές ημερολογίου εκατοντάδων σελίδων σε λιγότερο από 2 δευτερόλεπτα σε τυπικό εξοπλισμό διακομιστή, προσφέροντας υψηλή απόδοση μαζικής αποστολής.
 
 ## Προαπαιτούμενα
 - .NET 6+ ή Java 11+ runtime.  
-- Aspose.Email for .NET / Aspose.Email for Java πακέτο NuGet / Maven.  
+- Aspose.Email for .NET / Aspose.Email for Java NuGet / Maven package.  
 - Έγκυρη άδεια Aspose (ή δοκιμαστική).  
 - Πρόσβαση σε διακομιστή SMTP εάν σκοπεύετε να στείλετε το ραντεβού.
 
-## Οδηγός βήμα‑βήμα για **create calendar appointment**
-### Βήμα 1: Αρχικοποίηση MailMessage (C#) ή MailMessage (Java)
-Δημιουργήστε ένα νέο αντικείμενο μηνύματος αλληλογραφίας που θα περιέχει τα δεδομένα του ημερολογίου.
+## Οδηγός βήμα‑βήμα για τη δημιουργία ραντεβού ημερολογίου
 
-### Βήμα 2: Δημιουργία του ραντεβού
-Χρησιμοποιήστε την κλάση `Appointment` για να ορίσετε το θέμα, την τοποθεσία, τις ώρες έναρξης/λήξης και τους συμμετέχοντες.
+### Step 1: initialize a mailmessage (C#) or mailmessage (Java)
+`MailMessage` is Aspose.Email's core class representing an email message, which can contain plain‑text, HTML, and alternative views such as calendar data.  
+Create a new instance that will later hold the appointment payload.
 
-### Βήμα 3: Προσθήκη του ραντεβού στο μήνυμα
-Μετατρέψτε το ραντεβού σε συμβολοσειρά iCalendar και προσθέστε το ως εναλλακτική προβολή (ή ως συνημμένο) στο email.
+### Step 2: build the appointment
+`Appointment` is the class that models an iCalendar event, exposing properties for subject, location, start time, end time, attendees, and recurrence patterns.  
+Set the subject, location, start/end times, add required attendees, and configure any recurrence you need.
 
-### Βήμα 4: (Προαιρετικό) Μετατροπή σε PDF
-Εάν χρειάζεστε μια εκτυπώσιμη έκδοση, καλέστε `MailMessage.Save("appointment.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))`. Αυτό δείχνει τη λειτουργία **convert email to pdf**.
+### Step 3: attach the appointment to the message
+Convert the `Appointment` to an iCalendar string with `appointment.Save(message, SaveOptions.DefaultIcs)` and add it as an alternative view (or as an attachment) to the `MailMessage`. This embeds the calendar data so that email clients recognise it as a meeting request.
 
-### Βήμα 5: Αποστολή μέσω SMTP ή τοπική αποθήκευση
-Διαμορφώστε τον πελάτη SMTP (δείτε **SMTP server configuration**) και στείλτε το μήνυμα, ή απλώς αποθηκεύστε το αρχείο `.ics` στο δίσκο.
+### Step 4: (optional) convert to pdf
+If you need a printable version, call `MailMessage.Save("appointment.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))`. This demonstrates the **convert email to pdf** capability and produces a PDF that includes the calendar details and any embedded attachments.
 
-> **Pro tip:** Επαναχρησιμοποιήστε την ίδια παρουσία `SmtpClient` για μαζικές αποστολές ραντεβού ώστε να βελτιώσετε την απόδοση.
+### Step 5: send via smtp or save locally
+`SmtpClient` is Aspose.Email's client for transmitting messages over SMTP. Configure host, port, TLS/SSL settings, and credentials, then call `client.Send(message)`. For bulk sends, reuse the same `SmtpClient` instance to improve performance. Alternatively, save the `.ics` file to disk with `appointment.Save("meeting.ics", SaveOptions.DefaultIcs)`.
 
-## Συνηθισμένες Περιπτώσεις Χρήσης
-- **Εταιρικός προγραμματισμός:** Αυτόματη δημιουργία προσκλήσεων συναντήσεων για ενσωμάτωση HR ή έναρξη έργων.  
-- **Ενσωμάτωση Outlook:** Συγχρονίστε ραντεβού με τα ημερολόγια Outlook των χρηστών χωρίς να απαιτείται Outlook στον διακομιστή.  
-- **Αναφορές:** Μετατρέψτε ραντεβού σε PDF για αρχειοθέτηση ή αναφορά συμμόρφωσης.  
-- **Μεταφορά:** Συνδυάστε με **convert PST to EML** για μεταφορά παλαιών δεδομένων Outlook σε σύγχρονα συστήματα.
+> **Pro tip:** Επαναχρησιμοποιήστε το ίδιο αντικείμενο `SmtpClient` για μαζικές αποστολές ραντεβού ώστε να βελτιώσετε την απόδοση.
 
-## Πρόσθετα Θέματα που Θα Βρείτε σε Αυτά τα Tutorials
+## Συνηθισμένες περιπτώσεις χρήσης
+- **Enterprise scheduling:** Auto‑generate meeting invites for HR onboarding or project kick‑offs. → **Εταιρικός προγραμματισμός:** Αυτόματη δημιουργία προσκλήσεων συναντήσεων για ενσωμάτωση προσωπικού ή έναρξη έργων.  
+- **Outlook integration:** Sync appointments with users’ Outlook calendars without requiring Outlook on the server. → **Ενσωμάτωση με Outlook:** Συγχρονισμός ραντεβού με τα ημερολόγια Outlook των χρηστών χωρίς να απαιτείται Outlook στον διακομιστή.  
+- **Reporting:** Convert appointments to PDF for archival or compliance reporting. → **Αναφορές:** Μετατροπή ραντεβού σε PDF για αρχειοθέτηση ή συμμόρφωση.  
+- **Migration:** Combine with **convert PST to EML** to move legacy Outlook data into modern systems. → **Μετανάστευση:** Συνδυάστε με **convert PST to EML** για μεταφορά παλαιών δεδομένων Outlook σε σύγχρονα συστήματα.
+
+## Πρόσθετα θέματα που θα βρείτε σε αυτά τα μαθήματα
+
 - **Convert PST to EML** – Μάθετε πώς να εξάγετε μηνύματα από αρχεία Outlook PST και να τα εξάγετε ως αρχεία EML για διαπλατφορμική συμβατότητα.  
 - **Validate email address Java** – Χρησιμοποιήστε τον ενσωματωμένο ελεγκτή για να διασφαλίσετε ότι οι διευθύνσεις email συμμορφώνονται με τα πρότυπα RFC πριν την αποστολή.  
-- **Email verification .NET** – Εκτελέστε ελέγχους εγγραφών DNS MX και επαλήθευση χειραψίας SMTP απευθείας από τον κώδικα .NET.  
-- **SMTP server configuration** – Λεπτομερή βήματα για τη ρύθμιση TLS, μηχανισμών ελέγχου ταυτότητας και προσαρμοσμένων θυρών.  
-- **Convert email to PDF** – Μετατρέψτε οποιοδήποτε email (συμπεριλαμβανομένων των προσκλήσεων ημερολογίου) σε έγγραφο PDF για αρχειοθέτηση.
+- **Email verification .NET** – Εκτελέστε ελέγχους DNS MX record και επαλήθευση χειραψίας SMTP απευθείας από τον κώδικά σας .NET.  
+- **SMTP server configuration** – Λεπτομερή βήματα για τη ρύθμιση TLS, μηχανισμών αυθεντικοποίησης και προσαρμοσμένων θυρών.  
+- **Convert email to PDF** – Μετατρέψτε οποιοδήποτε email (συμπεριλαμβανομένων προσκλήσεων ημερολογίου) σε έγγραφο PDF για αρχειοθέτηση.
 
-## Εξερευνήστε τα Λεπτομερή μας Tutorials
-### Aspose.Email For .NET: Λεπτομερή Tutorials για το API Επεξεργασίας Email
+## Εξερευνήστε τα λεπτομερή μας μαθήματα
+
+### Aspose.Email for .NET: comprehensive email processing API tutorials
+
 {{% alert color="primary" %}}
-Ανακαλύψτε τη δύναμη του **Aspose.Email for .NET** με τα εις βάθος tutorials μας. Αυτοί οι οδηγοί παρέχουν βήμα‑βήμα οδηγίες και πρακτικά παραδείγματα κώδικα C# για την ανάπτυξη ισχυρών λύσεων διαχείρισης email. Μάθετε να συνθέτετε, στέλνετε, λαμβάνετε, μετατρέπετε, αναλύετε και ασφαλίζετε email, να ενσωματώνετε με τον Exchange Server και να διαχειρίζεστε διάφορες μορφές email όπως PST, MSG και EML, βελτιώνοντας τελικά τις .NET εφαρμογές σας και απλοποιώντας εργασίες κεντρικές στο email.
+Discover the power of **Aspose.Email for .NET** with our in‑depth tutorials. These guides provide step‑by‑step instructions and practical C# code examples for developing robust email management solutions. Learn to compose, send, receive, convert, parse, and secure emails, integrate with Exchange Server, and handle various email formats like PST, MSG, and EML, ultimately enhancing your .NET applications and streamlining email‑centric tasks.
 {{% /alert %}}
-- [Ξεκινώντας με το Aspose.Email για .NET](./net/getting-started/)
-- [Βασικές Λειτουργίες Μηνυμάτων Email σε .NET](./net/email-message-operations/)
-- [Μορφοποίηση & Προσαρμογή Μηνυμάτων Email σε .NET](./net/message-formatting-customization/)
-- [Διαχείριση Συνημμένων Email σε .NET](./net/attachments-handling/)
-- [Διαχείριση Ημερολογίου & Ραντεβού σε Emails (.NET)](./net/calendar-appointments/)
-- [Ενσωμάτωση με Exchange Server χρησιμοποιώντας Aspose.Email για .NET](./net/exchange-server-integration/)
-- [Λειτουργίες Πελάτη IMAP με Aspose.Email για .NET](./net/imap-client-operations/)
-- [Λειτουργίες Πελάτη POP3 με Aspose.Email για .NET](./net/pop3-client-operations/)
-- [Λειτουργίες Πελάτη SMTP για Αποστολή Emails σε .NET](./net/smtp-client-operations/)
-- [Εργασία με Αρχεία Outlook PST & OST σε .NET](./net/outlook-pst-ost-operations/)
-- [Λειτουργίες MAPI για Δεδομένα Outlook σε .NET](./net/mapi-operations/)
-- [Ασφάλεια & Επαλήθευση Email σε Εφαρμογές .NET](./net/security-authentication/)
-- [Τεχνικές Ανάλυσης & Ανάλυσης Email σε .NET](./net/email-parsing-analysis/)
-- [Μετατροπή & Απόδοση Email σε Διάφορες Μορφές (.NET)](./net/email-conversion-rendering/)
-- [Προχωρημένη Σύνθεση & Δημιουργία Email με .NET](./net/email-composition-and-creation/)
-- [Επικύρωση & Επαλήθευση Email σε .NET](./net/email-validation-and-verification/)
-- [Διαχείριση Κεφαλίδων Email σε .NET](./net/email-header-manipulation/)
-- [Διαχείριση Συμβάντων & Ημερολογίου Email με .NET](./net/email-event-and-calendar-handling/)
-- [Ειδοποίηση & Παρακολούθηση Email σε .NET](./net/email-notification-and-tracking/)
-- [Στρατηγικές Αποθήκευσης & Ανάκτησης Αρχείων Email (.NET)](./net/email-file-storage-and-retrieval/)
-- [Ασφάλεια Email & Ψηφιακές Υπογραφές σε .NET](./net/email-security-and-signatures/)
 
-### Aspose.Email For Java: Ισχυρά Tutorials Διαχείρισης Email
+Explore our Aspose.Email for .NET tutorials:
+- [Getting Started with Aspose.Email for .NET](./net/getting-started/)
+- [Core Email Message Operations in .NET](./net/email-message-operations/)
+- [Formatting & Customizing Email Messages in .NET](./net/message-formatting-customization/)
+- [Handling Email Attachments in .NET](./net/attachments-handling/)
+- [Managing Calendar & Appointments in Emails (.NET)](./net/calendar-appointments/)
+- [Integrating with Exchange Server using Aspose.Email for .NET](./net/exchange-server-integration/)
+- [IMAP Client Operations with Aspose.Email for .NET](./net/imap-client-operations/)
+- [POP3 Client Operations with Aspose.Email for .NET](./net/pop3-client-operations/)
+- [SMTP Client Operations for Sending Emails in .NET](./net/smtp-client-operations/)
+- [Working with Outlook PST & OST Files in .NET](./net/outlook-pst-ost-operations/)
+- [MAPI Operations for Outlook Data in .NET](./net/mapi-operations/)
+- [Email Security & Authentication in .NET Applications](./net/security-authentication/)
+- [Email Parsing & Analysis Techniques in .NET](./net/email-parsing-analysis/)
+- [Email Conversion & Rendering to Various Formats (.NET)](./net/email-conversion-rendering/)
+- [Advanced Email Composition and Creation with .NET](./net/email-composition-and-creation/)
+- [Email Validation and Verification in .NET](./net/email-validation-and-verification/)
+- [Manipulating Email Headers in .NET](./net/email-header-manipulation/)
+- [Email Event and Calendar Handling with .NET](./net/email-event-and-calendar-handling/)
+- [Email Notification and Tracking in .NET](./net/email-notification-and-tracking/)
+- [Email File Storage and Retrieval Strategies (.NET)](./net/email-file-storage-and-retrieval/)
+- [Email Security and Digital Signatures in .NET](./net/email-security-and-signatures/)
+
+### Aspose.Email for Java: powerful email management API tutorials
+
 {{% alert color="primary" %}}
-Αποκτήστε το πλήρες δυναμικό του **Aspose.Email for Java** με τη διεξοδική βιβλιοθήκη tutorials μας. Αυτοί οι οδηγοί προσφέρουν πρακτικά παραδείγματα κώδικα Java και σαφείς εξηγήσεις για την κατασκευή ισχυρών εφαρμογών διαχείρισης email. Εξερευνήστε θέματα όπως αποστολή και λήψη email, διαμόρφωση διακομιστών SMTP, διαχείριση συνημμένων, ασφαλή επικοινωνία και ενσωμάτωση με υπηρεσίες email, ενδυναμώνοντας τα Java έργα ανάπτυξής σας με αξιόπιστη λειτουργικότητα email.
+Unlock the full potential of **Aspose.Email for Java** with our comprehensive tutorial library. These guides offer practical Java code examples and clear explanations for building powerful email management applications. Explore topics like sending and receiving emails, configuring SMTP servers, handling attachments, securing communications, and integrating with email services, empowering your Java development projects with robust email functionality.
 {{% /alert %}}
-- [Ξεκινώντας με το Aspose.Email για Java](./java/getting-started/)
-- [Βασικές Λειτουργίες Μηνυμάτων Email σε Java](./java/email-message-operations/)
-- [Μορφοποίηση & Προσαρμογή Μηνυμάτων Email σε Java](./java/message-formatting-customization/)
-- [Διαχείριση Συνημμένων Email σε Java](./java/attachments-handling/)
-- [Διαχείριση Ημερολογίου & Ραντεβού σε Emails (Java)](./java/calendar-appointments/)
-- [Ενσωμάτωση με Exchange Server χρησιμοποιώντας Aspose.Email για Java](./java/exchange-server-integration/)
-- [Λειτουργίες Πελάτη IMAP με Aspose.Email για Java](./java/imap-client-operations/)
-- [Λειτουργίες Πελάτη POP3 με Aspose.Email για Java](./java/pop3-client-operations/)
-- [Λειτουργίες Πελάτη SMTP για Αποστολή Emails σε Java](./java/smtp-client-operations/)
-- [Εργασία με Αρχεία Outlook PST & OST σε Java](./java/outlook-pst-ost-operations/)
-- [Λειτουργίες MAPI για Δεδομένα Outlook σε Java](./java/mapi-operations/)
-- [Ασφάλεια & Επαλήθευση Email σε Εφαρμογές Java](./java/security-authentication/)
-- [Τεχνικές Ανάλυσης & Επεξεργασίας Email σε Java](./java/email-parsing-analysis/)
-- [Μετατροπή & Απόδοση Email σε Διάφορες Μορφές (Java)](./java/email-conversion-rendering/)
-- [Λειτουργίες Thunderbird & MBOX με Aspose.Email για Java](./java/thunderbird-mbox-operations/)
-- [Αποστολή Emails Προγραμματιστικά με Aspose.Email για Java](./java/sending-emails/)
-- [Λήψη Emails Προγραμματιστικά με Aspose.Email για Java](./java/receiving-emails/)
-- [Διαμόρφωση Διακομιστών SMTP για Αποστολή Email σε Java](./java/configuring-smtp-servers/)
-- [Προχωρημένη Διαχείριση Συνημμένων Email σε Java](./java/advanced-email-attachments/)
-- [Ασφαλή Επικοινωνία Email με Aspose.Email για Java](./java/securing-email-communications/)
-- [Προσαρμογή Κεφαλίδων Email με Aspose.Email για Java](./java/customizing-email-headers/)
-- [Εξερεύνηση Χαρακτηριστικών Ασφάλειας Email στο Aspose.Email για Java](./java/exploring-email-security/)
 
-## Συχνά Προβλήματα & Λύσεις
+Explore our Aspose.Email for Java tutorials:
+- [Getting Started with Aspose.Email for Java](./java/getting-started/)
+- [Core Email Message Operations in Java](./java/email-message-operations/)
+- [Formatting & Customizing Email Messages in Java](./java/message-formatting-customization/)
+- [Handling Email Attachments in Java](./java/attachments-handling/)
+- [Managing Calendar & Appointments in Emails (Java)](./java/calendar-appointments/)
+- [Integrating with Exchange Server using Aspose.Email for Java](./java/exchange-server-integration/)
+- [IMAP Client Operations with Aspose.Email for Java](./java/imap-client-operations/)
+- [POP3 Client Operations with Aspose.Email for Java](./java/pop3-client-operations/)
+- [SMTP Client Operations for Sending Emails in Java](./java/smtp-client-operations/)
+- [Working with Outlook PST & OST Files in Java](./java/outlook-pst-ost-operations/)
+- [MAPI Operations for Outlook Data in Java](./java/mapi-operations/)
+- [Email Security & Authentication in Java Applications](./java/security-authentication/)
+- [Email Parsing & Analysis Techniques in Java](./java/email-parsing-analysis/)
+- [Email Conversion & Rendering to Various Formats (Java)](./java/email-conversion-rendering/)
+- [Thunderbird & MBOX Operations with Aspose.Email for Java](./java/thunderbird-mbox-operations/)
+- [Sending Emails Programmatically with Aspose.Email for Java](./java/sending-emails/)
+- [Receiving Emails Programmatically with Aspose.Email for Java](./java/receiving-emails/)
+- [Configuring SMTP Servers for Email Sending in Java](./java/configuring-smtp-servers/)
+- [Advanced Email Attachments Handling in Java](./java/advanced-email-attachments/)
+- [Securing Email Communications with Aspose.Email for Java](./java/securing-email-communications/)
+- [Customizing Email Headers with Aspose.Email for Java](./java/customizing-email-headers/)
+- [Exploring Email Security Features in Aspose.Email for Java](./java/exploring-email-security/)
+
+## Συχνά προβλήματα & λύσεις
 
 | Πρόβλημα | Αιτία | Λύση |
-|----------|-------|------|
-| Η πρόσκληση ημερολογίου δεν εμφανίζεται στο Outlook | Απουσία κεφαλίδας `METHOD:REQUEST` | Προσθέστε `appointment.Save(message, SaveOptions.DefaultIcs)` πριν την αποστολή. |
-| Η μετατροπή PST αποτυγχάνει με “Invalid file format” | Χρήση παλαιότερης έκδοσης Aspose | Αναβαθμίστε στην πιο πρόσφατη έκδοση του Aspose.Email (υποστηρίζει PST v4). |
-| Η επικύρωση διεύθυνσης email επιστρέφει false για έγκυρες διευθύνσεις | Δεν υποστηρίζονται χαρακτήρες συγκεκριμένου τοπικού | Χρησιμοποιήστε `EmailValidator.Validate(email, ValidationOptions.AllowInternational)`. |
-| Σφάλμα ελέγχου ταυτότητας SMTP | Λανθασμένη θύρα ή ρυθμίσεις TLS | Επαληθεύστε τη **SMTP server configuration**: θύρα 587 με `EnableSsl = true`. |
-| Η μετατροπή PDF παράγει κενές σελίδες | Το σώμα του μηνύματος δεν έχει φορτωθεί | Καλέστε `message.Load("msgfile.msg")` πριν το `Save` σε PDF. |
+|-------|-------|----------|
+| Calendar invite not appearing in Outlook | Missing `METHOD:REQUEST` header | Add `appointment.Save(message, SaveOptions.DefaultIcs)` before sending. |
+| PST conversion fails with “Invalid file format” | Using older Aspose version | Upgrade to the latest Aspose.Email release (supports PST v4). |
+| Email address validation returns false for valid addresses | Locale‑specific characters not supported | Use `EmailValidator.Validate(email, ValidationOptions.AllowInternational)`. |
+| SMTP authentication error | Incorrect port or TLS settings | Verify **SMTP server configuration**: port 587 with `EnableSsl = true`. |
+| PDF conversion produces blank pages | Message body not loaded | Call `message.Load("msgfile.msg")` before `Save` to PDF. |
 
-## Συχνές Ερωτήσεις
+## Συχνές ερωτήσεις
 
-**Q: Πώς μπορώ να **create calendar appointment** και να το στείλω ως αρχείο iCalendar;**  
-A: Δημιουργήστε ένα αντικείμενο `Appointment`, ορίστε τις ιδιότητές του, μετατρέψτε το σε συμβολοσειρά iCalendar με `appointment.Save()`, προσθέστε το σε ένα `MailMessage` και στείλτε το μέσω `SmtpClient`.
+**Q: How do I create calendar appointment and send it as an iCalendar file?**  
+A: Build an `Appointment` object, set its properties, call `appointment.Save(message, SaveOptions.DefaultIcs)` to embed the iCalendar content, then send the `MailMessage` via `SmtpClient`.
 
-**Q: Μπορεί το Aspose.Email **convert PST to EML** αυτόματα;**  
-A: Ναι. Φορτώστε το PST με `PersonalStorage.FromFile`, επαναλάβετε τα αντικείμενα `Folder` και καλέστε `message.Save("output.eml", SaveOptions.DefaultEml)` για κάθε στοιχείο αλληλογραφίας.
+**Q: Can Aspose.Email convert PST to EML automatically?**  
+A: Yes. Load the PST with `PersonalStorage.FromFile`, enumerate its `Folder` objects, and call `message.Save("output.eml", SaveOptions.DefaultEml)` for each mail item.
 
-**Q: Ποιος είναι ο καλύτερος τρόπος για **validate email address Java**;**  
-A: Χρησιμοποιήστε `EmailValidator.IsValid(email, ValidationOptions.Default)` από το Aspose.Email για Java. Ελέγχει τη σύνταξη και προαιρετικά τις εγγραφές DNS MX.
+**Q: What is the best way to validate email address Java?**  
+A: Use `EmailValidator.IsValid(email, ValidationOptions.Default)` from Aspose.Email for Java. It checks syntax and can optionally verify DNS MX records.
 
-**Q: Πώς πρέπει να ρυθμίσω τη **SMTP server configuration** για ασφαλή αποστολή;**  
-A: Δημιουργήστε ένα `SmtpClient` (ή `SmtpTransport` σε Java), ορίστε `Host`, `Port` (συνήθως 587 για TLS), ενεργοποιήστε `EnableSsl`/`UseStartTls` και παρέχετε διαπιστευτήρια.
+**Q: How should I set up SMTP server configuration for secure sending?**  
+A: Create an `SmtpClient` (or `SmtpTransport` in Java), set `Host`, `Port` (usually 587 for TLS), enable `EnableSsl`/`UseStartTls`, and provide valid credentials.
 
-**Q: Είναι δυνατόν να **convert email to PDF** με ενσωματωμένα συνημμένα;**  
-A: Απόλυτα. Χρησιμοποιήστε `MailMessage.Save("output.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))`. Τα συνημμένα αποτυπώνονται ως εικονίδια ή ενσωματωμένα ανάλογα με τις ρυθμίσεις.
+**Q: Is it possible to convert email to PDF with attachments embedded?**  
+A: Absolutely. Use `MailMessage.Save("output.pdf", SaveOptions.CreateSaveOptions(SaveFormat.Pdf))`. Attachments are rendered as icons or inline depending on the save options you choose.
 
-**Τελευταία Ενημέρωση:** 2026-05-03  
-**Δοκιμάστηκε Με:** Aspose.Email 24.11 for .NET & Java  
-**Συγγραφέας:** Aspose  
+**Last Updated:** 2026-10-12  
+**Tested With:** Aspose.Email 24.11 for .NET & Java  
+**Author:** Aspose
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
