@@ -1,53 +1,90 @@
 ---
-date: 2026-04-21
-description: Dowiedz się, jak osadzić obraz w wiadomości HTML przy użyciu Aspose.Email
-  dla Javy, wysłać wiadomość HTML z osadzonym obrazem oraz zmniejszyć rozmiar załącznika
-  e‑mail.
+date: 2026-10-12
+description: Dowiedz się, jak osadzać obrazy w wiadomościach HTML przy użyciu Aspose.Email
+  for Java, wysyłać e‑mail w formacie HTML z osadzonymi obrazami oraz zmniejszyć rozmiar
+  załączników e‑mail.
 keywords:
-- embed image html email
-- send html email java
-- create email with image
 - reduce email attachment size
-- embed multiple images email
+- create email with image
+- optimize image for email
+- send html email java
+- embed cid image email
+lastmod: 2026-10-12
 linktitle: Jak dołączyć obraz do e‑maila przy użyciu Aspsoe.Email
+og_description: Zmniejsz rozmiar załączników e‑mail i osadzaj obrazy w wiadomościach
+  HTML przy użyciu Aspose.Email for Java. Postępuj zgodnie z tym przewodnikiem krok
+  po kroku, aby efektywnie wysyłać bogate wiadomości HTML.
+og_image_alt: 'Developer guide: embed images in HTML email while reducing attachment
+  size with Aspose.Email for Java'
+og_title: Zmniejsz rozmiar załączników e‑mail przy użyciu Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-10-12'
+  description: Learn how to embed images in HTML email using Aspose.Email for Java,
+    send HTML email with embedded images, and reduce email attachment size.
+  headline: Reduce email attachment size with Aspose.Email for Java
+  type: TechArticle
+- questions:
+  - answer: Repeat the attachment and `LinkedResource` steps for each image, assigning
+      a unique Content‑ID (e.g., `image2`, `image3`) and referencing them in the HTML.
+    question: How can I embed multiple images in a single email?
+  - answer: Plain‑text format does not support embedded images. You can only include
+      URLs that recipients can click to view the image online.
+    question: Can I embed images in plain‑text emails?
+  - answer: JPEG, PNG, and GIF are widely supported. Use JPEG for photographs and
+      PNG for graphics with transparency.
+    question: What image formats are safe for email embedding?
+  - answer: Yes—add `width`/`height` attributes to the `<img>` tag, e.g., `<img src='cid:image1'
+      width='400' height='300'>`.
+    question: Is there a way to control image dimensions in the email?
+  - answer: While there’s no strict SMTP limit, most mail providers recommend keeping
+      total email size under 5 MB. Optimizing image size helps stay well within this
+      limit.
+    question: Are there size limits for embedded images?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Jak osadzić obraz w e‑mailu HTML przy użyciu Aspose.Email dla Javy
+tags:
+- email attachment size
+- Aspose.Email
+- Java email API
+- embed images email
+- HTML email
+title: Zmniejsz rozmiar załączników e‑mail przy użyciu Aspose.Email for Java
 url: /pl/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Jak osadzić obraz w wiadomości HTML e‑mail przy użyciu Aspose.Email dla Javy
+# Zmniejsz rozmiar załącznika e‑mail przy użyciu Aspose.Email dla Javy
 
-W nowoczesnej komunikacji e‑mailowej, **embed image html email** ma większe znaczenie niż kiedykolwiek — obrazy zwiększają zaangażowanie i pomagają natychmiast przekazać Twoją wiadomość. Ten samouczek przeprowadzi Cię przez cały proces dołączania obrazu, osadzania go w treści HTML oraz zapewnienia, że wiadomość wygląda świetnie we wszystkich klientach poczty. Omówimy także najlepsze praktyki dotyczące **send html email java**, tworzenia e‑maili z obrazem oraz **reduce email attachment size**.
+Osadzanie obrazów bezpośrednio w wiadomości e‑mail HTML nie tylko sprawia, że wiadomość wygląda elegancko, ale także **zmniejsza rozmiar załącznika e‑mail**, ponieważ obraz jest częścią ciała MIME, a nie osobnym plikiem. W tym samouczku dowiesz się, jak utworzyć e‑mail z obrazem, osadzić obraz przy użyciu odwołania CID oraz zastosować wskazówki najlepszych praktyk, aby **optymalizować obraz pod e‑mail**, tak aby końcowa wiadomość była lekka. Zobaczysz również, jak wysłać e‑mail HTML w stylu Javy przy użyciu Aspose.Email i utrzymać całkowitą wielkość danych znacznie poniżej typowych limitów skrzynki pocztowej.
 
 ## Szybkie odpowiedzi
-- **Jaka jest podstawowa klasa do tworzenia e‑maila?** `MailMessage`
-- **Która klasa pozwala osadzić obraz w treści HTML?** `LinkedResource`
-- **Czy potrzebna jest licencja do wysyłania e‑maili w środowisku produkcyjnym?** Tak, wymagana jest komercyjna licencja Aspose.Email.
-- **Jak mogę zmniejszyć rozmiar załącznika?** Optymalizuj obraz przed dodaniem (np. zmień rozmiar/kompresuj).
-- **Czy mogę wysłać wiele obrazów?** Oczywiście — wystarczy dodać unikalny Content‑ID dla każdego.
+- **Jaka klasa tworzy wiadomość e‑mail?** `MailMessage` – podstawowy kontener dla tematu, odbiorców i treści.  
+- **Który obiekt pozwala osadzić obraz w treści HTML?** `LinkedResource` – otacza strumień obrazu i przypisuje Content‑ID.  
+- **Czy potrzebna jest licencja do użytku produkcyjnego?** Tak – wymagana jest komercyjna licencja Aspose.Email, aby usunąć ograniczenia wersji próbnej.  
+- **Jak mogę zmniejszyć rozmiar załącznika?** Optymalizuj obraz (zmień rozmiar do ≤600 px, skompresuj poniżej 100 KB) przed dodaniem.  
+- **Czy mogę osadzić kilka obrazów?** Oczywiście – dodaj unikalny Content‑ID dla każdego obrazu i odwołuj się do nich przy użyciu URI `cid:`.
 
-## Co to jest embed image html email?
-Dołączanie obrazu oznacza dodanie pliku do struktury MIME wiadomości, aby odbiorca mógł go wyświetlić. Gdy osadzasz obraz przy użyciu Content‑ID (CID), obraz pojawia się bezpośrednio w treści HTML zamiast jako osobny załącznik, co daje wrażenie obrazu wstawionego inline.
+## Co to jest osadzony obraz w e‑mailu HTML?
+Osadzenie obrazu oznacza wstawienie go do struktury MIME wiadomości e‑mail, tak aby odbiorca widział go w treści. Obraz jest odwoływany za pomocą **Content‑ID (CID)**, które znacznik HTML `<img>` ładuje bezpośrednio z ciała wiadomości, eliminując osobne załączniki i zmniejszając ogólny rozmiar.
 
 ## Dlaczego wysyłać e‑mail HTML z osadzonym obrazem?
-Osadzanie obrazów w HTML pozwala tworzyć bogatsze newslettery, ogłoszenia produktowe lub zgłoszenia wsparcia. Odbiorcy widzą grafikę od razu, bez konieczności pobierania załącznika, co zwiększa wskaźniki otwarć i ogólne zaangażowanie.
+Osadzanie obrazów w HTML pozwala tworzyć bardziej atrakcyjne newslettery, ogłoszenia produktów lub zgłoszenia wsparcia. Odbiorcy widzą grafikę od razu, bez konieczności pobierania załącznika, co zwiększa wskaźniki otwarć i ogólne zaangażowanie. Większość klientów e‑mail obsługuje obrazy CID, a osadzanie eliminuje dodatkowe kroki pobierania, co prowadzi do szybszego renderowania i mniejszego zużycia pasma.
 
 ## Wymagania wstępne
-- **Aspose.Email for Java** – pobierz ze strony oficjalnej: [Aspose.Email Java download](https://releases.aspose.com/email/java/).
-- Ważny **serwer SMTP** (np. Gmail, Outlook lub własny serwer pocztowy).
-- Plik obrazu, który chcesz osadzić (JPEG, PNG, GIF itp.).
+- **Aspose.Email for Java** – pobierz ze strony oficjalnej: [Aspose.Email Java download](https://releases.aspose.com/email/java/).  
+- Dostęp do serwera SMTP (Gmail, Outlook lub własny serwer przekaźnikowy).  
+- Plik obrazu (JPEG, PNG lub GIF), który chcesz osadzić.
 
-> **Pro tip:** *Optymalizuj rozmiar obrazu pod e‑mail* zmniejszając szerokość do ≤600 px i kompresując do ≤100 KB. To skraca czas ładowania i zapobiega przekroczeniu limitów rozmiaru skrzynki.
+> **Pro tip:** *Optymalizuj rozmiar obrazu pod e‑mail*, zmniejszając szerokość do ≤600 px i kompresując do ≤100 KB. To skraca czas ładowania i zapobiega przekroczeniu limitów rozmiaru skrzynki pocztowej.
 
 ## Tworzenie wiadomości e‑mail
-Najpierw zaimportuj wymagane przestrzenie nazw i utwórz instancję `MailMessage`. Ten obiekt będzie przechowywać temat, odbiorców i treść Twojego e‑maila.
+`MailMessage` jest obiektem najwyższego poziomu w Aspose.Email, który reprezentuje pojedynczy e‑mail. Przechowuje temat, nadawcę, odbiorców oraz treść (tekstową lub HTML).  
+Klasa `MailMessage` jest centralnym modelem do budowania i wysyłania wiadomości e‑mail w Aspose.Email dla Javy.
 
 ```java
 // Import necessary libraries
@@ -58,7 +95,8 @@ MailMessage message = new MailMessage();
 ```
 
 ## Dodawanie obrazu jako załącznika
-Następnie wskaż plik obrazu na dysku i dodaj go do kolekcji załączników wiadomości. Załącznik będzie później odwoływany za pomocą Content‑ID.
+`LinkedResource` reprezentuje część MIME, którą można osadzić w treści e‑maila.  
+Przed osadzeniem dodajesz plik obrazu do kolekcji załączników wiadomości. Załącznik staje się strumieniem, do którego `LinkedResource` może później odwołać się.
 
 ```java
 // Specify the path to the image file
@@ -69,8 +107,9 @@ Attachment attachment = new Attachment(imagePath);
 message.getAttachments().add(attachment);
 ```
 
-## Osadzanie dołączonego obrazu w HTML
-Aby wyświetlić obraz w treści e‑maila, utwórz `LinkedResource`, który otacza strumień załącznika. Przypisz unikalny Content‑ID (np. `image1`) i odwołaj się do niego w HTML przy użyciu schematu URI `cid:`.
+## Osadzanie załączonego obrazu w HTML
+`LinkedResource` służy do powiązania strumienia obrazu z Content‑ID w celu wyświetlenia go w treści.  
+Aby wyświetlić obraz w treści HTML, utwórz `LinkedResource`, który wskazuje na załączony obraz i ustaw jego Content‑ID (np. `image1`). Następnie odwołaj się do tego ID w HTML, używając schematu URI `cid:`.
 
 ```java
 // Create a LinkedResource for the attached image
@@ -83,10 +122,12 @@ message.setHtmlBody(htmlBody);
 message.getLinkedResources().addItem(linkedImage);
 ```
 
-> **Dlaczego używać `LinkedResource`?** Informuje klienta pocztowego, że obraz jest częścią treści wiadomości, a nie osobnym plikiem do pobrania, co jest kluczowe w scenariuszach **send HTML email with embedded image**.
+> **Dlaczego używać `LinkedResource`?** Sygnał dla klienta, że obraz jest częścią ciała wiadomości, co jest niezbędne w scenariuszach **send html email java**, które wymagają grafik w treści.
 
-## Wysyłanie e‑maila
-Na koniec skonfiguruj `SmtpClient` z danymi swojego serwera i wyślij wiadomość. Upewnij się, że poświadczenia SMTP mają uprawnienia do wysyłania w imieniu adresu nadawcy.
+## Wysyłanie wiadomości e‑mail
+`SmtpClient` jest klasą obsługującą komunikację SMTP w celu wysyłania wiadomości.  
+`SmtpClient` zajmuje się rzeczywistym przesyłaniem. Skonfiguruj go z hostem serwera, portem i danymi uwierzytelniającymi, a następnie wywołaj `send`, aby wysłać `MailMessage`.  
+`SmtpClient` to klasa transportowa SMTP w Aspose.Email, która bezpiecznie wysyła skonstruowany `MailMessage` do docelowego serwera pocztowego.
 
 ```java
 // Initialize the SmtpClient
@@ -96,47 +137,56 @@ SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "yo
 client.send(message);
 ```
 
-Gdy odbiorca otworzy e‑mail, treść HTML wyświetli obraz inline, zapewniając płynne wrażenia wizualne.
+Kiedy odbiorca otwiera e‑mail, treść HTML wyświetla obraz w linii, zapewniając płynne wrażenia wizualne przy jednoczesnym utrzymaniu małej wielkości ładunku.
 
 ## Jak osadzić wiele obrazów w e‑mailu
-Jeśli potrzebujesz więcej niż jednego obrazu, powtórz kroki dołączania i `LinkedResource` dla każdego pliku. Przypisz różne Content‑ID, takie jak `image2`, `image3`, i odwołuj się do nich w HTML (`src='cid:image2'` itp.). Takie podejście łatwo skaluje się w newsletterach z wieloma grafikami.
+`LinkedResource` reprezentuje część MIME, którą można osadzić w treści e‑maila.  
+Dodaj każdy obraz jako osobny załącznik, utwórz odrębny `LinkedResource` dla każdego i przypisz unikalny Content‑ID, np. `image2`, `image3` itd. Odwołuj się do nich w HTML za pomocą `src='cid:image2'`. Ten wzorzec skaluje się do newsletterów z dziesiątkami grafik bez zwiększania rozmiaru wiadomości.
 
-## Porady, jak zmniejszyć rozmiar załącznika e‑mail
-- **Resize** obraz do dokładnych wymiarów potrzebnych w e‑mailu (zwykle ≤600 px szerokości).  
-- **Compress** przy użyciu narzędzi takich jak ImageMagick lub kompresorów online, aby plik miał mniej niż 100 KB.  
-- **Choose the right format**: JPEG dla zdjęć, PNG dla grafik z przezroczystością.  
-- **Remove EXIF metadata** jeśli nie jest wymagane.
+## Wskazówki, jak zmniejszyć rozmiar załącznika e‑mail
+- **Zmień rozmiar** obrazu do dokładnych potrzebnych wymiarów (zazwyczaj ≤600 px szerokości).  
+- **Kompresuj** przy użyciu narzędzi takich jak ImageMagick lub kompresorów online, aby plik był poniżej 100 KB.  
+- **Wybierz odpowiedni format**: JPEG dla zdjęć, PNG dla grafik z przezroczystością.  
+- **Usuń metadane EXIF**, jeśli nie są potrzebne.  
+- **Używaj progresywnego JPEG**, aby przyspieszyć renderowanie progresywne w obsługiwanych klientach.
 
 ## Typowe problemy i rozwiązywanie
-| Problem | Przyczyna | Rozwiązanie |
-|---------|-----------|-------------|
-| Obraz nie wyświetla się | Nieprawidłowy Content‑ID lub brak `LinkedResource` | Zweryfikuj, że `linkedImage.setContentId("image1")` odpowiada `src='cid:image1'` w HTML. |
-| Duży rozmiar e‑maila | Nieoptymalny obraz (wysoka rozdzielczość) | Zmniejsz/kompresuj obraz przed dołączeniem; celuj w ≤100 KB. |
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| Obraz nie wyświetla się | Nieprawidłowy Content‑ID lub brak `LinkedResource` | Sprawdź, czy `linkedImage.setContentId("image1")` odpowiada `src='cid:image1'` w HTML. |
+| Duży rozmiar e‑maila | Niezoptymalizowany obraz (wysoka rozdzielczość) | Zmień rozmiar/skompresuj obraz przed dołączeniem; celuj w ≤100 KB. |
 | E‑mail oznaczony jako spam | Brak odpowiednich nagłówków MIME | Upewnij się, że `SmtpClient` używa TLS/STARTTLS i ustaw wyraźny adres `From`. |
-| Obraz inline pojawia się jako załącznik | Klient nie obsługuje CID | Podaj alternatywny URL w tagu `<img>` (`src='cid:image1' alt='Image'`). |
+| Obraz w treści pojawia się jako załącznik | Klient nie obsługuje CID | Podaj alternatywny URL w znaczniku `<img>` (`src='cid:image1' alt='Image'`). |
 
 ## Najczęściej zadawane pytania
 
-**Q: Jak mogę osadzić wiele obrazów w jednej wiadomości?**  
-A: Powtórz kroki dołączania i `LinkedResource` dla każdego obrazu, przypisując unikalny Content‑ID (np. `image2`, `image3`) i odwołując się do nich w HTML.
+**Q: Jak mogę osadzić wiele obrazów w jednej wiadomości e‑mail?**  
+A: Powtórz kroki dodawania załącznika i `LinkedResource` dla każdego obrazu, przypisując unikalny Content‑ID (np. `image2`, `image3`) i odwołując się do nich w HTML.
 
 **Q: Czy mogę osadzać obrazy w e‑mailach w formacie tekstowym?**  
-A: Format tekstowy nie obsługuje osadzonych obrazów. Można jedynie umieścić URL, który odbiorcy mogą kliknąć, aby zobaczyć obraz online.
+A: Format tekstowy nie obsługuje osadzonych obrazów. Można jedynie umieścić URL, które odbiorcy mogą kliknąć, aby zobaczyć obraz online.
 
-**Q: Jakie formaty obrazów są bezpieczne do osadzania w e‑mailach?**  
-A: JPEG, PNG i GIF są powszechnie wspierane. Używaj JPEG dla zdjęć i PNG dla grafik z przezroczystością.
+**Q: Jakie formaty obrazów są bezpieczne do osadzania w e‑mailu?**  
+A: JPEG, PNG i GIF są szeroko wspierane. Używaj JPEG dla fotografii i PNG dla grafik z przezroczystością.
 
 **Q: Czy istnieje sposób kontrolowania wymiarów obrazu w e‑mailu?**  
-A: Tak — dodaj atrybuty width/height do tagu `<img>`, np. `<img src='cid:image1' width='400' height='300'>`.
+A: Tak — dodaj atrybuty `width`/`height` do znacznika `<img>`, np. `<img src='cid:image1' width='400' height='300'>`.
 
 **Q: Czy istnieją limity rozmiaru dla osadzonych obrazów?**  
-A: Choć nie ma ścisłego limitu SMTP, większość dostawców poczty zaleca, aby całkowity rozmiar e‑maila nie przekraczał 5 MB. Optymalizacja rozmiaru obrazu pomaga pozostać w granicach tego limitu.
+A: Chociaż nie ma ścisłego limitu SMTP, większość dostawców poczty zaleca utrzymanie całkowitego rozmiaru e‑maila poniżej 5 MB. Optymalizacja rozmiaru obrazu pomaga pozostać w granicach tego limitu.
 
 ---
 
-**Ostatnia aktualizacja:** 2026-04-21  
+**Ostatnia aktualizacja:** 2026-10-12  
 **Testowano z:** Aspose.Email for Java 24.11 (najnowsza w momencie pisania)  
-**Autor:** Aspose  
+**Autor:** Aspose
+
+## Powiązane samouczki
+
+- [Zarządzanie limitem rozmiaru załącznika e‑mail przy użyciu Aspose.Email](/email/java/advanced-email-attachments/managing-large-attachments/)
+- [Tworzenie i wysyłanie załączników e‑mail Aspose Email Java](/email/java/attachments-handling/build-send-emails-attachments-aspose-email-java/)
+- [Jak wyodrębnić załączniki z plików msg przy użyciu Aspose.Email dla Javy](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

@@ -1,54 +1,90 @@
 ---
-date: 2026-04-21
-description: Tìm hiểu cách nhúng hình ảnh vào email HTML bằng Aspose.Email cho Java,
-  gửi email HTML có nhúng hình ảnh và giảm kích thước tệp đính kèm email.
+date: 2026-10-12
+description: Tìm hiểu cách nhúng hình ảnh vào email HTML bằng Aspose.Email for Java,
+  gửi email HTML có hình ảnh nhúng, và giảm kích thước tệp đính kèm email.
 keywords:
-- embed image html email
-- send html email java
-- create email with image
 - reduce email attachment size
-- embed multiple images email
-linktitle: Cách đính kèm hình ảnh vào email bằng Aspsoe.Email
+- create email with image
+- optimize image for email
+- send html email java
+- embed cid image email
+lastmod: 2026-10-12
+linktitle: Cách đính kèm hình ảnh vào email với Aspose.Email
+og_description: Giảm kích thước tệp đính kèm email và nhúng hình ảnh vào email HTML
+  bằng Aspose.Email for Java. Thực hiện theo hướng dẫn từng bước để gửi email HTML
+  phong phú một cách hiệu quả.
+og_image_alt: 'Developer guide: embed images in HTML email while reducing attachment
+  size with Aspose.Email for Java'
+og_title: Giảm kích thước tệp đính kèm email với Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-10-12'
+  description: Learn how to embed images in HTML email using Aspose.Email for Java,
+    send HTML email with embedded images, and reduce email attachment size.
+  headline: Reduce email attachment size with Aspose.Email for Java
+  type: TechArticle
+- questions:
+  - answer: Repeat the attachment and `LinkedResource` steps for each image, assigning
+      a unique Content‑ID (e.g., `image2`, `image3`) and referencing them in the HTML.
+    question: How can I embed multiple images in a single email?
+  - answer: Plain‑text format does not support embedded images. You can only include
+      URLs that recipients can click to view the image online.
+    question: Can I embed images in plain‑text emails?
+  - answer: JPEG, PNG, and GIF are widely supported. Use JPEG for photographs and
+      PNG for graphics with transparency.
+    question: What image formats are safe for email embedding?
+  - answer: Yes—add `width`/`height` attributes to the `<img>` tag, e.g., `<img src='cid:image1'
+      width='400' height='300'>`.
+    question: Is there a way to control image dimensions in the email?
+  - answer: While there’s no strict SMTP limit, most mail providers recommend keeping
+      total email size under 5 MB. Optimizing image size helps stay well within this
+      limit.
+    question: Are there size limits for embedded images?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Cách nhúng hình ảnh vào email HTML bằng Aspose.Email cho Java
+tags:
+- email attachment size
+- Aspose.Email
+- Java email API
+- embed images email
+- HTML email
+title: Giảm kích thước tệp đính kèm email với Aspose.Email for Java
 url: /vi/java/advanced-email-attachments/embedding-images-as-attachments/
 weight: 14
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Cách nhúng hình ảnh vào email HTML với Aspose.Email cho Java
+# Giảm kích thước tệp đính kèm email với Aspose.Email cho Java
 
-Trong giao tiếp email hiện đại, **embed image html email** ngày càng quan trọng—hình ảnh tăng cường tương tác và giúp truyền tải thông điệp của bạn ngay lập tức. Hướng dẫn này sẽ chỉ cho bạn quy trình đầy đủ để đính kèm một hình ảnh, nhúng nó vào phần thân HTML, và đảm bảo tin nhắn hiển thị tốt trên mọi client email. Chúng tôi cũng sẽ đề cập đến các mẹo thực tiễn cho **send html email java**, tạo email có hình ảnh, và **reduce email attachment size**.
+Nhúng hình ảnh trực tiếp vào email HTML không chỉ làm cho tin nhắn trông chuyên nghiệp, mà còn **giảm kích thước tệp đính kèm email** vì hình ảnh là một phần của phần thân MIME thay vì một tệp riêng biệt. Trong hướng dẫn này, bạn sẽ học cách tạo email có hình ảnh, nhúng hình ảnh bằng tham chiếu CID, và áp dụng các mẹo thực hành tốt nhất để **tối ưu hóa hình ảnh cho email** sao cho tin nhắn cuối cùng nhẹ nhàng. Bạn cũng sẽ thấy cách gửi email HTML kiểu Java với Aspose.Email và giữ tổng tải trọng dưới giới hạn hộp thư thường.
 
 ## Câu trả lời nhanh
-- **Lớp chính để tạo email là gì?** `MailMessage`
-- **Lớp nào cho phép bạn nhúng hình ảnh vào phần thân HTML?** `LinkedResource`
-- **Có cần giấy phép để gửi email trong môi trường production không?** Có, cần giấy phép thương mại Aspose.Email.
-- **Làm sao giảm kích thước tệp đính kèm?** Tối ưu hóa hình ảnh trước khi thêm (ví dụ: thay đổi kích thước/nén).
-- **Có thể gửi nhiều hình ảnh không?** Chắc chắn—chỉ cần thêm một Content‑ID duy nhất cho mỗi hình.
+- **Lớp nào tạo tin nhắn email?** `MailMessage` – bộ chứa chính cho tiêu đề, người nhận và nội dung.  
+- **Đối tượng nào cho phép bạn nhúng hình ảnh vào phần thân HTML?** `LinkedResource` – nó bao bọc luồng hình ảnh và gán một Content‑ID.  
+- **Tôi có cần giấy phép cho việc sử dụng trong môi trường sản xuất không?** Có – cần giấy phép thương mại Aspose.Email để loại bỏ các giới hạn đánh giá.  
+- **Làm thế nào để giảm kích thước tệp đính kèm?** Tối ưu hóa hình ảnh (thay đổi kích thước ≤600 px, nén dưới 100 KB) trước khi thêm.  
+- **Tôi có thể nhúng nhiều hình ảnh không?** Chắc chắn – thêm một Content‑ID duy nhất cho mỗi hình ảnh và tham chiếu chúng bằng URI `cid:`.
 
-## Embed image html email là gì?
-Đính kèm một hình ảnh có nghĩa là thêm tệp vào cấu trúc MIME của email để người nhận có thể xem. Khi bạn nhúng hình ảnh bằng Content‑ID (CID), hình ảnh sẽ xuất hiện trực tiếp trong phần thân HTML thay vì là một tệp đính kèm riêng, tạo cảm giác như một bức ảnh nội tuyến.
+## Nhúng hình ảnh trong email HTML là gì?
+Nhúng một hình ảnh có nghĩa là chèn ảnh vào cấu trúc MIME của email để người nhận thấy nó hiển thị trực tiếp. Hình ảnh được tham chiếu bằng **Content‑ID (CID)**, mà thẻ HTML `<img>` tải trực tiếp từ phần thân tin nhắn, loại bỏ các tệp đính kèm riêng và giữ tổng kích thước nhỏ hơn.
 
-## Tại sao gửi email HTML có hình ảnh nhúng?
-Nhúng hình ảnh trong HTML cho phép bạn thiết kế bản tin, thông báo sản phẩm hoặc vé hỗ trợ phong phú hơn. Người nhận sẽ thấy hình ảnh ngay lập tức, không cần tải xuống tệp đính kèm, giúp tăng tỷ lệ mở và mức độ tương tác tổng thể.
+## Tại sao gửi email HTML với hình ảnh nhúng?
+Nhúng hình ảnh trong HTML cho phép bạn thiết kế bản tin, thông báo sản phẩm hoặc phiếu hỗ trợ phong phú hơn. Người nhận nhìn thấy hình ảnh ngay lập tức, mà không cần tải xuống tệp đính kèm, giúp cải thiện tỷ lệ mở và mức độ tương tác tổng thể. Hầu hết các client email hỗ trợ hình ảnh CID, và việc nhúng tránh các bước tải xuống bổ sung, dẫn đến việc hiển thị nhanh hơn và tiêu thụ băng thông thấp hơn.
 
 ## Yêu cầu trước
-Trước khi bắt đầu, hãy chắc chắn rằng bạn có:
+- **Aspose.Email for Java** – tải xuống từ trang chính thức: [Aspose.Email Java download](https://releases.aspose.com/email/java/).  
+- Truy cập vào một máy chủ SMTP (Gmail, Outlook, hoặc máy chủ relay của bạn).  
+- Một tệp hình ảnh (JPEG, PNG hoặc GIF) mà bạn muốn nhúng.  
 
-- **Aspose.Email for Java** – tải về từ trang chính thức: [Aspose.Email Java download](https://releases.aspose.com/email/java/).
-- Một **máy chủ SMTP** hợp lệ (ví dụ: Gmail, Outlook, hoặc máy chủ chuyển tiếp mail của bạn).
-- Một tệp hình ảnh bạn muốn nhúng (JPEG, PNG, GIF, v.v.).
+> **Mẹo chuyên nghiệp:** *Tối ưu kích thước hình ảnh cho email* bằng cách thay đổi kích thước chiều rộng ≤600 px và nén dưới ≤100 KB. Điều này giảm thời gian tải và tránh vượt quá giới hạn kích thước hộp thư.
 
-> **Mẹo chuyên nghiệp:** *Tối ưu kích thước hình ảnh cho email* bằng cách thay đổi kích thước ≤600 px chiều rộng và nén ≤100 KB. Điều này giảm thời gian tải và tránh vượt quá giới hạn kích thước hộp thư.
+## Tạo tin nhắn email
+`MailMessage` là đối tượng cấp cao nhất của Aspose.Email đại diện cho một email duy nhất. Nó chứa tiêu đề, người gửi, người nhận và phần thân (văn bản thuần hoặc HTML).  
 
-## Tạo một tin nhắn email
-Đầu tiên, nhập các namespace cần thiết và khởi tạo một `MailMessage`. Đối tượng này sẽ chứa tiêu đề, người nhận và nội dung email của bạn.
+Lớp `MailMessage` là mô hình trung tâm để xây dựng và gửi tin nhắn email trong Aspose.Email cho Java.
 
 ```java
 // Import necessary libraries
@@ -58,8 +94,9 @@ import com.aspose.email.*;
 MailMessage message = new MailMessage();
 ```
 
-## Thêm hình ảnh làm đính kèm
-Tiếp theo, chỉ tới tệp hình ảnh trên đĩa và thêm nó vào bộ sưu tập đính kèm của tin nhắn. Đính kèm sẽ được tham chiếu sau này bằng một Content‑ID.
+## Thêm hình ảnh dưới dạng tệp đính kèm
+`LinkedResource` đại diện cho một phần MIME có thể được nhúng trực tiếp trong email.  
+Trước khi nhúng, bạn thêm tệp hình ảnh vào bộ sưu tập tệp đính kèm của tin nhắn. Tệp đính kèm trở thành một luồng mà `LinkedResource` có thể tham chiếu sau này.
 
 ```java
 // Specify the path to the image file
@@ -70,8 +107,9 @@ Attachment attachment = new Attachment(imagePath);
 message.getAttachments().add(attachment);
 ```
 
-## Nhúng hình ảnh đã đính kèm vào HTML
-Để hiển thị hình ảnh trong phần thân email, tạo một `LinkedResource` bao bọc luồng của tệp đính kèm. Gán một Content‑ID duy nhất (ví dụ: `image1`) và tham chiếu nó trong HTML bằng scheme `cid:`.
+## Nhúng hình ảnh đã đính kèm trong HTML
+`LinkedResource` được sử dụng để liên kết một luồng hình ảnh với Content‑ID để hiển thị nội tuyến.  
+Để hiển thị hình ảnh trong phần thân HTML, tạo một `LinkedResource` trỏ tới hình ảnh đã đính kèm và đặt Content‑ID cho nó (ví dụ, `image1`). Sau đó tham chiếu ID đó trong HTML bằng cách sử dụng scheme URI `cid:`.
 
 ```java
 // Create a LinkedResource for the attached image
@@ -84,10 +122,13 @@ message.setHtmlBody(htmlBody);
 message.getLinkedResources().addItem(linkedImage);
 ```
 
-> **Tại sao dùng `LinkedResource`?** Nó thông báo cho client mail rằng hình ảnh là một phần của phần thân tin nhắn, không phải một tệp tải xuống riêng, điều này rất quan trọng trong các kịch bản **send HTML email with embedded image**.
+> **Tại sao sử dụng `LinkedResource`?** Nó thông báo cho client rằng hình ảnh là một phần của phần thân tin nhắn, điều này thiết yếu cho các kịch bản **send html email java** yêu cầu đồ họa nội tuyến.
 
 ## Gửi email
-Cuối cùng, cấu hình `SmtpClient` với thông tin máy chủ của bạn và gửi tin nhắn. Đảm bảo thông tin đăng nhập SMTP có quyền gửi thay mặt địa chỉ người gửi.
+`SmtpClient` là lớp xử lý giao tiếp SMTP để gửi tin nhắn.  
+`SmtpClient` thực hiện việc truyền tải thực tế. Cấu hình nó với máy chủ, cổng và thông tin xác thực của bạn, sau đó gọi `send` để gửi `MailMessage`.  
+
+`SmtpClient` là lớp truyền tải SMTP của Aspose.Email, gửi một cách an toàn `MailMessage` đã soạn tới máy chủ email đích.
 
 ```java
 // Initialize the SmtpClient
@@ -97,47 +138,55 @@ SmtpClient client = new SmtpClient("smtp.example.com", 587, "your_username", "yo
 client.send(message);
 ```
 
-Khi người nhận mở email, phần thân HTML sẽ hiển thị hình ảnh nội tuyến, mang lại trải nghiệm hình ảnh liền mạch.
+Khi người nhận mở email, phần thân HTML hiển thị hình ảnh nội tuyến, mang lại trải nghiệm hình ảnh liền mạch trong khi giữ tổng tải trọng nhỏ.
 
 ## Cách nhúng nhiều hình ảnh trong email
-Nếu bạn cần hơn một hình ảnh, lặp lại các bước đính kèm và `LinkedResource` cho mỗi tệp. Gán các Content‑ID khác nhau như `image2`, `image3`, và tham chiếu chúng trong HTML (`src='cid:image2'`, v.v.). Cách này mở rộng dễ dàng cho các bản tin có nhiều đồ họa.
+`LinkedResource` đại diện cho một phần MIME có thể được nhúng nội tuyến trong email.  
+Thêm mỗi hình ảnh như một tệp đính kèm riêng, tạo một `LinkedResource` riêng cho mỗi hình và gán một Content‑ID duy nhất như `image2`, `image3`, v.v. Tham chiếu chúng trong HTML bằng `src='cid:image2'`. Mẫu này mở rộng cho các bản tin có hàng chục đồ họa mà không làm tăng kích thước tin nhắn.
 
 ## Mẹo giảm kích thước tệp đính kèm email
-- **Thay đổi kích thước** hình ảnh đúng kích thước cần thiết trong email (thường ≤600 px chiều rộng).  
+- **Thay đổi kích thước** hình ảnh tới kích thước chính xác cần thiết (thường ≤600 px chiều rộng).  
 - **Nén** bằng các công cụ như ImageMagick hoặc các công cụ nén trực tuyến để giữ tệp dưới 100 KB.  
-- **Chọn định dạng phù hợp**: JPEG cho ảnh, PNG cho đồ họa có nền trong suốt.  
-- **Xóa siêu dữ liệu EXIF** nếu không cần thiết.
+- **Chọn định dạng phù hợp**: JPEG cho ảnh, PNG cho đồ họa có độ trong suốt.  
+- **Xóa siêu dữ liệu EXIF** nếu không cần.  
+- **Sử dụng JPEG progressive** để hiển thị dần nhanh hơn trên các client hỗ trợ.
 
-## Các vấn đề thường gặp & Khắc phục
+## Các vấn đề thường gặp & khắc phục
 | Vấn đề | Nguyên nhân | Giải pháp |
-|-------|-------------|-----------|
-| Hình ảnh không hiển thị | Content‑ID sai hoặc thiếu `LinkedResource` | Kiểm tra `linkedImage.setContentId("image1")` khớp với `src='cid:image1'` trong HTML. |
+|-------|-------|----------|
+| Hình ảnh không hiển thị | Content‑ID sai hoặc thiếu `LinkedResource` | Xác minh `linkedImage.setContentId("image1")` khớp với `src='cid:image1'` trong HTML. |
 | Kích thước email lớn | Hình ảnh chưa tối ưu (độ phân giải cao) | Thay đổi kích thước/nén hình ảnh trước khi đính kèm; mục tiêu ≤100 KB. |
-| Email bị đánh dấu spam | Thiếu header MIME đúng | Đảm bảo `SmtpClient` sử dụng TLS/STARTTLS và đặt địa chỉ `From` rõ ràng. |
-| Hình ảnh nội tuyến xuất hiện dưới dạng đính kèm | Client không hỗ trợ CID | Cung cấp URL dự phòng trong thẻ `<img>` (`src='cid:image1' alt='Image'`). |
+| Email bị đánh dấu là spam | Thiếu tiêu đề MIME phù hợp | Đảm bảo `SmtpClient` sử dụng TLS/STARTTLS và đặt địa chỉ `From` rõ ràng. |
+| Hình ảnh nội tuyến xuất hiện như tệp đính kèm | Client không hỗ trợ CID | Cung cấp URL dự phòng trong thẻ `<img>` (`src='cid:image1' alt='Image'`). |
 
 ## Câu hỏi thường gặp
 
-**H: Làm sao tôi có thể nhúng nhiều hình ảnh trong một email?**  
-Đ: Lặp lại các bước đính kèm và `LinkedResource` cho mỗi hình ảnh, gán Content‑ID duy nhất (ví dụ: `image2`, `image3`) và tham chiếu chúng trong HTML.
+**Q: Làm thế nào tôi có thể nhúng nhiều hình ảnh trong một email duy nhất?**  
+A: Lặp lại các bước đính kèm và `LinkedResource` cho mỗi hình ảnh, gán một Content‑ID duy nhất (ví dụ, `image2`, `image3`) và tham chiếu chúng trong HTML.
 
-**H: Có thể nhúng hình ảnh trong email dạng plain‑text không?**  
-Đ: Định dạng plain‑text không hỗ trợ hình ảnh nhúng. Bạn chỉ có thể đưa URL để người nhận nhấp và xem hình ảnh trực tuyến.
+**Q: Tôi có thể nhúng hình ảnh trong email dạng văn bản thuần không?**  
+A: Định dạng văn bản thuần không hỗ trợ hình ảnh nhúng. Bạn chỉ có thể bao gồm các URL mà người nhận có thể nhấp để xem hình ảnh trực tuyến.
 
-**H: Các định dạng hình ảnh nào an toàn để nhúng trong email?**  
-Đ: JPEG, PNG và GIF được hỗ trợ rộng rãi. Dùng JPEG cho ảnh chụp và PNG cho đồ họa có nền trong suốt.
+**Q: Định dạng hình ảnh nào an toàn để nhúng trong email?**  
+A: JPEG, PNG và GIF được hỗ trợ rộng rãi. Sử dụng JPEG cho ảnh chụp và PNG cho đồ họa có độ trong suốt.
 
-**H: Có cách nào kiểm soát kích thước hình ảnh trong email không?**  
-Đ: Có—thêm thuộc tính width/height vào thẻ `<img>`, ví dụ `<img src='cid:image1' width='400' height='300'>`.
+**Q: Có cách nào để kiểm soát kích thước hình ảnh trong email không?**  
+A: Có—thêm các thuộc tính `width`/`height` vào thẻ `<img>`, ví dụ, `<img src='cid:image1' width='400' height='300'>`.
 
-**H: Có giới hạn kích thước cho hình ảnh nhúng không?**  
-Đ: Mặc dù không có giới hạn SMTP nghiêm ngặt, hầu hết các nhà cung cấp mail khuyến nghị giữ tổng kích thước email dưới 5 MB. Tối ưu hóa kích thước hình ảnh giúp bạn ở trong giới hạn này.
+**Q: Có giới hạn kích thước cho hình ảnh nhúng không?**  
+A: Mặc dù không có giới hạn SMTP nghiêm ngặt, hầu hết các nhà cung cấp email khuyến nghị giữ tổng kích thước email dưới 5 MB. Tối ưu kích thước hình ảnh giúp duy trì trong giới hạn này.
 
 ---
 
-**Cập nhật lần cuối:** 2026-04-21  
-**Đã kiểm tra với:** Aspose.Email for Java 24.11 (phiên bản mới nhất tại thời điểm viết)  
-**Tác giả:** Aspose  
+**Cập nhật lần cuối:** 2026-10-12  
+**Kiểm tra với:** Aspose.Email for Java 24.11 (phiên bản mới nhất tại thời điểm viết)  
+**Tác giả:** Aspose
+
+## Hướng dẫn liên quan
+
+- [Quản lý giới hạn kích thước tệp đính kèm email với Aspose.Email](/email/java/advanced-email-attachments/managing-large-attachments/)
+- [Xây dựng gửi email đính kèm Aspose Email Java](/email/java/attachments-handling/build-send-emails-attachments-aspose-email-java/)
+- [Cách trích xuất tệp đính kèm từ file msg bằng Aspose.Email cho Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
