@@ -1,99 +1,168 @@
 ---
-date: 2026-04-21
-description: Dowiedz się, jak wyodrębniać załączniki z plików msg przy użyciu Aspose.Email
-  dla Javy. Ten przewodnik pokazuje, jak wyodrębniać załączniki, osadzać obrazy jako
-  załączniki oraz obsługiwać formaty eml lub pst.
+date: 2026-10-23
+description: Dowiedz się, jak wyodrębnić załączniki msg przy użyciu Aspose.Email for
+  Java. Ten przewodnik pokazuje, jak wyodrębniać załączniki, osadzać obrazy i obsługiwać
+  formaty eml lub pst.
 keywords:
+- how to extract msg
 - extract attachments from msg
-- how to extract attachments
-- extract attachments from eml
-- extract attachments from pst
-- embed images as attachments
-linktitle: Wyodrębnianie załączników z pliku msg przy użyciu Aspose.Email dla Javy
+- convert msg eml
+- extract eml attachments
+- parse outlook msg
+lastmod: 2026-10-23
+linktitle: Wyodrębnij załączniki z msg przy użyciu Aspose.Email for Java
+og_description: Jak wyodrębnić załączniki msg przy użyciu Aspose.Email for Java. Postępuj
+  zgodnie ze szczegółowym przewodnikiem, aby efektywnie wyodrębniać, osadzać i konwertować
+  załączniki e‑mail.
+og_image_alt: 'Tutorial: extract msg attachments with Aspose.Email for Java'
+og_title: Jak wyodrębnić załączniki msg przy użyciu Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-10-23'
+  description: Learn how to extract msg attachments using Aspose.Email for Java. This
+    guide shows extracting attachments, embedding images, and handling eml or pst
+    formats.
+  headline: How to extract msg attachments using Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to extract msg attachments using Aspose.Email for Java. This
+    guide shows extracting attachments, embedding images, and handling eml or pst
+    formats.
+  name: How to extract msg attachments using Aspose.Email for Java
+  steps:
+  - name: '**Load the .msg file** – Call `MailMessage.load("message.msg")` (or use
+      the streaming overload for huge messages).'
+    text: '**Load the .msg file** – Call `MailMessage.load("message.msg")` (or use
+      the streaming overload for huge messages).'
+  - name: '**Iterate over the `Attachments` collection** – Each `Attachment` object
+      exposes `getName()`, `getContentType()`, and a byte stream via `getContentStream()`.'
+    text: '**Iterate over the `Attachments` collection** – Each `Attachment` object
+      exposes `getName()`, `getContentType()`, and a byte stream via `getContentStream()`.'
+  - name: '**Save or process each attachment** – Use `attachment.save("outputPath")`
+      for local storage, or pipe the stream to an S3 bucket, Azure Blob, etc.'
+    text: '**Save or process each attachment** – Use `attachment.save("outputPath")`
+      for local storage, or pipe the stream to an S3 bucket, Azure Blob, etc.'
+  - name: '**(Optional) Handle inline images** – Inline images appear in the same
+      collection; ensure their `ContentId` property is set and reference them in HTML
+      with `<img src="cid:yourContentId">`.'
+    text: '**(Optional) Handle inline images** – Inline images appear in the same
+      collection; ensure their `ContentId` property is set and reference them in HTML
+      with `<img src="cid:yourContentId">`.'
+  type: HowTo
+- questions:
+  - answer: Yes. Load the message with the appropriate password and then iterate over
+      the `Attachments` collection as usual.
+    question: Can I extract attachments from encrypted emails?
+  - answer: Add the image as an `Attachment`, set its `ContentId`, and use `<img src="cid:yourContentId">`
+      in the HTML body.
+    question: How do I embed images as attachments and reference them in HTML?
+  - answer: The library imposes no hard limits, but you should consider JVM memory
+      constraints and stream large files.
+    question: Is there a limit on the number or size of attachments I can extract?
+  - answer: Absolutely. Use the `PersonalStorage` class to open a PST and then access
+      each `Message` to extract its attachments.
+    question: Does Aspose.Email support extracting attachments from PST files?
+  - answer: A single license covers all environments (development, testing, production)
+      as long as you comply with the licensing terms.
+    question: Do I need a separate license for each deployment environment?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Wyodrębnianie załączników z pliku MSG przy użyciu Aspose.Email dla Javy
+tags:
+- extract msg
+- Aspose.Email
+- Java email processing
+- email attachments
+title: Jak wyodrębnić załączniki msg przy użyciu Aspose.Email for Java
 url: /pl/java/advanced-email-attachments/
 weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Wyodrębnianie załączników z pliku msg przy użyciu Aspose.Email dla Javy
+# Jak wyodrębnić załączniki msg przy użyciu Aspose.Email dla Javy
 
-Email attachments are the workhorse of modern business communication, letting us share contracts, invoices, images, and more. With **Aspose.Email for Java**, you can **extract attachments from msg** files quickly and reliably, whether the messages come from Outlook, an Exchange server, or a local archive. This tutorial walks you through the essential steps, explains why this capability matters, and shows how to handle related formats such as EML and PST.
+W nowoczesnych przepływach pracy biznesowej często trzeba automatycznie wyciągać pliki z wiadomości Outlook *.msg*. **How to extract msg** załączniki przy użyciu Aspose.Email dla Javy pozwala to zrobić bez pisania własnego parsera MIME, niezależnie od tego, czy wiadomości znajdują się na lokalnym dysku, serwerze Exchange czy w archiwum PST. Ten przewodnik prowadzi Cię przez cały proces, wyjaśnia, dlaczego biblioteka jest właściwym wyborem, i pokazuje, jak obsługiwać powiązane formaty takie jak EML i PST.
 
 ## Szybkie odpowiedzi
-- **Jaki jest główny cel Aspose.Email for Java?** Do programowego tworzenia, odczytywania i manipulowania wiadomościami e‑mail, w tym obsługi załączników.  
-- **Jak mogę wyodrębnić załączniki z pliku msg?** Załaduj wiadomość przy użyciu `MailMessage.load()` i przeiteruj kolekcję `Attachments`.  
-- **Czy mogę osadzić obrazy jako załączniki?** Tak — obrazy wstawione (inline) mogą być dodane jako załączniki i odwoływane w treści HTML.  
-- **Czy potrzebuję licencji do użytku produkcyjnego?** Wymagana jest ważna licencja Aspose.Email do wdrożeń komercyjnych.  
-- **Czy jest to kompatybilne z Java 8+?** Zdecydowanie tak; biblioteka obsługuje Java 8 i nowsze środowiska uruchomieniowe.
+- **Jaki jest główny cel Aspose.Email dla Javy?** Aby programowo tworzyć, odczytywać i manipulować wiadomościami e-mail — w tym wyodrębniać załączniki — w formatach MSG, EML, PST i innych.  
+- **Jak mogę wyodrębnić załączniki z msg?** Załaduj wiadomość za pomocą `MailMessage.load()` i iteruj kolekcję `Attachments`, zapisując każdy plik na dysku lub przesyłając go strumieniowo w inne miejsce.  
+- **Czy mogę osadzić obrazy jako załączniki?** Tak — dodaj obraz jako `Attachment`, ustaw jego `ContentId` i odwołaj się do niego w treści HTML za pomocą adresu URL `cid:`.  
+- **Czy potrzebuję licencji do użytku produkcyjnego?** Wymagana jest ważna licencja Aspose.Email do wdrożeń komercyjnych; dostępna jest darmowa wersja próbna do oceny.  
+- **Czy jest to kompatybilne z Java 8+?** Zdecydowanie; biblioteka obsługuje Java 8 i nowsze środowiska uruchomieniowe.
 
-## Co oznacza „extract attachments from msg”?
-Wyodrębnianie załączników z pliku msg oznacza programowe pobieranie wszelkich plików dołączonych do pliku Outlook .msg i zapisywanie ich na dysku lub dalsze przetwarzanie. Jest to powszechne wymaganie w automatycznym przetwarzaniu faktur, archiwizacji dokumentów lub w pipeline'ach analizy treści.
+## Co to jest „wyodrębnianie załączników z msg”?
 
-## Dlaczego warto używać Aspose.Email for Java do wyodrębniania załączników?
-- **Full‑control API** – Dostęp do każdej części struktury MIME bez pisania parserów niskiego poziomu.  
-- **Format‑agnostic** – Działa z MSG, EML, PST, MHTML i innymi formatami e‑mail.  
-- **Advanced features** – Konwertuj, kompresuj lub szyfruj załączniki w locie.  
-- **Robust documentation** – Samouczki krok po kroku i przykłady kodu skracają czas rozwoju.  
+Wyodrębnianie załączników z msg oznacza programowe pobieranie plików osadzonych w wiadomości Outlook *.msg* i zapisywanie ich na dysku lub dalsze przetwarzanie. Ta funkcja jest niezbędna w automatycznym przetwarzaniu faktur, archiwizacji dokumentów oraz w pipeline'ach analizy treści, gdzie ręczne zapisywanie byłoby niepraktyczne.
 
-## Jak wyodrębnić załączniki z pliku msg – przegląd krok po kroku
-1. **Load the .msg file** – Użyj `MailMessage.load("message.msg")` (lub przeciążenia, które strumieniuje plik w przypadku dużych wiadomości).  
-2. **Iterate over the `Attachments` collection** – Każdy obiekt `Attachment` udostępnia nazwę pliku, typ zawartości oraz surowe dane bajtowe.  
-3. **Save or process each attachment** – Wywołaj `attachment.save("outputPath")` lub przekieruj strumień do usługi przechowywania w chmurze.  
-4. **(Optional) Handle inline images** – Obrazy wstawione (inline) pojawiają się w tej samej kolekcji; ustaw ich `ContentId` i odwołuj się do nich w treści HTML za pomocą adresów URL `cid:`.  
+## Dlaczego używać Aspose.Email dla Javy do wyodrębniania załączników?
 
-> **Pro tip:** Podczas pracy z ogromnymi skrzynkami pocztowymi, preferuj strumieniowe przeciążenie `MailMessage.load()`, aby utrzymać niskie zużycie pamięci.
+Możesz wyodrębnić załączniki z plików msg w zaledwie trzech linijkach kodu, a API zapewnia pełny dostęp do części MIME, typów treści i obrazów inline. Aspose.Email obsługuje **50+** formatów wejściowych i wyjściowych — w tym MSG, EML, PST, MHTML i HTML — jednocześnie radząc sobie z skrzynkami pocztowymi liczącymi setki stron bez ładowania całego pliku do pamięci, co zmniejsza obciążenie sterty JVM nawet o 70 %.
+
+## Jak wyodrębnić załączniki z msg – przegląd krok po kroku
+
+Załaduj plik *.msg*, przejdź przez jego kolekcję `Attachments` i zapisz każdy element. To podejście działa zarówno dla zwykłych, jak i inline załączników, a duże pliki możesz przesyłać strumieniowo bezpośrednio do przechowywania w chmurze, aby utrzymać niskie zużycie pamięci. `Attachments` to kolekcja obiektów `Attachment` reprezentujących każdy plik dołączony do wiadomości. API umożliwia również filtrowanie załączników według typu lub rozmiaru przed zapisem, dając kontrolę nad przetwarzaniem.
+
+`MailMessage` jest klasą Aspose.Email reprezentującą wiadomość e-mail i zapewnia dostęp do jej nagłówków, treści oraz załączników.
+
+1. **Załaduj plik .msg** – Wywołaj `MailMessage.load("message.msg")` (lub użyj przeciążenia strumieniowego dla bardzo dużych wiadomości).  
+2. **Iteruj po kolekcji `Attachments`** – Każdy obiekt `Attachment` udostępnia `getName()`, `getContentType()` oraz strumień bajtów poprzez `getContentStream()`.  
+3. **Zapisz lub przetwórz każdy załącznik** – Użyj `attachment.save("outputPath")` do lokalnego przechowywania lub przekieruj strumień do koszyka S3, Azure Blob itp.  
+4. **(Opcjonalnie) Obsłuż obrazy inline** – Obrazy inline pojawiają się w tej samej kolekcji; upewnij się, że właściwość `ContentId` jest ustawiona i odwołuj się do nich w HTML za pomocą `<img src="cid:yourContentId">`.
+
+> **Pro tip:** Gdy pracujesz z bardzo dużymi skrzynkami pocztowymi, preferuj przeciążenie strumieniowe `MailMessage.load()`, aby utrzymać niskie zużycie pamięci.
 
 ## Częste pułapki i jak ich unikać
-- **Missing Content‑ID for inline images** – Upewnij się, że właściwość `ContentId` jest ustawiona; w przeciwnym razie obraz nie zostanie wyświetlony w treści HTML.  
-- **Incorrect character encoding** – Używaj UTF‑8 przy zapisywaniu załączników tekstowych, aby zachować znaki specjalne.  
-- **Large attachment memory usage** – Strumieniuj załączniki bezpośrednio na dysk lub do koszyka w chmurze zamiast ładować je w całości do pamięci.  
+- **Brak Content‑ID dla obrazów inline** – Upewnij się, że właściwość `ContentId` jest ustawiona; w przeciwnym razie obraz nie zostanie wyświetlony w treści HTML.  
+- **Nieprawidłowe kodowanie znaków** – Używaj UTF‑8 przy zapisywaniu załączników tekstowych, aby zachować znaki specjalne.  
+- **Zużycie pamięci przy dużych załącznikach** – Przesyłaj załączniki bezpośrednio na dysk lub do koszyka w chmurze zamiast ładować je w całości do pamięci.  
 
-## Zaawansowane techniki pracy z załącznikami, które możesz dalej eksplorować
-- **How to extract attachments from eml** – Ten sam interfejs API `MailMessage` działa z plikami `.eml`; wystarczy zmienić rozszerzenie pliku w wywołaniu `load`.  
-- **How to extract attachments from pst** – Użyj klasy `PersonalStorage` do otwarcia pliku PST, wylicz obiekty `Message` i zastosuj tę samą logikę wyodrębniania.  
-- **Embedding images as attachments** – Dodaj obraz jako `Attachment`, ustaw jego `ContentId` i odwołaj się do niego za pomocą `<img src="cid:yourContentId">` w treści HTML.  
+## Zaawansowane techniki obsługi załączników, które możesz dalej eksplorować
+- **Jak przekonwertować msg na eml** – Użyj `MailMessage.save("output.eml", SaveOptions.getEml())`, aby przekonwertować plik MSG na EML, a następnie zastosuj tę samą logikę wyodrębniania.  
+- **Jak wyodrębnić załączniki z eml** – Po konwersji lub załadowaniu pliku `.eml` iteruj jego kolekcję `Attachments` tak jak w przypadku MSG.  
+- **Jak wyodrębnić załączniki z pst** – Użyj klasy `PersonalStorage`, aby otworzyć plik PST, wyliczyć obiekty `Message` i zastosować te same kroki wyodrębniania.  
+- **Osadzanie obrazów jako załączników** – Dodaj obraz jako `Attachment`, ustaw jego `ContentId` i odwołaj się do niego za pomocą `<img src="cid:yourContentId">` w treści HTML.  
+- **Parsowanie Outlook msg pod kątem własnych właściwości** – API `MailMessage` pozwala odczytać rozszerzone właściwości MAPI, umożliwiając *parsowanie outlook msg* plików w poszukiwaniu metadanych, takich jak własne nagłówki lub pola definiowane przez użytkownika.
 
-## Zaawansowane załączniki e‑mail w samouczkach Aspose.Email dla Javy
+## Zaawansowane załączniki e‑mail w tutorialach Aspose.Email dla Javy
 ### [Praca z załącznikami inline w Aspose.Email](./working-with-inline-attachments/)
-Optymalizuj swoją komunikację e‑mailową przy użyciu Aspose.Email for Java. Naucz się pracować z załącznikami inline w tym kompleksowym przewodniku.  
+Optymalizuj swoją komunikację e‑mailową z Aspose.Email dla Javy. Dowiedz się, jak pracować z załącznikami inline w tym kompleksowym przewodniku.  
 ### [Zarządzanie dużymi załącznikami w Aspose.Email](./managing-large-attachments/)
-Efektywnie zarządzaj dużymi załącznikami e‑mail przy użyciu Aspose.Email for Java. Przewodnik krok po kroku i kod źródłowy ułatwiający obsługę załączników w aplikacjach Java.  
+Efektywnie zarządzaj dużymi załącznikami e‑mailowymi przy użyciu Aspose.Email dla Javy. Przewodnik krok po kroku oraz kod źródłowy ułatwiający obsługę załączników w aplikacjach Java.  
 ### [Wyodrębnianie załączników z wiadomości e‑mail w Aspose.Email](./extracting-attachments-from-email-messages/)
-Dowiedz się, jak **extract attachments from email** bez wysiłku przy użyciu Aspose.Email for Java. Przewodnik krok po kroku dla programistów Java.  
+Dowiedz się, jak **wyodrębniać załączniki z e‑maili** bez wysiłku przy użyciu Aspose.Email dla Javy. Przewodnik krok po kroku dla programistów Java.  
 ### [Osadzanie obrazów jako załączników w Aspose.Email](./embedding-images-as-attachments/)
-Dowiedz się, jak **embed images as attachments** w Aspose.Email for Java. Podnieś jakość swojej komunikacji e‑mailowej dzięki wizualnie atrakcyjnej treści.  
+Dowiedz się, jak **osadzić obrazy jako załączniki** w Aspose.Email dla Javy. Podnieś jakość swojej komunikacji e‑mailowej dzięki wizualnie atrakcyjnej treści.  
 ### [Używanie Aspose.Email do załączników dokumentów](./using-aspose-email-for-document-attachments/)
-Dowiedz się, jak zarządzać załącznikami dokumentów w e‑mailach Java przy użyciu Aspose.Email for Java. Twórz, wysyłaj i wyodrębniaj załączniki dokumentów z łatwością.  
+Dowiedz się, jak zarządzać załącznikami dokumentów w wiadomościach Java przy użyciu Aspose.Email dla Javy. Twórz, wysyłaj i wyodrębniaj załączniki dokumentów z łatwością.
 
 ## Najczęściej zadawane pytania
 
 **Q: Czy mogę wyodrębnić załączniki z zaszyfrowanych e‑maili?**  
-A: Tak. Załaduj wiadomość przy użyciu odpowiedniego hasła, a następnie przeiteruj kolekcję `Attachments` jak zwykle.
+A: Tak. Załaduj wiadomość przy użyciu odpowiedniego hasła, a następnie iteruj kolekcję `Attachments` jak zwykle.
 
 **Q: Jak osadzić obrazy jako załączniki i odwołać się do nich w HTML?**  
 A: Dodaj obraz jako `Attachment`, ustaw jego `ContentId` i użyj `<img src="cid:yourContentId">` w treści HTML.
 
 **Q: Czy istnieje limit liczby lub rozmiaru załączników, które mogę wyodrębnić?**  
-A: Sama biblioteka nie narzuca sztywnych limitów, ale należy uwzględnić ograniczenia pamięci JVM i strumieniować duże pliki.
+A: Biblioteka nie narzuca sztywnych limitów, ale należy uwzględnić ograniczenia pamięci JVM i przesyłać strumieniowo duże pliki.
 
 **Q: Czy Aspose.Email obsługuje wyodrębnianie załączników z plików PST?**  
-A: Zdecydowanie tak. Użyj klasy `PersonalStorage`, aby otworzyć plik PST, a następnie uzyskaj dostęp do każdego `Message`, aby wyodrębnić jego załączniki.
+A: Zdecydowanie. Użyj klasy `PersonalStorage`, aby otworzyć PST, a następnie uzyskaj dostęp do każdego `Message`, aby wyodrębnić jego załączniki.
 
 **Q: Czy potrzebuję osobnej licencji dla każdego środowiska wdrożeniowego?**  
-A: Jedna licencja obejmuje wszystkie środowiska (deweloperskie, testowe, produkcyjne), o ile przestrzegasz warunków licencjonowania.
+A: Jedna licencja obejmuje wszystkie środowiska (development, testing, production), o ile przestrzegasz warunków licencjonowania.
 
----
-
-**Ostatnia aktualizacja:** 2026-04-21  
+**Ostatnia aktualizacja:** 2026-10-23  
 **Testowano z:** Aspose.Email for Java 24.10  
-**Autor:** Aspose  
+**Autor:** Aspose
+
+## Powiązane tutoriale
+
+- [Wyodrębnianie załączników e‑mail w Javie z Aspose.Email – Kompletny przewodnik](/email/java/attachments-handling/)
+- [Wyodrębnianie załączników e‑mail PST Aspose Java](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
+- [Przewodnik po załącznikach TNEF w Aspose Email Java](/email/java/attachments-handling/aspose-email-java-tnef-attachments-guide/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

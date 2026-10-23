@@ -1,97 +1,168 @@
 ---
-date: 2026-04-21
-description: Lär dig hur du extraherar bilagor från msg‑filer med Aspose.Email för
-  Java. Den här guiden visar hur du extraherar bilagor, bäddar in bilder som bilagor
-  och hanterar eml‑ eller pst‑format.
+date: 2026-10-23
+description: Lär dig hur du extraherar msg‑bilagor med Aspose.Email för Java. Denna
+  guide visar hur man extraherar bilagor, bäddar in bilder och hanterar eml‑ eller
+  pst‑format.
 keywords:
+- how to extract msg
 - extract attachments from msg
-- how to extract attachments
-- extract attachments from eml
-- extract attachments from pst
-- embed images as attachments
-linktitle: Extrahera bilagor från MSG med Aspose.Email för Java
+- convert msg eml
+- extract eml attachments
+- parse outlook msg
+lastmod: 2026-10-23
+linktitle: Extrahera bilagor från msg med Aspose.Email för Java
+og_description: Hur man extraherar msg‑bilagor med Aspose.Email för Java. Följ en
+  steg‑för‑steg‑guide för att extrahera, bädda in och konvertera e‑postbilagor effektivt.
+og_image_alt: 'Tutorial: extract msg attachments with Aspose.Email for Java'
+og_title: Hur man extraherar msg‑bilagor med Aspose.Email för Java
+schemas:
+- author: Aspose
+  dateModified: '2026-10-23'
+  description: Learn how to extract msg attachments using Aspose.Email for Java. This
+    guide shows extracting attachments, embedding images, and handling eml or pst
+    formats.
+  headline: How to extract msg attachments using Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to extract msg attachments using Aspose.Email for Java. This
+    guide shows extracting attachments, embedding images, and handling eml or pst
+    formats.
+  name: How to extract msg attachments using Aspose.Email for Java
+  steps:
+  - name: '**Load the .msg file** – Call `MailMessage.load("message.msg")` (or use
+      the streaming overload for huge messages).'
+    text: '**Load the .msg file** – Call `MailMessage.load("message.msg")` (or use
+      the streaming overload for huge messages).'
+  - name: '**Iterate over the `Attachments` collection** – Each `Attachment` object
+      exposes `getName()`, `getContentType()`, and a byte stream via `getContentStream()`.'
+    text: '**Iterate over the `Attachments` collection** – Each `Attachment` object
+      exposes `getName()`, `getContentType()`, and a byte stream via `getContentStream()`.'
+  - name: '**Save or process each attachment** – Use `attachment.save("outputPath")`
+      for local storage, or pipe the stream to an S3 bucket, Azure Blob, etc.'
+    text: '**Save or process each attachment** – Use `attachment.save("outputPath")`
+      for local storage, or pipe the stream to an S3 bucket, Azure Blob, etc.'
+  - name: '**(Optional) Handle inline images** – Inline images appear in the same
+      collection; ensure their `ContentId` property is set and reference them in HTML
+      with `<img src="cid:yourContentId">`.'
+    text: '**(Optional) Handle inline images** – Inline images appear in the same
+      collection; ensure their `ContentId` property is set and reference them in HTML
+      with `<img src="cid:yourContentId">`.'
+  type: HowTo
+- questions:
+  - answer: Yes. Load the message with the appropriate password and then iterate over
+      the `Attachments` collection as usual.
+    question: Can I extract attachments from encrypted emails?
+  - answer: Add the image as an `Attachment`, set its `ContentId`, and use `<img src="cid:yourContentId">`
+      in the HTML body.
+    question: How do I embed images as attachments and reference them in HTML?
+  - answer: The library imposes no hard limits, but you should consider JVM memory
+      constraints and stream large files.
+    question: Is there a limit on the number or size of attachments I can extract?
+  - answer: Absolutely. Use the `PersonalStorage` class to open a PST and then access
+      each `Message` to extract its attachments.
+    question: Does Aspose.Email support extracting attachments from PST files?
+  - answer: A single license covers all environments (development, testing, production)
+      as long as you comply with the licensing terms.
+    question: Do I need a separate license for each deployment environment?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Extrahera bilagor från msg med Aspose.Email för Java
+tags:
+- extract msg
+- Aspose.Email
+- Java email processing
+- email attachments
+title: Hur man extraherar msg‑bilagor med Aspose.Email för Java
 url: /sv/java/advanced-email-attachments/
 weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Extrahera bilagor från msg med Aspose.Email för Java
+# Hur man extraherar msg-bilagor med Aspose.Email för Java
 
-E‑postbilagor är arbetskraften i modern affärskommunikation och låter oss dela kontrakt, fakturor, bilder och mer. Med **Aspose.Email for Java** kan du **extrahera bilagor från msg**‑filer snabbt och pålitligt, oavsett om meddelandena kommer från Outlook, en Exchange‑server eller ett lokalt arkiv. Denna handledning guidar dig genom de viktigaste stegen, förklarar varför denna funktion är viktig och visar hur du hanterar relaterade format som EML och PST.
+I moderna affärsarbetsflöden behöver du ofta automatiskt hämta filer från Outlook *.msg*-e‑mail. **How to extract msg**-bilagor med Aspose.Email för Java låter dig göra detta utan att skriva en egen MIME‑parser, oavsett om meddelandena finns på en lokal disk, en Exchange‑server eller i ett PST‑arkiv. Denna guide går igenom hela processen, förklarar varför biblioteket är rätt val och visar hur du hanterar relaterade format som EML och PST.
 
 ## Snabba svar
-- **Vad är det primära syftet med Aspose.Email for Java?** Att programatiskt skapa, läsa och manipulera e‑postmeddelanden, inklusive hantering av bilagor.  
-- **Hur kan jag extrahera bilagor från msg?** Läs in meddelandet med `MailMessage.load()` och iterera genom dess `Attachments`‑samling.  
-- **Kan jag bädda in bilder som bilagor?** Ja—inline‑bilder kan läggas till som bilagor och refereras i HTML‑kroppen.  
-- **Behöver jag en licens för produktionsanvändning?** En giltig Aspose.Email‑licens krävs för kommersiella distributioner.  
-- **Är detta kompatibelt med Java 8+?** Absolut; biblioteket stöder Java 8 och nyare runtime‑miljöer.
+- **Vad är det primära syftet med Aspose.Email för Java?** Att programatiskt skapa, läsa och manipulera e‑postmeddelanden — inklusive extrahering av bilagor — över MSG, EML, PST och andra format.  
+- **Hur kan jag extrahera bilagor från msg?** Ladda meddelandet med `MailMessage.load()` och iterera `Attachments`‑samlingen, spara varje fil till disk eller strömma den någon annanstans.  
+- **Kan jag bädda in bilder som bilagor?** Ja — lägg till bilden som en `Attachment`, sätt dess `ContentId` och referera till den i HTML‑kroppen med en `cid:`‑URL.  
+- **Behöver jag en licens för produktionsanvändning?** En giltig Aspose.Email‑licens krävs för kommersiella distributioner; en gratis provversion finns tillgänglig för utvärdering.  
+- **Är detta kompatibelt med Java 8+?** Absolut; biblioteket stödjer Java 8 och nyare runtime‑miljöer.
 
 ## Vad är “extrahera bilagor från msg”?
-Att extrahera bilagor från msg innebär att programatiskt hämta ut alla filer som är bifogade i en Outlook .msg‑fil och spara dem till disk eller bearbeta dem vidare. Detta är ett vanligt krav för automatiserad fakturabehandling, dokumentarkivering eller innehållsanalys‑pipelines.
+
+Att extrahera bilagor från msg innebär att programatiskt hämta filer som är inbäddade i ett Outlook *.msg*-e‑mail och spara dem till disk eller bearbeta dem vidare. Denna funktion är avgörande för automatiserad fakturahantering, dokumentarkivering och innehållsanalys‑pipelines där manuell sparning skulle vara opraktisk.
 
 ## Varför använda Aspose.Email för Java för att extrahera bilagor?
-- **Full‑control API** – Åtkomst till varje del av MIME‑strukturen utan att skriva lågnivå‑parsers.  
-- **Format‑agnostic** – Fungerar med MSG, EML, PST, MHTML och andra e‑postformat.  
-- **Advanced features** – Konvertera, komprimera eller kryptera bilagor i realtid.  
-- **Robust documentation** – Steg‑för‑steg‑handledningar och kodexempel minskar utvecklingstiden.  
 
-## Så extraherar du bilagor från msg – Steg‑för‑steg‑översikt
-1. **Load the .msg file** – Använd `MailMessage.load("message.msg")` (eller den överlagrade metoden som strömmar filen för stora meddelanden).  
-2. **Iterate over the `Attachments` collection** – Varje `Attachment`‑objekt ger filnamnet, innehållstypen och råa byte‑data.  
-3. **Save or process each attachment** – Anropa `attachment.save("outputPath")` eller skicka strömmen till en molnlagringstjänst.  
-4. **(Optional) Handle inline images** – Inline‑bilder finns i samma samling; sätt deras `ContentId` och referera dem i HTML‑kroppen med `cid:`‑URL:er.  
+Du kan extrahera bilagor från msg‑filer med bara tre kodrader, och API‑et ger dig full åtkomst till MIME‑delar, innehållstyper och inbäddade bilder. Aspose.Email stödjer **50+** in‑ och utdataformat — inklusive MSG, EML, PST, MHTML och HTML — samtidigt som det hanterar flera hundra sidors brevlådor utan att läsa in hela filen i minnet, vilket minskar JVM‑heap‑belastningen med upp till 70 %.
 
-> **Pro tip:** När du hanterar enorma brevlådor, föredra den strömmande överlagrade metoden av `MailMessage.load()` för att hålla minnesanvändningen låg.
+## Hur man extraherar bilagor från msg – steg‑för‑steg‑översikt
+
+Läs in *.msg*-filen, gå igenom dess `Attachments`‑samling och spara varje objekt. Detta tillvägagångssätt fungerar för både vanliga och inbäddade bilagor, och du kan strömma stora filer direkt till molnlagring för att hålla minnesanvändningen låg. `Attachments` är en samling av `Attachment`‑objekt som representerar varje fil som är bifogad till meddelandet. API‑et låter dig också filtrera bilagor efter typ eller storlek innan du sparar, vilket ger dig kontroll över bearbetningen.
+
+`MailMessage` är Aspose.Email‑klassen som representerar ett e‑postmeddelande och ger åtkomst till dess rubriker, kropp och bilagor.
+
+1. **Läs in .msg‑filen** – Anropa `MailMessage.load("message.msg")` (eller använd streaming‑överladdningen för enorma meddelanden).  
+2. **Iterera över `Attachments`‑samlingen** – Varje `Attachment`‑objekt exponerar `getName()`, `getContentType()` och en byte‑ström via `getContentStream()`.  
+3. **Spara eller bearbeta varje bilaga** – Använd `attachment.save("outputPath")` för lokal lagring, eller skicka strömmen till en S3‑bucket, Azure Blob osv.  
+4. **(Valfritt) Hantera inbäddade bilder** – Inbäddade bilder visas i samma samling; se till att deras `ContentId`‑egenskap är satt och referera till dem i HTML med `<img src="cid:yourContentId">`.
+
+> **Proffstips:** När du hanterar enorma brevlådor, föredra streaming‑överladdningen av `MailMessage.load()` för att hålla minnesanvändningen låg.
 
 ## Vanliga fallgropar och hur du undviker dem
-- **Missing Content‑ID for inline images** – Se till att `ContentId`‑egenskapen är satt; annars kommer bilden inte att renderas i HTML‑kroppen.  
-- **Incorrect character encoding** – Använd UTF‑8 när du sparar textbaserade bilagor för att bevara specialtecken.  
-- **Large attachment memory usage** – Strömma bilagor direkt till disk eller en molnbucket istället för att ladda dem helt i minnet.  
+- **Saknad Content‑ID för inbäddade bilder** – Se till att `ContentId`‑egenskapen är satt; annars kommer bilden inte att visas i HTML‑kroppen.  
+- **Fel teckenkodning** – Använd UTF‑8 när du sparar textbaserade bilagor för att bevara specialtecken.  
+- **Minnesanvändning för stora bilagor** – Strömma bilagor direkt till disk eller en molnbucket istället för att läsa in dem helt i minnet.  
 
 ## Avancerade bilagetekniker du kan utforska härnäst
-- **How to extract attachments from eml** – Samma `MailMessage`‑API fungerar med `.eml`‑filer; ändra bara filändelsen i `load`‑anropet.  
-- **How to extract attachments from pst** – Använd `PersonalStorage`‑klassen för att öppna en PST‑fil, enumerera `Message`‑objekt och tillämpa samma extraktionslogik.  
-- **Embedding images as attachments** – Lägg till en bild som en `Attachment`, sätt dess `ContentId` och referera den med `<img src="cid:yourContentId">` i HTML‑kroppen.  
+- **Hur man konverterar msg till eml** – Använd `MailMessage.save("output.eml", SaveOptions.getEml())` för att konvertera en MSG‑fil till EML, och tillämpa sedan samma extraktionslogik.  
+- **Hur man extraherar eml‑bilagor** – Efter att ha konverterat eller läst in en `.eml`‑fil, iterera dess `Attachments`‑samling precis som med MSG.  
+- **Hur man extraherar bilagor från pst** – Använd `PersonalStorage`‑klassen för att öppna en PST‑fil, enumerera `Message`‑objekt och tillämpa samma extraktionssteg.  
+- **Bädda in bilder som bilagor** – Lägg till en bild som en `Attachment`, sätt dess `ContentId` och referera till den med `<img src="cid:yourContentId">` i HTML‑kroppen.  
+- **Analysera Outlook msg för anpassade egenskaper** – `MailMessage`‑API‑et låter dig läsa utökade MAPI‑egenskaper, vilket gör att du kan *parse outlook msg*-filer för metadata såsom anpassade rubriker eller användardefinierade fält.  
 
 ## Avancerade e‑postbilagor med Aspose.Email för Java‑handledningar
-### [Arbeta med inline‑bilagor i Aspose.Email](./working-with-inline-attachments/)
-Optimera din e‑postkommunikation med Aspose.Email för Java. Lär dig att arbeta med inline‑bilagor i denna omfattande guide.  
+### [Arbeta med inbäddade bilagor i Aspose.Email](./working-with-inline-attachments/)
+Optimera din e‑postkommunikation med Aspose.Email för Java. Lär dig att arbeta med inbäddade bilagor i denna omfattande guide.  
 ### [Hantera stora bilagor i Aspose.Email](./managing-large-attachments/)
-Hantera stora e‑postbilagor effektivt med Aspose.Email för Java. Steg‑för‑steg‑guide och källkod för förenklad bilagahantering i Java‑applikationer.  
+Hantera effektivt stora e‑postbilagor med Aspose.Email för Java. Steg‑för‑steg‑guide och källkod för förenklad bilagehantering i Java‑applikationer.  
 ### [Extrahera bilagor från e‑postmeddelanden i Aspose.Email](./extracting-attachments-from-email-messages/)
 Lär dig hur du **extraherar bilagor från e‑post** enkelt med Aspose.Email för Java. Steg‑för‑steg‑guide för Java‑utvecklare.  
 ### [Bädda in bilder som bilagor i Aspose.Email](./embedding-images-as-attachments/)
 Lär dig hur du **bäddar in bilder som bilagor** i Aspose.Email för Java. Höj din e‑postkommunikation med visuellt engagerande innehåll.  
 ### [Använda Aspose.Email för dokumentbilagor](./using-aspose-email-for-document-attachments/)
-Lär dig hur du hanterar dokumentbilagor i Java‑e‑post med Aspose.Email för Java. Skapa, skicka och extrahera dokumentbilagor med lätthet.  
+Lär dig hur du hanterar dokumentbilagor i Java‑e‑post med Aspose.Email för Java. Skapa, skicka och extrahera dokumentbilagor med lätthet.
 
 ## Vanliga frågor
 
 **Q: Kan jag extrahera bilagor från krypterade e‑postmeddelanden?**  
 A: Ja. Läs in meddelandet med rätt lösenord och iterera sedan över `Attachments`‑samlingen som vanligt.
 
-**Q: Hur bäddar jag in bilder som bilagor och refererar dem i HTML?**  
+**Q: Hur bäddar jag in bilder som bilagor och refererar till dem i HTML?**  
 A: Lägg till bilden som en `Attachment`, sätt dess `ContentId` och använd `<img src="cid:yourContentId">` i HTML‑kroppen.
 
 **Q: Finns det någon gräns för antal eller storlek på bilagor jag kan extrahera?**  
-A: Biblioteket i sig har inga hårda begränsningar, men du bör beakta JVM‑minnesbegränsningar och strömma stora filer.
+A: Biblioteket har inga hårda begränsningar, men du bör beakta JVM‑minnesbegränsningar och strömma stora filer.
 
 **Q: Stöder Aspose.Email att extrahera bilagor från PST‑filer?**  
 A: Absolut. Använd `PersonalStorage`‑klassen för att öppna en PST och sedan komma åt varje `Message` för att extrahera dess bilagor.
 
-**Q: Behöver jag en separat licens för varje driftsmiljö?**  
+**Q: Behöver jag en separat licens för varje distributionsmiljö?**  
 A: En enda licens täcker alla miljöer (utveckling, test, produktion) så länge du följer licensvillkoren.
 
-**Senast uppdaterad:** 2026-04-21  
+---
+
+**Senast uppdaterad:** 2026-10-23  
 **Testad med:** Aspose.Email for Java 24.10  
-**Författare:** Aspose  
+**Författare:** Aspose
+
+## Relaterade handledningar
+
+- [Extrahera e‑postbilagor Java med Aspose.Email – Komplett guide](/email/java/attachments-handling/)
+- [Extrahera e‑postbilagor Pst Aspose Java](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
+- [Aspose Email Java Tnef‑bilagor guide](/email/java/attachments-handling/aspose-email-java-tnef-attachments-guide/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 

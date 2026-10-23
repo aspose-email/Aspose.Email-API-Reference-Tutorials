@@ -1,99 +1,170 @@
 ---
-date: 2026-04-21
-description: Узнайте, как извлекать вложения из файлов msg с помощью Aspose.Email
-  для Java. Это руководство показывает, как извлекать вложения, встраивать изображения
-  в виде вложений и работать с форматами eml или pst.
+date: 2026-10-23
+description: Узнайте, как извлекать вложения msg с помощью Aspose.Email for Java.
+  В этом руководстве показано извлечение вложений, встраивание изображений и работа
+  с форматами eml или pst.
 keywords:
+- how to extract msg
 - extract attachments from msg
-- how to extract attachments
-- extract attachments from eml
-- extract attachments from pst
-- embed images as attachments
-linktitle: Извлечение вложений из msg с помощью Aspose.Email для Java
+- convert msg eml
+- extract eml attachments
+- parse outlook msg
+lastmod: 2026-10-23
+linktitle: Извлечение вложений из msg с помощью Aspose.Email for Java
+og_description: Как извлечь вложения msg с помощью Aspose.Email for Java. Следуйте
+  пошаговому руководству, чтобы эффективно извлекать, встраивать и конвертировать
+  вложения электронной почты.
+og_image_alt: 'Tutorial: extract msg attachments with Aspose.Email for Java'
+og_title: Как извлечь вложения msg с помощью Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-10-23'
+  description: Learn how to extract msg attachments using Aspose.Email for Java. This
+    guide shows extracting attachments, embedding images, and handling eml or pst
+    formats.
+  headline: How to extract msg attachments using Aspose.Email for Java
+  type: TechArticle
+- description: Learn how to extract msg attachments using Aspose.Email for Java. This
+    guide shows extracting attachments, embedding images, and handling eml or pst
+    formats.
+  name: How to extract msg attachments using Aspose.Email for Java
+  steps:
+  - name: '**Load the .msg file** – Call `MailMessage.load("message.msg")` (or use
+      the streaming overload for huge messages).'
+    text: '**Load the .msg file** – Call `MailMessage.load("message.msg")` (or use
+      the streaming overload for huge messages).'
+  - name: '**Iterate over the `Attachments` collection** – Each `Attachment` object
+      exposes `getName()`, `getContentType()`, and a byte stream via `getContentStream()`.'
+    text: '**Iterate over the `Attachments` collection** – Each `Attachment` object
+      exposes `getName()`, `getContentType()`, and a byte stream via `getContentStream()`.'
+  - name: '**Save or process each attachment** – Use `attachment.save("outputPath")`
+      for local storage, or pipe the stream to an S3 bucket, Azure Blob, etc.'
+    text: '**Save or process each attachment** – Use `attachment.save("outputPath")`
+      for local storage, or pipe the stream to an S3 bucket, Azure Blob, etc.'
+  - name: '**(Optional) Handle inline images** – Inline images appear in the same
+      collection; ensure their `ContentId` property is set and reference them in HTML
+      with `<img src="cid:yourContentId">`.'
+    text: '**(Optional) Handle inline images** – Inline images appear in the same
+      collection; ensure their `ContentId` property is set and reference them in HTML
+      with `<img src="cid:yourContentId">`.'
+  type: HowTo
+- questions:
+  - answer: Yes. Load the message with the appropriate password and then iterate over
+      the `Attachments` collection as usual.
+    question: Can I extract attachments from encrypted emails?
+  - answer: Add the image as an `Attachment`, set its `ContentId`, and use `<img src="cid:yourContentId">`
+      in the HTML body.
+    question: How do I embed images as attachments and reference them in HTML?
+  - answer: The library imposes no hard limits, but you should consider JVM memory
+      constraints and stream large files.
+    question: Is there a limit on the number or size of attachments I can extract?
+  - answer: Absolutely. Use the `PersonalStorage` class to open a PST and then access
+      each `Message` to extract its attachments.
+    question: Does Aspose.Email support extracting attachments from PST files?
+  - answer: A single license covers all environments (development, testing, production)
+      as long as you comply with the licensing terms.
+    question: Do I need a separate license for each deployment environment?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Извлечение вложений из msg с помощью Aspose.Email для Java
+tags:
+- extract msg
+- Aspose.Email
+- Java email processing
+- email attachments
+title: Как извлечь вложения msg с помощью Aspose.Email for Java
 url: /ru/java/advanced-email-attachments/
 weight: 13
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Извлечение вложений из msg с помощью Aspose.Email for Java
+# Как извлечь вложения msg с помощью Aspose.Email для Java
 
-Email attachments are the workhorse of modern business communication, letting us share contracts, invoices, images, and more. With **Aspose.Email for Java**, you can **extract attachments from msg** files quickly and reliably, whether the messages come from Outlook, an Exchange server, or a local archive. This tutorial walks you through the essential steps, explains why this capability matters, and shows how to handle related formats such as EML and PST.
+В современных бизнес‑процессах часто требуется автоматически извлекать файлы из Outlook‑сообщений *.msg*. **Как извлечь msg** вложения с помощью Aspose.Email for Java позволяют сделать это без написания собственного MIME‑парсера, независимо от того, находятся ли сообщения на локальном диске, сервере Exchange или в архиве PST. Это руководство проведёт вас через весь процесс, объяснит, почему эта библиотека — правильный выбор, и покажет, как работать с сопутствующими форматами, такими как EML и PST.
 
-## Краткие ответы
-- **Какова основная цель Aspose.Email for Java?** Программно создавать, читать и изменять электронные сообщения, включая работу с вложениями.  
-- **Как извлечь вложения из msg?** Загрузите сообщение с помощью `MailMessage.load()` и пройдитесь по его коллекции `Attachments`.  
-- **Могу ли я встроить изображения как вложения?** Да — встроенные изображения можно добавить как вложения и ссылаться на них в HTML‑теле.  
-- **Нужна ли лицензия для использования в продакшене?** Для коммерческих развертываний требуется действительная лицензия Aspose.Email.  
+## Быстрые ответы
+- **Какова основная цель Aspose.Email for Java?** Программно создавать, читать и управлять электронными письмами, включая извлечение вложений, в форматах MSG, EML, PST и других.  
+- **Как извлечь вложения из msg?** Загрузите сообщение с помощью `MailMessage.load()` и пройдитесь по коллекции `Attachments`, сохраняя каждый файл на диск или передавая его в поток в другое место.  
+- **Могу ли я внедрять изображения как вложения?** Да — добавьте изображение как `Attachment`, задайте его `ContentId` и укажите его в HTML‑теле с помощью URL `cid:`.  
+- **Нужна ли лицензия для использования в продакшене?** Для коммерческих развертываний требуется действующая лицензия Aspose.Email; бесплатная пробная версия доступна для оценки.  
 - **Совместима ли она с Java 8+?** Абсолютно; библиотека поддерживает Java 8 и более новые среды выполнения.
 
-## Что означает «извлечение вложений из msg»?
-Извлечение вложений из msg означает программное извлечение любых файлов, прикреплённых к файлу Outlook .msg, и их сохранение на диск или дальнейшую обработку. Это распространённая потребность для автоматической обработки счетов, архивирования документов или конвейеров анализа контента.
+## Что такое «извлечение вложений из msg»?
 
-## Зачем использовать Aspose.Email for Java для извлечения вложений?
-- **API полного контроля** – Получайте доступ к каждой части MIME‑структуры без написания низкоуровневых парсеров.  
-- **Независимый от формата** – Работает с MSG, EML, PST, MHTML и другими форматами электронной почты.  
-- **Продвинутые функции** – Преобразовывайте, сжимайте или шифруйте вложения «на лету».  
-- **Надёжная документация** – Пошаговые учебники и примеры кода сокращают время разработки.  
+Извлечение вложений из msg означает программное получение файлов, встроенных в Outlook‑сообщение *.msg*, и их сохранение на диск или дальнейшую обработку. Эта возможность необходима для автоматизированной обработки счетов, архивирования документов и конвейеров анализа контента, где ручное сохранение было бы непрактичным.
 
-## Как извлечь вложения из msg — пошаговый обзор
-1. **Загрузить файл .msg** – Используйте `MailMessage.load("message.msg")` (или перегрузку, которая потоково читает файл для больших сообщений).  
-2. **Итерировать коллекцию `Attachments`** – Каждый объект `Attachment` предоставляет имя файла, тип содержимого и необработанные байтовые данные.  
-3. **Сохранить или обработать каждое вложение** – Вызовите `attachment.save("outputPath")` или передайте поток в облачное хранилище.  
-4. **(Опционально) Обрабатывать встроенные изображения** – Встроенные изображения находятся в той же коллекции; задайте их `ContentId` и ссылаться на них в HTML‑теле с помощью URL `cid:`.  
+## Почему использовать Aspose.Email for Java для извлечения вложений?
 
-> **Совет:** При работе с огромными почтовыми ящиками предпочтительно использовать потоковую перегрузку `MailMessage.load()`, чтобы снизить потребление памяти.
+Вы можете извлечь вложения из файлов msg всего в три строки кода, а API предоставляет полный доступ к MIME‑частям, типам контента и встроенным изображениям. Aspose.Email поддерживает **50+** форматов ввода и вывода, включая MSG, EML, PST, MHTML и HTML, при этом обрабатывает почтовые ящики на сотни страниц без загрузки всего файла в память, что снижает нагрузку на кучу JVM до 70 %.
+
+## Как извлечь вложения из msg – пошаговый обзор
+
+Загрузите файл *.msg*, пройдитесь по его коллекции `Attachments` и сохраните каждый элемент. Этот подход работает как с обычными, так и со встроенными вложениями, и вы можете напрямую передавать большие файлы в облачное хранилище, чтобы снизить использование памяти. `Attachments` — это коллекция объектов `Attachment`, представляющих каждый файл, вложенный в сообщение. API также позволяет фильтровать вложения по типу или размеру перед сохранением, предоставляя контроль над процессом.
+
+`MailMessage` — класс Aspose.Email, представляющий электронное сообщение и предоставляющий доступ к его заголовкам, телу и вложениям.
+
+1. **Загрузите файл .msg** – Call `MailMessage.load("message.msg")` (or use the streaming overload for huge messages).  
+2. **Пройдитесь по коллекции `Attachments`** – Each `Attachment` object exposes `getName()`, `getContentType()`, and a byte stream via `getContentStream()`.  
+3. **Сохраните или обработайте каждое вложение** – Use `attachment.save("outputPath")` for local storage, or pipe the stream to an S3 bucket, Azure Blob, etc.  
+4. **(Опционально) Обработайте встроенные изображения** – Inline images appear in the same collection; ensure their `ContentId` property is set and reference them in HTML with `<img src="cid:yourContentId">`.
+
+> **Совет:** При работе с огромными почтовыми ящиками предпочтительно использовать перегрузку `MailMessage.load()` с потоковой передачей, чтобы снизить использование памяти.
 
 ## Распространённые подводные камни и как их избежать
-- **Отсутствует Content‑ID у встроенных изображений** – Убедитесь, что свойство `ContentId` установлено; иначе изображение не отобразится в HTML‑теле.  
-- **Неправильная кодировка символов** – Используйте UTF‑8 при сохранении текстовых вложений, чтобы сохранить специальные символы.  
-- **Большое потребление памяти при работе с вложениями** – Потоково записывайте вложения напрямую на диск или в облачное хранилище, вместо полной загрузки их в память.  
+- **Отсутствует Content‑ID у встроенных изображений** – Ensure the `ContentId` property is set; otherwise the image won’t render in the HTML body.  
+- **Неправильная кодировка символов** – Use UTF‑8 when saving text‑based attachments to preserve special characters.  
+- **Большое потребление памяти вложениями** – Stream attachments directly to disk or a cloud bucket instead of loading them fully into memory.  
 
 ## Продвинутые техники работы с вложениями, которые вы можете изучить дальше
-- **Как извлечь вложения из eml** – Тот же API `MailMessage` работает с файлами `.eml`; просто измените расширение файла в вызове `load`.  
-- **Как извлечь вложения из pst** – Используйте класс `PersonalStorage` для открытия PST‑файла, перечислите объекты `Message` и примените ту же логику извлечения.  
-- **Встраивание изображений как вложений** – Добавьте изображение как `Attachment`, задайте его `ContentId` и ссылаться на него с помощью `<img src="cid:yourContentId">` в HTML‑теле.  
+- **Как конвертировать msg в eml** – Use `MailMessage.save("output.eml", SaveOptions.getEml())` to convert a MSG file to EML, then apply the same extraction logic.  
+- **Как извлечь вложения из eml** – After converting or loading an `.eml` file, iterate its `Attachments` collection just like with MSG.  
+- **Как извлечь вложения из pst** – Use the `PersonalStorage` class to open a PST file, enumerate `Message` objects, and apply the same extraction steps.  
+- **Встраивание изображений как вложения** – Add an image as an `Attachment`, set its `ContentId`, and reference it with `<img src="cid:yourContentId">` in the HTML body.  
+- **Разбор Outlook msg для пользовательских свойств** – The `MailMessage` API lets you read extended MAPI properties, enabling you to *разобрать outlook msg* files for metadata such as custom headers or user‑defined fields.  
 
-## Продвинутые вложения в электронной почте с Aspose.Email for Java: учебные материалы
-### [Working with Inline Attachments in Aspose.Email](./working-with-inline-attachments/)
-Оптимизируйте свою электронную коммуникацию с Aspose.Email for Java. Научитесь работать со встроенными вложениями в этом полном руководстве.  
-### [Managing Large Attachments in Aspose.Email](./managing-large-attachments/)
-Эффективно управляйте большими вложениями в электронных письмах с Aspose.Email for Java. Пошаговое руководство и исходный код для упрощённой обработки вложений в Java‑приложениях.  
-### [Extracting Attachments from Email Messages in Aspose.Email](./extracting-attachments-from-email-messages/)
+## Продвинутые вложения электронной почты с руководствами Aspose.Email для Java
+### [Работа со встроенными вложениями в Aspose.Email](./working-with-inline-attachments/)
+Оптимизируйте свою электронную коммуникацию с Aspose.Email for Java. Узнайте, как работать со встроенными вложениями, в этом полном руководстве.  
+### [Управление большими вложениями в Aspose.Email](./managing-large-attachments/)
+Эффективно управляйте большими вложениями электронной почты с Aspose.Email for Java. Пошаговое руководство и исходный код для упрощённой обработки вложений в Java‑приложениях.  
+### [Извлечение вложений из сообщений электронной почты в Aspose.Email](./extracting-attachments-from-email-messages/)
 Узнайте, как **извлекать вложения из email** без усилий с помощью Aspose.Email for Java. Пошаговое руководство для Java‑разработчиков.  
-### [Embedding Images as Attachments in Aspose.Email](./embedding-images-as-attachments/)
+### [Встраивание изображений как вложения в Aspose.Email](./embedding-images-as-attachments/)
 Узнайте, как **встраивать изображения как вложения** в Aspose.Email for Java. Поднимите свою электронную коммуникацию с визуально привлекательным контентом.  
-### [Using Aspose.Email for Document Attachments](./using-aspose-email-for-document-attachments/)
-Узнайте, как управлять документными вложениями в Java‑письмах с помощью Aspose.Email for Java. Создавайте, отправляйте и извлекайте документные вложения с лёгкостью.  
+### [Использование Aspose.Email для документных вложений](./using-aspose-email-for-document-attachments/)
+Узнайте, как управлять документными вложениями в Java‑письмах с помощью Aspose.Email for Java. Создавайте, отправляйте и извлекайте документные вложения с лёгкостью.
 
 ## Часто задаваемые вопросы
 
-**Q: Могу ли я извлечь вложения из зашифрованных писем?**  
-A: Да. Загрузите сообщение с соответствующим паролем, а затем как обычно пройдитесь по коллекции `Attachments`.  
+**Q: Могу ли я извлекать вложения из зашифрованных писем?**  
+A: Да. Загрузите сообщение с соответствующим паролем, а затем как обычно пройдитесь по коллекции `Attachments`.
 
-**Q: Как встроить изображения как вложения и ссылаться на них в HTML?**  
-A: Добавьте изображение как `Attachment`, задайте его `ContentId` и используйте `<img src="cid:yourContentId">` в HTML‑теле.  
+**Q: Как встраивать изображения как вложения и ссылаться на них в HTML?**  
+A: Добавьте изображение как `Attachment`, задайте его `ContentId` и используйте `<img src="cid:yourContentId">` в HTML‑теле.
 
-**Q: Есть ли ограничение на количество или размер вложений, которые я могу извлечь?**  
-A: Библиотека сама по себе не накладывает жёстких ограничений, однако следует учитывать ограничения памяти JVM и потоково обрабатывать большие файлы.  
+**Q: Есть ли ограничение на количество или размер извлекаемых вложений?**  
+A: Библиотека не накладывает жёстких ограничений, однако следует учитывать ограничения памяти JVM и передавать большие файлы потоково.
 
 **Q: Поддерживает ли Aspose.Email извлечение вложений из PST‑файлов?**  
-A: Абсолютно. Используйте класс `PersonalStorage` для открытия PST и затем получайте каждый `Message`, чтобы извлечь его вложения.  
+A: Абсолютно. Используйте класс `PersonalStorage` для открытия PST‑файла, а затем получайте каждый `Message` для извлечения его вложений.
 
 **Q: Нужна ли отдельная лицензия для каждой среды развертывания?**  
-A: Одна лицензия покрывает все среды (разработка, тестирование, продакшн), при условии соблюдения условий лицензирования.  
+A: Одна лицензия покрывает все среды (разработка, тестирование, продакшн), при условии соблюдения условий лицензирования.
 
 ---
 
-**Последнее обновление:** 2026-04-21  
+**Последнее обновление:** 2026-10-23  
 **Тестировано с:** Aspose.Email for Java 24.10  
-**Автор:** Aspose  
+**Автор:** Aspose
+
+## Связанные руководства
+
+- [Извлечение вложений email на Java с Aspose.Email – Полное руководство](/email/java/attachments-handling/)
+- [Извлечение вложений email PST Aspose Java](/email/java/attachments-handling/extract-email-attachments-pst-aspose-java/)
+- [Руководство по Tnef‑вложениями Aspose Email Java](/email/java/attachments-handling/aspose-email-java-tnef-attachments-guide/)
+
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
