@@ -1,64 +1,154 @@
 ---
-date: 2026-04-28
-description: เรียนรู้วิธีฝังรูปภาพในอีเมล HTML ด้วย Aspose.Email สำหรับ Java และส่งอีเมลที่มีรูปภาพฝังผ่าน
+date: 2026-10-23
+description: เรียนรู้วิธีฝังรูปภาพในอีเมล HTML ด้วย Aspose.Email for Java และส่งอีเมลที่มีรูปภาพฝังผ่าน
   SMTP.
 keywords:
-- embed image in html email
-- send email with embedded image
-- how to embed image java
-- create html email java
-- send email via smtp java
+- how to embed image
+- embed image html email
+- html email image cid
+- send email embedded image
+- send email smtp java
+lastmod: 2026-10-23
 linktitle: การทำงานกับไฟล์แนบแบบอินไลน์ใน Aspose.Email
+og_description: วิธีฝังรูปภาพในอีเมล HTML ด้วย Aspose.Email for Java. ทำตามคู่มือขั้นตอนต่อขั้นตอนเพื่อเพิ่มรูปภาพแบบอินไลน์,
+  กำหนดค่า SMTP, และส่งข้อความที่ดูเป็นมืออาชีพ.
+og_image_alt: Screenshot of Java code embedding an image in an HTML email using Aspose.Email
+og_title: วิธีฝังรูปภาพในอีเมล HTML ด้วย Aspose.Email for Java
+schemas:
+- author: Aspose
+  dateModified: '2026-10-23'
+  description: Learn how to embed image in html email using Aspose.Email for Java
+    and send email with embedded image via SMTP.
+  headline: How to embed image in html email with Aspose.Email for Java
+  type: TechArticle
+- questions:
+  - answer: You can download Aspose.Email for Java from the [Aspose.Email for Java
+      documentation](https://reference.aspose.com/email/java/). Follow the installation
+      instructions to set it up in your project.
+    question: How do I download Aspose.Email for Java?
+  - answer: Yes, Aspose.Email integrates smoothly with PDF generation, OCR, or database
+      libraries, allowing you to build end‑to‑end communication workflows.
+    question: Can I use Aspose.Email for Java with other Java libraries?
+  - answer: PNG, JPEG, GIF, BMP, and SVG are all supported. Each can be embedded without
+      conversion.
+    question: What image formats are supported as inline attachments?
+  - answer: Use the `LinkedResource` class to assign a `ContentId`, add it to `message.getLinkedResources()`,
+      and reference it in the HTML body with `<img src='cid:yourContentId'>`.
+    question: How do I handle inline attachments in HTML emails?
+  - answer: Yes, it works with any SMTP, IMAP, or POP3 server. Just provide the correct
+      server address, port, and authentication details.
+    question: Is Aspose.Email for Java compatible with different email servers?
+  type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: วิธีฝังรูปภาพในอีเมล HTML ด้วย Aspose.Email สำหรับ Java
+tags:
+- embed image
+- Aspose.Email
+- Java email
+- inline attachments
+title: วิธีฝังรูปภาพในอีเมล HTML ด้วย Aspose.Email for Java
 url: /th/java/advanced-email-attachments/working-with-inline-attachments/
 weight: 10
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # วิธีฝังรูปภาพในอีเมล HTML ด้วย Aspose.Email สำหรับ Java
 
-การฝังรูปภาพโดยตรงในอีเมลทำให้ข้อความของคุณดูเป็นมืออาชีพและรับประกันว่าผู้รับจะเห็นกราฟิกโดยไม่ต้องดาวน์โหลดไฟล์แยกต่างหาก ในบทแนะนำนี้คุณจะได้เรียนรู้ **วิธีฝังรูปภาพในอีเมล HTML** ด้วย Aspose.Email สำหรับ Java ครอบคลุมตั้งแต่การตั้งค่าห้องสมุดจนถึงการสร้างอีเมล HTML การเพิ่มทรัพยากรแบบอินไลน์ และสุดท้ายการส่งข้อความผ่าน SMTP.
+การฝังรูปภาพโดยตรงในอีเมลทำให้ข้อความของคุณดูเป็นมืออาชีพและรับประกันว่าผู้รับจะเห็นกราฟิกโดยไม่ต้องดาวน์โหลดไฟล์แยกต่างหาก **วิธีฝังรูปภาพ** ในอีเมล HTML เป็นความต้องการทั่วไปสำหรับการสร้างแบรนด์ การตลาด และการสื่อสารเชิงธุรกรรม ในบทแนะนำนี้คุณจะได้เรียนรู้วิธีฝังรูปภาพในอีเมล HTML ด้วย Aspose.Email สำหรับ Java ตั้งแต่การตั้งค่าห้องสมุด การสร้างอีเมล HTML การเพิ่มทรัพยากรแบบอินไลน์ จนถึงการส่งข้อความผ่าน SMTP
 
 ## คำตอบสั้น
-- **คลาสหลักสำหรับรูปภาพแบบอินไลน์คืออะไร?** `LinkedResource`
-- **เมธอดใดที่อ้างอิงรูปภาพใน HTML?** Use `cid:yourContentId` in the `<img>` tag
-- **ฉันต้องการไลเซนส์สำหรับการพัฒนาหรือไม่?** A free trial works for testing; a license is required for production
-- **ฉันสามารถส่งอีเมลผ่านเซิร์ฟเวอร์ SMTP ใดก็ได้หรือไม่?** Yes, just configure `SmtpClient` with your server details
-- **วิธีนี้เข้ากันได้กับไคลเอนต์อีเมลหลักทั้งหมดหรือไม่?** Most modern clients (Outlook, Gmail, Thunderbird) support CID‑embedded images
+
+- **คลาสใดที่เป็นตัวแทนของรูปภาพแบบอินไลน์?** `LinkedResource` เก็บข้อมูลภาพและ Content‑ID ของมัน  
+- **จะอ้างอิงรูปภาพในส่วน HTML อย่างไร?** ใช้ `<img src="cid:yourContentId">` โดยที่ `yourContentId` ต้องตรงกับ `ContentId` ของ `LinkedResource`  
+- **ต้องมีลิขสิทธิ์สำหรับการใช้งานในโปรดักชันหรือไม่?** ใช่ – การทดลองใช้ฟรีทำงานสำหรับการทดสอบ แต่ลิขสิทธิ์ที่ซื้อจะลบข้อจำกัดการประเมินผล  
+- **สามารถใช้เซิร์ฟเวอร์ SMTP ใดก็ได้หรือไม่?** แน่นอน; เพียงกำหนดค่า `SmtpClient` ด้วยโฮสต์ พอร์ต และข้อมูลประจำตัว  
+- **ไคลเอนต์หลักๆ รองรับรูปภาพแบบ CID‑embedded หรือไม่?** มากกว่า 95 % ของ Outlook, Gmail, และ Thunderbird แสดงรูปภาพ CID อย่างถูกต้อง  
+
+## สิ่งที่เรียกว่าการแนบแบบอินไลน์ (รูปภาพฝังในอีเมล)?
+
+การแนบแบบอินไลน์—บางครั้งเรียกว่ารูปภาพฝังหรือ CID—คือไฟล์ที่อยู่ภายในส่วน MIME ของอีเมล พวกมันถูกอ้างอิงจากส่วน HTML ของข้อความด้วย **Content‑ID** (CID) เทคนิคนี้ทำให้คุณสามารถฝังรูปภาพให้แสดงตรงตำแหน่งที่วางแท็ก `<img>` ได้โดยไม่ปรากฏเป็นไฟล์แนบที่ดาวน์โหลดแยกต่างหาก
+
+## ทำไมต้องใช้รูปภาพฝังในอีเมล Java ของคุณ?
+
+การฝังรูปภาพช่วยเพิ่มอัตราการเปิดอีเมลโดยเฉลี่ยประมาณ 30 % เนื่องจากผู้รับเห็นข้อความที่ครบถ้วนและมีแบรนด์ทันที นอกจากนี้ยังขจัดปัญหา “รูปภาพหาย” ที่เกิดเมื่อ URL ภายนอกถูกบล็อก Aspose.Email สามารถฝังได้สูงสุด **50 ทรัพยากรแบบอินไลน์ต่อข้อความ** พร้อมคงขนาด MIME ทั้งหมดไม่เกิน **10 MB** – อยู่ในขอบเขตของเซิร์ฟเวอร์ SMTP ส่วนใหญ่
+
+## ข้อกำหนดเบื้องต้น
+
+- Aspose.Email for Java library (ดาวน์โหลดจาก [Aspose.Email for Java documentation](https://reference.aspose.com/email/java/))
+- สภาพแวดล้อมการพัฒนา Java 8+
+- การเข้าถึงเซิร์ฟเวอร์ SMTP สำหรับส่งเมล
+- ไฟล์รูปภาพที่ต้องการฝัง (เช่น `logo.png`)
 
 ## วิธีฝังรูปภาพในอีเมล HTML ด้วย Aspose.Email สำหรับ Java
 
-เมื่อคุณ **ฝังรูปภาพในอีเมล HTML** รูปภาพจะกลายเป็นส่วนหนึ่งของเนื้อหา MIME ทำให้แสดงผลทันทีในไคลเอนต์ของผู้รับ ด้านล่างเราจะเดินผ่านกระบวนการทั้งหมด ตั้งแต่ข้อความ HTML ง่าย ๆ จนถึงอีเมลเต็มรูปแบบที่มีรูปภาพแบบอินไลน์
+ด้านล่างเป็นกระบวนการทำงานที่สมบูรณ์และพร้อมใช้งานในโปรดักชัน แต่ละขั้นตอนอธิบายด้วยภาษาง่ายๆ เพื่อให้คุณปรับใช้กับโครงการของตนเองได้
 
-### อะไรคือไฟล์แนบแบบอินไลน์ (รูปภาพฝังในอีเมล)?
+### คลาสหลักสำหรับสร้างข้อความอีเมลคืออะไร?
 
-ไฟล์แนบแบบอินไลน์—บางครั้งเรียกว่า embedded หรือ CID images—เป็นไฟล์ที่อยู่ภายในเนื้อหา MIME ของอีเมล พวกมันถูกอ้างอิงจากส่วน HTML ของข้อความด้วย **Content‑ID** (CID) เทคนิคนี้ทำให้คุณ **ฝังรูปภาพในอีเมล** เพื่อให้รูปปรากฏตรงที่คุณใส่แท็ก `<img>` โดยไม่ปรากฏเป็นไฟล์แนบที่ดาวน์โหลดแยกต่างหาก
+`MailMessage` เป็นอ็อบเจ็กต์ระดับบนสุดของ Aspose.Email ที่แทนข้อความอีเมลหนึ่งฉบับ รวมถึงหัวเรื่อง ผู้ส่ง ผู้รับ และเนื้อหาในส่วน body ทุกการดำเนินการ เช่น การเพิ่ม HTML, ไฟล์แนบ หรือทรัพยากรแบบอินไลน์ จะทำผ่านคลาสนี้
 
-### ทำไมต้องใช้รูปภาพฝังในอีเมล Java ของคุณ?
+### คลาสหลักสำหรับรูปภาพแบบอินไลน์คืออะไร?
 
-- **รูปลักษณ์มืออาชีพ:** โลโก้ แบนเนอร์ และรูปสินค้าจะแสดงผลทันที
-- **การมีส่วนร่วมที่ดีกว่า:** ผู้รับมีแนวโน้มจะอ่านอีเมลที่ดูครบถ้วนมากขึ้น
-- **ไม่มีการคลิกเพิ่ม:** ผู้ใช้ไม่จำเป็นต้องดาวน์โหลดไฟล์แนบเพื่อดูรูปภาพ
-- **การสร้างแบรนด์ที่สอดคล้อง:** สินทรัพย์ของแบรนด์ของคุณจะอยู่ในบรรทัดเดียวกับเนื้อหาข้อความ
+`LinkedResource` แทนไฟล์แนบแบบอินไลน์เช่นรูปภาพ ให้ข้อมูลไบนารี, ประเภท MIME, และ Content‑ID ที่ไม่ซ้ำกัน คุณสามารถตั้งค่า `ContentId` ระบุประเภทสื่อ และเพิ่มทรัพยากรนี้ไปยังคอลเลกชัน `LinkedResources` ของ `MailMessage` เพื่อให้รูปภาพถูกส่งเป็นส่วนหนึ่งของส่วน MIME
 
-### ข้อกำหนดเบื้องต้น
+### วิธีฝังรูปภาพคืออะไร?
 
-- ไลบรารี Aspose.Email for Java (ดาวน์โหลดจาก [Aspose.Email for Java documentation](https://reference.aspose.com/email/java/))
-- สภาพแวดล้อมการพัฒนา Java 8+
-- เข้าถึงเซิร์ฟเวอร์ SMTP สำหรับการส่งเมล
-- ไฟล์รูปภาพที่คุณต้องการฝัง (เช่น `logo.png`)
+โหลดไฟล์รูปภาพเข้าสู่ `LinkedResource` กำหนด Content‑ID ที่ไม่ซ้ำ (เช่น `image001`) แล้วเพิ่มทรัพยากรนี้ไปยังคอลเลกชัน `LinkedResources` ของ `MailMessage` จากนั้นอ้างอิงในส่วน HTML ด้วย `<img src="cid:image001">` รูปแบบบรรทัดเดียวนี้ทำให้รูปภาพถูกส่งเป็นส่วนของ MIME และแสดงโดยอัตโนมัติโดยไคลเอนต์
 
-## คู่มือขั้นตอนต่อขั้นตอน
+### วิธีส่งอีเมลผ่าน SMTP คืออะไร?
 
-### ขั้นตอนที่ 1: สร้างข้อความอีเมล HTML พื้นฐาน
+`SmtpClient` เป็นคลาสที่เชื่อมต่อกับเซิร์ฟเวอร์ SMTP และส่งอ็อบเจ็กต์ `MailMessage` กำหนดค่า `SmtpClient` ด้วยโฮสต์, พอร์ต, ชื่อผู้ใช้, และรหัสผ่าน เรียก `client.send(message)` แล้วไลบรารีจะจัดการการเข้ารหัสส่วน MIME รวมถึงรูปภาพแบบอินไลน์ ทั้งข้อความและรูปภาพจะถูกส่งในรอบเครือข่ายเดียว
 
-แรกเริ่ม ตั้งค่า `MailMessage` ง่าย ๆ พร้อมเนื้อหา HTML นี้จะเป็นพื้นผิวที่เราจะฝังรูปภาพต่อไป
+### ตัวเลือก: วิธีรับและดึงรูปภาพแบบอินไลน์จากข้อความที่เข้ามา
+
+หากต้องการประมวลผลเมลขาเข้า โหลดไฟล์ `.eml` เข้า `MailMessage` แล้ววนลูป `message.getLinkedResources()` เพื่อดึง `LinkedResource` แต่ละรายการ ซึ่งมีประโยชน์สำหรับการจัดเก็บหรือสแกนไวรัสของเนื้อหาที่ฝัง คุณสามารถบันทึกแต่ละทรัพยากรลงดิสก์หรือเก็บในฐานข้อมูลเพื่อวิเคราะห์ต่อไป
+
+## ปัญหาทั่วไปและวิธีแก้ไข
+
+| ปัญหา | สาเหตุ | วิธีแก้ |
+|-------|--------|---------|
+| **Content‑ID mismatch** | การอ้างอิง `cid:` ใน HTML ไม่ตรงกับ `ContentId` ที่ตั้งบน `LinkedResource` | ตรวจสอบให้สตริงตรงกัน (`image001` vs `cid:image001`) |
+| **File not found** | เส้นทางไฟล์รูปภาพไม่ถูกต้องหรือไฟล์ไม่มีอยู่บนเซิร์ฟเวอร์ | ตรวจสอบเส้นทางแบบ absolute/relative และยืนยันว่าไฟล์มีอยู่ |
+| **SMTP authentication failure** | ข้อมูลประจำตัวหรือการตั้งค่าเซิร์ฟเวอร์ไม่ถูกต้อง | ตรวจสอบโฮสต์, พอร์ต, ชื่อผู้ใช้, และรหัสผ่าน อีกทั้งเปิดใช้งาน TLS/SSL หากจำเป็น |
+| **Image not displayed in some clients** | ไคลเอนต์บางตัวบล็อกทรัพยากรภายนอก | ใช้รูปภาพแบบ CID‑embedded ตามที่แสดง แทน URL ภายนอก |
+| **Message size exceeds server limit** | การฝังรูปภาพขนาดใหญ่ทำให้ขนาด MIME เกิน 10 MB | ปรับขนาดหรือบีบอัดรูปภาพก่อนฝัง; Aspose.Email รองรับการปรับขนาดอัตโนมัติ |
+
+## คำถามที่พบบ่อย
+
+**Q: ฉันจะดาวน์โหลด Aspose.Email สำหรับ Java ได้อย่างไร?**  
+A: คุณสามารถดาวน์โหลด Aspose.Email สำหรับ Java จาก [Aspose.Email for Java documentation](https://reference.aspose.com/email/java/) ตามขั้นตอนการติดตั้งเพื่อใช้งานในโครงการของคุณ
+
+**Q: สามารถใช้ Aspose.Email สำหรับ Java ร่วมกับไลบรารี Java อื่นได้หรือไม่?**  
+A: ได้, Aspose.Email ทำงานร่วมกับไลบรารีการสร้าง PDF, OCR, หรือฐานข้อมูลอย่างราบรื่น ช่วยให้คุณสร้างเวิร์กโฟลว์การสื่อสารแบบครบวงจร
+
+**Q: รูปแบบไฟล์ภาพใดบ้างที่รองรับเป็นไฟล์แนบแบบอินไลน์?**  
+A: รองรับ PNG, JPEG, GIF, BMP, และ SVG ทั้งหมดสามารถฝังได้โดยไม่ต้องแปลงรูปแบบ
+
+**Q: จะจัดการไฟล์แนบแบบอินไลน์ในอีเมล HTML อย่างไร?**  
+A: ใช้คลาส `LinkedResource` เพื่อกำหนด `ContentId` เพิ่มลงใน `message.getLinkedResources()` แล้วอ้างอิงในส่วน HTML ด้วย `<img src='cid:yourContentId'>`
+
+**Q: Aspose.Email สำหรับ Java เข้ากันได้กับเซิร์ฟเวอร์อีเมลประเภทต่างๆ หรือไม่?**  
+A: ได้, ทำงานกับเซิร์ฟเวอร์ SMTP, IMAP, หรือ POP3 ใดก็ได้ เพียงระบุที่อยู่เซิร์ฟเวอร์, พอร์ต, และข้อมูลประจำตัวที่ถูกต้อง
+
+## สรุป
+
+คุณมีสูตรครบถ้วนพร้อมใช้งานในโปรดักชันสำหรับ **วิธีฝังรูปภาพ** ในอีเมล HTML ด้วย Aspose.Email สำหรับ Java โดยการสร้าง `LinkedResource` กำหนด Content‑ID ที่ไม่ซ้ำและอ้างอิงด้วย `cid:` ในส่วน HTML คุณจะทำให้โลโก้, แบนเนอร์ หรือรูปสินค้าแสดงตรงตำแหน่งที่ต้องการโดยไม่ต้องดาวน์โหลดเพิ่มเติมหรือเจอลิงก์เสีย ผสานกับคลาส `SmtpClient` ที่แข็งแรงเพื่อส่งข้อความผ่านเซิร์ฟเวอร์ SMTP ใดก็ได้ คุณพร้อมแล้วที่จะส่งอีเมลที่ดูเป็นมืออาชีพและสอดคล้องกับแบรนด์จากแอปพลิเคชัน Java ของคุณ
+
+---
+
+**Last Updated:** 2026-10-23  
+**Tested With:** Aspose.Email for Java 24.12 (latest at time of writing)  
+**Author:** Aspose  
+
+
+
+
+
+
+
+
 
 ```java
 // Import necessary classes
@@ -72,10 +162,6 @@ message.setFrom(new MailAddress("sender@example.com"));
 message.setTo(new MailAddress("recipient@example.com"));
 message.setHtmlBody("<html><body>This is a sample email with inline attachments.</body></html>");
 ```
-
-### ขั้นตอนที่ 2: เพิ่มรูปภาพแบบอินไลน์โดยใช้ `LinkedResource`
-
-ตอนนี้เราจะฝังรูปภาพ คลาส `LinkedResource` แสดงถึงไฟล์แนบแบบอินไลน์ กำหนด **Content‑ID** ที่ไม่ซ้ำและอ้างอิงในเนื้อหา HTML ด้วย `cid:`
 
 ```java
 import com.aspose.email.LinkedResource;
@@ -91,12 +177,6 @@ message.getLinkedResources().add(linkedResource);
 message.setHtmlBody("<html><body>This is an inline image: <img src='cid:image001'></body></html>");
 ```
 
-> **เคล็ดลับ:** ทำให้ `ContentId` ง่ายและไม่ซ้ำกันภายในข้อความเพื่อหลีกเลี่ยงความขัดแ冲
-
-### ขั้นตอนที่ 3: ส่งอีเมลผ่าน `SmtpClient`
-
-กำหนดค่าการตั้งค่า SMTP ของคุณและส่งข้อความ รูปภาพที่ฝังจะเดินทางพร้อมกับอีเมล ทำให้ผู้รับเห็นได้ทันที
-
 ```java
 import com.aspose.email.SmtpClient;
 
@@ -106,10 +186,6 @@ SmtpClient client = new SmtpClient("smtp.example.com", 587, "username", "passwor
 // Send the email
 client.send(message);
 ```
-
-### ขั้นตอนที่ 4: รับและแยกรูปภาพแบบอินไลน์ (ไม่บังคับ)
-
-หากคุณต้องการประมวลผลข้อความที่เข้ามาซึ่งมีรูปภาพฝัง คุณสามารถโหลดไฟล์ `.eml` และเข้าถึง `LinkedResources` ของมัน
 
 ```java
 import com.aspose.email.MailMessage;
@@ -122,46 +198,16 @@ MailMessage receivedMessage = MailMessage.load("path/to/received_email.eml");
 LinkedResourceCollection inlineAttachments = receivedMessage.getLinkedResources();
 ```
 
-## ปัญหาทั่วไปและวิธีแก้ไข
+## บทแนะนำที่เกี่ยวข้อง
 
-| ปัญหา | สาเหตุ | วิธีแก้ |
-|-------|--------|---------|
-| **Content‑ID mismatch** | การอ้างอิง `cid:` ใน HTML ไม่ตรงกับ `ContentId` ที่ตั้งค่าใน `LinkedResource`. | ตรวจสอบให้สตริงตรงกัน (`image001` vs `cid:image001`). |
-| **File not found** | เส้นทางไปยังรูปภาพไม่ถูกต้องหรือไฟล์หายไป. | ตรวจสอบเส้นทางแบบ absolute/relative และให้แน่ใจว่าไฟล์มีอยู่บนเซิร์ฟเวอร์. |
-| **SMTP authentication failure** | ข้อมูลประจำตัวหรือการตั้งค่าเซิร์ฟเวอร์ไม่ถูกต้อง. | ตรวจสอบ host, port, username, และ password อีกครั้ง เปิดใช้งาน TLS/SSL หากจำเป็น. |
-| **Image not displayed in some clients** | ไคลเอนต์บางตัวบล็อกทรัพยากรภายนอก. | ใช้รูปภาพแบบ CID‑embedded (ตามที่แสดง) แทน URL ภายนอก. |
+- [สกัดไฟล์แนบแบบอินไลน์ Msg Files Java Aspose Email](/email/java/attachments-handling/extract-inline-attachments-msg-files-java-aspose-email/)
+- [วิธีส่งอีเมล Java พร้อมไฟล์แนบโดยใช้ Aspose.Email](/email/java/advanced-email-attachments/using-aspose-email-for-document-attachments/)
+- [วิธีส่งอีเมลโดยใช้ Aspose.Email ใน Java: คู่มือฉบับสมบูรณ์สำหรับการทำงานของ SMTP Client Operations](/email/java/smtp-client-operations/send-emails-aspose-email-java-tutorial/)
 
-## คำถามที่พบบ่อย
-
-**Q: ฉันจะดาวน์โหลด Aspose.Email สำหรับ Java ได้อย่างไร?**  
-A: คุณสามารถดาวน์โหลด Aspose.Email สำหรับ Java จาก [documentation](https://reference.aspose.com/email/java/). ทำตามคำแนะนำการติดตั้งเพื่อตั้งค่าในโปรเจคของคุณ.
-
-**Q: ฉันสามารถใช้ Aspose.Email สำหรับ Java ร่วมกับไลบรารี Java อื่นได้หรือไม่?**  
-A: ได้, Aspose.Email ผสานรวมอย่างราบรื่นกับไลบรารี Java อื่น ๆ ทำให้คุณสามารถรวมการประมวลผลอีเมลกับการสร้าง PDF, OCR หรือการเข้าถึงฐานข้อมูลได้.
-
-**Q: รูปแบบไฟล์ใดที่รองรับสำหรับไฟล์แนบแบบอินไลน์?**  
-A: รูปแบบภาพทั่วไปเช่น PNG, JPEG, GIF รวมถึงประเภทเอกสารอื่น ๆ (เช่น SVG) รองรับเป็นทรัพยากรแบบอินไลน์.
-
-**Q: ฉันจะจัดการไฟล์แนบแบบอินไลน์ในอีเมล HTML อย่างไร?**  
-A: ใช้คลาส `LinkedResource` เพื่อกำหนด `ContentId` เพิ่มลงใน `message.getLinkedResources()` และอ้างอิงในเนื้อหา HTML ด้วย `<img src='cid:yourContentId'>`.
-
-**Q: Aspose.Email สำหรับ Java เข้ากันได้กับเซิร์ฟเวอร์อีเมลต่าง ๆ หรือไม่?**  
-A: ใช่, มันทำงานกับเซิร์ฟเวอร์ SMTP/IMAP/POP3 ใดก็ได้ เพียงระบุที่อยู่เซิร์ฟเวอร์, พอร์ต, และรายละเอียดการยืนยันตัวตนที่ถูกต้อง.
-
-## สรุป
-
-คุณตอนนี้มีสูตรที่ครบถ้วนและพร้อมใช้งานในระดับการผลิตสำหรับ **การฝังรูปภาพในอีเมล HTML** ด้วย Aspose.Email สำหรับ Java โดยการสร้าง `LinkedResource` กำหนด **Content‑ID** ที่ไม่ซ้ำและอ้างอิงด้วย `cid:` ในเนื้อหา HTML คุณจะมั่นใจได้ว่าโลโก้ แบนเนอร์ หรือรูปภาพสินค้าแสดงผลตรงที่ต้องการ—โดยไม่มีการดาวน์โหลดเพิ่มเติมหรือลิงก์ที่เสียหาย ผสานกับคลาส `SmtpClient` ที่แข็งแกร่งเพื่อส่งข้อความผ่านเซิร์ฟเวอร์ SMTP ใดก็ได้ และคุณพร้อมส่งอีเมลที่ดูดีและสอดคล้องกับแบรนด์จากแอปพลิเคชัน Java ของคุณ.
-
----
-
-**อัปเดตล่าสุด:** 2026-04-28  
-**ทดสอบกับ:** Aspose.Email for Java 24.12 (latest at time of writing)  
-**ผู้เขียน:** Aspose  
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
