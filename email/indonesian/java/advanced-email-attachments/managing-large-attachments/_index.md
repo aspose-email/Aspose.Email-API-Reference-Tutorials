@@ -1,18 +1,25 @@
 ---
-date: 2026-06-28
+date: 2026-10-23
 description: Pelajari cara menangani batas ukuran lampiran email, membuat lampiran
-  email java, dan mengunduh lampiran email java menggunakan Aspose.Email untuk Java.
+  email dengan Java, dan mengunduh lampiran email dengan Java menggunakan Aspose.Email
+  for Java.
 keywords:
 - email attachment size limit
-- send large email attachment
+- zip multiple attachments
 - create email attachment java
-linktitle: Manajemen Batas Ukuran Lampiran Email dengan Aspose.Email
+lastmod: 2026-10-23
+linktitle: Manajemen batas ukuran lampiran email dengan Aspose.Email
+og_description: Pelajari cara mengelola batas ukuran lampiran email menggunakan Aspose.Email
+  for Java—membuat, mengirim, dan mengunduh lampiran besar secara efisien.
+og_image_alt: Guide showing how to handle large email attachments with Aspose.Email
+  in Java
+og_title: Manajemen batas ukuran lampiran email dengan Aspose.Email for Java
 schemas:
 - author: Aspose
-  dateModified: '2026-06-28'
+  dateModified: '2026-10-23'
   description: Learn how to handle email attachment size limit, create email attachment
     java, and download email attachment java using Aspose.Email for Java.
-  headline: Email Attachment Size Limit Management with Aspose.Email
+  headline: Email attachment size limit management with Aspose.Email
   type: TechArticle
 - questions:
   - answer: Use `Attachment` constructors that accept a `java.io.InputStream` and
@@ -32,38 +39,35 @@ schemas:
     question: What if the recipient’s server rejects the attachment?
   type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: Manajemen Batas Ukuran Lampiran Email dengan Aspose.Email
+tags:
+- email attachment size limit
+- Aspose.Email
+- Java email handling
+title: Manajemen batas ukuran lampiran email dengan Aspose.Email
 url: /id/java/advanced-email-attachments/managing-large-attachments/
 weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
-# Manajemen Batas Ukuran Lampiran Email dengan Aspose.Email
+# Manajemen batas ukuran lampiran email dengan Aspose.Email
 
-Mengelola **batas ukuran lampiran email** dapat menjadi rumit, terutama ketika Anda perlu mengirim atau menerima file besar dalam aplikasi Java. Dalam tutorial ini kami akan membahas cara membuat, mengirim, dan mengunduh lampiran email besar dengan Aspose.Email untuk Java, sambil menjaga ukuran lampiran tetap terkendali. Pada akhir tutorial Anda akan mengetahui cara membuat objek **create email attachment java**, mengalirkan file besar secara efisien, dan **download email attachment java** tanpa menghabiskan memori.
+Mengelola **batas ukuran lampiran email** dapat menjadi rumit, terutama ketika Anda perlu mengirim atau menerima file besar dalam aplikasi Java. Dalam tutorial ini kami akan membahas cara membuat, mengirim, dan mengunduh lampiran email besar dengan Aspose.Email untuk Java, sambil menjaga ukuran lampiran tetap terkendali. Pada akhir tutorial Anda akan tahu cara **membuat objek lampiran email java**, melakukan streaming file besar secara efisien, dan **mengunduh file lampiran email java** tanpa menghabiskan memori.
 
-## Jawaban Cepat
-- **Apa batas ukuran lampiran email?** Sebagian besar server mail membatasi lampiran antara 10 MB dan 25 MB, meskipun beberapa memperbolehkan hingga 50 MB.  
+## Jawaban cepat
+- **Berapa batas ukuran lampiran email?** Kebanyakan server mail membatasi lampiran antara 10 MB hingga 25 MB, meskipun layanan premium memungkinkan hingga 50 MB.  
 - **Apakah Aspose.Email dapat menangani file besar?** Ya – ia melakukan streaming data sehingga Anda tidak pernah memuat seluruh file ke RAM.  
-- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk pengujian; lisensi komersial diperlukan untuk penggunaan produksi.  
+- **Apakah saya memerlukan lisensi?** Versi trial gratis cukup untuk pengujian; lisensi komersial diperlukan untuk penggunaan produksi.  
 - **Versi Java apa yang diperlukan?** Java 8 atau lebih tinggi.  
 - **Apakah konfigurasi SMTP diperlukan?** Tentu – Anda harus menyediakan host, username, dan password.
 
 ## Apa itu batas ukuran lampiran email?
-**Batas ukuran lampiran email** adalah ukuran file maksimum yang akan diterima atau dikirim oleh server mail. Sebagian besar penyedia memberlakukan batas antara 10 MB hingga 25 MB, dengan layanan premium mencapai 50 MB atau lebih. Melebihi ambang ini akan memicu kegagalan pengiriman, bounce‑back, atau kebutuhan untuk beralih ke metode transfer alternatif seperti tautan penyimpanan cloud. Memahami batas ini membantu Anda merancang strategi fallback dan menjaga pesan tetap sesuai.
+Batas ukuran lampiran email adalah ukuran file maksimum yang akan diterima atau dikirimkan oleh server mail. Kebanyakan penyedia memberlakukan batas antara 10 MB hingga 25 MB, dengan layanan premium mencapai 50 MB atau lebih. Melebihi ambang batas ini akan memicu kegagalan pengiriman, bounce‑back, atau memaksa Anda menggunakan metode transfer alternatif seperti tautan penyimpanan cloud. Mengetahui batas ini memungkinkan Anda merancang strategi fallback dan menjaga pesan tetap sesuai.
 
 ## Mengapa mengelola lampiran besar dengan Aspose.Email?
-Mengelola lampiran besar dengan Aspose.Email penting karena ia melakukan streaming data untuk menghindari kesalahan OutOfMemory, menyediakan kompresi bawaan untuk mengurangi ukuran, bekerja konsisten di Windows, Linux, dan macOS, serta menawarkan API sederhana yang memungkinkan pengembang membuat, mengirim, dan mengunduh lampiran dengan hanya beberapa baris kode Java.
-
-- **Streaming efisien memori** – memproses file hingga 2 GB tanpa memuatnya sepenuhnya ke memori.  
-- **Kompresi bawaan** – mengurangi ukuran hingga 70 % untuk tipe dokumen umum.  
-- **Dukungan lintas platform** – perilaku identik pada Windows, Linux, dan macOS.  
-- **API sederhana** – membuat, mengirim, dan mengunduh lampiran dengan hanya beberapa pernyataan Java.
+Aspose.Email melakukan streaming data lampiran, mencegah error OutOfMemory bahkan untuk file hingga **2 GB**. Ia juga menawarkan kompresi bawaan yang dapat memperkecil dokumen tipikal hingga **hingga 70 %**, dan berfungsi sama pada Windows, Linux, dan macOS. API memungkinkan Anda membuat, mengirim, dan mengunduh lampiran dengan hanya beberapa pernyataan Java, mengurangi waktu pengembangan secara signifikan.
 
 ## Prasyarat
 
@@ -71,10 +75,77 @@ Mengelola lampiran besar dengan Aspose.Email penting karena ia melakukan streami
 - Lingkungan pengembangan Java 8+.  
 - Akses ke server SMTP untuk mengirim email.
 
-## Langkah 1: Buat Email dengan Lampiran Besar (create email attachment java)
+## Langkah 1: buat email dengan lampiran besar (create email attachment java)
 
-`MailMessage` mewakili email dengan subjek, isi, dan lampiran.  
-Pertama, kami akan membangun sebuah `MailMessage` dan melampirkan PDF besar. Kode di bawah ini menunjukkan cara **create email attachment java** objek dan menyimpan pesan secara lokal.
+`MailMessage` adalah objek tingkat atas yang mewakili pesan email, termasuk subjek, isi, dan lampirannya.  
+`Attachment` mewakili satu file yang dilampirkan ke `MailMessage`. Kedua kelas ringan dan mendukung streaming.
+
+Kelas `MailMessage` adalah kontainer Aspose.Email untuk semua bagian pesan, sementara kelas `Attachment` menyimpan data biner dan metadata setiap file yang Anda lampirkan.
+
+Pertama, kami akan membangun sebuah `MailMessage` dan melampirkan PDF besar. Kode (ditunjukkan dalam sumber asli) membuat `MailMessage`, memuat PDF melalui `InputStream`, dan menambahkan `Attachment` ke koleksi `Attachments` pesan. Pendekatan ini memastikan file tidak pernah dimuat sepenuhnya ke memori.
+
+> **Pro tip:** Jika file melebihi batas tipikal, pertimbangkan untuk mengompresinya terlebih dahulu atau membaginya menjadi bagian‑bagian lebih kecil menggunakan metode `AttachmentCollection`.
+
+## Cara mengirim lampiran email besar dengan Aspose.Email
+
+Aspose.Email melakukan streaming lampiran selama transaksi SMTP, sehingga seluruh file tidak pernah berada di memori. Muat file besar Anda ke dalam `InputStream`, lampirkan ke `MailMessage`, dan panggil `SmtpClient.send`. Kelas `SmtpClient` menangani protokol SMTP tingkat rendah, otentikasi, dan negosiasi TLS.
+
+`SmtpClient` adalah komponen yang terhubung ke server SMTP, melakukan otentikasi, dan mentransmisikan pesan yang telah di‑encode MIME. Ia mendukung TLS, OAuth, dan port khusus.
+
+Ganti host SMTP, username, dan password dengan kredensial Anda sendiri. API secara otomatis menangani encoding MIME dan streaming, memungkinkan Anda mengirim file berukuran ratusan megabyte tanpa mencapai batas memori.
+
+## Langkah 3: terima dan unduh lampiran (download email attachment java)
+
+Saat penerima menerima pesan, Anda mungkin perlu mengekstrak file besar tersebut. Kelas `MailMessage` menyediakan koleksi `Attachments` yang dapat Anda iterasi. Untuk setiap `Attachment`, Anda dapat memanggil `save` dengan `OutputStream` untuk menulis file langsung ke disk, kembali menghindari buffering penuh di memori.
+
+Objek `Attachment` mengekspos properti seperti `getName()` dan `getContentId()` yang memungkinkan Anda mengidentifikasi file yang tepat ketika ada banyak lampiran.
+
+Loop memeriksa nama setiap lampiran, memastikan Anda hanya mengunduh file yang dimaksud. Pendekatan ini bekerja bahkan ketika email berisi banyak lampiran.
+
+## Masalah umum & solusi
+
+| Masalah | Penyebab | Solusi |
+|-------|-------|-----|
+| **Lampiran melebihi batas server** | File lebih besar dari ukuran yang diizinkan | Kompres file atau bagi menjadi bagian menggunakan `AttachmentCollection` |
+| **OutOfMemoryError** | Seluruh file dimuat ke memori | Gunakan API streaming (`Attachment(String name, InputStream stream)`) |
+| **Kegagalan otentikasi** | Kredensial SMTP salah | Verifikasi host, username, password, dan aktifkan TLS bila diperlukan |
+| **Lampiran tidak diunduh** | Nama tidak cocok | Gunakan `attachment.getContentId()` atau periksa tipe MIME |
+
+## Pertanyaan yang sering diajukan
+
+**T: Bagaimana cara mengurangi ukuran lampiran besar?**  
+J: Gunakan konstruktor `Attachment` yang menerima `java.io.InputStream` dan kompres data sebelum menambahkannya ke pesan.
+
+**T: Apakah ada batas keras yang diberlakukan oleh Aspose.Email?**  
+J: Tidak. Batas ditentukan oleh server mail yang Anda gunakan; Aspose.Email hanya melakukan streaming data.
+
+**T: Bisakah saya mengirim beberapa lampiran besar dalam satu email?**  
+J: Ya, tetapi perhatikan ukuran total; pertimbangkan untuk meng‑zip mereka menjadi satu arsip.
+
+**T: Apakah Aspose.Email mendukung pengiriman async?**  
+J: Perpustakaan menyediakan API sinkron; Anda dapat membungkus pemanggilan dalam thread terpisah atau menggunakan `CompletableFuture` untuk perilaku async.
+
+**T: Bagaimana jika server penerima menolak lampiran?**  
+J: Tawarkan tautan unduhan (misalnya ke bucket penyimpanan cloud) sebagai fallback dalam isi email.
+
+**T: Bagaimana cara memantau ukuran lampiran sebelum mengirim?**  
+J: Panggil `new File("path/to/file").length()` dan bandingkan dengan batas server yang diketahui.
+
+## Kesimpulan
+
+Dengan memanfaatkan Aspose.Email untuk Java, Anda dapat secara efisien **mengelola batas ukuran lampiran email**, **membuat objek lampiran email java**, dan **mengunduh file lampiran email java** tanpa mengalami kendala memori atau batas sisi server. Terapkan teknik streaming dan kompresi yang ditunjukkan di sini untuk menjaga aplikasi Anda tetap tangguh dan pengguna Anda puas.
+
+---
+
+**Terakhir Diperbarui:** 2026-10-23  
+**Diuji Dengan:** Aspose.Email for Java 24.12  
+**Penulis:** Aspose  
+
+## Tutorial terkait
+
+- [Kirim Email dengan Lampiran Java menggunakan Aspose.Email](/email/java/advanced-email-attachments/using-aspose-email-for-document-attachments/)
+- [Cara Mengekstrak Lampiran Email dari Pesan Email Menggunakan Aspose.Email untuk Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [Cara Mengirim Email dengan Gambar Tersemat Menggunakan Aspose.Email untuk Java](/email/java/advanced-email-attachments/working-with-inline-attachments/)
 
 ```java
 // Import the required Aspose.Email classes
@@ -105,17 +176,6 @@ public class CreateEmailWithLargeAttachment {
     }
 }
 ```
-
-> **Pro tip:** Jika file melebihi batas umum, pertimbangkan untuk mengompresinya terlebih dahulu atau membaginya menjadi bagian‑bagian lebih kecil menggunakan metode `AttachmentCollection`.
-
-## Cara mengirim lampiran email besar dengan Aspose.Email
-
-`InputStream` adalah aliran Java yang membaca byte dari sumber, memungkinkan data diproses tanpa memuat seluruh file ke memori.  
-`SmtpClient` menangani komunikasi dengan server SMTP dan mengirim pesan.
-
-Muat file besar Anda ke dalam `InputStream`, lampirkan ke `MailMessage`, dan panggil `SmtpClient.send`. Aspose.Email melakukan streaming lampiran selama transaksi SMTP, sehingga seluruh file tidak pernah berada di memori – pendekatan ini dapat mengirim file hingga beberapa ratus megabyte sambil tetap berada di bawah batas ukuran server.
-
-Sekarang pesan sudah siap, kami perlu mengirimnya melalui server SMTP. Aspose.Email melakukan streaming lampiran selama operasi pengiriman, sehingga seluruh file tidak pernah berada di memori.
 
 ```java
 // Import the required Aspose.Email classes
@@ -155,12 +215,6 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
-Ganti host SMTP, username, dan password dengan kredensial Anda sendiri. API secara otomatis menangani enkoding MIME dan streaming.
-
-## Langkah 3: Terima dan Unduh Lampiran (download email attachment java)
-
-Saat penerima menerima pesan, Anda mungkin perlu mengekstrak file besar tersebut. Potongan kode berikut menunjukkan cara **download email attachment java** dengan aman.
-
 ```java
 // Import the required Aspose.Email classes
 import com.aspose.email.*;
@@ -185,58 +239,9 @@ public class DownloadAttachmentFromEmail {
 }
 ```
 
-Loop memeriksa nama setiap lampiran, memastikan Anda hanya mengunduh file yang dimaksud. Pendekatan ini berfungsi bahkan ketika email berisi beberapa lampiran.
-
-## Masalah Umum & Solusi
-
-| Masalah | Penyebab | Solusi |
-|-------|-------|-----|
-| **Lampiran melebihi batas server** | File lebih besar dari ukuran yang diizinkan | Kompres file atau bagi menjadi bagian menggunakan `AttachmentCollection` |
-| **OutOfMemoryError** | Seluruh file dimuat ke memori | Gunakan API streaming (`Attachment(String name, InputStream stream)`) |
-| **Kegagalan autentikasi** | Kredensial SMTP salah | Verifikasi host, username, password, dan aktifkan TLS jika diperlukan |
-| **Lampiran tidak diunduh** | Nama tidak cocok | Gunakan `attachment.getContentId()` atau periksa tipe MIME |
-
-## Pertanyaan yang Sering Diajukan
-
-**Q: Bagaimana saya dapat mengurangi ukuran lampiran besar?**  
-A: Gunakan konstruktor `Attachment` yang menerima `java.io.InputStream` dan kompres data sebelum menambahkannya ke pesan.
-
-**Q: Apakah ada batas keras yang diberlakukan oleh Aspose.Email?**  
-A: Tidak. Batas ditentukan oleh server mail yang Anda gunakan; Aspose.Email hanya melakukan streaming data.
-
-**Q: Bisakah saya mengirim beberapa lampiran besar dalam satu email?**  
-A: Ya, tetapi perhatikan ukuran total; pertimbangkan untuk mengompresnya menjadi satu arsip.
-
-**Q: Apakah Aspose.Email mendukung pengiriman async?**  
-A: Perpustakaan menyediakan API sinkron; Anda dapat membungkus panggilan dalam thread terpisah atau menggunakan `CompletableFuture` untuk perilaku async.
-
-**Q: Bagaimana jika server penerima menolak lampiran?**  
-A: Tawarkan tautan unduhan (misalnya, ke bucket penyimpanan cloud) sebagai alternatif dalam isi email.
-
-**Q: Bagaimana cara memantau ukuran lampiran sebelum mengirim?**  
-A: Panggil `new File("path/to/file").length()` dan bandingkan dengan batas server yang diketahui.
-
-## Kesimpulan
-
-Dengan memanfaatkan Aspose.Email untuk Java, Anda dapat secara efisien **mengelola batas ukuran lampiran email**, membuat objek **create email attachment java**, dan **download email attachment java** tanpa menghadapi batas memori atau pembatasan sisi server. Terapkan teknik streaming dan kompresi yang ditunjukkan di sini untuk menjaga aplikasi Anda tetap kuat dan pengguna Anda puas.
-
----
-
-**Terakhir Diperbarui:** 2026-06-28  
-**Diuji Dengan:** Aspose.Email for Java 24.12  
-**Penulis:** Aspose  
-
-{{< blocks/products/products-backtop-button >}}
-
-## Tutorial Terkait
-
-- [Kirim Email dengan Lampiran Java menggunakan Aspose.Email](/email/java/advanced-email-attachments/using-aspose-email-for-document-attachments/)
-- [Cara Mengekstrak Lampiran Email dari Pesan Email Menggunakan Aspose.Email untuk Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
-- [Cara Mengirim Email dengan Gambar Tersemat Menggunakan Aspose.Email untuk Java](/email/java/advanced-email-attachments/working-with-inline-attachments/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

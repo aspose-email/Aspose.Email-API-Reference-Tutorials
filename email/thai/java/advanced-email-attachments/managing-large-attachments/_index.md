@@ -1,18 +1,24 @@
 ---
-date: 2026-06-28
+date: 2026-10-23
 description: เรียนรู้วิธีจัดการขนาดไฟล์แนบของอีเมล, สร้างไฟล์แนบอีเมลด้วย Java, และดาวน์โหลดไฟล์แนบอีเมลด้วย
   Java โดยใช้ Aspose.Email for Java.
 keywords:
 - email attachment size limit
-- send large email attachment
+- zip multiple attachments
 - create email attachment java
-linktitle: การจัดการขนาดไฟล์แนบอีเมลด้วย Aspose.Email
+lastmod: 2026-10-23
+linktitle: การจัดการขนาดไฟล์แนบของอีเมลด้วย Aspose.Email
+og_description: เรียนรู้วิธีจัดการขนาดไฟล์แนบของอีเมลโดยใช้ Aspose.Email for Java—สร้าง
+  ส่ง และดาวน์โหลดไฟล์แนบขนาดใหญ่อย่างมีประสิทธิภาพ.
+og_image_alt: Guide showing how to handle large email attachments with Aspose.Email
+  in Java
+og_title: การจัดการขนาดไฟล์แนบของอีเมลด้วย Aspose.Email for Java
 schemas:
 - author: Aspose
-  dateModified: '2026-06-28'
+  dateModified: '2026-10-23'
   description: Learn how to handle email attachment size limit, create email attachment
     java, and download email attachment java using Aspose.Email for Java.
-  headline: Email Attachment Size Limit Management with Aspose.Email
+  headline: Email attachment size limit management with Aspose.Email
   type: TechArticle
 - questions:
   - answer: Use `Attachment` constructors that accept a `java.io.InputStream` and
@@ -32,49 +38,107 @@ schemas:
     question: What if the recipient’s server rejects the attachment?
   type: FAQPage
 second_title: Aspose.Email Java Email Management API
-title: การจัดการขนาดไฟล์แนบอีเมลด้วย Aspose.Email
+tags:
+- email attachment size limit
+- Aspose.Email
+- Java email handling
+title: การจัดการขนาดไฟล์แนบของอีเมลด้วย Aspose.Email
 url: /th/java/advanced-email-attachments/managing-large-attachments/
 weight: 11
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
 
 # การจัดการขนาดไฟล์แนบของอีเมลด้วย Aspose.Email
 
-การจัดการ **email attachment size limit** อาจเป็นเรื่องยาก โดยเฉพาะเมื่อคุณต้องส่งหรือรับไฟล์ขนาดใหญ่ในแอปพลิเคชัน Java ในบทแนะนำนี้เราจะอธิบายขั้นตอนการสร้าง ส่ง และดาวน์โหลดไฟล์แนบอีเมลขนาดใหญ่ด้วย Aspose.Email for Java พร้อมควบคุมขนาดไฟล์แนบให้เหมาะสม เมื่อจบคุณจะทราบวิธี **create email attachment java** objects, stream large files efficiently, และ **download email attachment java** files โดยไม่ทำให้หน่วยความจำเต็ม
+การจัดการ **email attachment size limit** สามารถทำได้ยาก โดยเฉพาะเมื่อคุณต้องส่งหรือรับไฟล์ขนาดใหญ่ในแอปพลิเคชัน Java ในบทเรียนนี้เราจะอธิบายขั้นตอนการสร้าง ส่ง และดาวน์โหลดไฟล์แนบอีเมลขนาดใหญ่ด้วย Aspose.Email สำหรับ Java พร้อมควบคุมขนาดไฟล์แนบให้เหมาะสม เมื่อจบคุณจะรู้วิธี **create email attachment java** วัตถุ, สตรีมไฟล์ขนาดใหญ่อย่างมีประสิทธิภาพ, และ **download email attachment java** ไฟล์โดยไม่ทำให้หน่วยความจำเต็ม
 
-## คำตอบอย่างรวดเร็ว
-- **What is the email attachment size limit?** ส่วนใหญ่เซิร์ฟเวอร์เมลจำกัดไฟล์แนบระหว่าง 10 MB ถึง 25 MB แม้บางเซิร์ฟเวอร์อาจอนุญาตสูงสุดถึง 50 MB.  
-- **Can Aspose.Email handle large files?** ใช่ – มันสตรีมข้อมูลทำให้คุณไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่ RAM.  
-- **Do I need a license?** การทดลองใช้ฟรีเพียงพอสำหรับการทดสอบ; ต้องมีลิขสิทธิ์เชิงพาณิชย์สำหรับการใช้งานจริง.  
+## คำตอบสั้น
+- **What is the email attachment size limit?** ส่วนใหญ่เซิร์ฟเวอร์เมลจำกัดไฟล์แนบระหว่าง 10 MB ถึง 25 MB แม้บริการพรีเมียมอาจอนุญาตสูงสุดถึง 50 MB.  
+- **Can Aspose.Email handle large files?** ได้ – มันสตรีมข้อมูลทำให้คุณไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่ RAM.  
+- **Do I need a license?** ทดลองใช้ฟรีได้สำหรับการทดสอบ; ต้องมีลิขสิทธิ์เชิงพาณิชย์สำหรับการใช้งานจริง.  
 - **Which Java version is required?** Java 8 หรือสูงกว่า.  
-- **Is SMTP configuration needed?** แน่นอน – คุณต้องระบุ host, username และ password.  
+- **Is SMTP configuration needed?** แน่นอน – คุณต้องระบุโฮสต์, ชื่อผู้ใช้, และรหัสผ่าน.
 
 ## ขนาดไฟล์แนบของอีเมลคืออะไร?
-**email attachment size limit** คือขนาดไฟล์สูงสุดที่เซิร์ฟเวอร์เมลจะรับหรือส่งได้ ส่วนใหญ่ผู้ให้บริการกำหนดขีดจำกัดระหว่าง 10 MB ถึง 25 MB โดยบริการพรีเมียมอาจถึง 50 MB หรือมากกว่า การเกินขีดจำกัดนี้จะทำให้เกิดการส่งล้มเหลว, bounce‑backs หรือจำเป็นต้องใช้วิธีการถ่ายโอนอื่นเช่นลิงก์คลาวด์สตอเรจ การเข้าใจขีดจำกัดช่วยให้คุณออกแบบกลยุทธ์สำรองและทำให้ข้อความของคุณเป็นไปตามมาตรฐาน
+ขนาดไฟล์แนบของอีเมลคือขนาดไฟล์สูงสุดที่เซิร์ฟเวอร์เมลจะยอมรับหรือส่งต่อ ส่วนใหญ่ผู้ให้บริการกำหนดขีดจำกัดระหว่าง 10 MB ถึง 25 MB โดยบริการพรีเมียมอาจถึง 50 MB หรือมากกว่า การเกินขีดจำกัดนี้จะทำให้เกิดการส่งล้มเหลว, การ bounce‑back, หรือบังคับให้คุณใช้วิธีการถ่ายโอนอื่น ๆ เช่น ลิงก์คลาวด์สตอเรจ การรู้ขีดจำกัดช่วยให้คุณออกแบบกลยุทธ์สำรองและทำให้ข้อความของคุณสอดคล้องตามข้อกำหนด
 
 ## ทำไมต้องจัดการไฟล์แนบขนาดใหญ่ด้วย Aspose.Email?
-การจัดการไฟล์แนบขนาดใหญ่ด้วย Aspose.Email มีความสำคัญเนื่องจากมันสตรีมข้อมูลเพื่อหลีกเลี่ยงข้อผิดพลาด OutOfMemory, มีการบีบอัดในตัวเพื่อลดขนาด, ทำงานสอดคล้องกันบน Windows, Linux และ macOS, และให้ API ที่ง่ายซึ่งทำให้นักพัฒนาสามารถสร้าง ส่ง และดาวน์โหลดไฟล์แนบได้ด้วยเพียงไม่กี่บรรทัดของโค้ด Java.
-
-- **Memory‑efficient streaming** – ประมวลผลไฟล์ขนาดถึง 2 GB โดยไม่ต้องโหลดเต็มเข้าสู่หน่วยความจำ.  
-- **Built‑in compression** – ลดขนาดได้สูงสุด 70 % สำหรับประเภทเอกสารทั่วไป.  
-- **Cross‑platform support** – พฤติกรรมเดียวกันบน Windows, Linux และ macOS.  
-- **Simple API** – สร้าง ส่ง และดาวน์โหลดไฟล์แนบด้วยเพียงไม่กี่คำสั่ง Java.  
+Aspose.Email สตรีมข้อมูลไฟล์แนบ ป้องกันข้อผิดพลาด OutOfMemory แม้ไฟล์จะมีขนาดถึง **2 GB** นอกจากนี้ยังมีการบีบอัดในตัวที่สามารถลดขนาดเอกสารทั่วไปได้ **สูงสุด 70 %** และทำงานได้เช่นเดียวกันบน Windows, Linux, และ macOS API ช่วยให้คุณสร้าง ส่ง และดาวน์โหลดไฟล์แนบด้วยคำสั่ง Java เพียงไม่กี่บรรทัด ลดเวลาในการพัฒนาอย่างมาก
 
 ## ข้อกำหนดเบื้องต้น
-
-- [Aspose.Email for Java](https://releases.aspose.com/email/java/) – ดาวน์โหลดและเพิ่ม JAR ไปยังโปรเจกต์ของคุณ.  
-- สภาพแวดล้อมการพัฒนา Java 8+.  
-- เข้าถึงเซิร์ฟเวอร์ SMTP สำหรับส่งเมล.  
+- [Aspose.Email for Java](https://releases.aspose.com/email/java/) – ดาวน์โหลดและเพิ่มไฟล์ JAR ไปยังโปรเจกต์ของคุณ.  
+- สภาพแวดล้อมการพัฒนา Java 8+  
+- การเข้าถึงเซิร์ฟเวอร์ SMTP สำหรับส่งเมล
 
 ## ขั้นตอนที่ 1: สร้างอีเมลพร้อมไฟล์แนบขนาดใหญ่ (create email attachment java)
+`MailMessage` คืออ็อบเจ็กต์ระดับบนสุดที่แสดงอีเมล รวมถึงหัวเรื่อง, เนื้อหา, และไฟล์แนบ.  
+`Attachment` แสดงไฟล์เดียวที่แนบกับ `MailMessage`. ทั้งสองคลาสมีน้ำหนักเบาและรองรับการสตรีม.
 
-`MailMessage` แทนอีเมลที่มีหัวเรื่อง, เนื้อหา, และไฟล์แนบ.  
-แรกเราจะสร้าง `MailMessage` และแนบ PDF ขนาดใหญ่ โค้ดด้านล่างแสดงวิธี **create email attachment java** objects และบันทึกข้อความลงในเครื่อง.
+คลาส `MailMessage` เป็นคอนเทนเนอร์ของ Aspose.Email สำหรับส่วนต่าง ๆ ของข้อความ, ส่วนคลาส `Attachment` เก็บข้อมูลไบนารีและเมตาดาต้าของไฟล์แต่ละไฟล์ที่คุณแนบ.
+
+แรกเริ่มเราจะสร้าง `MailMessage` และแนบ PDF ขนาดใหญ่ โค้ด (แสดงในแหล่งต้นฉบับ) จะสร้าง `MailMessage`, โหลด PDF ผ่าน `InputStream`, แล้วเพิ่ม `Attachment` ไปยังคอลเลกชัน `Attachments` ของข้อความ วิธีนี้ทำให้ไฟล์ไม่ถูกโหลดเต็มเข้าสู่หน่วยความจำ.
+
+> **Pro tip:** หากไฟล์เกินขีดจำกัดทั่วไป ให้พิจารณาบีบอัดก่อนหรือแยกเป็นส่วนย่อยโดยใช้เมธอดของ `AttachmentCollection`.
+
+## วิธีส่งไฟล์แนบอีเมลขนาดใหญ่ด้วย Aspose.Email
+Aspose.Email สตรีมไฟล์แนบระหว่างการทำธุรกรรม SMTP ทำให้ไฟล์ทั้งหมดไม่เคยอยู่ในหน่วยความจำ โหลดไฟล์ขนาดใหญ่ของคุณเข้าสู่ `InputStream`, แนบไปยัง `MailMessage`, แล้วเรียก `SmtpClient.send`. คลาส `SmtpClient` จัดการโปรโตคอล SMTP ระดับต่ำ, การตรวจสอบสิทธิ์, และการเจรจา TLS.
+
+`SmtpClient` คือคอมโพเนนต์ที่เชื่อมต่อกับเซิร์ฟเวอร์ SMTP, ตรวจสอบสิทธิ์, และส่งข้อความที่เข้ารหัสแบบ MIME รองรับ TLS, OAuth, และพอร์ตที่กำหนดเอง.
+
+แทนที่โฮสต์ SMTP, ชื่อผู้ใช้, และรหัสผ่านด้วยข้อมูลประจำตัวของคุณเอง API จะจัดการการเข้ารหัส MIME และการสตรีมโดยอัตโนมัติ ทำให้คุณส่งไฟล์หลายร้อยเมกะไบต์โดยไม่เจอข้อจำกัดของหน่วยความจำ.
+
+## ขั้นตอนที่ 3: รับและดาวน์โหลดไฟล์แนบ (download email attachment java)
+เมื่อผู้รับได้รับข้อความ คุณอาจต้องสกัดไฟล์ขนาดใหญ่ คลาส `MailMessage` มีคอลเลกชัน `Attachments` ที่คุณสามารถวนลูปได้ สำหรับแต่ละ `Attachment` คุณสามารถเรียก `save` พร้อม `OutputStream` เพื่อเขียนไฟล์โดยตรงลงดิสก์ อีกครั้งเพื่อหลีกเลี่ยงการบัฟเฟอร์เต็มในหน่วยความจำ.
+
+อ็อบเจ็กต์ `Attachment` มีคุณสมบัติเช่น `getName()` และ `getContentId()` ที่ช่วยให้คุณระบุไฟล์ที่ต้องการเมื่อมีไฟล์แนบหลายไฟล์.
+
+ลูปจะตรวจสอบชื่อของแต่ละไฟล์แนบ เพื่อให้คุณดาวน์โหลดเฉพาะไฟล์ที่ต้องการ วิธีนี้ทำงานได้แม้เมื่ออีเมลมีไฟล์แนบหลายไฟล์.
+
+## ปัญหาที่พบบ่อยและวิธีแก้
+
+| ปัญหา | สาเหตุ | วิธีแก้ |
+|-------|-------|-----|
+| **ไฟล์แนบเกินขีดจำกัดของเซิร์ฟเวอร์** | ไฟล์ใหญ่กว่าขนาดที่อนุญาต | บีบอัดไฟล์หรือแยกเป็นส่วนโดยใช้ `AttachmentCollection` |
+| **OutOfMemoryError** | ไฟล์ทั้งหมดถูกโหลดเข้าสู่หน่วยความจำ | ใช้ API สตรีม (`Attachment(String name, InputStream stream)`) |
+| **การตรวจสอบสิทธิ์ล้มเหลว** | ข้อมูลประจำตัว SMTP ไม่ถูกต้อง | ตรวจสอบโฮสต์, ชื่อผู้ใช้, รหัสผ่าน, และเปิดใช้งาน TLS หากจำเป็น |
+| **ไฟล์แนบไม่ถูกดาวน์โหลด** | ชื่อไม่ตรงกัน | ใช้ `attachment.getContentId()` หรือเช็คประเภท MIME |
+
+## คำถามที่พบบ่อย
+
+**Q: ฉันจะลดขนาดไฟล์แนบขนาดใหญ่ได้อย่างไร?**  
+A: ใช้คอนสตรัคเตอร์ของ `Attachment` ที่รับ `java.io.InputStream` และบีบอัดข้อมูลก่อนเพิ่มเข้าไปในข้อความ.
+
+**Q: มีขีดจำกัดที่แน่นอนจาก Aspose.Email หรือไม่?**  
+A: ไม่มี ขีดจำกัดกำหนดโดยเซิร์ฟเวอร์เมลที่คุณใช้; Aspose.Email เพียงสตรีมข้อมูลเท่านั้น.
+
+**Q: ฉันสามารถส่งไฟล์แนบขนาดใหญ่หลายไฟล์ในอีเมลเดียวได้หรือไม่?**  
+A: ได้ แต่ควรคำนึงถึงขนาดรวม; พิจารณาบีบอัดเป็นไฟล์ zip เดียว.
+
+**Q: Aspose.Email รองรับการส่งแบบ async หรือไม่?**  
+A: ไลบรารีให้ API แบบ synchronous; คุณสามารถห่อการเรียกในเธรดแยกหรือใช้ `CompletableFuture` สำหรับพฤติกรรม async.
+
+**Q: หากเซิร์ฟเวอร์ของผู้รับปฏิเสธไฟล์แนบจะทำอย่างไร?**  
+A: ให้ลิงก์ดาวน์โหลด (เช่น ไปยังคลาวด์สตอเรจ) เป็นวิธีสำรองในเนื้อหาอีเมล.
+
+**Q: ฉันจะตรวจสอบขนาดไฟล์แนบก่อนส่งได้อย่างไร?**  
+A: เรียก `new File("path/to/file").length()` แล้วเปรียบเทียบกับขีดจำกัดของเซิร์ฟเวอร์ที่ทราบ.
+
+## สรุป
+โดยใช้ Aspose.Email สำหรับ Java คุณสามารถจัดการข้อกังวลเกี่ยวกับ **email attachment size limit** ได้อย่างมีประสิทธิภาพ, **create email attachment java** วัตถุ, และ **download email attachment java** ไฟล์โดยไม่เจอข้อจำกัดของหน่วยความจำหรือเซิร์ฟเวอร์ ใช้เทคนิคการสตรีมและการบีบอัดที่แสดงในนี้เพื่อทำให้แอปพลิเคชันของคุณแข็งแรงและผู้ใช้พึงพอใจ.
+
+---
+
+**อัปเดตล่าสุด:** 2026-10-23  
+**ทดสอบด้วย:** Aspose.Email for Java 24.12  
+**ผู้เขียน:** Aspose  
+
+## บทเรียนที่เกี่ยวข้อง
+- [ส่งอีเมลพร้อมไฟล์แนบ Java ด้วย Aspose.Email](/email/java/advanced-email-attachments/using-aspose-email-for-document-attachments/)
+- [วิธีดึงไฟล์แนบจากข้อความอีเมลโดยใช้ Aspose.Email สำหรับ Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [วิธีส่งอีเมลพร้อมภาพฝังในข้อความโดยใช้ Aspose.Email สำหรับ Java](/email/java/advanced-email-attachments/working-with-inline-attachments/)
 
 ```java
 // Import the required Aspose.Email classes
@@ -105,17 +169,6 @@ public class CreateEmailWithLargeAttachment {
     }
 }
 ```
-
-> **Pro tip:** หากไฟล์เกินขีดจำกัดทั่วไป ให้พิจารณาบีบอัดไฟล์ก่อนหรือแยกเป็นส่วนย่อยโดยใช้เมธอดของ `AttachmentCollection`.
-
-## วิธีส่งไฟล์แนบอีเมลขนาดใหญ่ด้วย Aspose.Email
-
-`InputStream` คือสตรีมของ Java ที่อ่านไบต์จากแหล่งข้อมูล ทำให้ประมวลผลข้อมูลได้โดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ.  
-`SmtpClient` จัดการการสื่อสารกับเซิร์ฟเวอร์ SMTP และส่งข้อความ.
-
-โหลดไฟล์ขนาดใหญ่ของคุณเข้าสู่ `InputStream`, แนบไปยัง `MailMessage`, แล้วเรียก `SmtpClient.send`. Aspose.Email จะสตรีมไฟล์แนบระหว่างการทำธุรกรรม SMTP ทำให้ไฟล์ทั้งหมดไม่เคยอยู่ในหน่วยความจำ – วิธีนี้ส่งไฟล์ขนาดหลายร้อยเมกะไบต์ได้อย่างมั่นคงโดยอยู่ในขีดจำกัดของเซิร์ฟเวอร์.
-
-ตอนนี้ข้อความพร้อมแล้ว เราต้องส่งผ่านเซิร์ฟเวอร์ SMTP. Aspose.Email สตรีมไฟล์แนบระหว่างการส่ง, ดังนั้นไฟล์ทั้งหมดจะไม่อยู่ในหน่วยความจำ.
 
 ```java
 // Import the required Aspose.Email classes
@@ -155,12 +208,6 @@ public class SendEmailWithLargeAttachment {
 }
 ```
 
-แทนที่ค่า SMTP host, username, และ password ด้วยข้อมูลประจำตัวของคุณเอง API จะจัดการการเข้ารหัส MIME และการสตรีมโดยอัตโนมัติ.
-
-## ขั้นตอนที่ 3: รับและดาวน์โหลดไฟล์แนบ (download email attachment java)
-
-เมื่อผู้รับได้รับข้อความ คุณอาจต้องดึงไฟล์ขนาดใหญ่ออกมา โค้ดต่อไปนี้แสดงวิธี **download email attachment java** อย่างปลอดภัย.
-
 ```java
 // Import the required Aspose.Email classes
 import com.aspose.email.*;
@@ -185,54 +232,9 @@ public class DownloadAttachmentFromEmail {
 }
 ```
 
-## ปัญหาทั่วไปและวิธีแก้
-
-| ปัญหา | สาเหตุ | วิธีแก้ |
-|-------|-------|-----|
-| **ไฟล์แนบเกินขีดจำกัดของเซิร์ฟเวอร์** | ไฟล์ใหญ่กว่าขนาดที่อนุญาต | บีบอัดไฟล์หรือแยกเป็นส่วนโดยใช้ `AttachmentCollection` |
-| **OutOfMemoryError** | โหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ | ใช้ API สตรีม (`Attachment(String name, InputStream stream)`) |
-| **Authentication failure** | ข้อมูลประจำตัว SMTP ไม่ถูกต้อง | ตรวจสอบ host, username, password และเปิดใช้งาน TLS หากจำเป็น |
-| **Attachment not downloaded** | ชื่อไม่ตรงกัน | ใช้ `attachment.getContentId()` หรือเช็ค MIME type |
-
-## คำถามที่พบบ่อย
-
-**Q: ฉันจะลดขนาดไฟล์แนบขนาดใหญ่ได้อย่างไร?**  
-A: ใช้คอนสตรัคเตอร์ของ `Attachment` ที่รับ `java.io.InputStream` และบีบอัดข้อมูลก่อนเพิ่มลงในข้อความ.
-
-**Q: มีขีดจำกัดที่แน่นอนจาก Aspose.Email หรือไม่?**  
-A: ไม่มี. ขีดจำกัดถูกกำหนดโดยเซิร์ฟเวอร์เมลที่คุณใช้; Aspose.Email เพียงสตรีมข้อมูล.
-
-**Q: ฉันสามารถส่งไฟล์แนบขนาดใหญ่หลายไฟล์ในอีเมลเดียวได้หรือไม่?**  
-A: ได้, แต่ควรระวังขนาดรวม; พิจารณาบีบอัดเป็นไฟล์ zip เดียว.
-
-**Q: Aspose.Email รองรับการส่งแบบ async หรือไม่?**  
-A: ไลบรารีให้ API แบบ synchronous; คุณสามารถห่อการเรียกในเธรดแยกหรือใช้ `CompletableFuture` เพื่อพฤติกรรมแบบ async.
-
-**Q: ถ้าเซิร์ฟเวอร์ของผู้รับปฏิเสธไฟล์แนบจะทำอย่างไร?**  
-A: ให้ลิงก์ดาวน์โหลด (เช่น ไปยัง bucket ของคลาวด์สตอเรจ) เป็นวิธีสำรองในเนื้อหาอีเมล.
-
-**Q: ฉันจะตรวจสอบขนาดไฟล์แนบก่อนส่งได้อย่างไร?**  
-A: เรียก `new File("path/to/file").length()` แล้วเปรียบเทียบกับขีดจำกัดของเซิร์ฟเวอร์ที่ทราบ.
-
-## สรุป
-
-โดยใช้ Aspose.Email for Java คุณสามารถจัดการข้อกังวลเกี่ยวกับ **manage email attachment size limit** อย่างมีประสิทธิภาพ, **create email attachment java** objects, และ **download email attachment java** files โดยไม่เจอปัญหาหน่วยความจำหรือข้อจำกัดของเซิร์ฟเวอร์. ใช้เทคนิคสตรีมและบีบอัดที่แสดงในนี้เพื่อทำให้แอปพลิเคชันของคุณแข็งแรงและผู้ใช้พึงพอใจ.
-
-**อัปเดตล่าสุด:** 2026-06-28  
-**ทดสอบด้วย:** Aspose.Email for Java 24.12  
-**ผู้เขียน:** Aspose  
-
-{{< blocks/products/products-backtop-button >}}
-
-## บทแนะนำที่เกี่ยวข้อง
-
-- [ส่งอีเมลพร้อมไฟล์แนบ Java ด้วย Aspose.Email](/email/java/advanced-email-attachments/using-aspose-email-for-document-attachments/)
-- [วิธีดึงไฟล์แนบจากข้อความอีเมลโดยใช้ Aspose.Email for Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
-- [วิธีส่งอีเมลพร้อมภาพฝังในเนื้อหาโดยใช้ Aspose.Email for Java](/email/java/advanced-email-attachments/working-with-inline-attachments/)
-
-
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
