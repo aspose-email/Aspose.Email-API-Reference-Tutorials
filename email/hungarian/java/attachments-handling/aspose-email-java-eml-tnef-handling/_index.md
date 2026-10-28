@@ -1,58 +1,65 @@
 ---
-date: '2026-07-03'
-description: Lépésről‑lépésre bemutató Aspose.Email Java útmutató, amely megmutatja,
-  hogyan menthetünk eml‑t tnef‑vel, betölthetünk, frissíthetünk mellékleteket, cserélhetünk
-  képeket, és megőrizhetjük az Outlook adatokat.
+date: '2026-10-28'
+description: Ismerje meg, hogyan archiválhat Outlook e‑mailt TNEF‑el EML fájlokban
+  az Aspose.Email for Java segítségével. Ez a lépésről‑lépésre útmutató bemutatja
+  a betöltést, a mellékletek frissítését és az Outlook adatok megőrzését.
 keywords:
-- save eml with tnef
-- aspose email java tutorial
-- email attachment processing java
-- eml handling aspose
+- outlook email archiving
+- aspose email java
+- process email attachments
+- preserve outlook data
+- exchange mailbox migration
+lastmod: '2026-10-28'
+og_description: Ismerje meg, hogyan archiválhat Outlook e‑mailt TNEF‑el EML fájlokban
+  az Aspose.Email for Java segítségével. Kövesse a lépésről‑lépésre útmutatót a betöltéshez,
+  módosításhoz és mentéshez, miközben megőrzi az Outlook adatokat.
+og_image_alt: 'Developer guide: archive Outlook email with TNEF in EML using Aspose.Email
+  for Java'
+og_title: Outlook e‑mail archiválása TNEF‑el EML formátumban az Aspose.Email használatával
 schemas:
 - author: Aspose
-  dateModified: '2026-07-03'
-  description: Step‑by‑step Aspose.Email Java tutorial showing how to save eml with
-    tnef, load, update attachments, replace images, and preserve Outlook data.
-  headline: Save EML with TNEF using Aspose.Email for Java – Full Tutorial
+  dateModified: '2026-10-28'
+  description: Learn how to archive Outlook email with TNEF in EML files using Aspose.Email
+    for Java. This step‑by‑step guide covers loading, updating attachments, and preserving
+    Outlook data.
+  headline: Archive outlook email with TNEF in EML using Aspose.Email
   type: TechArticle
-- description: Step‑by‑step Aspose.Email Java tutorial showing how to save eml with
-    tnef, load, update attachments, replace images, and preserve Outlook data.
-  name: Save EML with TNEF using Aspose.Email for Java – Full Tutorial
+- description: Learn how to archive Outlook email with TNEF in EML files using Aspose.Email
+    for Java. This step‑by‑step guide covers loading, updating attachments, and preserving
+    Outlook data.
+  name: Archive outlook email with TNEF in EML using Aspose.Email
   steps:
-  - name: '**Load the EML File**'
-    text: '**Load the EML File**'
-  - name: '**Initialize Load and Save Options**'
-    text: '**Initialize Load and Save Options**'
-  - name: '**Update Resources in the Mail Message**'
-    text: '**Update Resources in the Mail Message**'
-  - name: '**Save the Updated EML File**'
-    text: '**Save the Updated EML File**'
-  - name: '**Email Archiving** – Keep a faithful copy of Outlook messages, including
-      proprietary TNEF parts, for compliance audits.'
-    text: '**Email Archiving** – Keep a faithful copy of Outlook messages, including
-      proprietary TNEF parts, for compliance audits.'
-  - name: '**Automated Support Workflows** – Extract images from incoming tickets,
+  - name: '**Load the EML file**'
+    text: '**Load the EML file**'
+  - name: '**Initialize load and save options**'
+    text: '**Initialize load and save options**'
+  - name: '**Update resources in the mail message**'
+    text: '**Update resources in the mail message**'
+  - name: '**Save the updated EML file**'
+    text: '**Save the updated EML file**'
+  - name: '**Email archiving** – Keep a faithful copy of Outlook messages, including
+      proprietary TNEF parts, for compliance audits and long‑term **outlook email
+      archiving**.'
+    text: '**Email archiving** – Keep a faithful copy of Outlook messages, including
+      proprietary TNEF parts, for compliance audits and long‑term **outlook email
+      archiving**.'
+  - name: '**Automated support workflows** – Extract images from incoming tickets,
       replace them with watermarked versions, and re‑save the message for downstream
       processing.'
-    text: '**Automated Support Workflows** – Extract images from incoming tickets,
+    text: '**Automated support workflows** – Extract images from incoming tickets,
       replace them with watermarked versions, and re‑save the message for downstream
       processing.'
-  - name: '**Data Migration** – Move mailboxes from Exchange to a custom archive while
-      preserving every attachment intact, reducing migration errors by up to 92 %
+  - name: '**Data migration** – Move mailboxes from Exchange to a custom archive while
+      preserving every attachment intact, reducing migration errors by up to **92 %**
       compared with plain‑text export tools.'
-    text: '**Data Migration** – Move mailboxes from Exchange to a custom archive while
-      preserving every attachment intact, reducing migration errors by up to 92 %
+    text: '**Data migration** – Move mailboxes from Exchange to a custom archive while
+      preserving every attachment intact, reducing migration errors by up to **92 %**
       compared with plain‑text export tools.'
-  - name: '**What is TNEF, and why is it important?**'
-    text: '**What is TNEF, and why is it important?**'
-  - name: '**Can I use Aspose.Email with other email formats besides EML?**'
-    text: '**Can I use Aspose.Email with other email formats besides EML?**'
-  - name: '**How do I handle large email files efficiently?**'
-    text: '**How do I handle large email files efficiently?**'
   type: HowTo
 - questions:
   - answer: Inspect the `MailMessage.getAttachments()` collection for an attachment
-      with the content type `application/ms‑tnef`.
+      whose content type equals `application/ms‑tnef`; the presence of such an attachment
+      indicates that Outlook‑specific information is embedded.
     question: How can I programmatically determine if an EML file contains TNEF data?
   - answer: Yes—set `FileCompatibilityMode.RemoveTnefAttachments` when saving to strip
       TNEF but retain regular attachments.
@@ -69,47 +76,55 @@ schemas:
       portion, and other clients will display the standard parts correctly.
     question: Will the saved EML file be readable by standard email clients like Thunderbird?
   type: FAQPage
-title: EML mentése TNEF‑vel az Aspose.Email for Java használatával – Teljes útmutató
+tags:
+- outlook email archiving
+- aspose email java
+- email attachment processing
+- eml handling
+- java email workflow
+title: Outlook e‑mail archiválása TNEF‑el EML formátumban az Aspose.Email használatával
 url: /hu/java/attachments-handling/aspose-email-java-eml-tnef-handling/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# EML mentése TNEF használatával az Aspose.Email for Java segítségével – Teljes útmutató
+
+# Outlook e-mail archiválása TNEF-fel EML-ben az Aspose.Email használatával
 
 ## Bevezetés
 
-Ha **eml mentése tnef** mellékletekkel, miközben minden Outlook‑specifikus tulajdonságot érintetlenül szeretne megtartani, az Aspose.Email for Java egy termék‑kész, null‑függőségi API‑t kínál. Ebben az útmutatóban megtanulja, hogyan **feldolgozza az e‑mail mellékleteket**, **betöltsön** egy EML fájlt, **cserélje ki a beágyazott képeket**, és végül **eml mentése tnef**-vel adatvesztés nélkül. Megvitatjuk, miért fontos a TNEF megőrzése a megfelelőség szempontjából, bemutatunk valós példákat, és gyakorlati tippeket adunk a hibaelhárításhoz, hogy magabiztosan integrálhassa a megoldást saját projektjeibe.
+Ha **Outlook e-mailt** kell archiválnia, miközben minden Outlook‑specifikus TNEF tulajdonságot érintetlenül tart, az Aspose.Email for Java egy termék‑kész, null‑függőségi API‑t biztosít. Ebben az útmutatóban megtanulja, hogyan **feldolgozza az e‑mail mellékleteket**, **betölti** az EML fájlt, **cseréli ki a beágyazott képeket**, és végül **elmenti az EML‑t TNEF‑fel** anélkül, hogy adatot veszítene. Megvitatjuk, miért fontos a TNEF megőrzése a megfelelőség szempontjából, bemutatunk valós példákat, mint a **exchange postafiók migráció** és az **e‑mail munkafolyamat automatizálása**, valamint adunk hibakeresési tippeket, hogy magabiztosan integrálhassa a megoldást saját projektjeibe.
 
 **Mit fog megtanulni**
-- Töltsön be egy EML fájlt, és tartsa érintetlenül a TNEF adatokat.  
-- Frissítse a beágyazott képeket vagy egyéb erőforrásokat anélkül, hogy a MIME struktúrát megsértené.  
-- Mentse a módosított üzenetet `EmlSaveOptions` használatával, hogy a TNEF rész megmaradjon.  
-- Alkalmazza a munkafolyamatot gyakori esetekben, például archiválás, jegy‑automatizálás és postafiók‑migráció során.  
+- Betölteni egy EML fájlt és a TNEF adatokat érintetlenül tartani.  
+- Beágyazott képeket vagy egyéb erőforrásokat frissíteni anélkül, hogy a MIME struktúrát megsértené.  
+- A módosított üzenetet `EmlSaveOptions` használatával menteni, hogy a TNEF rész megmaradjon.  
+- A munkafolyamatot alkalmazni gyakori esetekben, mint archiválás, jegyautomatizálás és postafiók migráció.  
 
-Készen áll az e‑mail kezelés mesterségére? Merüljünk el benne!
+Készen áll az Outlook e‑mail archiválás elsajátítására? Merüljünk el benne!
 
 ## Gyors válaszok
-- **Mi a legfőbb módja a TNEF mellékletek megőrzésének?** Set `FileCompatibilityMode.PreserveTnefAttachments` in `EmlSaveOptions`.  
-- **Mely Aspose osztály tölti be az EML fájlt?** `MailMessage.load(String filePath)`.  
-- **Frissíthetek beágyazott képeket anélkül, hogy tönkretenném az e‑mailt?** Igen – használja az `UpdateResources` segédfüggvényt a streamek cseréjéhez, miközben a MIME fejlécek változatlanok maradnak.  
-- **Szükségem van licencre a fejlesztéshez?** Az ingyenes próba működik teszteléshez; a teljes licenc szükséges a termeléshez.  
-- **Mely Java verzió támogatott?** JDK 1.8 or higher (the example uses JDK 16 classifier).  
+- **Mi a fő módja a TNEF mellékletek megőrzésének?** Állítsa be a `FileCompatibilityMode.PreserveTnefAttachments` értéket az `EmlSaveOptions`‑ban.  
+- **Melyik Aspose osztály tölti be az EML fájlt?** `MailMessage.load(String filePath)`.  
+- **Frissíthetek beágyazott képeket anélkül, hogy a levelet megtörném?** Igen – használja az `UpdateResources` segédfüggvényt a streamek cseréjéhez, miközben a MIME fejlécek változatlanok maradnak.  
+- **Szükségem van licencre a fejlesztéshez?** Egy ingyenes próba működik teszteléshez; teljes licenc szükséges a termeléshez.  
+- **Melyik Java verzió támogatott?** JDK 1.8 vagy újabb (a példában JDK 16 classifier van használva).  
 
-## Mi a “process email attachments” TNEF mellékletekkel?
-**Direct Answer (40‑70 words):** A TNEF‑mel mellékletek feldolgozása magában foglalja az Outlook‑specifikus `application/ms‑tnef` rész kezelését, hogy az túlélje a betöltés‑módosítás‑mentés ciklusokat. Amikor egy EML‑t TNEF‑vel ment, az Aspose.Email visszaírja az eredeti TNEF adatfolyamot a fájlba, megőrizve a formázást, a találkozó‑kéréseket és a beágyazott objektumokat pontosan úgy, ahogy a küldő szándékozta.
+## Mi az a „process email attachments” TNEF mellékletekkel?
 
-## Miért használja az Aspose.Email for Java‑t?
-Az Aspose.Email **50+ bemeneti és kimeneti formátumot** támogat (beleértve a MSG, EML, MHTML, PST és HTML formátumokat), és több száz oldalas postafiókokat képes feldolgozni anélkül, hogy a teljes fájlt a memóriába töltené. **Stream‑alapú API‑ja** akár 70 %-kal csökkenti a memóriahasználatot a naív fájl‑olvasási megközelítésekhez képest, így ideális vállalati szintű archiválási és migrációs projektekhez.
+A TNEF‑el ellátott e‑mail mellékletek feldolgozása magában foglalja az Outlook‑specifikus `application/ms‑tnef` rész kezelését, hogy az túlélje a betöltés‑módosítás‑mentés ciklusokat. Amikor egy EML‑t TNEF‑fel ment, az Aspose.Email visszaírja az eredeti TNEF streame‑t a fájlba, megőrizve a formázást, a találkozó‑kéréseket és a beágyazott objektumokat pontosan úgy, ahogy a küldő szándékozta.
 
-## Előfeltételek
+## Miért használjuk az Aspose.Email‑t Java‑hoz?
+
+Az Aspose.Email **50+ bemeneti és kimeneti formátumot** támogat (beleértve a MSG, EML, MHTML, PST és HTML formátumokat), és több száz oldalas postafiókokat tud feldolgozni anélkül, hogy a teljes fájlt a memóriába töltené. A **stream‑alapú API** akár **70 %**‑kal csökkenti a memóriahasználatot a naiv fájl‑olvasási megközelítésekhez képest, így ideális vállalati szintű **outlook e‑mail archiváláshoz**, **exchange postafiók migrációhoz**, és automatizált munkafolyamat‑szcenáriókhoz.
+
+## Előkövetelmények
 
 ### Szükséges könyvtárak és függőségek
-You will need Aspose.Email for Java. Add it via Maven:
+
+Szüksége lesz az Aspose.Email for Java-ra. Adja hozzá Maven‑en keresztül:
 
 ```xml
 <dependency>
@@ -130,24 +145,29 @@ You will need Aspose.Email for Java. Add it via Maven:
 ```
 
 ### Környezet beállítása
-- Java Development Kit (JDK) 1.8 or higher.  
-- An IDE such as IntelliJ IDEA or Eclipse.  
 
-### Tudás előfeltételek
-Basic Java programming, familiarity with streams, and a high‑level understanding of MIME email structure are recommended.
+- Java Development Kit (JDK) 1.8 vagy újabb.  
+- Egy IDE, például IntelliJ IDEA vagy Eclipse.  
 
-## Az Aspose.Email for Java beállítása
+### Tudás előkövetelmények
+
+Alapvető Java programozás, a streamekkel való ismeretek, valamint a MIME e‑mail struktúra magas szintű megértése ajánlott.
+
+## Az Aspose.Email beállítása Java‑hoz
 
 ### Telepítési információk
-Add the Maven dependency above or download the JAR directly from the [Aspose website](https://releases.aspose.com/email/java/).
 
-### Licenc megszerzésének lépései
-- **Free Trial:** Get a trial license to explore the API.  
-- **Temporary License:** Apply if you need an extended evaluation period.  
-- **Purchase:** Acquire a full license for production deployments.
+Adja hozzá a fenti Maven függőséget, vagy töltse le a JAR‑t közvetlenül az [Aspose weboldaláról](https://releases.aspose.com/email/java/).
+
+### Licenc beszerzési lépések
+
+- **Ingyenes próba:** Szerezzen próbalisencet az API felfedezéséhez.  
+- **Ideiglenes licenc:** Igényelje, ha hosszabb értékelési időszakra van szüksége.  
+- **Vásárlás:** Szerezzen teljes licencet a termelési telepítésekhez.
 
 ### Alap inicializálás és beállítás
-First, load your license so the API runs without evaluation restrictions:
+
+Először töltse be a licencet, hogy az API korlátozás nélkül fusson:
 
 ```java
 import com.aspose.email.License;
@@ -156,20 +176,21 @@ License license = new License();
 license.setLicense("path/to/your/license/file");
 ```
 
-## Implementációs útmutató
+## Megvalósítási útmutató
 
-This guide walks you through **how to load eml**, update its resources, and finally **how to save eml** while preserving TNEF attachments.
+Ez az útmutató végigvezet a **EML betöltésének**, erőforrásainak frissítésének, és végül a **EML mentésének** lépésein, miközben megőrzi a TNEF mellékleteket.
 
-### Hogyan dolgozzuk fel az e‑mail mellékleteket az Aspose.Email‑el?
-**Direct Answer (40‑70 words):** Load the EML file with `MailMessage.load`, replace any embedded resources using a custom helper, configure `EmlSaveOptions` with `FileCompatibilityMode.PreserveTnefAttachments`, and call `mailMessage.save`—the entire operation preserves Outlook‑specific TNEF parts in just a few lines of code.
+### Hogyan dolgozzuk fel az e‑mail mellékleteket az Aspose.Email‑del?
+
+Töltse be az EML fájlt a `MailMessage.load`‑val, cserélje ki a beágyazott erőforrásokat egy egyedi segédfüggvénnyel, konfigurálja az `EmlSaveOptions`‑t a `FileCompatibilityMode.PreserveTnefAttachments` beállítással, és hívja meg a `mailMessage.save`‑t – a teljes művelet néhány kódsorban megőrzi az Outlook‑specifikus TNEF részeket. Az API lehetővé teszi a karakterkódolás megadását, a MIME határolók vezérlését, és az eredeti fejlécek megtartását, biztosítva, hogy a mentett üzenet teljesen kompatibilis legyen mind az Outlook, mind más e‑mail kliensekkel.
 
 #### Áttekintés
-We’ll load an existing EML file, replace any embedded images, and then save the message back to disk without losing TNEF data.
+Betöltünk egy meglévő EML fájlt, kicserélünk minden beágyazott képet, majd a TNEF adat elvesztése nélkül mentjük vissza a lemezre.
 
 #### Lépés‑ről‑lépésre útmutató
 
-1. **Load the EML File**  
-   Use `MailMessage.load` to bring the message into memory.
+1. **Az EML fájl betöltése**  
+   Használja a `MailMessage.load`‑t az üzenet memóriába hozásához.
 
 ```java
 import com.aspose.email.MailMessage;
@@ -181,15 +202,13 @@ String fileName = dataDir + "tnefEMl1.eml";
 MailMessage originalMailMessage = MailMessage.load(fileName);
 ```
 
-   **Definition:** `MailMessage` is Aspose.Email's core class that represents a single email message, exposing properties for subject, body, attachments, and linked resources.
+   **Definíció:** `MailMessage` az Aspose.Email alapvető osztálya, amely egyetlen e‑mail üzenetet képvisel, és elérhetővé teszi a tárgy, a törzs, a mellékletek és a kapcsolt erőforrások tulajdonságait.
 
-   **Definíció:** `MailMessage` az Aspose.Email központi osztálya, amely egyetlen e‑mail üzenetet képvisel, és elérhetővé teszi a tárgy, a törzs, a mellékletek és a linkelt erőforrások tulajdonságait.
+2. **Betöltési és mentési beállítások inicializálása**  
+   Állítsa be a lehetőségeket úgy, hogy a TNEF mellékletek megmaradjanak.
 
-2. **Initialize Load and Save Options**  
-   Configure the options so that TNEF attachments are preserved.
-
-**Definition:** `EmlLoadOptions` configures how Aspose.Email reads an EML file, including charset and TNEF handling.  
-**Definition:** `EmlSaveOptions` configures how the library writes an EML file, allowing you to preserve TNEF attachments and control MIME boundaries.
+**Definíció:** `EmlLoadOptions` konfigurálja, hogyan olvassa az Aspose.Email az EML fájlt, beleértve a karakterkészletet és a TNEF kezelését.  
+**Definíció:** `EmlSaveOptions` konfigurálja, hogyan írja a könyvtár az EML fájlt, lehetővé téve a TNEF mellékletek megőrzését és a MIME határolók vezérlését.
 
 ```java
 import com.aspose.email.EmlLoadOptions;
@@ -201,55 +220,39 @@ EmlSaveOptions emlSo = new EmlSaveOptions(com.aspose.email.MailMessageSaveType.g
 emlSo.setFileCompatibilityMode(FileCompatibilityMode.PreserveTnefAttachments);
 ```
 
-   **Definition:** `EmlLoadOptions` configures how Aspose.Email reads an EML file, including charset and TNEF handling.  
-   **Definíció:** `EmlLoadOptions` beállítja, hogyan olvassa az Aspose.Email az EML fájlt, beleértve a karakterkészletet és a TNEF kezelését.  
-   **Definition:** `EmlSaveOptions` configures how the library writes an EML file, allowing you to preserve TNEF attachments and control MIME boundaries.  
-   **Definíció:** `EmlSaveOptions` beállítja, hogyan írja a könyvtár az EML fájlt, lehetővé téve a TNEF mellékletek megőrzését és a MIME határolók szabályozását.
-
-3. **Update Resources in the Mail Message**  
-   Replace embedded images (or other resources) with new content streams.
+3. **Az üzenet erőforrásainak frissítése**  
+   Cserélje ki a beágyazott képeket (vagy egyéb erőforrásokat) új tartalom streamekkel.
 
 ```java
 UpdateResources(originalMailMessage, dataDir + "Untitled.jpg");
 ```
 
-   **Definition:** `UpdateResources` is a helper that walks through a message’s attachments and linked resources, replacing their content streams without altering MIME headers.  
-   **Definíció:** `UpdateResources` egy segédfüggvény, amely végigjárja az üzenet mellékleteit és linkelt erőforrásait, és a tartalom‑streameket cseréli anélkül, hogy a MIME fejléceket módosítaná.
+   **Definíció:** `UpdateResources` egy segédfüggvény, amely végigjárja az üzenet mellékleteit és kapcsolt erőforrásait, lecserélve azok tartalom streameit anélkül, hogy a MIME fejléceket módosítaná.
 
-4. **Save the Updated EML File**  
-   This is the core of **how to save eml with tnef** while preserving Outlook data.
+4. **A frissített EML fájl mentése**  
+   Ez a **hogyan mentse az EML‑t TNEF‑fel** magja, miközben megőrzi az Outlook adatokat.
 
 ```java
 String outFileName = dataDir + "01_SAVE_Preserve_out.eml";
 originalMailMessage.save(outFileName, emlSo);
 ```
 
-   **Direct Answer (40‑70 words):** Call `mailMessage.save(outputPath, emlSaveOptions)` after you have updated resources; the `PreserveTnefAttachments` flag guarantees that the original `application/ms‑tnef` part is written back unchanged, so Outlook will display the message exactly as the sender intended.
-
-   **Direct Answer (40‑70 words):** Hívja meg a `mailMessage.save(outputPath, emlSaveOptions)` metódust a források frissítése után; a `PreserveTnefAttachments` jelző garantálja, hogy az eredeti `application/ms‑tnef` rész változatlanul vissza legyen írva, így az Outlook pontosan úgy jeleníti meg az üzenetet, ahogy a küldő szándékozta.
-
-#### Explanation
-- `EmlLoadOptions` and `EmlSaveOptions` ensure the loader and saver respect Outlook’s TNEF format.  
-- The helper method `UpdateResources` (shown later) walks through attachments and linked resources, swapping out the image streams.
+   Hívja meg a `mailMessage.save(outputPath, emlSaveOptions)`‑t az erőforrások frissítése után; a `PreserveTnefAttachments` jelző garantálja, hogy az eredeti `application/ms‑tnef` rész változatlanul vissza legyen írva, így az Outlook pontosan úgy jeleníti meg az üzenetet, ahogy a küldő szándékozta.
 
 #### Magyarázat
-- Az `EmlLoadOptions` és az `EmlSaveOptions` biztosítják, hogy a betöltő és a mentő tiszteletben tartsa az Outlook TNEF formátumát.  
-- A `UpdateResources` segédmetódus (később látható) végigjárja a mellékleteket és a linkelt erőforrásokat, és kicseréli a kép‑streameket.
+- Az `EmlLoadOptions` és `EmlSaveOptions` biztosítják, hogy a betöltő és mentő tiszteletben tartsa az Outlook TNEF formátumát.  
+- A `UpdateResources` segédfüggvény (később bemutatva) végigjárja a mellékleteket és a kapcsolt erőforrásokat, kicserélve a kép streameket.
 
-### Hogyan cseréljünk ki beágyazott képeket egy e‑mailben?
-**Direct Answer (40‑70 words):** Iterate through `mailMessage.getLinkedResources()` and replace each `LinkedResource`’s `ContentStream` with a new `ByteArrayInputStream` containing the updated image data; then call `mailMessage.save` with `PreserveTnefAttachments` to keep the original TNEF part intact.
+### Hogyan cserélünk ki beágyazott képeket egy e‑mailben?
 
-**Direct Answer (40‑70 words):** Iteráljon a `mailMessage.getLinkedResources()` felett, és cserélje le minden `LinkedResource` `ContentStream`‑jét egy új `ByteArrayInputStream`‑re, amely a frissített képadatokat tartalmazza; ezután hívja meg a `mailMessage.save`‑t a `PreserveTnefAttachments` opcióval, hogy az eredeti TNEF rész változatlan maradjon.
-
-#### Áttekintés
-When you need to **process email attachments** or **update email** content, you must iterate over both regular attachments and linked resources.
+Iteráljon a `mailMessage.getLinkedResources()`-en, és cserélje ki minden `LinkedResource` `ContentStream`‑jét egy új `ByteArrayInputStream`‑re, amely a frissített kép adatot tartalmazza; ezután hívja meg a `mailMessage.save`‑t a `PreserveTnefAttachments`‑szel, hogy az eredeti `application/ms‑tnef` rész érintetlen maradjon. Szükség esetén frissítheti a tartalom típust és a tartalom‑azonosítót is, és a könyvtár automatikusan módosítja a HTML törzs hivatkozásait, így az e‑mail helyesen jelenik meg a változtatás után.
 
 #### Áttekintés
-Amikor **e‑mail mellékleteket kell feldolgozni** vagy **e‑mail tartalmat frissíteni**, mind a normál mellékleteken, mind a linkelt erőforrásokon iterálni kell.
+Amikor **e‑mail mellékleteket kell feldolgozni** vagy **e‑mail tartalmat frissíteni**, iterálnia kell mind a szabályos mellékleteken, mind a kapcsolt erőforrásokon.
 
 #### Mellékletek frissítése
 
-**Definition:** `Attachment` represents a file attached to the email, exposing properties such as name, content type, and content stream.
+**Definíció:** `Attachment` egy e‑mailhez csatolt fájlt képvisel, és olyan tulajdonságokat tesz elérhetővé, mint a név, a tartalom típusa és a tartalom stream.
 
 ```java
 import com.aspose.email.Attachment;
@@ -272,11 +275,9 @@ for (int i = 0; i < msg.getAttachments().size(); i++) {
 }
 ```
 
-**Definíció:** `Attachment` egy e‑mailhez csatolt fájlt jelöl, és elérhetővé teszi a név, a tartalom‑típus és a tartalom‑stream tulajdonságait.
+#### Kapcsolt erőforrások frissítése (beágyazott képek)
 
-#### Linkelt erőforrások frissítése (beágyazott képek)
-
-**Definition:** `LinkedResource` represents an embedded object (e.g., image) referenced in the HTML body, with its own content ID and stream.
+**Definíció:** `LinkedResource` egy beágyazott objektumot (pl. képet) képvisel, amely a HTML törzsben hivatkozott, saját tartalom‑azonosítóval és stream‑mel rendelkezik.
 
 ```java
 import com.aspose.email.LinkedResource;
@@ -294,118 +295,93 @@ for (LinkedResource att : msg.getLinkedResources()) {
 }
 ```
 
-**Definíció:** `LinkedResource` egy beágyazott objektumot (pl. képet) jelöl, amely a HTML törzsben hivatkozott, saját tartalom‑azonosítóval és stream‑el rendelkezik.
-
-#### Explanation
-- The `UpdateResources` method (called earlier) combines the two loops above, ensuring **update email attachments** and embedded images are refreshed in a single pass.  
-- Nested EML files are processed recursively, which is essential when dealing with forwarded messages that also contain TNEF data.
-
 #### Magyarázat
 - Az `UpdateResources` metódus (korábban hívva) egyesíti a fenti két ciklust, biztosítva, hogy a **e‑mail mellékletek frissítése** és a beágyazott képek egyetlen lépésben legyenek frissítve.  
-- A beágyazott EML fájlok rekurzívan kerülnek feldolgozásra, ami elengedhetetlen a továbbított üzenetek kezelésekor, ha azok TNEF adatot is tartalmaznak.
+- A beágyazott EML fájlok rekurzívan kerülnek feldolgozásra, ami elengedhetetlen a továbbított üzeneteknél, amelyek szintén TNEF adatot tartalmaznak.
 
-## Hibaelhárítási tippek
-**Direct Answer (40‑70 words):** Verify that `dataDir` points to an existing folder, ensure your application has read/write permissions, and confirm that `FileCompatibilityMode.PreserveTnefAttachments` is set; if TNEF parts disappear after saving, the compatibility mode is likely defaulting to `RemoveTnefAttachments`.
+## Hibakeresési tippek
 
-**Direct Answer (40‑70 words):** Ellenőrizze, hogy a `dataDir` egy létező mappára mutat, hogy az alkalmazásnak van‑e olvasási/írási jogosultsága, és hogy a `FileCompatibilityMode.PreserveTnefAttachments` be van‑e állítva; ha a TNEF részek a mentés után eltűnnek, a kompatibilitási mód valószínűleg a `RemoveTnefAttachments` értékre áll vissza.
-
-- Verify that `dataDir` points to a valid folder and that you have read/write permissions.  
-- Use `try‑with‑resources` for streams to avoid leaks in production code.  
-- If TNEF attachments disappear after saving, double‑check that `FileCompatibilityMode.PreserveTnefAttachments` is set.
-
-- Ellenőrizze, hogy a `dataDir` egy érvényes mappára mutat, és hogy van‑e olvasási/írási jogosultsága.  
+- Ellenőrizze, hogy a `dataDir` egy létező mappára mutat, és hogy van‑e olvasási/írási jogosultsága.  
 - Használjon `try‑with‑resources`‑t a streamekhez, hogy elkerülje a szivárgásokat a termelési kódban.  
-- Ha a TNEF mellékletek a mentés után eltűnnek, ellenőrizze újra, hogy a `FileCompatibilityMode.PreserveTnefAttachments` be van‑e állítva.
+- Ha a TNEF mellékletek a mentés után eltűnnek, ellenőrizze, hogy a `FileCompatibilityMode.PreserveTnefAttachments` be van‑e állítva.
 
 ## Gyakorlati alkalmazások
 
-1. **Email Archiving** – Keep a faithful copy of Outlook messages, including proprietary TNEF parts, for compliance audits.  
-2. **Automated Support Workflows** – Extract images from incoming tickets, replace them with watermarked versions, and re‑save the message for downstream processing.  
-3. **Data Migration** – Move mailboxes from Exchange to a custom archive while preserving every attachment intact, reducing migration errors by up to 92 % compared with plain‑text export tools.
-
-1. **E‑mail archiválás** – Megőriz egy hiteles másolatot az Outlook üzenetekről, beleértve a proprietárius TNEF részeket is, a megfelelőségi auditokhoz.  
-2. **Automatizált támogatási munkafolyamatok** – Képek kinyerése a bejövő jegyekből, vízjelezett verziókkal való helyettesítése, majd az üzenet újramentése a további feldolgozáshoz.  
-3. **Adatmigráció** – Postafiókok áthelyezése az Exchange‑ről egy egyedi archívumba, miközben minden melléklet érintetlenül marad, ezáltal a migrációs hibák akár 92 %-kal csökkennek a sima szöveges export eszközökhöz képest.
+1. **E‑mail archiválás** – Tartson hiteles másolatot az Outlook üzenetekről, beleértve a proprietárius TNEF részeket, a megfelelőségi auditok és a hosszú távú **outlook e‑mail archiválás** céljából.  
+2. **Automatizált támogatási munkafolyamatok** – Képek kinyerése a bejövő jegyekből, vízjelezett verziókkal való helyettesítése, majd az üzenet újra‑mentése a további feldolgozáshoz.  
+3. **Adatmigráció** – Postafiókok áthelyezése az Exchange‑ről egy egyedi archívumba, miközben minden melléklet érintetlen marad, csökkentve a migrációs hibákat akár **92 %**‑kal a sima szöveges export eszközökhöz képest.
 
 ## Teljesítmény szempontok
 
-- Reuse `FileInputStream` objects where possible; close them promptly with `try‑with‑resources`.  
-- For large mailboxes, process messages in batches and release references after each save to keep heap usage under 200 MB.  
-- Profile memory usage with VisualVM or similar tools; Aspose.Email’s streaming API typically reduces peak memory by 60 % versus full‑load approaches.
+- Amennyiben lehetséges, újrahasználja a `FileInputStream` objektumokat; zárja be őket gyorsan a `try‑with‑resources`‑szel.  
+- Nagy postafiókok esetén dolgozza fel az üzeneteket kötegekben, és minden mentés után szabadítsa fel a referenciákat, hogy a heap használat **200 MB** alatt maradjon.  
+- Profilozza a memóriahasználatot VisualVM‑mel vagy hasonló eszközökkel; az Aspose.Email streaming API-ja általában **60 %**‑kal csökkenti a csúcsterhelést a teljes betöltéses megközelítésekhez képest.
 
-- Használjon újra `FileInputStream` objektumokat, ahol csak lehetséges; zárja be őket gyorsan a `try‑with‑resources`‑szel.  
-- Nagy postafiókok esetén dolgozza fel az üzeneteket kötegekben, és minden mentés után szabadítsa fel a referenciákat, hogy a heap használat 200 MB alatt maradjon.  
-- Profilozza a memóriahasználatot VisualVM‑mel vagy hasonló eszközökkel; az Aspose.Email streaming API-ja általában 60 %-kal csökkenti a csúcsterhelést a teljes betöltéses megközelítésekhez képest.
+## Összegzés
 
-## Következtetés
+Most már tudja, **hogyan mentse az EML‑t TNEF‑es** mellékletekkel, hogyan **töltse be az EML‑t**, és hogyan **frissítse az e‑mail** tartalmat biztonságosan az Aspose.Email for Java használatával. Ez a képesség megbízható **outlook e‑mail archiválást**, automatizált feldolgozást és zökkenőmentes migrációs projekteket tesz lehetővé, miközben garantálja, hogy az Outlook‑specifikus adatok érintetlenek maradnak.
 
-You now know **how to save eml with tnef** attachments, how to **load eml**, and how to **update email** content safely using Aspose.Email for Java. This capability unlocks reliable email archiving, automated processing, and seamless migration projects while guaranteeing that Outlook‑specific data remains untouched.
+**Következő lépések**
+- Kísérletezzen különböző `FileCompatibilityMode` beállításokkal, hogy lássa, hogyan befolyásolják a többi formátumot, például az MSG‑t vagy a MHTML‑t.  
+- Fedezze fel az Aspose.Email API‑t MIME részek elemzéséhez, titkosított üzenetek kezeléséhez, és az Exchange Web Services (EWS) integrálásához.
 
-**Next Steps**
-- Experiment with different `FileCompatibilityMode` settings to see how they affect other formats such as MSG or MHTML.  
-- Explore the Aspose.Email API for parsing MIME parts, handling encrypted messages, and integrating with Exchange Web Services (EWS).  
+## GyIK szekció
 
-## GyIK szakasz
+**Mi az a TNEF, és miért fontos?**  
+TNEF (Transport Neutral Encapsulation Format) egy Microsoft Outlook saját tulajdonú konténer, amely gazdag formázást, találkozó‑kéréseket és beágyazott objektumokat tárol; megőrzése biztosítja, hogy az üzenet az Outlookban pontosan úgy jelenjen meg, ahogy eredetileg elkészült, ami a jogi megfelelőség és a felhasználói élmény szempontjából kritikus.
 
-**Direct Answer (40‑70 words):** TNEF (Transport Neutral Encapsulation Format) is a Microsoft Outlook proprietary container that stores rich formatting, meeting requests, and embedded objects; preserving it ensures the message appears identical in Outlook as originally composed, which is critical for legal compliance and user experience.  
+**Használhatom az Aspose.Email‑t más e‑mail formátumokkal az EML‑en kívül?**  
+Igen, az Aspose.Email támogatja a MSG, MHTML, PST és több más formátumot.
 
-1. **Mi az a TNEF, és miért fontos?**  
-   TNEF (Transport Neutral Encapsulation Format) a Microsoft Outlook által használt konténer, amely gazdag formázást, találkozó‑kéréseket és beágyazott objektumokat tárol. A megőrzése biztosítja, hogy az üzenet pontosan úgy jelenjen meg Outlook‑ban, ahogy eredetileg készült, ami jogi megfelelőség és felhasználói élmény szempontjából kritikus.  
+**Hogyan kezeljem hatékonyan a nagy e‑mail fájlokat?**  
+Streamelje az üzenet tartalmát, és kerülje a teljes fájl memóriába töltését; használja a `try‑with‑resources`‑t az automatikus takarításhoz.
 
-2. **Használhatom-e az Aspose.Email‑t más e‑mail formátumokkal az EML‑en kívül?**  
-   Igen, az Aspose.Email támogatja a MSG, MHTML, PST és több más formátumot.  
+**Milyen licencelési lehetőségek állnak rendelkezésre az Aspose.Email‑hez?**  
+Kezdje egy ingyenes próba verzióval, majd válasszon ideiglenes vagy teljes kereskedelmi licencet a projekt igényei alapján.
 
-3. **Hogyan kezeljem hatékonyan a nagy e‑mail fájlokat?**  
-   Stream‑elje az üzenet tartalmát, és kerülje a teljes fájl memóriába töltését; használjon `try‑with‑resources`‑t az automatikus takarításért.  
+**Hogyan hibakeressem az EML fájlkezelés gyakori problémáit?**  
+Ellenőrizze a fájl útvonalakat, győződjön meg a megfelelő könyvtár verzióról, és ellenőrizze, hogy a `FileCompatibilityMode` TNEF megőrzésre van‑e állítva.
 
-4. **Milyen licencelési lehetőségek állnak rendelkezésre az Aspose.Email‑hez?**  
-   Kezdje egy ingyenes próbalicencével, majd válasszon ideiglenes vagy teljes kereskedelmi licencet a projekt igényei szerint.  
+## Gyakran ismételt kérdések
 
-5. **Hogyan hibaelháríthatom az EML fájlkezeléssel kapcsolatos gyakori problémákat?**  
-   Ellenőrizze a fájlutakat, győződjön meg a megfelelő könyvtárverzióról, és ellenőrizze, hogy a `FileCompatibilityMode` TNEF megőrzésére van‑e állítva.  
+**K: Hogyan határozhatom meg programozottan, hogy egy EML fájl TNEF adatot tartalmaz‑e?**  
+A: Ellenőrizze a `MailMessage.getAttachments()` gyűjteményt, hogy van‑e olyan melléklet, amelynek a tartalom típusa `application/ms‑tnef`; egy ilyen melléklet jelenléte azt jelzi, hogy Outlook‑specifikus információ van beágyazva.
 
-## Gyakran Ismételt Kérdések
+**K: Lehet-e egy TNEF‑gazdag EML‑t egyszerű szöveges EML‑re konvertálni, miközben az eredeti mellékletek megmaradnak?**  
+A: Igen—állítsa be a `FileCompatibilityMode.RemoveTnefAttachments`‑t mentéskor, hogy eltávolítsa a TNEF‑et, de megtartsa a normál mellékleteket.
 
-**Direct Answer (40‑70 words):** To determine if an EML file contains TNEF data, inspect the `MailMessage.getAttachments()` collection for an attachment whose content type equals `application/ms‑tnef`; the presence of such an attachment indicates that Outlook‑specific information is embedded.  
+**K: Támogatja az Aspose.Email az aszinkron műveleteket nagy e‑mailok betöltéséhez és mentéséhez?**  
+A: A könyvtár szinkron API‑kat biztosít; a hívásokat `CompletableFuture`‑be csomagolhatja vagy saját szálkészlettel valósíthatja meg az aszinkron viselkedést.
 
-**Q: How can I programmatically determine if an EML file contains TNEF data?**  
-A: Inspect the `MailMessage.getAttachments()` collection for an attachment with the content type `application/ms‑tnef`.  
+**K: Frissíthetek beágyazott képet anélkül, hogy módosítanám az eredeti MIME határolókat?**  
+A: A `LinkedResource` `ContentStream`‑jének frissítése megőrzi az eredeti MIME fejléceket és határolókat.
 
-**Q: Is it possible to convert a TNEF‑rich EML to a plain‑text EML while keeping the original attachments?**  
-A: Yes—set `FileCompatibilityMode.RemoveTnefAttachments` when saving to strip TNEF but retain regular attachments.  
+**K: A mentett EML fájl olvasható lesz-e szabványos e‑mail kliensekkel, például a Thunderbird‑dal?**  
+A: Igen—ha `PreserveTnefAttachments`‑kel menti, az Outlook képes olvasni a TNEF részt, és más kliensek helyesen jelenítik meg a szabványos részeket.
 
-**Q: Does Aspose.Email support async operations for loading and saving large emails?**  
-A: The library provides synchronous APIs; you can wrap calls in `CompletableFuture` or use your own thread pool for asynchronous behavior.  
+## Források
 
-**Q: Can I update an embedded image without altering the original MIME boundaries?**  
-A: Updating the `ContentStream` of a `LinkedResource` preserves the original MIME headers and boundaries.  
-
-**Q: Will the saved EML file be readable by standard email clients like Thunderbird?**  
-A: Yes—when saved with `PreserveTnefAttachments`, Outlook can read the TNEF portion, and other clients will display the standard parts correctly.  
-
-## Erőforrások
-- [Aspose.Email Documentation](https://reference.aspose.com/email/java/)
-- [Download Aspose.Email for Java](https://releases.aspose.com/email/java/)
-- [Purchase a License](https://purchase.aspose.com/buy)
-- [Free Trial License](https://releases.aspose.com/email/java/)
-- [Temporary License Application](https://purchase.aspose.com/temporary-license)
+- [Aspose.Email dokumentáció](https://reference.aspose.com/email/java/)
+- [Aspose.Email for Java letöltése](https://releases.aspose.com/email/java/)
+- [Licenc vásárlása](https://purchase.aspose.com/buy)
+- [Ingyenes próba licenc](https://releases.aspose.com/email/java/)
+- [Ideiglenes licenc igénylése](https://purchase.aspose.com/temporary-license)
 
 ---
 
-**Utolsó frissítés:** 2026-07-03  
-**Tesztelve ezzel:** Aspose.Email for Java 25.4 (jdk16 classifier)  
+**Utoljára frissítve:** 2026-10-28  
+**Tesztelve:** Aspose.Email for Java 25.4 (jdk16 classifier)  
 **Szerző:** Aspose
 
-## Kapcsolódó útmutatók
+## Kapcsolódó oktatóanyagok
 
-- [TNEF mellékletek megőrzése EML fájlokban az Aspose.Email for Java használatával – Átfogó útmutató](/email/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/)
+- [TNEF mellékletek megőrzése EML fájlokban az Aspose.Email for Java használatával – átfogó útmutató](/email/java/attachments-handling/preserve-tnef-attachments-eml-aspose-email-java/)
 - [msg konvertálása eml-re java – Aspose.Email TNEF mellékletek útmutató](/email/java/attachments-handling/aspose-email-java-tnef-attachments-guide/)
 - [EML fájl olvasása java-ban és mellékletek ellenőrzése az Aspose.Email segítségével](/email/java/attachments-handling/aspose-email-java-load-inspect-attachments/)
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
 
 {{< blocks/products/products-backtop-button >}}
-
-{{< /blocks/products/pf/main-wrap-class >}}
