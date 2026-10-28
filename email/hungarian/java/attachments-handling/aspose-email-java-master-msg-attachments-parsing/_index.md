@@ -1,32 +1,36 @@
 ---
-date: '2026-07-22'
-description: Ismerje meg, hogyan lehet e-mailt e-mailbe beágyazni és MSG-t EML-re
-  konvertálni az Aspose.Email for Java használatával. Ez az útmutató bemutatja a mellékletek
-  kinyerését, az üzenetek beágyazását, valamint gyakorlati kódrészleteket.
+date: '2026-10-28'
+description: Ismerje meg, hogyan ágyazhat be egy e-mailt egy másik e-mailbe, és konvertálhatja
+  a MSG-t EML-re az Aspose.Email for Java használatával. Ez az útmutató bemutatja
+  a mellékletek kinyerését, az üzenetek beágyazását, valamint a gyakorlati kódrészleteket.
+images:
+- /java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/og-image.png
 keywords:
 - embed email in email
 - outlook msg to eml
 - embed message as attachment
 - aspose email java tutorial
-lastmod: '2026-07-22'
-og_description: Ismerje meg, hogyan lehet e-mailt e-mailbe beágyazni és MSG-t EML-re
-  konvertálni az Aspose.Email for Java használatával. Ez az útmutató bemutatja a mellékletek
-  kinyerését, az üzenetek beágyazását, valamint gyakorlati kódrészleteket.
+lastmod: '2026-10-28'
+og_description: Ismerje meg, hogyan ágyazhat be egy e-mailt egy másik e-mailbe, és
+  konvertálhatja a MSG-t EML-re az Aspose.Email for Java használatával. Ez a bemutató
+  bemutatja a mellékletek kinyerését, az üzenetek beágyazását, valamint a gyakorlati
+  kódrészleteket.
 og_image_alt: Guide showing how to embed email in email and convert MSG to EML using
   Aspose.Email for Java
-og_title: E-mail beágyazása e-mailbe – MSG konvertálása EML-re az Aspose.Email segítségével
+og_title: E-mail beágyazása egy másik e-mailbe – MSG konvertálása EML-re az Aspose.Email
+  használatával
 schemas:
 - author: Aspose
-  dateModified: '2026-07-22'
+  dateModified: '2026-10-28'
   description: Learn how to embed email in email and convert MSG to EML using Aspose.Email
     for Java. This guide covers attachment extraction, embedding messages, and practical
     code examples.
-  headline: Embed Email in Email – Convert MSG to EML with Aspose.Email
+  headline: Embed email in email – convert MSG to EML with Aspose.Email
   type: TechArticle
 - description: Learn how to embed email in email and convert MSG to EML using Aspose.Email
     for Java. This guide covers attachment extraction, embedding messages, and practical
     code examples.
-  name: Embed Email in Email – Convert MSG to EML with Aspose.Email
+  name: Embed email in email – convert MSG to EML with Aspose.Email
   steps:
   - name: '**Free Trial**: Download and activate your trial from [Aspose''s Free Trial
       Page](https://releases.aspose.com/email/java/).'
@@ -76,58 +80,55 @@ tags:
 - Aspose.Email
 - Java email processing
 - email attachments
-title: E-mail beágyazása e-mailbe – MSG konvertálása EML-re az Aspose.Email segítségével
+title: E-mail beágyazása egy másik e-mailbe – MSG konvertálása EML-re az Aspose.Email
+  segítségével
 url: /hu/java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# E‑mail beágyazása e‑mailbe – MSG konvertálása EML-re az Aspose.Email for Java segítségével
+
+# E‑mail beágyazása e‑mailbe – MSG konvertálása EML‑re az Aspose.Email for Java segítségével
 
 ## Bevezetés
 
-Az e‑mail mellékletek hatékony kezelése és az **e‑mail beágyazása e‑mailbe** gyakori kihívások az Outlook adatok más rendszerekkel való integrálásakor. Az Aspose.Email for Java segítségével zökkenőmentesen konvertálhatja az MSG-t EML-re, kinyerheti és mentheti a mellékleteket, sőt beágyazhat egy üzenetet egy másikba is. Ez az útmutató lépésről lépésre végigvezeti, megmagyarázza, miért fontosak ezek a képességek, és kész‑kész kódrészleteket biztosít.
+Az e‑mail mellékletek hatékony kezelése és az **e‑mail beágyazása e‑mailbe** képesség gyakori kihívás az Outlook adatok más rendszerekkel való integrálásakor. Az Aspose.Email for Java segítségével zökkenőmentesen konvertálhatja a MSG‑t EML‑re, kinyerheti és mentheti a mellékleteket, valamint beágyazhat egy üzenetet egy másikba. Ez az útmutató lépésről lépésre végigvezet, elmagyarázza, miért fontosak ezek a funkciók, és kész‑kódú példákat biztosít, amelyeket egyszerűen beilleszthet a projektjébe.
 
-A következőket tárgyaljuk:
-- MSG fájlból a mellékletek feldolgozása és mentése.  
-- Üzenet beágyazása mellékletként egy másik üzenetbe.  
-- Beágyazott üzenetek olvasása a mellékletekből.  
-- **Hogyan konvertáljuk az MSG-t EML-re** az Aspose.Email for Java használatával.
+Megtanulja, hogyan:
+- Kinyerje és mentse a mellékleteket egy MSG‑fájlból.  
+- Egy üzenetet mellékletként ágyazzon be egy másik üzenetbe.  
+- Beágyazott üzeneteket olvasson a mellékletekből.  
+- **MSG‑t EML‑re konvertáljon** az Aspose.Email for Java használatával.
 
 ## Gyors válaszok
-- **Az Aspose.Email for Java mit csinál?** Az Aspose.Email for Java egy Java API-t biztosít az MSG, EML és egyéb e‑mail formátumok olvasásához, létrehozásához és manipulálásához.  
-- **Hogyan nyerhetem ki az MSG mellékleteket?** Használja a `MapiMessage.getAttachments()` metódust, és mentse minden `MapiAttachment`-ot.  
-- **Beágyazhatok‑e e‑mailt e‑mailbe?** Igen – adjon hozzá egy `MapiMessage`‑t mellékletként egy másik `MapiMessage`‑hez.  
-- **Szükségem van licencre?** Igen – egy ingyenes próba a kiértékeléshez elegendő; a termeléshez állandó licenc szükséges.  
-- **Milyen Java verzió szükséges?** JDK 16 vagy újabb ajánlott.
+- **Mit csinál az Aspose.Email for Java?** Egy Java API‑t biztosít az MSG, EML és egyéb e‑mail formátumok olvasásához, létrehozásához és manipulálásához.  
+- **Hogyan nyerhetem ki a MSG mellékleteket?** Használja a `MapiMessage.getAttachments()` metódust, és mentse el minden `MapiAttachment`‑ot.  
+- **Beágyazhatok e‑mailt e‑mailbe?** Igen – adjon hozzá egy `MapiMessage`‑t egy másik `MapiMessage` mellékletéhez.  
+- **Szükségem van licencre?** Egy ingyenes próba a kiértékeléshez elegendő; a termeléshez állandó licenc szükséges.  
+- **Melyik Java verzió szükséges?** JDK 16 vagy újabb ajánlott.
 
-## Hogyan konvertáljuk az MSG-t EML-re az Aspose.Email for Java használatával?
-`MapiMessage` az Aspose.Email osztálya, amely egy Outlook MSG e‑mail üzenetet képvisel. Töltse be az MSG fájlt a `MapiMessage.fromFile()` metódussal, majd hívja a `save`‑t, megadva egy `.eml` fájlnevet. Ez az egy‑soros konverzió megőrzi az összes fejlécet, a törzstartalmat és a mellékleteket, így a kapott EML bármely SMTP szerveren küldhető hűségvesztés nélkül. A folyamat továbbá megtartja az eredeti időbélyegeket és prioritás‑jelzőket, biztosítva a teljes hűséget.
+## Hogyan konvertáljuk a MSG‑t EML‑re az Aspose.Email for Java használatával?
 
-```java
-// Direct answer: Convert MSG to EML in two lines
-MapiMessage msg = MapiMessage.fromFile("input.msg");
-msg.save("output.eml", SaveOptions.getDefaultEml());
-```
+A `MapiMessage` az Aspose.Email osztálya, amely egy Outlook MSG e‑mail üzenetet reprezentál. Töltse be a MSG‑fájlt a `MapiMessage.fromFile()` metódussal, majd hívja a `save`‑t, megadva egy `.eml` fájlnevet. Ez az egy‑soros konverzió megőrzi az összes fejlécet, a törzstartalmat és a mellékleteket, így a kapott EML bármely SMTP szerveren küldhető veszteség nélkül.
 
-> **Pro tipp:** A konverció megőrzi az összes eredeti fejlécet, a törzstartalmat és a mellékleteket, így a kapott EML fájlt azonnal továbbíthatja bármely SMTP szervernek.
+> **Pro tipp:** A konverzió megőrzi az összes eredeti fejlécet, a törzstartalmat és a mellékleteket, így a kapott EML fájlt azonnal továbbíthatja bármely SMTP szerverre.
 
 ## Mi az Aspose.Email for Java?
-`Aspose.Email for Java` egy robusztus könyvtár, amely elrejti az e‑mail fájlformátumok összetettségét. **50+ bemeneti és kimeneti formátumot** támogat, többek között MSG, EML, HTML és MIME, és több száz oldalas üzeneteket képes feldolgozni a teljes fájl memóriába betöltése nélkül.
 
-## Mi az „MSG mellékletek kinyerése”?
-A MSG mellékletek kinyerése azt jelenti, hogy beolvassa a bináris MSG fájlt, megtalálja az egyes mellékletobjektumokat, és lemezre menti vagy memóriában dolgozza fel őket. Ez elengedhetetlen az automatizált e‑mail feldolgozási csővezetékekhez, archiválási megoldásokhoz vagy CRM integrációkhoz.
+Az `Aspose.Email for Java` egy robusztus könyvtár, amely elrejti az e‑mail fájlformátumok bonyolultságát. **50+ bemeneti és kimeneti formátumot** támogat, többek között MSG, EML, HTML és MIME, és több száz oldalas üzeneteket képes feldolgozni anélkül, hogy a teljes fájlt memóriába töltené.
+
+## Mi az a „MSG mellékletek kinyerése”?
+
+A MSG mellékletek kinyerése azt jelenti, hogy a bináris MSG‑fájlt beolvassa, megtalálja az egyes mellékletobjektumokat, és lementi őket a lemezre vagy memóriában dolgozza fel. Ez elengedhetetlen automatizált e‑mail feldolgozási csővezetékekhez, archiválási megoldásokhoz vagy CRM integrációkhoz.
 
 ## Előfeltételek
-Mielőtt belemerülne a megvalósításba, győződjön meg róla, hogy rendelkezik:
+Mielőtt a megvalósításba merülne, győződjön meg arról, hogy rendelkezik:
 
-- **Java Development Kit (JDK)**: JDK 16 vagy újabb telepítve legyen a rendszerén.  
+- **Java Development Kit (JDK)**: JDK 16 vagy újabb legyen telepítve a rendszerén.  
 - **Maven**: Ez az útmutató Maven‑t használ a függőségkezeléshez.  
-- **Aspose.Email Library**: Az Aspose.Email for Java könyvtárat be kell vonni.
+- **Aspose.Email Library**: Az Aspose.Email for Java könyvtárat be kell vonni a projektbe.
 
 ### Szükséges könyvtárak
 Adja hozzá a következő függőséget a `pom.xml` fájlhoz:
@@ -140,29 +141,25 @@ Adja hozzá a következő függőséget a `pom.xml` fájlhoz:
 </dependency>
 ```
 
-### Licenc beszerzése
-A Aspose.Email for Java teljes kihasználásához fontolja meg a licenc beszerzését:
-- **Ingyenes próba**: Kezdje egy 30‑napos próbaidőszakkal a funkciók felfedezéséhez.  
-- **Ideiglenes licenc**: Szerezzen ideiglenes licencet a hosszabb teszteléshez.  
-- **Vásárlás**: Hosszú távú használathoz előfizetést vásároljon.
-
-A licencfájl megszerzése után állítsa be a Java projektjében a következő módon:
-```java
-License license = new License();
-license.setLicense("path/to/your/license/file");
-```
+### Licenc megszerzése
+Az Aspose.Email for Java teljes kihasználásához fontolja meg a licenc beszerzését:
+- **Ingyenes próba**: Kezdje egy 30‑napos próbaidőszakkal a funkciók felfedezéséhez. Lásd a [Free Trial](https://releases.aspose.com/email/java/) vagy az [Aspose's Free Trial Page](https://releases.aspose.com/email/java/) oldalt.  
+- **Ideiglenes licenc**: Szerezzen ideiglenes licencet a hosszabb teszteléshez. Lásd a [Temporary License](https://purchase.aspose.com/temporary-license/) vagy az [Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/) oldalt.  
+- **Vásárlás**: Hosszú távú használathoz előfizetést kell vásárolni. Látogassa meg a [Aspose Purchase Page](https://purchase.aspose.com/buy) oldalt.
 
 ## Az Aspose.Email for Java beállítása
-### Telepítési információ
-Az Aspose.Email for Java Maven használatával történő telepítéséhez vegye fel a fent említett függőséget a `pom.xml` fájlba. Ez biztosítja, hogy az összes szükséges könyvtár automatikusan letöltődjön és kezelve legyen.
+### Telepítési információk
+Az Aspose.Email for Java Maven‑os telepítéséhez vegye fel a fent említett függőséget a `pom.xml`‑be. Ez biztosítja, hogy az összes szükséges könyvtár automatikusan letöltődjön és kezelve legyen.
 
 ### Licenc beállítása
-1. **Ingyenes próba**: Töltse le és aktiválja a próbaverziót az [Aspose ingyenes próbaoldaláról](https://releases.aspose.com/email/java/).  
-2. **Ideiglenes licenc**: Igényeljen ideiglenes licencet az [Aspose ideiglenes licenc oldalán](https://purchase.aspose.com/temporary-license/).  
-3. **Vásárlás licenc**: Teljes hozzáféréshez látogassa meg az [Aspose vásárlási oldalt](https://purchase.aspose.com/buy).
+1. **Ingyenes próba**: Töltse le és aktiválja a próbaverziót az [Aspose's Free Trial Page](https://releases.aspose.com/email/java/) oldalról.  
+2. **Ideiglenes licenc**: Igényeljen ideiglenes licencet az [Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/) oldalon.  
+3. **Vásárlási licenc**: Teljes hozzáféréshez látogassa meg a [Aspose Purchase Page](https://purchase.aspose.com/buy) oldalt.
 
-## Hogyan ágyazzunk be e‑mailt e‑mailbe az Aspose.Email for Java használatával?
-Egy e‑mail másik e‑mailbe ágyazása olyan egyszerű, mint egy `MapiMessage` objektum hozzáadása egy szülő `MapiMessage` mellékletgyűjteményéhez. A belső üzenet megőrzi eredeti szerkezetét, lehetővé téve a címzettek számára, hogy szabályos e‑mail mellékletként nyissák meg. A csatolt üzenethez egyedi megjelenítési nevet is beállíthat.
+## Hogyan ágyazzunk e‑mailt e‑mailbe az Aspose.Email for Java használatával?
+
+A `MapiMessage` az az objektum, amely egy Outlook e‑mailt reprezentál. Egy e‑mail beágyazása egy másikba olyan egyszerű, mint egy `MapiMessage` objektum hozzáadása a szülő `MapiMessage` mellékletgyűjteményéhez. A belső üzenet megőrzi eredeti szerkezetét, lehetővé téve a címzettek számára, hogy azt normál e‑mail mellékletként nyissák meg. A csatolt üzenethez egyedi megjelenítési nevet is beállíthat.
+
 ```java
 // Direct answer: Embed one MSG inside another in three steps
 MapiMessage outer = new MapiMessage("sender@domain.com", "recipient@domain.com", "Subject", "Body");
@@ -171,20 +168,20 @@ outer.getAttachments().add(inner);
 outer.save("outer_with_embedded.msg");
 ```
 
-## MSG fájlok mellékleteinek feldolgozása és mentése
+## MSG fájlok mellékleteinek elemzése és mentése
 ### Áttekintés
-Ez a funkció lehetővé teszi, hogy **MSG mellékleteket nyerjen ki** egy MSG fájlból, és helyileg mentse őket. Hasznos e‑mail adatok feldolgozásához vagy más rendszerekkel való integrációhoz.
+Ez a funkció lehetővé teszi a **MSG mellékletek kinyerését** egy MSG‑fájlból és azok helyi mentését. Hasznos e‑mail adatok feldolgozásához vagy más rendszerekkel való integrációhoz.
 
-A `MapiMessage` az Aspose.Email Outlook MSG üzenetének ábrázolása, amely programozott hozzáférést biztosít a fejlécekhez, a törzshöz és a mellékletekhez.
+A `MapiMessage` az Aspose.Email Outlook MSG üzenet reprezentációja, amely programozott hozzáférést biztosít a fejlécekhez, a törzshöz és a mellékletekhez.
 
 #### Lépések
-1. **Az MSG fájl betöltése**  
-   Load the MSG file using `MapiMessage.fromFile()` method:
+1. **MSG fájl betöltése**  
+   Töltse be a MSG‑fájlt a `MapiMessage.fromFile()` metódussal:
    ```java
    MapiMessage outlookMessageFile = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
    ```
-2. **Mellékletek iterálása és mentése**  
-   Loop through each attachment, saving them with their original filenames:
+2. **Mellékletek bejárása és mentése**  
+   Iteráljon a mellékleteken, és mentse őket az eredeti fájlnevekkel:
    ```java
    for (int i = 0; i < outlookMessageFile.getAttachments().size(); i++) {
        MapiAttachment outlookMessageAttachment = 
@@ -193,130 +190,149 @@ A `MapiMessage` az Aspose.Email Outlook MSG üzenetének ábrázolása, amely pr
    }
    ```
 
-#### Hibakeresés
-- Győződjön meg arról, hogy a könyvtár útvonala helyes és írható.  
-- Ellenőrizze, hogy az MSG fájl valóban tartalmaz mellékleteket.
+#### Hibaelhárítás
+- Győződjön meg arról, hogy a könyvtárútvonal helyes és írható.  
+- Ellenőrizze, hogy a MSG‑fájl valóban tartalmaz mellékleteket.
 
 ## Üzenet beágyazása mellékletként
 ### Áttekintés
-Üzenet beágyazása (**üzenet beágyazása mellékletként**) hasznos jelentések küldéséhez, beszélgetések továbbításához vagy kapcsolódó kommunikációk összegyűjtéséhez.
+Az üzenet **beágyazása mellékletként** hasznos jelentések küldéséhez, beszélgetések továbbításához vagy kapcsolódó kommunikációk egyesítéséhez.
 
 #### Lépések
 1. **Fő üzenet létrehozása**  
-   Define your main message using `MapiMessage`:
+   Definiálja a fő üzenetet a `MapiMessage` segítségével:
    ```java
    MapiMessage msg = new MapiMessage("from@test.com", "to@test.com", "Subj", "This is a message body");
    ```
 2. **Beágyazott üzenet betöltése és hozzáadása**  
-   Load the MSG file to be embedded and add it as an attachment:
+   Töltse be a beágyazandó MSG‑fájlt, és adja hozzá mellékletként:
    ```java
    MapiMessage attachMsg = MapiMessage.fromFile(dataDir + "message.msg");
    msg.getAttachments().add("Weekly report", attachMsg);
    ```
 3. **Új MSG fájl mentése**  
-   Save the message with the embedded attachment:
+   Mentse az üzenetet a beágyazott melléklettel:
    ```java
    msg.save(dataDir + "EmbededMessageAsAttachment.msg");
    ```
 
-#### Hibakeresés
-- Ellenőrizze, hogy a fő és a beágyazott üzenetek helyesen vannak formázva.  
-- Győződjön meg arról, hogy a fájlutak pontosak.
+#### Hibaelhárítás
+- Ellenőrizze, hogy a fő és a beágyazott üzenet is helyesen van formázva.  
+- Győződjön meg a fájlútvonalak pontosságáról.
 
-## Beágyazott üzenetek olvasása a mellékletekből
+## Beágyazott üzenetek olvasása mellékletekből
 ### Áttekintés
-Tanulja meg, hogyan nyerjen ki és dolgozzon fel egy **mellékletként beágyazott üzenetet**, ami hasznos az e‑mail tartalmak automatizált feldolgozásához.
+Tanulja meg, hogyan nyerjen ki és dolgozzon fel egy **beágyazott üzenetet mellékletként**, ami automatizált e‑mail tartalomfeldolgozáshoz hasznos.
 
 #### Lépések
 1. **MSG fájl betöltése**  
-   Load the MSG file containing the embedded message:
+   Töltse be azt a MSG‑fájlt, amely a beágyazott üzenetet tartalmazza:
    ```java
    MapiMessage mapi = MapiMessage.fromFile(dataDir + "EmbededMessageAsAttachment.msg");
    ```
 2. **Beágyazott üzenet lekérése és feldolgozása**  
-   Extract the first attachment as a `MapiMessage` object:
+   Az első mellékletet `MapiMessage` objektummá alakítja:
    ```java
    MapiMessage emb = mapi.getAttachments().get_Item(0).getObjectData().toMapiMessage();
    ```
 
-#### Hibakeresés
-- Erősítse meg, hogy a melléklet index helyes.  
-- Ellenőrizze, hogy nincs-e feldolgozási hiba.
+#### Hibaelhárítás
+- Ellenőrizze, hogy a melléklet indexe helyes.  
+- Vizsgálja meg, vannak‑e elemzési hibák.
 
 ## Gyakorlati alkalmazások
 1. **Automatizált e‑mail feldolgozás** – Mellékletek kinyerése e‑mailből további elemzés vagy tárolás céljából.  
-2. **Jelentés terjesztése** – Jelentéseket ágyazzon be e‑mailbe, hogy a címzettek átfogó frissítéseket kapjanak.  
-3. **Adatarchiválás** – E‑mail tartalmakat és mellékleteket helyileg mentse a nyilvántartás céljából.  
-4. **Integráció CRM rendszerekkel** – Automatizálja az ügyfélkommunikációk kinyerését.  
-5. **E‑mail alapú értesítések** – Használjon beágyazott üzeneteket részletes riasztásokhoz.
+2. **Jelentés terjesztés** – Jelentések beágyazása e‑mailbe, hogy a címzettek teljes körű frissítéseket kapjanak.  
+3. **Adatarchiválás** – E‑mail tartalom és mellékletek helyi mentése archiválási célokra.  
+4. **Integráció CRM rendszerekkel** – Ügyfélkommunikációk automatikus kinyerése.  
+5. **E‑mail alapú értesítések** – Beágyazott üzenetek használata részletes riasztásokhoz.
 
-## Teljesítmény szempontok
-Az Aspose.Email használatakor a teljesítmény optimalizálásához:
-- Zárja le az adatfolyamokat a fájlok feldolgozása után az erőforrások kezelése érdekében.  
-- Használjon megfelelő Java memória‑kezelési technikákat, például a szemétgyűjtés finomhangolását.  
-- Optimalizálja a fájl I/O műveleteket a késleltetés minimalizálása érdekében.
+## Teljesítménybeli megfontolások
+Az Aspose.Email használata során a teljesítmény optimalizálásához:
+- Zárja le az adatfolyamokat a fájlok feldolgozása után.  
+- Alkalmazzon megfelelő Java memória‑kezelési technikákat, például a **garbage‑collection finomhangolását**.  
+- Optimalizálja a fájl‑I/O műveleteket a késleltetés minimalizálása érdekében.
 
 ## Gyakori problémák és megoldások
-- **Probléma:** A mellékletek nem mentődnek.  
-  **Megoldás:** Ellenőrizze, hogy a `dataDir` egy írható mappára mutat, és hogy az MSG fájl valóban tartalmaz mellékleteket.  
-- **Probléma:** A beágyazott üzenet nem jelenik meg a címzett kliensében.  
-  **Megoldás:** Győződjön meg arról, hogy a mellékletet megfelelő megjelenítési névvel adja hozzá, és hogy a belső MSG érvényes fájl.  
-- **Probléma:** Az MSG‑t EML‑re konvertálás formázást veszít.  
-  **Megoldás:** Használja a legújabb Aspose.Email verziót, és kerülje a message objektum módosítását a `save` hívása előtt.
+- **Probléma:** A mellékletek nem **mentődnek**.  
+  **Megoldás:** Ellenőrizze, hogy a `dataDir` egy írható mappára mutat, és a MSG‑fájl valóban **tartalmaz** mellékleteket.  
+- **Probléma:** A beágyazott üzenet nem **jelenik meg** a **címzett** kliensében.  
+  **Megoldás:** Győződjön meg arról, hogy a melléklet megfelelő megjelenítési névvel van hozzáadva, és a belső MSG érvényes fájl.  
+- **Probléma:** A MSG‑t EML‑re konvertálva elveszik a formázás.  
+  **Megoldás:** Használja az Aspose.Email legújabb verzióját, és ne módosítsa az üzenetobjektumot a `save` hívása előtt.
 
-## GYIK szekció
+## FAQ szekció
 1. **Mi az Aspose.Email for Java?**  
-   - Egy könyvtár, amely lehetővé teszi az MSG és EML‑hez hasonló e‑mail formátumok Java‑alkalmazásokban való kezelését.  
-2. **Hogyan telepítem az Aspose.Email‑t Maven‑nel?**  
-   - Adja hozzá a megadott függőséget a `pom.xml` fájlhoz.  
-3. **Kinyerhetek mellékleteket e‑mailből anélkül, hogy helyileg menteném őket?**  
-   - Igen, a mellékleteket közvetlenül a memóriában is feldolgozhatja.  
+   - Egy könyvtár, amely lehetővé teszi az MSG és EML formátumokkal való munkát Java‑alkalmazásokban.  
+2. **Hogyan telepítem az Aspose.Email‑et Maven‑nel?**  
+   - Adja hozzá a megadott függőséget a `pom.xml`‑hez.  
+3. **Parsolhatok-e mellékleteket e‑mailből anélkül, hogy helyileg menteném őket?**  
+   - Igen, a mellékleteket közvetlenül memóriában is feldolgozhatja.  
 4. **Lehet több üzenetet beágyazni egy e‑mailbe?**  
    - Természetesen! Tetszőleges számú beágyazott üzenetet hozzáadhat.  
 5. **Mit tegyek, ha a beágyazott üzenet nem jelenik meg helyesen?**  
-   - Győződjön meg arról, hogy a melléklet helyesen van hozzáadva, és ellenőrizze a formázási problémákat.
+   - Ellenőrizze, hogy a melléklet helyesen van-e hozzáadva, és vizsgálja meg a formázási problémákat.
 
-## Gyakran Ismételt Kérdések
-**K: Hogyan töltök be egy MSG fájlt az Aspose.Email for Java‑val?**  
-V: Használja a `MapiMessage.fromFile("path/to/file.msg")` metódust az MSG fájl `MapiMessage` objektumba történő betöltéséhez.
+## Gyakran feltett kérdések
 
-**K: Mi a legjobb módja az MSG mellékletek kinyerésének?**  
-V: Iteráljon a `message.getAttachments()` felett, és hívja meg az `attachment.save(destinationPath)` metódust minden elemhez.
+**Q: Hogyan töltök be egy MSG‑fájlt az Aspose.Email for Java‑val?**  
+A: Használja a `MapiMessage.fromFile("path/to/file.msg")` metódust a MSG‑fájl `MapiMessage` objektummá történő betöltéséhez.
 
-**K: Beágyazhatok‑e egy e‑mailt egy másik e‑mailbe az Aspose.Email for Java‑val?**  
-V: Igen – hozza létre a belső e‑mailhez egy `MapiMessage`‑t, és adja hozzá a külső üzenet mellékletgyűjteményéhez.
+**Q: Mi a legjobb módja a MSG mellékletek kinyerésének?**  
+A: Iteráljon a `message.getAttachments()` gyűjteményen, és hívja meg az `attachment.save(destinationPath)` metódust minden elemre.
 
-**K: Szükségem van licencre a mellékletek kinyeréséhez termelési környezetben?**  
-V: Érvényes licenc szükséges a termelési használathoz; az ingyenes próba csak kiértékelésre elegendő.
+**Q: Beágyazhatok-e e‑mailt egy másik e‑mailbe az Aspose.Email for Java‑val?**  
+A: Igen – hozza létre a belső e‑mailt `MapiMessage`‑ként, majd adja hozzá a külső üzenet mellékletgyűjteményéhez.
 
-**K: Vannak‑e gyakori csapdák a beágyazott üzenetek olvasásakor?**  
-V: Győződjön meg arról, hogy a helyes melléklet indexet használja, és ellenőrizze, hogy a beágyazott tartalom érvényes MSG fájl.
+**Q: Szükségem van licencre a mellékletek kinyeréséhez termelési környezetben?**  
+A: Igen, a termeléshez érvényes licenc szükséges; az ingyenes próba csak kiértékelésre alkalmas.
 
-## Erőforrások
-- [Aspose.Email dokumentáció](https://reference.aspose.com/email/java/)  
-- [Aspose.Email letöltése](https://releases.aspose.com/email/java/)  
-- [Licenc vásárlása](https://purchase.aspose.com/buy)  
-- [Ingyenes próba](https://releases.aspose.com/email/java/)  
-- [Ideiglenes licenc](https://purchase.aspose.com/temporary-license/)  
-- [Támogatási fórum](https://forum.aspose.com/c/email/10)
+**Q: Vannak gyakori buktatók a beágyazott üzenetek olvasásakor?**  
+A: Győződjön meg arról, hogy a megfelelő melléklet indexet használja, és ellenőrizze, hogy a beágyazott tartalom érvényes MSG‑fájl.
+
+## Források
+- [Aspose.Email Documentation](https://reference.aspose.com/email/java/)  
+- [Download Aspose.Email](https://releases.aspose.com/email/java/)  
+- [Purchase License](https://purchase.aspose.com/buy)  
+- [Free Trial](https://releases.aspose.com/email/java/)  
+- [Temporary License](https://purchase.aspose.com/temporary-license/)  
+- [Support Forum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Utoljára frissítve:** 2026-07-22  
-**Tesztelve ezzel:** Aspose.Email 25.4 for Java (JDK 16)  
+**Utoljára frissítve:** 2026-10-28  
+**Tesztelve:** Aspose.Email 25.4 for Java (JDK 16)  
 **Szerző:** Aspose
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Kapcsolódó oktatóanyagok
 
-- [Hogyan töltsük be és dolgozzuk fel az Outlook MSG fájlokat az Aspose.Email for Java használatával: Átfogó útmutató](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
-- [Hogyan nyerjünk ki e‑mail mellékleteket e‑mail üzenetekből az Aspose.Email for Java használatával](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
-- [Hogyan illesszünk be mellékletet MSG fájlokba az Aspose.Email for Java használatával](/email/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/)
+- [How to Load and Parse Outlook MSG Files Using Aspose.Email for Java: A Comprehensive Guide](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [How to Extract Email Attachments from Email Messages Using Aspose.Email for Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [How to Insert Attachment in MSG Files Using Aspose.Email for Java](/email/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/)
 
+
+
+
+
+
+
+
+```java
+// Direct answer: Convert MSG to EML in two lines
+MapiMessage msg = MapiMessage.fromFile("input.msg");
+msg.save("output.eml", SaveOptions.getDefaultEml());
+```
+
+```java
+License license = new License();
+license.setLicense("path/to/your/license/file");
+```
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

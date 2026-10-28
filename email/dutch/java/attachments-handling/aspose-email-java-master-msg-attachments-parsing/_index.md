@@ -1,32 +1,34 @@
 ---
-date: '2026-07-22'
+date: '2026-10-28'
 description: Leer hoe u e-mail in e-mail kunt insluiten en MSG naar EML kunt converteren
-  met Aspose.Email voor Java. Deze gids behandelt attachment extraction, embedding
-  messages en praktische code examples.
+  met Aspose.Email voor Java. Deze gids behandelt het extraheren van bijlagen, het
+  insluiten van berichten en praktische codevoorbeelden.
+images:
+- /java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/og-image.png
 keywords:
 - embed email in email
 - outlook msg to eml
 - embed message as attachment
 - aspose email java tutorial
-lastmod: '2026-07-22'
+lastmod: '2026-10-28'
 og_description: Leer hoe u e-mail in e-mail kunt insluiten en MSG naar EML kunt converteren
-  met Aspose.Email voor Java. Deze gids behandelt attachment extraction, embedding
-  messages en praktische code examples.
+  met Aspose.Email voor Java. Deze tutorial behandelt het extraheren van bijlagen,
+  het insluiten van berichten en praktische codevoorbeelden.
 og_image_alt: Guide showing how to embed email in email and convert MSG to EML using
   Aspose.Email for Java
-og_title: E-mail insluiten in e-mail – Convert MSG to EML met Aspose.Email
+og_title: E-mail in e-mail insluiten – converteer MSG naar EML met Aspose.Email
 schemas:
 - author: Aspose
-  dateModified: '2026-07-22'
+  dateModified: '2026-10-28'
   description: Learn how to embed email in email and convert MSG to EML using Aspose.Email
     for Java. This guide covers attachment extraction, embedding messages, and practical
     code examples.
-  headline: Embed Email in Email – Convert MSG to EML with Aspose.Email
+  headline: Embed email in email – convert MSG to EML with Aspose.Email
   type: TechArticle
 - description: Learn how to embed email in email and convert MSG to EML using Aspose.Email
     for Java. This guide covers attachment extraction, embedding messages, and practical
     code examples.
-  name: Embed Email in Email – Convert MSG to EML with Aspose.Email
+  name: Embed email in email – convert MSG to EML with Aspose.Email
   steps:
   - name: '**Free Trial**: Download and activate your trial from [Aspose''s Free Trial
       Page](https://releases.aspose.com/email/java/).'
@@ -76,58 +78,54 @@ tags:
 - Aspose.Email
 - Java email processing
 - email attachments
-title: E-mail insluiten in e-mail – Convert MSG to EML met Aspose.Email
+title: E-mail in e-mail insluiten – converteer MSG naar EML met Aspose.Email
 url: /nl/java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# E‑mail in e‑mail insluiten – MSG naar EML converteren met Aspose.Email voor Java
+
+# E-mail in e-mail insluiten – converteer MSG naar EML met Aspose.Email voor Java
 
 ## Inleiding
 
-Het efficiënt beheren van e‑mailbijlagen en het kunnen **e‑mail in e‑mail insluiten** zijn veelvoorkomende uitdagingen bij het integreren van Outlook‑gegevens met andere systemen. Met Aspose.Email voor Java kun je naadloos MSG naar EML converteren, bijlagen extraheren en opslaan, en zelfs één bericht in een ander insluiten. Deze tutorial leidt je door elke stap, legt uit waarom deze mogelijkheden belangrijk zijn, en biedt kant‑klaar code‑fragmenten.
+Het efficiënt beheren van e-mailbijlagen en het kunnen **embed email in email** zijn veelvoorkomende uitdagingen bij het integreren van Outlook-gegevens met andere systemen. Met Aspose.Email for Java kun je naadloos MSG naar EML converteren, bijlagen extraheren en opslaan, en één bericht in een ander insluiten. Deze tutorial leidt je door elke stap, legt uit waarom deze mogelijkheden belangrijk zijn, en biedt kant‑klaar werkende code‑fragmenten die je in je project kunt kopiëren.
 
-We behandelen:
-- Het parseren en opslaan van bijlagen uit een MSG‑bestand.  
+Je leert hoe je:
+- Parse en sla bijlagen op uit een MSG‑bestand.  
 - Een bericht als bijlage in een ander bericht insluiten.  
 - Ingesloten berichten uit bijlagen lezen.  
-- **Hoe MSG naar EML te converteren** met Aspose.Email voor Java.
+- **Convert MSG to EML** gebruiken met Aspose.Email for Java.
 
 ## Snelle antwoorden
-- **Wat doet Aspose.Email voor Java?** Het biedt een Java‑API om MSG, EML en andere e‑mailformaten te lezen, te maken en te manipuleren.  
+- **Wat doet Aspose.Email for Java?** Het biedt een Java‑API om MSG, EML en andere e‑mailformaten te lezen, te maken en te manipuleren.  
 - **Hoe kan ik MSG‑bijlagen extraheren?** Gebruik `MapiMessage.getAttachments()` en sla elke `MapiAttachment` op.  
 - **Kan ik e‑mail in e‑mail insluiten?** Ja—voeg een `MapiMessage` toe als bijlage aan een andere `MapiMessage`.  
 - **Heb ik een licentie nodig?** Een gratis proefversie werkt voor evaluatie; een permanente licentie is vereist voor productie.  
-- **Welke Java‑versie is vereist?** JDK 16 of hoger wordt aanbevolen.
+- **Welke Java‑versie is vereist?** JDK 16 of later wordt aanbevolen.
 
-## Hoe MSG naar EML converteren met Aspose.Email voor Java?
-`MapiMessage` is de Aspose.Email‑klasse die een Outlook‑MSG‑e‑mailbericht vertegenwoordigt. Laad het MSG‑bestand met `MapiMessage.fromFile()`, roep vervolgens `save` aan met een `.eml`‑bestandsnaam. Deze één‑regelige conversie behoudt alle headers, body‑inhoud en bijlagen, zodat de resulterende EML via elke SMTP‑server kan worden verzonden zonder verlies van kwaliteit. Het proces behoudt ook de oorspronkelijke tijdstempels en prioriteitsvlaggen, waardoor volledige getrouwheid wordt gegarandeerd.
+## Hoe converteer je MSG naar EML met Aspose.Email voor Java?
 
-```java
-// Direct answer: Convert MSG to EML in two lines
-MapiMessage msg = MapiMessage.fromFile("input.msg");
-msg.save("output.eml", SaveOptions.getDefaultEml());
-```
+`MapiMessage` is de klasse van Aspose.Email die een Outlook MSG‑e‑mailbericht vertegenwoordigt. Laad het MSG‑bestand met `MapiMessage.fromFile()`, roep vervolgens `save` aan met een `.eml`‑bestandsnaam. Deze één‑regelige conversie behoudt alle headers, de inhoud van de body en bijlagen, zodat het resulterende EML‑bestand via elke SMTP‑server kan worden verzonden zonder verlies van kwaliteit.
 
 > **Pro tip:** De conversie behoudt alle originele headers, body‑inhoud en bijlagen, zodat je het resulterende EML‑bestand direct kunt doorsturen naar elke SMTP‑server.
 
 ## Wat is Aspose.Email voor Java?
-`Aspose.Email for Java` is een robuuste bibliotheek die de complexiteit van e‑mailbestandsformaten abstraheert. Het ondersteunt **meer dan 50 invoer‑ en uitvoerformaten**, waaronder MSG, EML, HTML en MIME, en kan berichten van honderden pagina's verwerken zonder het volledige bestand in het geheugen te laden.
 
-## Wat betekent “MSG‑bijlagen extraheren”?
-Het extraheren van MSG‑bijlagen betekent het lezen van het binaire MSG‑bestand, het lokaliseren van elk bijlage‑object en het opslaan op schijf of verwerken in het geheugen. Dit is essentieel voor geautomatiseerde e‑mailverwerkings‑pipelines, archiveringsoplossingen of CRM‑integraties.
+`Aspose.Email for Java` is een robuuste bibliotheek die de complexiteit van e‑mailbestandsformaten abstraheert. Het ondersteunt **50+ input‑ en outputformaten**, waaronder MSG, EML, HTML en MIME, en kan berichten van honderden pagina's verwerken zonder het volledige bestand in het geheugen te laden.
+
+## Wat is “extract MSG attachments”?
+
+Het extraheren van MSG‑bijlagen betekent het lezen van het binaire MSG‑bestand, het lokaliseren van elk bijlage‑object en het opslaan op schijf of verwerken in het geheugen. Dit is essentieel voor geautomatiseerde e‑mailverwerkings‑pijplijnen, archiveringsoplossingen of CRM‑integraties.
 
 ## Voorvereisten
-Voordat je in de implementatie duikt, zorg dat je het volgende hebt:
+Voordat je aan de implementatie begint, zorg ervoor dat je het volgende hebt:
 
-- **Java Development Kit (JDK)**: JDK 16 of hoger moet op je systeem geïnstalleerd zijn.  
+- **Java Development Kit (JDK)**: JDK 16 of later moet op je systeem geïnstalleerd zijn.  
 - **Maven**: Deze tutorial gebruikt Maven voor afhankelijkheidsbeheer.  
-- **Aspose.Email Library**: Je moet Aspose.Email voor Java als bibliotheek opnemen.
+- **Aspose.Email Library**: Je moet Aspose.Email for Java als bibliotheek opnemen.
 
 ### Vereiste bibliotheken
 Voeg de volgende afhankelijkheid toe in je `pom.xml`‑bestand:
@@ -141,29 +139,24 @@ Voeg de volgende afhankelijkheid toe in je `pom.xml`‑bestand:
 ```
 
 ### Licentie‑acquisitie
-Om Aspose.Email voor Java volledig te benutten, overweeg een licentie aan te schaffen:
+Om Aspose.Email for Java volledig te kunnen benutten, overweeg een licentie aan te schaffen:
 
-- **Gratis proefversie**: Begin met een proefperiode van 30 dagen om de functies te verkennen.  
-- **Tijdelijke licentie**: Verkrijg een tijdelijke licentie voor uitgebreid testen.  
-- **Aankoop**: Voor langdurig gebruik, koop een abonnement.
-
-Na het verkrijgen van je licentiebestand, stel je het in je Java‑project in met:
-```java
-License license = new License();
-license.setLicense("path/to/your/license/file");
-```
+- **Gratis proefversie**: Begin met een proefperiode van 30 dagen om de functies te verkennen. Zie de [Gratis proefversie](https://releases.aspose.com/email/java/) of de [Aspose's Gratis Proefversie Pagina](https://releases.aspose.com/email/java/).  
+- **Tijdelijke licentie**: Verkrijg een tijdelijke licentie voor uitgebreid testen. Zie de [Tijdelijke licentie](https://purchase.aspose.com/temporary-license/) of de [Aspose Tijdelijke Licentie Pagina](https://purchase.aspose.com/temporary-license/).  
+- **Aankoop**: Voor langdurig gebruik, koop een abonnement. Bezoek de [Aspose Aankoop Pagina](https://purchase.aspose.com/buy).
 
 ## Aspose.Email voor Java instellen
 ### Installatie‑informatie
-Om Aspose.Email voor Java te installeren met Maven, voeg je de hierboven genoemde afhankelijkheid toe in je `pom.xml`. Dit zorgt ervoor dat alle vereiste bibliotheken automatisch worden gedownload en beheerd.
+Om Aspose.Email for Java te installeren met Maven, neem je de hierboven genoemde afhankelijkheid op in je `pom.xml`. Dit zorgt ervoor dat alle vereiste bibliotheken automatisch worden gedownload en beheerd.
 
-### Licentie‑instelling
-1. **Gratis proefversie**: Download en activeer je proefversie vanaf [Aspose's Free Trial Page](https://releases.aspose.com/email/java/).  
-2. **Tijdelijke licentie**: Vraag een tijdelijke licentie aan via [Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/).  
-3. **Licentie kopen**: Voor volledige toegang, bezoek [Aspose Purchase Page](https://purchase.aspose.com/buy).
+### Licentie‑configuratie
+1. **Gratis proefversie**: Download en activeer je proefversie vanaf de [Aspose's Gratis Proefversie Pagina](https://releases.aspose.com/email/java/).  
+2. **Tijdelijke licentie**: Vraag een tijdelijke licentie aan via de [Aspose Tijdelijke Licentie Pagina](https://purchase.aspose.com/temporary-license/).  
+3. **Aankoop licentie**: Voor volledige toegang, bezoek de [Aspose Aankoop Pagina](https://purchase.aspose.com/buy).
 
 ## Hoe e‑mail in e‑mail insluiten met Aspose.Email voor Java?
-Een e‑mail in een andere e‑mail insluiten is zo simpel als een `MapiMessage`‑object toevoegen aan de bijlagen‑collectie van een bovenliggende `MapiMessage`. Het binnenste bericht behoudt zijn originele structuur, waardoor ontvangers het kunnen openen als een gewone e‑mailbijlage. Je kunt ook een aangepaste weergavenaam voor het bijgevoegde bericht instellen.
+
+`MapiMessage` is het object dat een Outlook‑e‑mail vertegenwoordigt. Een e‑mail in een andere e‑mail insluiten is zo simpel als het toevoegen van een `MapiMessage`‑object aan de bijlagen‑collectie van een bovenliggende `MapiMessage`. Het binnenste bericht behoudt zijn oorspronkelijke structuur, waardoor ontvangers het kunnen openen als een reguliere e‑mailbijlage. Je kunt ook een aangepaste weergavenaam instellen voor het bijgevoegde bericht.
 
 ```java
 // Direct answer: Embed one MSG inside another in three steps
@@ -175,18 +168,18 @@ outer.save("outer_with_embedded.msg");
 
 ## Bijlagen uit MSG‑bestanden parseren en opslaan
 ### Overzicht
-Deze functie stelt je in staat om **MSG‑bijlagen te extraheren** uit een MSG‑bestand en ze lokaal op te slaan. Het is nuttig voor het verwerken van e‑mailgegevens of integratie met andere systemen.
+Deze functie stelt je in staat om **extract MSG attachments** uit een MSG‑bestand te halen en lokaal op te slaan. Het is nuttig voor het verwerken van e‑mailgegevens of integratie met andere systemen.
 
-`MapiMessage` is de weergave van Aspose.Email van een Outlook‑MSG‑bericht, waardoor je programmatisch toegang krijgt tot de headers, body en bijlagen.
+`MapiMessage` is de weergave van Aspose.Email van een Outlook MSG‑bericht, die je programmatische toegang geeft tot de headers, body en bijlagen.
 
 #### Stappen
 1. **Laad het MSG‑bestand**  
-   Laad het MSG‑bestand met de methode `MapiMessage.fromFile()`:
+   Laad het MSG‑bestand met de `MapiMessage.fromFile()`‑methode:  
    ```java
    MapiMessage outlookMessageFile = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
    ```
-2. **Itereren en bijlagen opslaan**  
-   Loop door elke bijlage en sla ze op met hun originele bestandsnamen:
+2. **Itereer en sla bijlagen op**  
+   Loop door elke bijlage en sla ze op met hun originele bestandsnamen:  
    ```java
    for (int i = 0; i < outlookMessageFile.getAttachments().size(); i++) {
        MapiAttachment outlookMessageAttachment = 
@@ -196,47 +189,47 @@ Deze functie stelt je in staat om **MSG‑bijlagen te extraheren** uit een MSG�
    ```
 
 #### Probleemoplossing
-- Zorg ervoor dat het pad van de map correct en schrijfbaar is.  
+- Zorg ervoor dat het mappad correct en schrijfbaar is.  
 - Controleer of het MSG‑bestand daadwerkelijk bijlagen bevat.
 
 ## Een bericht als bijlage insluiten
 ### Overzicht
-Een bericht insluiten (**bericht als bijlage insluiten**) is handig voor het verzenden van rapporten, het doorsturen van gesprekken, of het bundelen van gerelateerde communicatie.
+Het insluiten van een bericht (**embed message as attachment**) is handig voor het verzenden van rapporten, het doorsturen van gesprekken, of het bundelen van gerelateerde communicatie.
 
 #### Stappen
-1. **Hoofdbericht maken**  
-   Definieer je hoofdbericht met `MapiMessage`:
+1. **Maak hoofdbericht**  
+   Definieer je hoofdbericht met `MapiMessage`:  
    ```java
    MapiMessage msg = new MapiMessage("from@test.com", "to@test.com", "Subj", "This is a message body");
    ```
-2. **Ingesloten bericht laden en toevoegen**  
-   Laad het MSG‑bestand dat moet worden ingesloten en voeg het toe als bijlage:
+2. **Laad en voeg ingesloten bericht toe**  
+   Laad het MSG‑bestand dat moet worden ingesloten en voeg het toe als bijlage:  
    ```java
    MapiMessage attachMsg = MapiMessage.fromFile(dataDir + "message.msg");
    msg.getAttachments().add("Weekly report", attachMsg);
    ```
-3. **Het nieuwe MSG‑bestand opslaan**  
-   Sla het bericht op met de ingesloten bijlage:
+3. **Sla het nieuwe MSG‑bestand op**  
+   Sla het bericht op met de ingesloten bijlage:  
    ```java
    msg.save(dataDir + "EmbededMessageAsAttachment.msg");
    ```
 
 #### Probleemoplossing
-- Controleer of zowel het hoofd‑ als het ingesloten bericht correct zijn geformatteerd.  
-- Zorg ervoor dat de bestandspaden juist zijn.
+- Controleer of zowel het hoofd‑ als het ingesloten bericht correct geformatteerd zijn.  
+- Zorg ervoor dat bestandspaden nauwkeurig zijn.
 
 ## Ingesloten berichten uit bijlagen lezen
 ### Overzicht
-Leer een bericht **ingesloten als bijlage** te extraheren en verwerken, nuttig voor geautomatiseerde verwerking van e‑mailinhoud.
+Leer een bericht **embedded as an attachment** te extraheren en verwerken, nuttig voor geautomatiseerde verwerking van e‑mailinhoud.
 
 #### Stappen
-1. **MSG‑bestand laden**  
-   Laad het MSG‑bestand dat het ingesloten bericht bevat:
+1. **Laad MSG‑bestand**  
+   Laad het MSG‑bestand dat het ingesloten bericht bevat:  
    ```java
    MapiMessage mapi = MapiMessage.fromFile(dataDir + "EmbededMessageAsAttachment.msg");
    ```
-2. **Ingesloten bericht ophalen en verwerken**  
-   Haal de eerste bijlage op als een `MapiMessage`‑object:
+2. **Haal ingesloten bericht op en verwerk**  
+   Extraheer de eerste bijlage als een `MapiMessage`‑object:  
    ```java
    MapiMessage emb = mapi.getAttachments().get_Item(0).getObjectData().toMapiMessage();
    ```
@@ -246,14 +239,14 @@ Leer een bericht **ingesloten als bijlage** te extraheren en verwerken, nuttig v
 - Controleer op eventuele parse‑fouten.
 
 ## Praktische toepassingen
-- **Geautomatiseerde e‑mailverwerking** – Bijlagen uit e‑mails extraheren voor verdere analyse of opslag.  
-- **Rapportdistributie** – Rapporten in e‑mails insluiten zodat ontvangers volledige updates ontvangen.  
-- **Gegevensarchivering** – E‑mailinhoud en bijlagen lokaal opslaan voor archivering.  
-- **Integratie met CRM‑systemen** – Automatiseer het extraheren van klantcommunicatie.  
-- **E‑mailgebaseerde meldingen** – Gebruik ingesloten berichten voor gedetailleerde waarschuwingen.
+1. **Geautomatiseerde e‑mailverwerking** – Bijlagen uit e‑mails extraheren voor verdere analyse of opslag.  
+2. **Rapportdistributie** – Rapporten insluiten in e‑mails om ervoor te zorgen dat ontvangers volledige updates ontvangen.  
+3. **Gegevensarchivering** – E‑mailinhoud en bijlagen lokaal opslaan voor archivering.  
+4. **Integratie met CRM‑systemen** – Automatiseer het extraheren van klantcommunicatie.  
+5. **E‑mailgebaseerde meldingen** – Gebruik ingesloten berichten om gedetailleerde waarschuwingen te geven.
 
 ## Prestatie‑overwegingen
-Om de prestaties te optimaliseren bij gebruik van Aspose.Email:
+Om de prestaties te optimaliseren bij het gebruik van Aspose.Email:
 - Beheer bronnen door streams te sluiten na het verwerken van bestanden.  
 - Gebruik geschikte Java‑geheugenbeheer‑technieken, zoals het afstemmen van garbage collection.  
 - Optimaliseer bestands‑I/O‑bewerkingen om latentie te minimaliseren.
@@ -262,9 +255,9 @@ Om de prestaties te optimaliseren bij gebruik van Aspose.Email:
 - **Probleem:** Bijlagen worden niet opgeslagen.  
   **Oplossing:** Controleer of `dataDir` naar een schrijfbare map wijst en dat het MSG‑bestand daadwerkelijk bijlagen bevat.  
 - **Probleem:** Ingesloten bericht verschijnt niet in de client van de ontvanger.  
-  **Oplossing:** Zorg ervoor dat je de bijlage toevoegt met een juiste weergavenaam en dat de binnenste MSG een geldig bestand is.  
+  **Oplossing:** Zorg ervoor dat je de bijlage toevoegt met een juiste weergavenaam en dat het binnenste MSG‑bestand geldig is.  
 - **Probleem:** Bij het converteren van MSG naar EML gaat opmaak verloren.  
-  **Oplossing:** Gebruik de nieuwste versie van Aspose.Email en vermijd het wijzigen van het berichtobject vóór het aanroepen van `save`.
+  **Oplossing:** Gebruik de nieuwste Aspose.Email‑versie en vermijd het wijzigen van het berichtobject vóór het aanroepen van `save`.
 
 ## FAQ‑sectie
 1. **Wat is Aspose.Email voor Java?**  
@@ -274,19 +267,19 @@ Om de prestaties te optimaliseren bij gebruik van Aspose.Email:
 3. **Kan ik bijlagen uit e‑mails parseren zonder ze lokaal op te slaan?**  
    - Ja, je kunt bijlagen direct in het geheugen verwerken.  
 4. **Is het mogelijk om meerdere berichten in één e‑mail in te sluiten?**  
-   - Zeker! Je kunt zoveel ingesloten berichten toevoegen als nodig.  
+   - Absoluut! Je kunt zoveel ingesloten berichten toevoegen als nodig.  
 5. **Wat moet ik doen als mijn ingesloten bericht niet correct wordt weergegeven?**  
    - Zorg ervoor dat de bijlage correct is toegevoegd en controleer op eventuele opmaakproblemen.
 
 ## Veelgestelde vragen
 
-**Q: Hoe laad ik een MSG‑bestand met Aspose.Email voor Java?**  
+**Q: Hoe laad ik een MSG‑bestand met Aspose.Email for Java?**  
 A: Gebruik `MapiMessage.fromFile("path/to/file.msg")` om het MSG‑bestand te laden in een `MapiMessage`‑object.
 
 **Q: Wat is de beste manier om MSG‑bijlagen te extraheren?**  
 A: Iterate over `message.getAttachments()` en roep `attachment.save(destinationPath)` aan voor elk item.
 
-**Q: Kan ik een e‑mail in een andere e‑mail insluiten met Aspose.Email voor Java?**  
+**Q: Kan ik een e‑mail in een andere e‑mail insluiten met Aspose.Email for Java?**  
 A: Ja—maak een `MapiMessage` voor de binnenste e‑mail en voeg deze toe aan de bijlagen‑collectie van de buitenste e‑mail.
 
 **Q: Heb ik een licentie nodig om bijlagen te extraheren in een productieomgeving?**  
@@ -301,15 +294,15 @@ A: Zorg ervoor dat je de juiste bijlage‑index gebruikt en verifieer dat de ing
 - [Licentie kopen](https://purchase.aspose.com/buy)  
 - [Gratis proefversie](https://releases.aspose.com/email/java/)  
 - [Tijdelijke licentie](https://purchase.aspose.com/temporary-license/)  
-- [Ondersteuningsforum](https://forum.aspose.com/c/email/10)
+- [Supportforum](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Laatst bijgewerkt:** 2026-07-22  
+**Laatst bijgewerkt:** 2026-10-28  
 **Getest met:** Aspose.Email 25.4 voor Java (JDK 16)  
 **Auteur:** Aspose
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Gerelateerde tutorials
 
@@ -318,8 +311,26 @@ A: Zorg ervoor dat je de juiste bijlage‑index gebruikt en verifieer dat de ing
 - [Hoe een bijlage in MSG‑bestanden in te voegen met Aspose.Email voor Java](/email/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/)
 
 
+
+
+
+
+
+
+```java
+// Direct answer: Convert MSG to EML in two lines
+MapiMessage msg = MapiMessage.fromFile("input.msg");
+msg.save("output.eml", SaveOptions.getDefaultEml());
+```
+
+```java
+License license = new License();
+license.setLicense("path/to/your/license/file");
+```
+
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
