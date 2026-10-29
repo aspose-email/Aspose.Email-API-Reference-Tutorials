@@ -1,33 +1,35 @@
 ---
-date: '2026-07-22'
-description: Aprenda cómo incrustar correo electrónico en correo electrónico y convertir
-  MSG a EML usando Aspose.Email para Java. Esta guía cubre attachment extraction,
-  embedding messages y practical code examples.
+date: '2026-10-28'
+description: Aprenda cómo incrustar un correo electrónico dentro de otro y convertir
+  MSG a EML usando Aspose.Email para Java. Esta guía cubre la extracción de adjuntos,
+  la incrustación de mensajes y ejemplos de código prácticos.
+images:
+- /java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/og-image.png
 keywords:
 - embed email in email
 - outlook msg to eml
 - embed message as attachment
 - aspose email java tutorial
-lastmod: '2026-07-22'
-og_description: Aprenda cómo incrustar correo electrónico en correo electrónico y
-  convertir MSG a EML usando Aspose.Email para Java. Esta guía cubre attachment extraction,
-  embedding messages y practical code examples.
+lastmod: '2026-10-28'
+og_description: Aprenda cómo incrustar un correo electrónico dentro de otro y convertir
+  MSG a EML usando Aspose.Email para Java. Este tutorial cubre la extracción de adjuntos,
+  la incrustación de mensajes y ejemplos de código prácticos.
 og_image_alt: Guide showing how to embed email in email and convert MSG to EML using
   Aspose.Email for Java
-og_title: Incrustar correo electrónico en correo electrónico – Convertir MSG a EML
-  con Aspose.Email
+og_title: Incrustar correo electrónico en otro correo electrónico – convertir MSG
+  a EML usando Aspose.Email
 schemas:
 - author: Aspose
-  dateModified: '2026-07-22'
+  dateModified: '2026-10-28'
   description: Learn how to embed email in email and convert MSG to EML using Aspose.Email
     for Java. This guide covers attachment extraction, embedding messages, and practical
     code examples.
-  headline: Embed Email in Email – Convert MSG to EML with Aspose.Email
+  headline: Embed email in email – convert MSG to EML with Aspose.Email
   type: TechArticle
 - description: Learn how to embed email in email and convert MSG to EML using Aspose.Email
     for Java. This guide covers attachment extraction, embedding messages, and practical
     code examples.
-  name: Embed Email in Email – Convert MSG to EML with Aspose.Email
+  name: Embed email in email – convert MSG to EML with Aspose.Email
   steps:
   - name: '**Free Trial**: Download and activate your trial from [Aspose''s Free Trial
       Page](https://releases.aspose.com/email/java/).'
@@ -77,63 +79,59 @@ tags:
 - Aspose.Email
 - Java email processing
 - email attachments
-title: Incrustar correo electrónico en correo electrónico – Convertir MSG a EML con
-  Aspose.Email
+title: Incrustar correo electrónico en otro correo electrónico – convertir MSG a EML
+  con Aspose.Email
 url: /es/java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Incrustar correo electrónico en correo electrónico – Convertir MSG a EML con Aspose.Email para Java
+
+# Insertar correo electrónico en correo electrónico – convertir MSG a EML con Aspose.Email para Java
 
 ## Introducción
 
-Gestionar los archivos adjuntos de correo electrónico de manera eficiente y poder **embed email in email** son desafíos comunes al integrar datos de Outlook con otros sistemas. Con Aspose.Email para Java puedes convertir MSG a EML sin problemas, extraer y guardar los adjuntos, e incluso incrustar un mensaje dentro de otro. Este tutorial te guía paso a paso, explica por qué estas capacidades son importantes y proporciona fragmentos de código listos para ejecutar.
+Gestionar los archivos adjuntos de correo electrónico de manera eficiente y poder **insertar correo electrónico en correo electrónico** son desafíos comunes al integrar datos de Outlook con otros sistemas. Con Aspose.Email para Java puedes convertir MSG a EML sin problemas, extraer y guardar archivos adjuntos, e insertar un mensaje dentro de otro. Este tutorial te guía paso a paso, explica por qué estas capacidades son importantes y proporciona fragmentos de código listos para ejecutar que puedes copiar en tu proyecto.
 
-Vamos a cubrir:
-- Analizar y guardar los archivos adjuntos de un archivo MSG.  
-- Incrustar un mensaje como adjunto dentro de otro mensaje.  
-- Leer mensajes incrustados desde los adjuntos.  
-- **How to convert MSG to EML** using Aspose.Email for Java.
+Aprenderás a:
+- Analizar y guardar archivos adjuntos de un archivo MSG.  
+- Insertar un mensaje como archivo adjunto dentro de otro mensaje.  
+- Leer mensajes insertados desde archivos adjuntos.  
+- **Convertir MSG a EML** usando Aspose.Email para Java.
 
 ## Respuestas rápidas
 - **¿Qué hace Aspose.Email para Java?** Proporciona una API Java para leer, crear y manipular MSG, EML y otros formatos de correo electrónico.  
-- **¿Cómo puedo extraer los adjuntos de MSG?** Use `MapiMessage.getAttachments()` y guarde cada `MapiAttachment`.  
-- **¿Puedo incrustar un correo electrónico dentro de otro?** Sí—agregue un `MapiMessage` como adjunto a otro `MapiMessage`.  
+- **¿Cómo puedo extraer los archivos adjuntos de MSG?** Usa `MapiMessage.getAttachments()` y guarda cada `MapiAttachment`.  
+- **¿Puedo insertar correo electrónico en correo electrónico?** Sí—añade un `MapiMessage` como archivo adjunto a otro `MapiMessage`.  
 - **¿Necesito una licencia?** Una prueba gratuita funciona para evaluación; se requiere una licencia permanente para producción.  
 - **¿Qué versión de Java se requiere?** Se recomienda JDK 16 o posterior.
 
 ## Cómo convertir MSG a EML usando Aspose.Email para Java?
-`MapiMessage` es la clase de Aspose.Email que representa un mensaje de correo Outlook MSG. Cargue el archivo MSG con `MapiMessage.fromFile()`, luego llame a `save` especificando un nombre de archivo `.eml`. Esta conversión de una sola línea conserva todos los encabezados, el contenido del cuerpo y los adjuntos intactos, de modo que el EML resultante puede enviarse a través de cualquier servidor SMTP sin pérdida de fidelidad. El proceso también conserva las marcas de tiempo originales y los indicadores de prioridad, garantizando una fidelidad total.
 
-```java
-// Direct answer: Convert MSG to EML in two lines
-MapiMessage msg = MapiMessage.fromFile("input.msg");
-msg.save("output.eml", SaveOptions.getDefaultEml());
-```
+`MapiMessage` es la clase de Aspose.Email que representa un mensaje de correo electrónico Outlook MSG. Carga el archivo MSG con `MapiMessage.fromFile()`, luego llama a `save` especificando un nombre de archivo `.eml`. Esta conversión de una sola línea conserva todas las cabeceras, el contenido del cuerpo y los archivos adjuntos intactos, de modo que el EML resultante puede enviarse a través de cualquier servidor SMTP sin pérdida de fidelidad.
 
-> **Consejo profesional:** La conversión conserva todos los encabezados originales, el contenido del cuerpo y los adjuntos, por lo que puedes reenviar inmediatamente el archivo EML resultante a cualquier servidor SMTP.
+> **Consejo profesional:** La conversión conserva todas las cabeceras originales, el contenido del cuerpo y los archivos adjuntos, por lo que puedes reenviar inmediatamente el archivo EML resultante a cualquier servidor SMTP.
 
-## ¿Qué es Aspose.Email para Java?
-`Aspose.Email for Java` es una biblioteca robusta que abstrae las complejidades de los formatos de archivos de correo electrónico. Soporta **más de 50 formatos de entrada y salida**, incluidos MSG, EML, HTML y MIME, y puede procesar mensajes de cientos de páginas sin cargar todo el archivo en memoria.
+## Qué es Aspose.Email para Java?
 
-## ¿Qué es “extraer adjuntos de MSG”?
-Extraer los adjuntos de MSG significa leer el archivo MSG binario, localizar cada objeto adjunto y guardarlo en disco o procesarlo en memoria. Esto es esencial para canalizaciones automatizadas de procesamiento de correo, soluciones de archivado o integraciones con CRM.
+`Aspose.Email para Java` es una biblioteca robusta que abstrae las complejidades de los formatos de archivos de correo electrónico. Soporta **más de 50 formatos de entrada y salida**, incluidos MSG, EML, HTML y MIME, y puede procesar mensajes de cientos de páginas sin cargar todo el archivo en memoria.
+
+## Qué significa “extraer archivos adjuntos de MSG”?
+
+Extraer los archivos adjuntos de MSG significa leer el archivo MSG binario, localizar cada objeto adjunto y guardarlo en disco o procesarlo en memoria. Esto es esencial para pipelines automatizados de procesamiento de correo, soluciones de archivado o integraciones con CRM.
 
 ## Requisitos previos
 
-Antes de sumergirse en la implementación, asegúrese de tener:
+Antes de sumergirte en la implementación, asegúrate de tener:
 
-- **Java Development Kit (JDK)**: JDK 16 o posterior debe estar instalado en su sistema.  
+- **Java Development Kit (JDK)**: JDK 16 o posterior debe estar instalado en tu sistema.  
 - **Maven**: Este tutorial usa Maven para la gestión de dependencias.  
-- **Aspose.Email Library**: Necesitará incluir Aspose.Email para Java como una biblioteca.
+- **Biblioteca Aspose.Email**: Necesitarás incluir Aspose.Email para Java como una biblioteca.
 
 ### Bibliotecas requeridas
-Agregue la siguiente dependencia en su archivo `pom.xml`:
+Add the following dependency in your `pom.xml` file:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -144,28 +142,24 @@ Agregue la siguiente dependencia en su archivo `pom.xml`:
 ```
 
 ### Obtención de licencia
-Para utilizar plenamente Aspose.Email para Java, considere adquirir una licencia:
-- **Free Trial**: Comience con una prueba de 30 días para explorar las funciones.  
-- **Temporary License**: Obtenga una licencia temporal para pruebas extendidas.  
-- **Purchase**: Para uso a largo plazo, adquiera una suscripción.
+Para utilizar plenamente Aspose.Email para Java, considera adquirir una licencia:
 
-Después de obtener su archivo de licencia, configúrelo en su proyecto Java usando:
-```java
-License license = new License();
-license.setLicense("path/to/your/license/file");
-```
+- **Prueba gratuita**: Comienza con una prueba de 30 días para explorar las funciones. Consulta la [Prueba gratuita](https://releases.aspose.com/email/java/) o la [Página de prueba gratuita de Aspose](https://releases.aspose.com/email/java/).  
+- **Licencia temporal**: Obtén una licencia temporal para pruebas extendidas. Consulta la [Licencia temporal](https://purchase.aspose.com/temporary-license/) o la [Página de licencia temporal de Aspose](https://purchase.aspose.com/temporary-license/).  
+- **Compra**: Para uso a largo plazo, adquiere una suscripción. Visita la [Página de compra de Aspose](https://purchase.aspose.com/buy).
 
 ## Configuración de Aspose.Email para Java
 ### Información de instalación
-Para instalar Aspose.Email para Java usando Maven, incluya la dependencia mencionada anteriormente en su `pom.xml`. Esto asegura que todas las bibliotecas requeridas se descarguen y gestionen automáticamente.
+Para instalar Aspose.Email para Java usando Maven, incluye la dependencia mencionada arriba en tu `pom.xml`. Esto asegura que todas las bibliotecas requeridas se descarguen y gestionen automáticamente.
 
 ### Configuración de licencia
-1. **Free Trial**: Descargue y active su prueba desde [Aspose's Free Trial Page](https://releases.aspose.com/email/java/).  
-2. **Temporary License**: Solicite una licencia temporal en [Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/).  
-3. **Purchase License**: Para acceso completo, visite [Aspose Purchase Page](https://purchase.aspose.com/buy).
+1. **Prueba gratuita**: Descarga y activa tu prueba desde la [Página de prueba gratuita de Aspose](https://releases.aspose.com/email/java/).  
+2. **Licencia temporal**: Solicita una licencia temporal en la [Página de licencia temporal de Aspose](https://purchase.aspose.com/temporary-license/).  
+3. **Licencia de compra**: Para acceso completo, visita la [Página de compra de Aspose](https://purchase.aspose.com/buy).
 
-## Cómo incrustar correo electrónico en correo electrónico usando Aspose.Email para Java?
-Incrustar un correo electrónico dentro de otro es tan simple como agregar un objeto `MapiMessage` a la colección de adjuntos de un `MapiMessage` padre. El mensaje interno conserva su estructura original, lo que permite a los destinatarios abrirlo como un adjunto de correo regular. También puede establecer un nombre de visualización personalizado para el mensaje adjunto.
+## Cómo insertar correo electrónico en correo electrónico usando Aspose.Email para Java?
+
+`MapiMessage` es el objeto que representa un correo de Outlook. Insertar un correo dentro de otro es tan simple como añadir un objeto `MapiMessage` a la colección de archivos adjuntos de un `MapiMessage` padre. El mensaje interno conserva su estructura original, permitiendo a los destinatarios abrirlo como un archivo adjunto de correo normal. También puedes establecer un nombre de visualización personalizado para el mensaje adjunto.
 
 ```java
 // Direct answer: Embed one MSG inside another in three steps
@@ -175,20 +169,20 @@ outer.getAttachments().add(inner);
 outer.save("outer_with_embedded.msg");
 ```
 
-## Analizar y guardar adjuntos de archivos MSG
+## Analizar y guardar archivos adjuntos de archivos MSG
 ### Visión general
-Esta función le permite **extraer adjuntos de MSG** de un archivo MSG y guardarlos localmente. Es útil para procesar datos de correo electrónico o integrarse con otros sistemas.
+Esta función te permite **extraer archivos adjuntos de MSG** de un archivo MSG y guardarlos localmente. Es útil para procesar datos de correo electrónico o integrarse con otros sistemas.
 
-`MapiMessage` es la representación de Aspose.Email de un mensaje Outlook MSG, brindándole acceso programático a sus encabezados, cuerpo y adjuntos.
+`MapiMessage` es la representación de Aspose.Email de un mensaje Outlook MSG, dándote acceso programático a sus cabeceras, cuerpo y archivos adjuntos.
 
 #### Pasos
 1. **Cargar el archivo MSG**  
-   Cargue el archivo MSG usando el método `MapiMessage.fromFile()`:
+   Carga el archivo MSG usando el método `MapiMessage.fromFile()`:
    ```java
    MapiMessage outlookMessageFile = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
    ```
-2. **Iterar y guardar los adjuntos**  
-   Recorra cada adjunto, guardándolos con sus nombres de archivo originales:
+2. **Iterar y guardar archivos adjuntos**  
+   Recorre cada archivo adjunto, guardándolos con sus nombres de archivo originales:
    ```java
    for (int i = 0; i < outlookMessageFile.getAttachments().size(); i++) {
        MapiAttachment outlookMessageAttachment = 
@@ -198,104 +192,103 @@ Esta función le permite **extraer adjuntos de MSG** de un archivo MSG y guardar
    ```
 
 #### Solución de problemas
-- Asegúrese de que la ruta del directorio sea correcta y tenga permisos de escritura.  
-- Verifique que el archivo MSG realmente contenga adjuntos.
+- Asegúrate de que la ruta del directorio sea correcta y tenga permisos de escritura.  
+- Verifica que el archivo MSG realmente contenga archivos adjuntos.
 
-## Incrustar un mensaje como adjunto
+## Insertar un mensaje como archivo adjunto
 ### Visión general
-Incrustar un mensaje (**embed message as attachment**) es útil para enviar informes, reenviar conversaciones o agrupar comunicaciones relacionadas.
+Insertar un mensaje (**insertar mensaje como archivo adjunto**) es útil para enviar informes, reenviar conversaciones o agrupar comunicaciones relacionadas.
 
 #### Pasos
 1. **Crear mensaje principal**  
-   Defina su mensaje principal usando `MapiMessage`:
+   Define tu mensaje principal usando `MapiMessage`:
    ```java
    MapiMessage msg = new MapiMessage("from@test.com", "to@test.com", "Subj", "This is a message body");
    ```
-2. **Cargar y agregar mensaje incrustado**  
-   Cargue el archivo MSG que se incrustará y agréguelo como adjunto:
+2. **Cargar y añadir mensaje insertado**  
+   Carga el archivo MSG que se insertará y añádelo como archivo adjunto:
    ```java
    MapiMessage attachMsg = MapiMessage.fromFile(dataDir + "message.msg");
    msg.getAttachments().add("Weekly report", attachMsg);
    ```
 3. **Guardar el nuevo archivo MSG**  
-   Guarde el mensaje con el adjunto incrustado:
+   Guarda el mensaje con el archivo adjunto insertado:
    ```java
    msg.save(dataDir + "EmbededMessageAsAttachment.msg");
    ```
 
 #### Solución de problemas
-- Verifique que tanto el mensaje principal como el mensaje incrustado estén correctamente formateados.  
-- Asegúrese de que las rutas de archivo sean precisas.
+- Verifica que tanto el mensaje principal como el insertado estén correctamente formateados.  
+- Asegúrate de que las rutas de los archivos sean precisas.
 
-## Leer mensajes incrustados desde los adjuntos
+## Leer mensajes insertados desde archivos adjuntos
 ### Visión general
-Aprenda a extraer y procesar un mensaje **incrustado como adjunto**, útil para el procesamiento automatizado del contenido de correos electrónicos.
+Aprende a extraer y procesar un mensaje **insertado como archivo adjunto**, útil para el procesamiento automatizado del contenido de correos.
 
 #### Pasos
 1. **Cargar archivo MSG**  
-   Cargue el archivo MSG que contiene el mensaje incrustado:
+   Carga el archivo MSG que contiene el mensaje insertado:
    ```java
    MapiMessage mapi = MapiMessage.fromFile(dataDir + "EmbededMessageAsAttachment.msg");
    ```
-2. **Recuperar y procesar el mensaje incrustado**  
-   Extraiga el primer adjunto como un objeto `MapiMessage`:
+2. **Recuperar y procesar el mensaje insertado**  
+   Extrae el primer archivo adjunto como un objeto `MapiMessage`:
    ```java
    MapiMessage emb = mapi.getAttachments().get_Item(0).getObjectData().toMapiMessage();
    ```
 
 #### Solución de problemas
-- Confirme que el índice del adjunto sea correcto.  
-- Verifique si hay errores de análisis.
+- Confirma que el índice del archivo adjunto sea correcto.  
+- Verifica si hay errores de análisis.
 
 ## Aplicaciones prácticas
-1. **Procesamiento automatizado de correo electrónico** – Extraiga adjuntos de correos para análisis o almacenamiento adicional.  
-2. **Distribución de informes** – Incruste informes dentro de correos para asegurar que los destinatarios reciban actualizaciones completas.  
-3. **Archivado de datos** – Guarde el contenido de correos y sus adjuntos localmente para el registro.  
-4. **Integración con sistemas CRM** – Automatice la extracción de comunicaciones de clientes.  
-5. **Notificaciones basadas en correo** – Use mensajes incrustados para proporcionar alertas detalladas.
+1. **Procesamiento automatizado de correos** – Extraer archivos adjuntos de correos para análisis o almacenamiento adicional.  
+2. **Distribución de informes** – Insertar informes dentro de correos para asegurar que los destinatarios reciban actualizaciones completas.  
+3. **Archivado de datos** – Guardar el contenido de los correos y sus archivos adjuntos localmente para mantenimiento de registros.  
+4. **Integración con sistemas CRM** – Automatizar la extracción de comunicaciones con clientes.  
+5. **Notificaciones basadas en correo** – Utilizar mensajes insertados para proporcionar alertas detalladas.
 
 ## Consideraciones de rendimiento
 Para optimizar el rendimiento al usar Aspose.Email:
-- Administre los recursos cerrando los streams después de procesar los archivos.  
-- Utilice técnicas adecuadas de gestión de memoria en Java, como la afinación de la recolección de basura.  
-- Optimice las operaciones de E/S de archivos para minimizar la latencia.
+- Gestiona los recursos cerrando los streams después de procesar los archivos.  
+- Utiliza técnicas adecuadas de gestión de memoria en Java, como la afinación de la recolección de basura.  
+- Optimiza las operaciones de E/S de archivos para minimizar la latencia.
 
 ## Problemas comunes y soluciones
-- **Problema:** Los adjuntos no se guardan.  
-  **Solución:** Verifique que `dataDir` apunte a una carpeta con permisos de escritura y que el archivo MSG realmente contenga adjuntos.  
-- **Problema:** El mensaje incrustado no aparece en el cliente del destinatario.  
-  **Solución:** Asegúrese de agregar el adjunto con un nombre de visualización adecuado y que el MSG interno sea un archivo válido.  
+- **Problema:** Los archivos adjuntos no se guardan.  
+  **Solución:** Verifica que `dataDir` apunte a una carpeta con permisos de escritura y que el archivo MSG realmente contenga archivos adjuntos.  
+- **Problema:** El mensaje insertado no aparece en el cliente del destinatario.  
+  **Solución:** Asegúrate de añadir el archivo adjunto con un nombre de visualización adecuado y que el MSG interno sea un archivo válido.  
 - **Problema:** Convertir MSG a EML pierde el formato.  
-  **Solución:** Use la última versión de Aspose.Email y evite modificar el objeto del mensaje antes de llamar a `save`.
+  **Solución:** Usa la última versión de Aspose.Email y evita modificar el objeto del mensaje antes de llamar a `save`.
 
 ## Sección de preguntas frecuentes
 1. **¿Qué es Aspose.Email para Java?**  
-   - Una biblioteca que le permite trabajar con formatos de correo como MSG y EML en aplicaciones Java.  
+   - Una biblioteca que permite trabajar con formatos de correo como MSG y EML en aplicaciones Java.  
 2. **¿Cómo instalo Aspose.Email usando Maven?**  
-   - Añada la dependencia especificada a su `pom.xml`.  
-3. **¿Puedo analizar adjuntos de correos sin guardarlos localmente?**  
-   - Sí, puede procesar los adjuntos directamente en memoria.  
-4. **¿Es posible incrustar varios mensajes en un solo correo?**  
-   - ¡Absolutamente! Puede agregar tantos mensajes incrustados como necesite.  
-5. **¿Qué debo hacer si mi mensaje incrustado no se muestra correctamente?**  
-   - Asegúrese de que el adjunto se haya añadido correctamente y verifique cualquier problema de formato.
+   - Añade la dependencia especificada a tu `pom.xml`.  
+3. **¿Puedo analizar archivos adjuntos de correos sin guardarlos localmente?**  
+   - Sí, puedes procesar los archivos adjuntos directamente en memoria.  
+4. **¿Es posible insertar varios mensajes en un solo correo?**  
+   - ¡Absolutamente! Puedes añadir tantos mensajes insertados como necesites.  
+5. **¿Qué debo hacer si mi mensaje insertado no se muestra correctamente?**  
+   - Asegúrate de que el archivo adjunto se haya añadido correctamente y verifica cualquier problema de formato.
 
 ## Preguntas frecuentes
-
 **P: ¿Cómo cargo un archivo MSG con Aspose.Email para Java?**  
-R: Use `MapiMessage.fromFile("path/to/file.msg")` para cargar el archivo MSG en un objeto `MapiMessage`.
+R: Usa `MapiMessage.fromFile("path/to/file.msg")` para cargar el archivo MSG en un objeto `MapiMessage`.
 
-**P: ¿Cuál es la mejor manera de extraer los adjuntos de MSG?**  
-R: Itere sobre `message.getAttachments()` y llame a `attachment.save(destinationPath)` para cada elemento.
+**P: ¿Cuál es la mejor manera de extraer los archivos adjuntos de MSG?**  
+R: Itera sobre `message.getAttachments()` y llama a `attachment.save(destinationPath)` para cada elemento.
 
-**P: ¿Puedo incrustar un correo electrónico dentro de otro usando Aspose.Email para Java?**  
-R: Sí—cree un `MapiMessage` para el correo interno y agréguelo a la colección de adjuntos del mensaje externo.
+**P: ¿Puedo insertar un correo dentro de otro correo usando Aspose.Email para Java?**  
+R: Sí—crea un `MapiMessage` para el correo interno y añádelo a la colección de archivos adjuntos del mensaje externo.
 
-**P: ¿Necesito una licencia para extraer adjuntos en un entorno de producción?**  
+**P: ¿Necesito una licencia para extraer archivos adjuntos en un entorno de producción?**  
 R: Se requiere una licencia válida para uso en producción; una prueba gratuita solo sirve para evaluación.
 
-**P: ¿Existen trampas comunes al leer mensajes incrustados?**  
-R: Asegúrese de referenciar el índice de adjunto correcto y verifique que el contenido incrustado sea un archivo MSG válido.
+**P: ¿Existen trampas comunes al leer mensajes insertados?**  
+R: Asegúrate de referenciar el índice de archivo adjunto correcto y verifica que el contenido insertado sea un archivo MSG válido.
 
 ## Recursos
 - [Documentación de Aspose.Email](https://reference.aspose.com/email/java/)  
@@ -305,23 +298,30 @@ R: Asegúrese de referenciar el índice de adjunto correcto y verifique que el c
 - [Licencia temporal](https://purchase.aspose.com/temporary-license/)  
 - [Foro de soporte](https://forum.aspose.com/c/email/10)
 
----
-
-**Última actualización:** 2026-07-22  
+**Última actualización:** 2026-10-28  
 **Probado con:** Aspose.Email 25.4 para Java (JDK 16)  
 **Autor:** Aspose
-
-{{< blocks/products/products-backtop-button >}}
 
 ## Tutoriales relacionados
 
 - [Cómo cargar y analizar archivos Outlook MSG usando Aspose.Email para Java: Guía completa](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
-- [Cómo extraer adjuntos de correos electrónicos de mensajes usando Aspose.Email para Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
-- [Cómo insertar adjuntos en archivos MSG usando Aspose.Email para Java](/email/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/)
+- [Cómo extraer archivos adjuntos de correos electrónicos usando Aspose.Email para Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [Cómo insertar archivos adjuntos en archivos MSG usando Aspose.Email para Java](/email/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/)
 
+```java
+// Direct answer: Convert MSG to EML in two lines
+MapiMessage msg = MapiMessage.fromFile("input.msg");
+msg.save("output.eml", SaveOptions.getDefaultEml());
+```
+
+```java
+License license = new License();
+license.setLicense("path/to/your/license/file");
+```
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

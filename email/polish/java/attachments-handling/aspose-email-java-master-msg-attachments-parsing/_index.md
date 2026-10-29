@@ -1,32 +1,34 @@
 ---
-date: '2026-07-22'
-description: Dowiedz się, jak osadzić e‑mail w e‑mailu i konwertować MSG na EML przy
-  użyciu Aspose.Email dla Java. Ten przewodnik obejmuje attachment extraction, embedding
-  messages oraz praktyczne code examples.
+date: '2026-10-28'
+description: Dowiedz się, jak osadzić wiadomość e-mail w e-mailu i konwertować MSG
+  na EML przy użyciu Aspose.Email dla Javy. Ten przewodnik obejmuje wyodrębnianie
+  załączników, osadzanie wiadomości oraz praktyczne przykłady kodu.
+images:
+- /java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/og-image.png
 keywords:
 - embed email in email
 - outlook msg to eml
 - embed message as attachment
 - aspose email java tutorial
-lastmod: '2026-07-22'
-og_description: Dowiedz się, jak osadzić e‑mail w e‑mailu i konwertować MSG na EML
-  przy użyciu Aspose.Email dla Java. Ten tutorial obejmuje attachment extraction,
-  embedding messages oraz praktyczne code examples.
+lastmod: '2026-10-28'
+og_description: Dowiedz się, jak osadzić wiadomość e-mail w e-mailu i konwertować
+  MSG na EML przy użyciu Aspose.Email dla Javy. Ten przewodnik obejmuje wyodrębnianie
+  załączników, osadzanie wiadomości oraz praktyczne przykłady kodu.
 og_image_alt: Guide showing how to embed email in email and convert MSG to EML using
   Aspose.Email for Java
-og_title: Osadź e‑mail w e‑mailu – konwertuj MSG na EML przy użyciu Aspose.Email
+og_title: Osadź wiadomość e-mail w e-mailu – konwertuj MSG na EML przy użyciu Aspose.Email
 schemas:
 - author: Aspose
-  dateModified: '2026-07-22'
+  dateModified: '2026-10-28'
   description: Learn how to embed email in email and convert MSG to EML using Aspose.Email
     for Java. This guide covers attachment extraction, embedding messages, and practical
     code examples.
-  headline: Embed Email in Email – Convert MSG to EML with Aspose.Email
+  headline: Embed email in email – convert MSG to EML with Aspose.Email
   type: TechArticle
 - description: Learn how to embed email in email and convert MSG to EML using Aspose.Email
     for Java. This guide covers attachment extraction, embedding messages, and practical
     code examples.
-  name: Embed Email in Email – Convert MSG to EML with Aspose.Email
+  name: Embed email in email – convert MSG to EML with Aspose.Email
   steps:
   - name: '**Free Trial**: Download and activate your trial from [Aspose''s Free Trial
       Page](https://releases.aspose.com/email/java/).'
@@ -76,61 +78,57 @@ tags:
 - Aspose.Email
 - Java email processing
 - email attachments
-title: Osadź e‑mail w e‑mailu – konwertuj MSG na EML przy użyciu Aspose.Email
+title: Osadź wiadomość e-mail w e-mailu – konwertuj MSG na EML przy użyciu Aspose.Email
 url: /pl/java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Osadzanie wiadomości e‑mail w wiadomości e‑mail – konwersja MSG do EML przy użyciu Aspose.Email dla Javy
+
+# Osadzanie wiadomości e‑mail w e‑mail – konwersja MSG do EML przy użyciu Aspose.Email dla Javy
 
 ## Wprowadzenie
 
-Efektywne zarządzanie załącznikami e‑mail oraz możliwość **osadzania wiadomości e‑mail w wiadomości e‑mail** to częste wyzwania przy integracji danych Outlooka z innymi systemami. Dzięki Aspose.Email dla Javy możesz płynnie konwertować MSG na EML, wyodrębniać i zapisywać załączniki oraz osadzać jedną wiadomość wewnątrz drugiej. Ten samouczek przeprowadzi Cię przez każdy krok, wyjaśni, dlaczego te możliwości są istotne, i dostarczy gotowych do uruchomienia fragmentów kodu.
+Efektywne zarządzanie załącznikami e‑mail oraz możliwość **embed email in email** to powszechne wyzwania przy integracji danych Outlook z innymi systemami. Dzięki Aspose.Email dla Javy możesz płynnie konwertować MSG na EML, wyodrębniać i zapisywać załączniki oraz osadzać jedną wiadomość w drugiej. Ten samouczek przeprowadzi Cię przez każdy krok, wyjaśni, dlaczego te możliwości są ważne, i dostarczy gotowe do uruchomienia fragmenty kodu, które możesz skopiować do swojego projektu.
 
-Omówimy:
+Nauczysz się, jak:
 - Parsowanie i zapisywanie załączników z pliku MSG.  
-- Osadzanie wiadomości jako załącznika w innej wiadomości.  
-- Odczytywanie osadzonych wiadomości z załączników.  
-- **Jak konwertować MSG na EML** przy użyciu Aspose.Email dla Javy.
+- Osadzenie wiadomości jako załącznika w innej wiadomości.  
+- Odczyt osadzonych wiadomości z załączników.  
+- **Convert MSG to EML** przy użyciu Aspose.Email dla Javy.
 
 ## Szybkie odpowiedzi
-- **Co robi Aspose.Email dla Javy?** Dostarcza API w Javie do odczytu, tworzenia i manipulacji formatami MSG, EML i innymi formatami e‑mail.  
-- **Jak wyodrębnić załączniki MSG?** Użyj `MapiMessage.getAttachments()` i zapisz każdy `MapiAttachment`.  
-- **Czy mogę osadzić e‑mail w e‑mail?** Tak — dodaj `MapiMessage` jako załącznik do innego `MapiMessage`.  
-- **Czy potrzebna jest licencja?** Bezpłatna wersja próbna działa w celach ewaluacyjnych; stała licencja jest wymagana w środowisku produkcyjnym.  
-- **Jaka wersja Javy jest wymagana?** Zalecane JDK 16 lub nowsze.
+- **Co robi Aspose.Email dla Javy?** Zapewnia interfejs API Java do odczytu, tworzenia i manipulacji formatami MSG, EML i innymi formatami e‑mail.  
+- **Jak mogę wyodrębnić załączniki MSG?** Use `MapiMessage.getAttachments()` and save each `MapiAttachment`.  
+- **Czy mogę osadzić e‑mail w e‑mail?** Tak—dodaj `MapiMessage` jako załącznik do innego `MapiMessage`.  
+- **Czy potrzebuję licencji?** Darmowa wersja próbna działa w celach oceny; stała licencja jest wymagana w produkcji.  
+- **Jakiej wersji Javy wymaga się?** Zalecany jest JDK 16 lub nowszy.
 
 ## Jak konwertować MSG do EML przy użyciu Aspose.Email dla Javy?
-`MapiMessage` jest klasą Aspose.Email reprezentującą wiadomość Outlook MSG. Załaduj plik MSG przy pomocy `MapiMessage.fromFile()`, a następnie wywołaj `save`, podając nazwę pliku z rozszerzeniem `.eml`. Ta jednowierszowa konwersja zachowuje wszystkie nagłówki, treść i załączniki, dzięki czemu otrzymany plik EML może być wysłany przez dowolny serwer SMTP bez utraty jakości. Proces zachowuje także oryginalne znaczniki czasu i priorytetu, zapewniając pełną wierność.
 
-```java
-// Direct answer: Convert MSG to EML in two lines
-MapiMessage msg = MapiMessage.fromFile("input.msg");
-msg.save("output.eml", SaveOptions.getDefaultEml());
-```
+`MapiMessage` jest klasą Aspose.Email, która reprezentuje wiadomość e‑mail Outlook MSG. Załaduj plik MSG za pomocą `MapiMessage.fromFile()`, a następnie wywołaj `save`, podając nazwę pliku z rozszerzeniem `.eml`. Ta jednowierszowa konwersja zachowuje wszystkie nagłówki, treść ciała i załączniki, dzięki czemu powstały plik EML może być wysłany przez dowolny serwer SMTP bez utraty jakości.
 
-> **Wskazówka:** Konwersja zachowuje wszystkie oryginalne nagłówki, treść i załączniki, więc możesz od razu przekazać wygenerowany plik EML do dowolnego serwera SMTP.
+> **Pro tip:** Konwersja zachowuje wszystkie oryginalne nagłówki, treść ciała i załączniki, więc możesz od razu przekazać powstały plik EML do dowolnego serwera SMTP.
 
-## Czym jest Aspose.Email dla Javy?
-`Aspose.Email for Java` to solidna biblioteka upraszczająca obsługę skomplikowanych formatów plików e‑mail. Obsługuje **ponad 50 formatów wejściowych i wyjściowych**, w tym MSG, EML, HTML i MIME, oraz potrafi przetwarzać wiadomości wielostronicowe bez ładowania całego pliku do pamięci.
+## Co to jest Aspose.Email dla Javy?
 
-## Co oznacza „wyodrębnianie załączników MSG”?
-Wyodrębnianie załączników MSG polega na odczytaniu binarnego pliku MSG, zlokalizowaniu każdego obiektu załącznika i zapisaniu go na dysku lub przetworzeniu w pamięci. Jest to niezbędne w automatycznych pipeline’ach przetwarzania e‑mail, rozwiązaniach archiwizacyjnych czy integracjach z CRM.
+`Aspose.Email for Java` jest solidną biblioteką, która abstrahuje złożoność formatów plików e‑mail. Obsługuje **ponad 50 formatów wejściowych i wyjściowych**, w tym MSG, EML, HTML i MIME, i może przetwarzać wiadomości wielostronicowe bez ładowania całego pliku do pamięci.
+
+## Co to jest „wyodrębnianie załączników MSG”?
+
+Wyodrębnianie załączników MSG oznacza odczyt binarnego pliku MSG, zlokalizowanie każdego obiektu załącznika i zapisanie go na dysku lub przetworzenie w pamięci. Jest to niezbędne w automatycznych pipeline'ach przetwarzania e‑mail, rozwiązaniach archiwizacyjnych lub integracjach CRM.
 
 ## Wymagania wstępne
-Przed przystąpieniem do implementacji upewnij się, że masz:
 
-- **Java Development Kit (JDK)**: JDK 16 lub nowsze powinny być zainstalowane w systemie.  
-- **Maven**: Ten samouczek wykorzystuje Maven do zarządzania zależnościami.  
-- **Biblioteka Aspose.Email**: Należy dodać Aspose.Email dla Javy jako zależność.
+- **Java Development Kit (JDK)**: JDK 16 lub nowszy powinien być zainstalowany w systemie.  
+- **Maven**: Ten samouczek używa Maven do zarządzania zależnościami.  
+- **Aspose.Email Library**: Należy dołączyć Aspose.Email dla Javy jako bibliotekę.
 
 ### Wymagane biblioteki
-Dodaj następującą zależność do pliku `pom.xml`:
+
+Add the following dependency in your `pom.xml` file:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -140,29 +138,27 @@ Dodaj następującą zależność do pliku `pom.xml`:
 </dependency>
 ```
 
-### Uzyskiwanie licencji
-Aby w pełni wykorzystać Aspose.Email dla Javy, rozważ zakup licencji:
-- **Bezpłatna wersja próbna**: Rozpocznij od 30‑dniowej wersji próbnej, aby poznać funkcje.  
-- **Licencja tymczasowa**: Uzyskaj tymczasową licencję na wydłużone testy.  
-- **Zakup**: Dla długoterminowego użytkowania zakup subskrypcję.
+### Uzyskanie licencji
 
-Po uzyskaniu pliku licencyjnego skonfiguruj go w projekcie Java przy użyciu:
-```java
-License license = new License();
-license.setLicense("path/to/your/license/file");
-```
+To fully utilize Aspose.Email for Java, consider acquiring a license:
+- **Free trial**: Rozpocznij 30‑dniowy okres próbny, aby przetestować funkcje. Zobacz [Free Trial](https://releases.aspose.com/email/java/) lub [Aspose's Free Trial Page](https://releases.aspose.com/email/java/).  
+- **Temporary license**: Uzyskaj tymczasową licencję na rozszerzone testy. Zobacz [Temporary License](https://purchase.aspose.com/temporary-license/) lub [Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/).  
+- **Purchase**: Do długoterminowego użycia zakup subskrypcję. Odwiedź [Aspose Purchase Page](https://purchase.aspose.com/buy).
 
 ## Konfigurowanie Aspose.Email dla Javy
 ### Informacje o instalacji
-Aby zainstalować Aspose.Email dla Javy przy użyciu Maven, dołącz wymienioną wyżej zależność w pliku `pom.xml`. Zapewni to automatyczne pobranie i zarządzanie wszystkimi niezbędnymi bibliotekami.
+
+Aby zainstalować Aspose.Email dla Javy przy użyciu Maven, dołącz wymienioną powyżej zależność w pliku `pom.xml`. Zapewnia to automatyczne pobranie i zarządzanie wszystkimi wymaganymi bibliotekami.
 
 ### Konfiguracja licencji
-1. **Bezpłatna wersja próbna**: Pobierz i aktywuj wersję próbną z [Strony bezpłatnej wersji próbnej Aspose](https://releases.aspose.com/email/java/).  
-2. **Licencja tymczasowa**: Złóż wniosek o licencję tymczasową na [Stronie licencji tymczasowej Aspose](https://purchase.aspose.com/temporary-license/).  
-3. **Zakup licencji**: Pełny dostęp uzyskasz, odwiedzając [Stronę zakupu Aspose](https://purchase.aspose.com/buy).
+
+1. **Free trial**: Pobierz i aktywuj wersję próbną ze [Aspose's Free Trial Page](https://releases.aspose.com/email/java/).  
+2. **Temporary license**: Złóż wniosek o tymczasową licencję na [Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/).  
+3. **Purchase license**: Aby uzyskać pełny dostęp, odwiedź [Aspose Purchase Page](https://purchase.aspose.com/buy).
 
 ## Jak osadzić e‑mail w e‑mail przy użyciu Aspose.Email dla Javy?
-Osadzenie wiadomości e‑mail w innej wiadomości jest tak proste, jak dodanie obiektu `MapiMessage` do kolekcji załączników nadrzędnego `MapiMessage`. Wewnętrzna wiadomość zachowuje swoją pierwotną strukturę, umożliwiając odbiorcom otwarcie jej jako zwykłego załącznika e‑mail. Możesz także ustawić własną nazwę wyświetlaną dla załączonej wiadomości.
+
+`MapiMessage` jest obiektem reprezentującym wiadomość Outlook. Osadzenie e‑maila w innym e‑mailu jest tak proste, jak dodanie obiektu `MapiMessage` do kolekcji załączników nadrzędnego `MapiMessage`. Wewnętrzna wiadomość zachowuje swoją pierwotną strukturę, umożliwiając odbiorcom otwarcie jej jako zwykłego załącznika e‑mail. Możesz także ustawić własną nazwę wyświetlaną dla załączonej wiadomości.
 
 ```java
 // Direct answer: Embed one MSG inside another in three steps
@@ -172,20 +168,21 @@ outer.getAttachments().add(inner);
 outer.save("outer_with_embedded.msg");
 ```
 
-## Analiza i zapisywanie załączników z plików MSG
+## Parsowanie i zapisywanie załączników z plików MSG
 ### Przegląd
-Ta funkcja umożliwia **wyodrębnianie załączników MSG** z pliku MSG i zapisywanie ich lokalnie. Jest przydatna przy przetwarzaniu danych e‑mail lub integracji z innymi systemami.
 
-`MapiMessage` jest reprezentacją wiadomości Outlook MSG w Aspose.Email, dającą programowy dostęp do nagłówków, treści i załączników.
+Ta funkcja pozwala **wyodrębnić załączniki MSG** z pliku MSG i zapisać je lokalnie. Jest przydatna przy przetwarzaniu danych e‑mail lub integracji z innymi systemami.
+
+`MapiMessage` jest reprezentacją Aspose.Email wiadomości Outlook MSG, dającą programowy dostęp do nagłówków, treści i załączników.
 
 #### Kroki
 1. **Załaduj plik MSG**  
-   Użyj metody `MapiMessage.fromFile()`:
+   Załaduj plik MSG używając metody `MapiMessage.fromFile()`:
    ```java
    MapiMessage outlookMessageFile = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
    ```
 2. **Iteruj i zapisz załączniki**  
-   Przejdź przez każdy załącznik, zapisując go pod oryginalną nazwą pliku:
+   Przejdź przez każdy załącznik, zapisując je z ich oryginalnymi nazwami plików:
    ```java
    for (int i = 0; i < outlookMessageFile.getAttachments().size(); i++) {
        MapiAttachment outlookMessageAttachment = 
@@ -195,16 +192,17 @@ Ta funkcja umożliwia **wyodrębnianie załączników MSG** z pliku MSG i zapisy
    ```
 
 #### Rozwiązywanie problemów
-- Upewnij się, że ścieżka katalogu jest prawidłowa i zapisywalna.  
-- Zweryfikuj, czy plik MSG rzeczywiście zawiera załączniki.
+- Upewnij się, że ścieżka katalogu jest poprawna i zapisywalna.  
+- Zweryfikuj, że plik MSG rzeczywiście zawiera załączniki.
 
-## Osadzanie wiadomości jako załącznika
+## Osadzanie wiadomości jako załącznik
 ### Przegląd
-Osadzanie wiadomości (**osadzanie wiadomości jako załącznika**) jest przydatne przy wysyłaniu raportów, przekazywaniu konwersacji lub grupowaniu powiązanych komunikacji.
+
+Osadzanie wiadomości (**embed message as attachment**) jest przydatne przy wysyłaniu raportów, przekazywaniu konwersacji lub grupowaniu powiązanych komunikacji.
 
 #### Kroki
 1. **Utwórz główną wiadomość**  
-   Zdefiniuj główną wiadomość przy użyciu `MapiMessage`:
+   Zdefiniuj swoją główną wiadomość przy użyciu `MapiMessage`:
    ```java
    MapiMessage msg = new MapiMessage("from@test.com", "to@test.com", "Subj", "This is a message body");
    ```
@@ -221,12 +219,13 @@ Osadzanie wiadomości (**osadzanie wiadomości jako załącznika**) jest przydat
    ```
 
 #### Rozwiązywanie problemów
-- Zweryfikuj, czy zarówno główna, jak i osadzona wiadomość są poprawnie sformatowane.  
-- Upewnij się, że ścieżki plików są dokładne.
+- Zweryfikuj, że zarówno główna, jak i osadzona wiadomość są poprawnie sformatowane.  
+- Upewnij się, że ścieżki plików są prawidłowe.
 
 ## Odczytywanie osadzonych wiadomości z załączników
 ### Przegląd
-Naucz się wyodrębniać i przetwarzać wiadomość **osadzoną jako załącznik**, co jest przydatne w automatycznym przetwarzaniu treści e‑mail.
+
+Naucz się wyodrębniać i przetwarzać wiadomość **embedded as an attachment**, przydatne do automatycznego przetwarzania treści e‑mail.
 
 #### Kroki
 1. **Załaduj plik MSG**  
@@ -245,80 +244,98 @@ Naucz się wyodrębniać i przetwarzać wiadomość **osadzoną jako załącznik
 - Sprawdź, czy nie występują błędy parsowania.
 
 ## Praktyczne zastosowania
-1. **Automatyczne przetwarzanie e‑mail** – Wyodrębnianie załączników z e‑mail w celu dalszej analizy lub przechowywania.  
-2. **Dystrybucja raportów** – Osadzanie raportów w e‑mail, aby odbiorcy otrzymali pełne aktualizacje.  
-3. **Archiwizacja danych** – Lokalny zapis treści e‑mail i załączników w celach dokumentacyjnych.  
-4. **Integracja z systemami CRM** – Automatyzacja wyodrębniania komunikacji z klientami.  
-5. **Powiadomienia oparte na e‑mail** – Użycie osadzonych wiadomości do szczegółowych alertów.
+1. **Automatyczne przetwarzanie e‑mail — wyodrębnianie załączników z e‑maili w celu dalszej analizy lub przechowywania.**  
+2. **Dystrybucja raportów — osadzanie raportów w e‑mailach, aby odbiorcy otrzymali pełne aktualizacje.**  
+3. **Archiwizacja danych — zapisywanie treści e‑maili i załączników lokalnie w celu prowadzenia rejestrów.**  
+4. **Integracja z systemami CRM — automatyzacja wyodrębniania komunikacji z klientami.**  
+5. **Powiadomienia oparte na e‑mail — używanie osadzonych wiadomości do dostarczania szczegółowych alertów.**
 
 ## Rozważania dotyczące wydajności
 Aby zoptymalizować wydajność przy użyciu Aspose.Email:
 - Zarządzaj zasobami, zamykając strumienie po przetworzeniu plików.  
 - Stosuj odpowiednie techniki zarządzania pamięcią w Javie, takie jak dostrajanie garbage collection.  
-- Optymalizuj operacje I/O, aby zminimalizować opóźnienia.
+- Optymalizuj operacje I/O plików, aby zminimalizować opóźnienia.
 
 ## Typowe problemy i rozwiązania
 - **Problem:** Załączniki nie są zapisywane.  
-  **Rozwiązanie:** Sprawdź, czy `dataDir` wskazuje na folder zapisywalny oraz czy plik MSG rzeczywiście zawiera załączniki.  
-- **Problem:** Osadzona wiadomość nie pojawia się u odbiorcy.  
-  **Rozwiązanie:** Upewnij się, że załącznik ma prawidłową nazwę wyświetlaną i że wewnętrzny plik MSG jest prawidłowy.  
+  **Solution:** Zweryfikuj, że `dataDir` wskazuje na folder zapisywalny oraz że plik MSG rzeczywiście zawiera załączniki.  
+- **Problem:** Osadzona wiadomość nie pojawia się w kliencie odbiorcy.  
+  **Solution:** Upewnij się, że dodajesz załącznik z właściwą nazwą wyświetlaną oraz że wewnętrzny plik MSG jest prawidłowy.  
 - **Problem:** Konwersja MSG do EML traci formatowanie.  
-  **Rozwiązanie:** Użyj najnowszej wersji Aspose.Email i nie modyfikuj obiektu wiadomości przed wywołaniem `save`.
+  **Solution:** Użyj najnowszej wersji Aspose.Email i unikaj modyfikacji obiektu wiadomości przed wywołaniem `save`.
 
 ## Sekcja FAQ
 1. **Co to jest Aspose.Email dla Javy?**  
    - Biblioteka umożliwiająca pracę z formatami e‑mail, takimi jak MSG i EML, w aplikacjach Java.  
 2. **Jak zainstalować Aspose.Email przy użyciu Maven?**  
-   - Dodaj wskazaną zależność do pliku `pom.xml`.  
-3. **Czy mogę parsować załączniki z e‑mail bez ich zapisywania lokalnie?**  
+   - Dodaj określoną zależność do swojego `pom.xml`.  
+3. **Czy mogę parsować załączniki z e‑maili bez ich zapisywania lokalnie?**  
    - Tak, możesz przetwarzać załączniki bezpośrednio w pamięci.  
-4. **Czy można osadzić wiele wiadomości w jednej wiadomości?**  
+4. **Czy można osadzić wiele wiadomości w jednym e‑mailu?**  
    - Oczywiście! Możesz dodać dowolną liczbę osadzonych wiadomości.  
-5. **Co zrobić, gdy osadzona wiadomość nie wyświetla się poprawnie?**  
-   - Upewnij się, że załącznik został prawidłowo dodany i sprawdź ewentualne problemy z formatowaniem.
+5. **Co zrobić, jeśli moja osadzona wiadomość nie wyświetla się poprawnie?**  
+   - Upewnij się, że załącznik został dodany prawidłowo i sprawdź ewentualne problemy z formatowaniem.
 
-## Najczęściej zadawane pytania
+## Często zadawane pytania
 
-**P: Jak załadować plik MSG przy użyciu Aspose.Email dla Javy?**  
-O: Użyj `MapiMessage.fromFile("path/to/file.msg")`, aby wczytać plik MSG do obiektu `MapiMessage`.
+**Q: Jak załadować plik MSG przy użyciu Aspose.Email dla Javy?**  
+A: Użyj `MapiMessage.fromFile("path/to/file.msg")`, aby załadować plik MSG do obiektu `MapiMessage`.
 
-**P: Jaki jest najlepszy sposób na wyodrębnianie załączników MSG?**  
-O: Iteruj po `message.getAttachments()` i wywołaj `attachment.save(destinationPath)` dla każdego elementu.
+**Q: Jaki jest najlepszy sposób na wyodrębnienie załączników MSG?**  
+A: Iteruj po `message.getAttachments()` i wywołaj `attachment.save(destinationPath)` dla każdego elementu.
 
-**P: Czy mogę osadzić e‑mail wewnątrz innego e‑mail przy użyciu Aspose.Email dla Javy?**  
-O: Tak — utwórz `MapiMessage` dla wewnętrznego e‑maila i dodaj go do kolekcji załączników wiadomości zewnętrznej.
+**Q: Czy mogę osadzić e‑mail wewnątrz innego e‑maila przy użyciu Aspose.Email dla Javy?**  
+A: Tak — utwórz `MapiMessage` dla wewnętrznego e‑maila i dodaj go do kolekcji załączników wiadomości zewnętrznej.
 
-**P: Czy potrzebuję licencji do wyodrębniania załączników w środowisku produkcyjnym?**  
-O: W środowisku produkcyjnym wymagana jest ważna licencja; wersja próbna służy wyłącznie do oceny.
+**Q: Czy potrzebuję licencji, aby wyodrębniać załączniki w środowisku produkcyjnym?**  
+A: Wymagana jest ważna licencja do użytku produkcyjnego; wersja próbna działa wyłącznie w celach oceny.
 
-**P: Czy istnieją typowe pułapki przy odczytywaniu osadzonych wiadomości?**  
-O: Upewnij się, że odwołujesz się do właściwego indeksu załącznika i że osadzona treść jest prawidłowym plikiem MSG.
+**Q: Czy istnieją typowe pułapki przy odczytywaniu osadzonych wiadomości?**  
+A: Upewnij się, że odwołujesz się do prawidłowego indeksu załącznika i zweryfikuj, że osadzona treść jest prawidłowym plikiem MSG.
 
 ## Zasoby
 - [Dokumentacja Aspose.Email](https://reference.aspose.com/email/java/)  
 - [Pobierz Aspose.Email](https://releases.aspose.com/email/java/)  
-- [Zakup licencję](https://purchase.aspose.com/buy)  
+- [Kup licencję](https://purchase.aspose.com/buy)  
 - [Bezpłatna wersja próbna](https://releases.aspose.com/email/java/)  
 - [Licencja tymczasowa](https://purchase.aspose.com/temporary-license/)  
 - [Forum wsparcia](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Ostatnia aktualizacja:** 2026-07-22  
-**Testowano z:** Aspose.Email 25.4 for Java (JDK 16)  
+**Ostatnia aktualizacja:** 2026-10-28  
+**Testowano z:** Aspose.Email 25.4 dla Javy (JDK 16)  
 **Autor:** Aspose
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Powiązane samouczki
 
-- [How to Load and Parse Outlook MSG Files Using Aspose.Email for Java: A Comprehensive Guide](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
-- [How to Extract Email Attachments from Email Messages Using Aspose.Email for Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
-- [How to Insert Attachment in MSG Files Using Aspose.Email for Java](/email/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/)
+- [Jak załadować i parsować pliki Outlook MSG przy użyciu Aspose.Email dla Javy: Kompletny przewodnik](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [Jak wyodrębnić załączniki e‑mail z wiadomości e‑mail przy użyciu Aspose.Email dla Javy](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [Jak wstawić załącznik do plików MSG przy użyciu Aspose.Email dla Javy](/email/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/)
 
+
+
+
+
+
+
+
+```java
+// Direct answer: Convert MSG to EML in two lines
+MapiMessage msg = MapiMessage.fromFile("input.msg");
+msg.save("output.eml", SaveOptions.getDefaultEml());
+```
+
+```java
+License license = new License();
+license.setLicense("path/to/your/license/file");
+```
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

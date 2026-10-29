@@ -1,32 +1,34 @@
 ---
-date: '2026-07-22'
-description: Узнайте, как встраивать письмо в письмо и преобразовывать MSG в EML с
-  помощью Aspose.Email для Java. В этом руководстве рассматриваются извлечение вложений,
-  встраивание сообщений и практические примеры кода.
+date: '2026-10-28'
+description: Узнайте, как вставить письмо в письмо и конвертировать MSG в EML с помощью
+  Aspose.Email для Java. В этом руководстве рассматриваются извлечение вложений, встраивание
+  сообщений и практические примеры кода.
+images:
+- /java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/og-image.png
 keywords:
 - embed email in email
 - outlook msg to eml
 - embed message as attachment
 - aspose email java tutorial
-lastmod: '2026-07-22'
-og_description: Узнайте, как встраивать письмо в письмо и преобразовывать MSG в EML
-  с помощью Aspose.Email для Java. В этом руководстве рассматриваются извлечение вложений,
+lastmod: '2026-10-28'
+og_description: Узнайте, как вставить письмо в письмо и конвертировать MSG в EML с
+  помощью Aspose.Email для Java. В этом руководстве рассматриваются извлечение вложений,
   встраивание сообщений и практические примеры кода.
 og_image_alt: Guide showing how to embed email in email and convert MSG to EML using
   Aspose.Email for Java
-og_title: Встраивание письма в письмо – преобразование MSG в EML с помощью Aspose.Email
+og_title: Вставка письма в письмо – конвертация MSG в EML с помощью Aspose.Email
 schemas:
 - author: Aspose
-  dateModified: '2026-07-22'
+  dateModified: '2026-10-28'
   description: Learn how to embed email in email and convert MSG to EML using Aspose.Email
     for Java. This guide covers attachment extraction, embedding messages, and practical
     code examples.
-  headline: Embed Email in Email – Convert MSG to EML with Aspose.Email
+  headline: Embed email in email – convert MSG to EML with Aspose.Email
   type: TechArticle
 - description: Learn how to embed email in email and convert MSG to EML using Aspose.Email
     for Java. This guide covers attachment extraction, embedding messages, and practical
     code examples.
-  name: Embed Email in Email – Convert MSG to EML with Aspose.Email
+  name: Embed email in email – convert MSG to EML with Aspose.Email
   steps:
   - name: '**Free Trial**: Download and activate your trial from [Aspose''s Free Trial
       Page](https://releases.aspose.com/email/java/).'
@@ -76,62 +78,55 @@ tags:
 - Aspose.Email
 - Java email processing
 - email attachments
-title: Встраивание письма в письмо – преобразование MSG в EML с помощью Aspose.Email
+title: Вставка письма в письмо – конвертация MSG в EML с помощью Aspose.Email
 url: /ru/java/attachments-handling/aspose-email-java-master-msg-attachments-parsing/
 weight: 1
 ---
 
 {{< blocks/products/pf/main-wrap-class >}}
-
 {{< blocks/products/pf/main-container >}}
-
 {{< blocks/products/pf/tutorial-page-section >}}
-# Встраивание письма в письмо – Конвертация MSG в EML с помощью Aspose.Email для Java
+
+# Вставка письма в письмо – конвертация MSG в EML с помощью Aspose.Email для Java
 
 ## Введение
 
-Эффективное управление вложениями электронной почты и возможность **встраивать письмо в письмо** являются распространёнными задачами при интеграции данных Outlook с другими системами. С Aspose.Email для Java вы можете бесшовно конвертировать MSG в EML, извлекать и сохранять вложения, а также встраивать одно сообщение в другое. Этот учебник проведёт вас через каждый шаг, объяснит, почему эти возможности важны, и предоставит готовые к запуску фрагменты кода.
+Эффективное управление вложениями электронной почты и возможность **вставка письма в письмо** являются распространёнными задачами при интеграции данных Outlook с другими системами. С помощью Aspose.Email for Java вы можете бесшовно конвертировать MSG в EML, извлекать и сохранять вложения, а также вставлять одно сообщение внутрь другого. Этот учебник проведёт вас через каждый шаг, объяснит, почему эти возможности важны, и предоставит готовые к запуску фрагменты кода, которые вы можете скопировать в свой проект.
 
-Мы рассмотрим:
-- Разбор и сохранение вложений из файла MSG.  
-- Встраивание сообщения как вложения в другое сообщение.  
-- Чтение встроенных сообщений из вложений.  
-- **Как конвертировать MSG в EML** с помощью Aspose.Email для Java.
+Вы узнаете, как:
+- Разобрать и сохранить вложения из файла MSG.  
+- Вставить сообщение как вложение в другое сообщение.  
+- Прочитать вложенные сообщения из вложений.  
+- **Конвертировать MSG в EML** с помощью Aspose.Email for Java.
 
 ## Быстрые ответы
-- **Что делает Aspose.Email для Java?** Он предоставляет Java API для чтения, создания и манипулирования форматами MSG, EML и другими форматами электронной почты.  
-- **Как извлечь вложения MSG?** Используйте `MapiMessage.getAttachments()` и сохраняйте каждый `MapiAttachment`.  
-- **Можно ли встраивать письмо в письмо?** Да — добавьте `MapiMessage` как вложение к другому `MapiMessage`.  
-- **Нужна ли лицензия?** Бесплатная пробная версия подходит для оценки; постоянная лицензия требуется для продакшн.  
-- **Какая версия Java требуется?** Рекомендуется JDK 16 или новее.
+- **What does Aspose.Email for Java do?** It provides a Java API to read, create, and manipulate MSG, EML, and other email formats.  
+- **How can I extract MSG attachments?** Use `MapiMessage.getAttachments()` and save each `MapiAttachment`.  
+- **Can I embed email in email?** Yes—add a `MapiMessage` as an attachment to another `MapiMessage`.  
+- **Do I need a license?** A free trial works for evaluation; a permanent license is required for production.  
+- **What Java version is required?** JDK 16 or later is recommended.
 
 ## Как конвертировать MSG в EML с помощью Aspose.Email для Java?
-`MapiMessage` — класс Aspose.Email, представляющий сообщение Outlook MSG. Загрузите файл MSG с помощью `MapiMessage.fromFile()`, затем вызовите `save`, указав имя файла с расширением `.eml`. Эта однострочная конвертация сохраняет все заголовки, содержимое тела и вложения без изменений, поэтому полученный EML можно отправлять через любой SMTP‑сервер без потери качества. Процесс также сохраняет оригинальные временные метки и флаги приоритета, обеспечивая полную достоверность.
 
-```java
-// Direct answer: Convert MSG to EML in two lines
-MapiMessage msg = MapiMessage.fromFile("input.msg");
-msg.save("output.eml", SaveOptions.getDefaultEml());
-```
+`MapiMessage` is Aspose.Email's class that represents an Outlook MSG email message. Load the MSG file with `MapiMessage.fromFile()`, then call `save` specifying an `.eml` filename. This one‑line conversion keeps all headers, body content, and attachments intact, so the resulting EML can be sent through any SMTP server without loss of fidelity.
 
-> **Совет:** Конвертация сохраняет все оригинальные заголовки, содержимое тела и вложения, поэтому вы можете сразу переслать полученный файл EML на любой SMTP‑сервер.
+> **Pro tip:** The conversion preserves all original headers, body content, and attachments, so you can immediately forward the resulting EML file to any SMTP server.
 
 ## Что такое Aspose.Email для Java?
-`Aspose.Email for Java` — надёжная библиотека, абстрагирующая сложности форматов файлов электронной почты. Она поддерживает **более 50 форматов ввода и вывода**, включая MSG, EML, HTML и MIME, и может обрабатывать сообщения в сотни страниц без загрузки всего файла в память.
+
+`Aspose.Email for Java` is a robust library that abstracts the complexities of email file formats. It supports **50+ input and output formats**, including MSG, EML, HTML, and MIME, and can process multi‑hundred‑page messages without loading the entire file into memory.
 
 ## Что означает «извлечение вложений MSG»?
-Извлечение вложений MSG означает чтение бинарного файла MSG, поиск каждого объекта вложения и сохранение его на диск или обработку в памяти. Это необходимо для автоматизированных конвейеров обработки электронной почты, решений по архивированию или интеграций с CRM.
+
+Extracting MSG attachments means reading the binary MSG file, locating each attachment object, and saving it to disk or processing it in memory. This is essential for automated email processing pipelines, archiving solutions, or CRM integrations.
 
 ## Предварительные требования
-Прежде чем приступить к реализации, убедитесь, что у вас есть:
+- **Java Development Kit (JDK)**: JDK 16 or later should be installed on your system.  
+- **Maven**: This tutorial uses Maven for dependency management.  
+- **Aspose.Email Library**: You will need to include Aspose.Email for Java as a library.
 
-- **Java Development Kit (JDK)**: На вашей системе должен быть установлен JDK 16 или новее.  
-- **Maven**: В этом учебнике используется Maven для управления зависимостями.  
-- **Библиотека Aspose.Email**: Вам потребуется включить Aspose.Email для Java в качестве библиотеки.
-
-### Необходимые библиотеки
-Добавьте следующую зависимость в ваш файл `pom.xml`:
-
+### Требуемые библиотеки
+Add the following dependency in your `pom.xml` file:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
@@ -142,30 +137,23 @@ msg.save("output.eml", SaveOptions.getDefaultEml());
 ```
 
 ### Приобретение лицензии
-Чтобы полностью использовать Aspose.Email для Java, рассмотрите возможность приобретения лицензии:
-
-- **Бесплатная пробная версия**: Начните с 30‑дневной пробной версии, чтобы изучить возможности.  
-- **Временная лицензия**: Получите временную лицензию для расширенного тестирования.  
-- **Покупка**: Для длительного использования приобретите подписку.
-
-После получения файла лицензии настройте его в вашем Java‑проекте, используя:
-
-```java
-License license = new License();
-license.setLicense("path/to/your/license/file");
-```
+To fully utilize Aspose.Email for Java, consider acquiring a license:
+- **Free trial**: Start with a 30‑day trial to explore features. See the [Бесплатная пробная версия](https://releases.aspose.com/email/java/) or the [Страница бесплатной пробной версии Aspose](https://releases.aspose.com/email/java/).  
+- **Temporary license**: Obtain a temporary license for extended testing. See the [Временная лицензия](https://purchase.aspose.com/temporary-license/) or the [Страница временной лицензии Aspose](https://purchase.aspose.com/temporary-license/).  
+- **Purchase**: For long‑term use, purchase a subscription. Visit the [Страница покупки Aspose](https://purchase.aspose.com/buy).
 
 ## Настройка Aspose.Email для Java
 ### Информация об установке
-Чтобы установить Aspose.Email для Java с помощью Maven, включите вышеупомянутую зависимость в ваш `pom.xml`. Это гарантирует автоматическую загрузку и управление всеми необходимыми библиотеками.
+To install Aspose.Email for Java using Maven, include the dependency mentioned above in your `pom.xml`. This ensures all required libraries are automatically downloaded and managed.
 
 ### Настройка лицензии
-1. **Бесплатная пробная версия**: Скачайте и активируйте пробную версию со страницы [Aspose's Free Trial Page](https://releases.aspose.com/email/java/).  
-2. **Временная лицензия**: Оформите временную лицензию на странице [Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/).  
-3. **Покупка лицензии**: Для полного доступа посетите страницу [Aspose Purchase Page](https://purchase.aspose.com/buy).
+1. **Free trial**: Download and activate your trial from [Страница бесплатной пробной версии Aspose](https://releases.aspose.com/email/java/).  
+2. **Temporary license**: Apply for a temporary license at [Страница временной лицензии Aspose](https://purchase.aspose.com/temporary-license/).  
+3. **Purchase license**: For full access, visit [Страница покупки Aspose](https://purchase.aspose.com/buy).
 
-## Как встраивать письмо в письмо с помощью Aspose.Email для Java?
-Встраивание письма в другое письмо так же просто, как добавить объект `MapiMessage` в коллекцию вложений родительского `MapiMessage`. Внутреннее сообщение сохраняет свою оригинальную структуру, позволяя получателям открыть его как обычное вложение письма. Вы также можете задать пользовательское отображаемое имя для вложенного сообщения.
+## Как вставить письмо в письмо с помощью Aspose.Email для Java?
+
+`MapiMessage` is the object that represents an Outlook email. Embedding an email inside another email is as simple as adding a `MapiMessage` object to the attachments collection of a parent `MapiMessage`. The inner message retains its original structure, enabling recipients to open it as a regular email attachment. You can also set a custom display name for the attached message.
 
 ```java
 // Direct answer: Embed one MSG inside another in three steps
@@ -177,16 +165,18 @@ outer.save("outer_with_embedded.msg");
 
 ## Разбор и сохранение вложений из файлов MSG
 ### Обзор
-Эта функция позволяет **извлекать вложения MSG** из файла MSG и сохранять их локально. Это полезно для обработки данных электронной почты или интеграции с другими системами.
+This feature allows you to **extract MSG attachments** from an MSG file and save them locally. It's useful for processing email data or integrating with other systems.
 
-`MapiMessage` — представление Aspose.Email сообщения Outlook MSG, предоставляющее программный доступ к его заголовкам, телу и вложениям.
+`MapiMessage` is Aspose.Email's representation of an Outlook MSG message, giving you programmatic access to its headers, body, and attachments.
 
 #### Шаги
-1. **Загрузите файл MSG, используя метод `MapiMessage.fromFile()`**:  
+1. **Load the MSG file**  
+   Load the MSG file using `MapiMessage.fromFile()` method:
    ```java
    MapiMessage outlookMessageFile = MapiMessage.fromFile(dataDir + "WithEmbeddedMsg.msg");
    ```
-2. **Переберите каждое вложение, сохраняя их с оригинальными именами файлов**:  
+2. **Iterate and save attachments**  
+   Loop through each attachment, saving them with their original filenames:
    ```java
    for (int i = 0; i < outlookMessageFile.getAttachments().size(); i++) {
        MapiAttachment outlookMessageAttachment = 
@@ -196,128 +186,141 @@ outer.save("outer_with_embedded.msg");
    ```
 
 #### Устранение неполадок
-- Убедитесь, что путь к каталогу правильный и доступен для записи.  
-- Проверьте, что файл MSG действительно содержит вложения.
+- Ensure the directory path is correct and writable.  
+- Verify that the MSG file actually contains attachments.
 
-## Встраивание сообщения как вложения
+## Вставка сообщения как вложения
 ### Обзор
-Встраивание сообщения (**встроить сообщение как вложение**) удобно для отправки отчетов, пересылки переписки или объединения связанных коммуникаций.
+Embedding a message (**embed message as attachment**) is handy for sending reports, forwarding conversations, or bundling related communications.
 
 #### Шаги
-1. **Создайте основное сообщение, определив его с помощью `MapiMessage`**:  
+1. **Create main message**  
+   Define your main message using `MapiMessage`:
    ```java
    MapiMessage msg = new MapiMessage("from@test.com", "to@test.com", "Subj", "This is a message body");
    ```
-2. **Загрузите файл MSG, который будет встроен, и добавьте его как вложение**:  
+2. **Load and add embedded message**  
+   Load the MSG file to be embedded and add it as an attachment:
    ```java
    MapiMessage attachMsg = MapiMessage.fromFile(dataDir + "message.msg");
    msg.getAttachments().add("Weekly report", attachMsg);
    ```
-3. **Сохраните сообщение с встроенным вложением**:  
+3. **Save the new MSG file**  
+   Save the message with the embedded attachment:
    ```java
    msg.save(dataDir + "EmbededMessageAsAttachment.msg");
    ```
 
 #### Устранение неполадок
-- Убедитесь, что как основное, так и встроенное сообщения правильно отформатированы.  
-- Убедитесь, что пути к файлам точны.
+- Verify that both the main and embedded messages are correctly formatted.  
+- Ensure file paths are accurate.
 
-## Чтение встроенных сообщений из вложений
+## Чтение вложенных сообщений из вложений
 ### Обзор
-Научитесь извлекать и обрабатывать сообщение **встроенное как вложение**, полезно для автоматической обработки содержимого электронной почты.
+Learn to extract and process a message **embedded as an attachment**, useful for automated processing of email contents.
 
 #### Шаги
-1. **Загрузите файл MSG, содержащий встроенное сообщение**:  
+1. **Load MSG file**  
+   Load the MSG file containing the embedded message:
    ```java
    MapiMessage mapi = MapiMessage.fromFile(dataDir + "EmbededMessageAsAttachment.msg");
    ```
-2. **Извлеките первое вложение как объект `MapiMessage`**:  
+2. **Retrieve and process embedded message**  
+   Extract the first attachment as a `MapiMessage` object:
    ```java
    MapiMessage emb = mapi.getAttachments().get_Item(0).getObjectData().toMapiMessage();
    ```
 
 #### Устранение неполадок
-- Убедитесь, что индекс вложения правильный.  
-- Проверьте наличие ошибок разбора.
+- Confirm that the attachment index is correct.  
+- Check for any parsing errors.
 
 ## Практические применения
-- **Автоматическая обработка электронной почты** – извлечение вложений из писем для дальнейшего анализа или хранения.  
-- **Распространение отчетов** – встраивание отчетов в письма, чтобы получатели получали полные обновления.  
-- **Архивирование данных** – локальное сохранение содержимого писем и вложений для ведения записей.  
-- **Интеграция с CRM‑системами** – автоматизация извлечения коммуникаций с клиентами.  
-- **Уведомления по электронной почте** – использование встроенных сообщений для предоставления детальных оповещений.
+1. **Automated email processing** – Extract attachments from emails for further analysis or storage.  
+2. **Report distribution** – Embed reports within emails to ensure recipients receive comprehensive updates.  
+3. **Data archiving** – Save email contents and attachments locally for record‑keeping.  
+4. **Integration with CRM systems** – Automate the extraction of customer communications.  
+5. **Email‑based notifications** – Use embedded messages to provide detailed alerts.
 
 ## Соображения по производительности
-Для оптимизации производительности при использовании Aspose.Email:
-
-- Управляйте ресурсами, закрывая потоки после обработки файлов.  
-- Используйте соответствующие техники управления памятью Java, такие как настройка сборки мусора.  
-- Оптимизируйте операции ввода‑вывода файлов для минимизации задержек.
+To optimize performance when using Aspose.Email:
+- Manage resources by closing streams after processing files.  
+- Use appropriate Java memory‑management techniques, such as garbage‑collection tuning.  
+- Optimize file I/O operations to minimize latency.
 
 ## Распространённые проблемы и решения
-- **Проблема:** Вложения не сохраняются.  
-  **Решение:** Убедитесь, что `dataDir` указывает на папку, доступную для записи, и что файл MSG действительно содержит вложения.  
+- **Problem:** Attachments are not saved.  
+  **Solution:** Verify that `dataDir` points to a writable folder and that the MSG file actually contains attachments.  
+- **Problem:** Embedded message does not appear in the recipient’s client.  
+  **Solution:** Ensure you add the attachment with a proper display name and that the inner MSG is a valid file.  
+- **Problem:** Converting MSG to EML loses formatting.  
+  **Solution:** Use the latest Aspose.Email version and avoid modifying the message object before calling `save`.
 
-- **Проблема:** Встроенное сообщение не отображается у получателя.  
-  **Решение:** Убедитесь, что вы добавляете вложение с правильным отображаемым именем и что внутренний MSG является действительным файлом.  
-
-- **Проблема:** При конвертации MSG в EML теряется форматирование.  
-  **Решение:** Используйте последнюю версию Aspose.Email и избегайте изменения объекта сообщения перед вызовом `save`.
-
-## Раздел FAQ
-1. **Что такое Aspose.Email для Java?**  
-   - Библиотека, позволяющая работать с форматами электронной почты, такими как MSG и EML, в Java‑приложениях.  
-2. **Как установить Aspose.Email с помощью Maven?**  
-   - Добавьте указанную зависимость в ваш `pom.xml`.  
-3. **Можно ли разбирать вложения из писем без их локального сохранения?**  
-   - Да, вы можете обрабатывать вложения непосредственно в памяти.  
-4. **Можно ли встроить несколько сообщений в одно письмо?**  
-   - Конечно! Вы можете добавить столько встроенных сообщений, сколько потребуется.  
-5. **Что делать, если встроенное сообщение отображается некорректно?**  
-   - Убедитесь, что вложение добавлено правильно, и проверьте наличие проблем с форматированием.
+## Раздел часто задаваемых вопросов
+1. **What is Aspose.Email for Java?**  
+   - A library that allows you to work with email formats like MSG and EML in Java applications.  
+2. **How do I install Aspose.Email using Maven?**  
+   - Add the specified dependency to your `pom.xml`.  
+3. **Can I parse attachments from emails without saving them locally?**  
+   - Yes, you can process attachments directly within memory.  
+4. **Is it possible to embed multiple messages in one email?**  
+   - Absolutely! You can add as many embedded messages as needed.  
+5. **What should I do if my embedded message isn’t displaying correctly?**  
+   - Ensure the attachment is added correctly and check for any formatting issues.
 
 ## Часто задаваемые вопросы
 
-**В: Как загрузить файл MSG с помощью Aspose.Email для Java?**  
-О: Используйте `MapiMessage.fromFile("path/to/file.msg")`, чтобы загрузить файл MSG в объект `MapiMessage`.
+**Q: How do I load a MSG file with Aspose.Email for Java?**  
+A: Use `MapiMessage.fromFile("path/to/file.msg")` to load the MSG file into a `MapiMessage` object.
 
-**В: Какой лучший способ извлечения вложений MSG?**  
-О: Перебирайте `message.getAttachments()` и вызывайте `attachment.save(destinationPath)` для каждого элемента.
+**Q: What is the best way to extract MSG attachments?**  
+A: Iterate over `message.getAttachments()` and call `attachment.save(destinationPath)` for each item.
 
-**В: Можно ли встроить письмо в другое письмо с помощью Aspose.Email для Java?**  
-О: Да — создайте `MapiMessage` для внутреннего письма и добавьте его в коллекцию вложений внешнего сообщения.
+**Q: Can I embed an email inside another email using Aspose.Email for Java?**  
+A: Yes—create a `MapiMessage` for the inner email and add it to the outer message’s attachments collection.
 
-**В: Нужна ли лицензия для извлечения вложений в производственной среде?**  
-О: Для использования в продакшн требуется действующая лицензия; бесплатная пробная версия подходит только для оценки.
+**Q: Do I need a license to extract attachments in a production environment?**  
+A: A valid license is required for production use; a free trial works for evaluation only.
 
-**В: Есть ли распространённые подводные камни при чтении встроенных сообщений?**  
-О: Убедитесь, что вы ссылаетесь на правильный индекс вложения и проверяете, что встроенный контент является действительным файлом MSG.
+**Q: Are there any common pitfalls when reading embedded messages?**  
+A: Ensure you reference the correct attachment index and verify that the embedded content is a valid MSG file.
 
 ## Ресурсы
 - [Документация Aspose.Email](https://reference.aspose.com/email/java/)  
 - [Скачать Aspose.Email](https://releases.aspose.com/email/java/)  
-- [Приобрести лицензию](https://purchase.aspose.com/buy)  
+- [Купить лицензию](https://purchase.aspose.com/buy)  
 - [Бесплатная пробная версия](https://releases.aspose.com/email/java/)  
 - [Временная лицензия](https://purchase.aspose.com/temporary-license/)  
 - [Форум поддержки](https://forum.aspose.com/c/email/10)
 
 ---
 
-**Последнее обновление:** 2026-07-22  
+**Последнее обновление:** 2026-10-28  
 **Тестировано с:** Aspose.Email 25.4 for Java (JDK 16)  
 **Автор:** Aspose
 
-{{< blocks/products/products-backtop-button >}}
+
 
 ## Связанные учебники
 
-- [Как загрузить и разобрать файлы Outlook MSG с помощью Aspose.Email для Java: Полное руководство](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
-- [Как извлечь вложения электронной почты из сообщений с помощью Aspose.Email для Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
-- [Как вставить вложение в файлы MSG с помощью Aspose.Email для Java](/email/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/)
+- [Как загрузить и разобрать файлы Outlook MSG с помощью Aspose.Email for Java: Полное руководство](/email/java/mapi-operations/outlook-msg-aspose-email-java-guide/)
+- [Как извлечь вложения из сообщений электронной почты с помощью Aspose.Email for Java](/email/java/advanced-email-attachments/extracting-attachments-from-email-messages/)
+- [Как вставить вложение в файлы MSG с помощью Aspose.Email for Java](/email/java/attachments-handling/mastering-attachment-manipulation-aspose-email-java/)
 
+```java
+// Direct answer: Convert MSG to EML in two lines
+MapiMessage msg = MapiMessage.fromFile("input.msg");
+msg.save("output.eml", SaveOptions.getDefaultEml());
+```
+
+```java
+License license = new License();
+license.setLicense("path/to/your/license/file");
+```
 
 {{< /blocks/products/pf/tutorial-page-section >}}
 
 {{< /blocks/products/pf/main-container >}}
-
 {{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
